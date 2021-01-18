@@ -168,6 +168,7 @@
 #define VARIOUS_JUMP_IF_ABSENT                  101
 #define VARIOUS_DESTROY_ABILITY_POPUP           102
 #define VARIOUS_TOTEM_BOOST                     103
+#define VARIOUS_SET_Z_EFFECT                    104
 
 // Cmd_manipulatedamage
 #define DMG_CHANGE_SIGN            0

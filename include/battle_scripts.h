@@ -357,5 +357,14 @@ extern const u8 BattleScript_CottonDownActivates[];
 extern const u8 BattleScript_BallFetch[];
 extern const u8 BattleScript_SandSpitActivates[];
 extern const u8 BattleScript_PerishBodyActivates[];
+// zmoves
+extern const u8 BattleScript_ZMoveActivateDamaging[];
+extern const u8 BattleScript_ZMoveActivateStatus[];
+extern const u8 BattleScript_ZEffectPrintString[];
+extern const u8 BattleScript_RecoverHPZMove[];
+extern const u8 BattleScript_StatUpZMove[];
+extern const u8 BattleScript_HealReplacementZMove[];
+extern const u8 BattleScript_EffectExtremeEvoboost[];
+
 
 #endif // GUARD_BATTLE_SCRIPTS_H

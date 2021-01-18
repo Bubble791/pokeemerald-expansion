@@ -527,6 +527,7 @@
 #define B_ANIM_SLIDE_OFFSCREEN          0x1E // for Emergency Exit
 #define B_ANIM_RESTORE_BG               0x1F // for Terrain Endings
 #define B_ANIM_TOTEM_FLARE              0x20 // Totem boosts aura flare
+#define B_ANIM_ZMOVE_ACTIVATE           0x21
 
 // special animations table
 #define B_ANIM_LVL_UP                   0x0
@@ -615,6 +616,12 @@
 // horseshoe/fist frames
 #define ANIM_RIGHT_FIST  0
 #define ANIM_LEFT_FIST   2
+
+// fist/chop frames
+#define ANIM_FIST_1  0
+#define ANIM_FOOT_1  1
+#define ANIM_FOOT_2  2
+#define ANIM_CHOP    3
 
 // surf wave palettes
 #define ANIM_SURF_PAL_SURF           0
