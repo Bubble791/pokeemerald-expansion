@@ -57,7 +57,7 @@ static u8 GetZMoveScore(u8 battlerAtk, u8 battlerDef, u16 baseMove, u16 zMove);
 // Const Data
 static const struct SignatureZMove sSignatureZMoves[] =
 {
-    #ifdef POKEMON_EXPANSION
+    /*#ifdef POKEMON_EXPANSION
     {SPECIES_RAICHU_A,              ITEM_ALORAICHIUM_Z,        MOVE_THUNDERBOLT,         MOVE_STOKED_SPARKSURFER},
     {SPECIES_DECIDUEYE,             ITEM_DECIDIUM_Z,           MOVE_SPIRIT_SHACKLE,      MOVE_SINISTER_ARROW_RAID},
     {SPECIES_INCINEROAR,            ITEM_INCINIUM_Z,           MOVE_DARKEST_LARIAT,      MOVE_MALICIOUS_MOONSAULT},
@@ -89,7 +89,7 @@ static const struct SignatureZMove sSignatureZMoves[] =
     {SPECIES_MEW,                   ITEM_MEWNIUM_Z,            MOVE_PSYCHIC,             MOVE_GENESIS_SUPERNOVA},
     {SPECIES_PIKACHU,               ITEM_PIKANIUM_Z,           MOVE_VOLT_TACKLE,         MOVE_CATASTROPIKA},
     {SPECIES_EEVEE,                 ITEM_EEVIUM_Z,             MOVE_LAST_RESORT,         MOVE_EXTREME_EVOBOOST},
-    {SPECIES_SNORLAX,               ITEM_SNORLIUM_Z,           MOVE_GIGA_IMPACT,         MOVE_PULVERIZING_PANCAKE},
+    {SPECIES_SNORLAX,               ITEM_SNORLIUM_Z,           MOVE_GIGA_IMPACT,         MOVE_PULVERIZING_PANCAKE},*/
 };
 
 static const u8 sText_ResetStats[] = _("Reset Lowered Stats");
@@ -699,12 +699,12 @@ bool32 ShouldAIUseZMove(u8 battlerAtk, u8 battlerDef, u16 chosenMove)
     
     if (IsViableZMove(battlerAtk, chosenMove))
     {
-        #ifdef POKEMON_EXPANSION
+        /*#ifdef POKEMON_EXPANSION
         if (defAbility == ABILITY_DISGUISE && defSpecies == SPECIES_MIMIKYU)
             return 0; //Don't waste a Z-Move busting Mimikyu's disguise
         if (defAbility == ABILITY_ICEFACE && defSpecies == SPECIES_EISCUE && IS_MOVE_PHYSICAL(chosenMove))
             return 0; //Don't waste a Z-Move busting Eiscue's Ice Face
-        #endif
+        #endif*/
         
         if (IS_MOVE_STATUS(chosenMove) && !IS_MOVE_STATUS(gBattleStruct->zmove.chosenZMove))
             return FALSE;

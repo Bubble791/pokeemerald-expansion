@@ -809,7 +809,7 @@ gCryTable:: @ 869DCF4
 	cry_not Cry_Blacephalon
 	cry_not Cry_Zeraora
 	cry_not Cry_Meltan
-	cry_not Cry_Melmetal
+	cry_not Cry_Meltan
 	cry_not Cry_Grookey
 	cry_not Cry_Thwackey
 	cry_not Cry_Rillaboom
@@ -900,57 +900,7 @@ gCryTable:: @ 869DCF4
 	cry_not Cry_Spectrier
 	cry_not Cry_Calyrex
 	@ Megas
-	cry_not Cry_Venusaur_Mega
-	cry_not Cry_Charizard_Mega_X
-	cry_not Cry_Charizard_Mega_Y
-	cry_not Cry_Blastoise_Mega
-	cry_not Cry_Beedrill_Mega
-	cry_not Cry_Pidgeot_Mega
-	cry_not Cry_Alakazam_Mega
-	cry_not Cry_Slowbro_Mega
-	cry_not Cry_Gengar_Mega
-	cry_not Cry_Kangaskhan_Mega
-	cry_not Cry_Pinsir_Mega
-	cry_not Cry_Gyarados_Mega
-	cry_not Cry_Aerodactyl_Mega
-	cry_not Cry_Mewtwo_Mega_X
-	cry_not Cry_Mewtwo_Mega_Y
-	cry_not Cry_Ampharos_Mega
-	cry_not Cry_Steelix_Mega
-	cry_not Cry_Scizor_Mega
-	cry_not Cry_Heracross_Mega
-	cry_not Cry_Houndoom_Mega
-	cry_not Cry_Tyranitar_Mega
-	cry_not Cry_Sceptile_Mega
-	cry_not Cry_Blaziken_Mega
-	cry_not Cry_Swampert_Mega
-	cry_not Cry_Gardevoir_Mega
-	cry_not Cry_Sableye_Mega
-	cry_not Cry_Mawile_Mega
-	cry_not Cry_Aggron_Mega
-	cry_not Cry_Medicham_Mega
-	cry_not Cry_Manectric_Mega
-	cry_not Cry_Sharpedo_Mega
-	cry_not Cry_Camerupt_Mega
-	cry_not Cry_Altaria_Mega
-	cry_not Cry_Banette_Mega
-	cry_not Cry_Absol_Mega
-	cry_not Cry_Glalie_Mega
-	cry_not Cry_Salamence_Mega
-	cry_not Cry_Metagross_Mega
-	cry_not Cry_Latias_Mega
-	cry_not Cry_Latios_Mega
-	cry_not Cry_Lopunny_Mega
-	cry_not Cry_Garchomp_Mega
-	cry_not Cry_Lucario_Mega
-	cry_not Cry_Abomasnow_Mega
-	cry_not Cry_Gallade_Mega
-	cry_not Cry_Audino_Mega
-	cry_not Cry_Diancie_Mega
 	@ Special Mega + Primals
-	cry_not Cry_Rayquaza_Mega
-	cry_not Cry_Kyogre_Primal
-	cry_not Cry_Groudon_Primal
 	@ Alolan Forms
 	cry Cry_Rattata
 	cry Cry_Raticate
@@ -974,7 +924,6 @@ gCryTable:: @ 869DCF4
 	cry Cry_Meowth
 	cry Cry_Ponyta
 	cry Cry_Rapidash
-	cry_not Cry_Slowpoke_Galarian
 	cry Cry_Slowbro
 	cry Cry_Farfetchd
 	cry Cry_Weezing
@@ -1066,7 +1015,6 @@ gCryTable:: @ 869DCF4
 	@ Giratina
 	cry_not Cry_Giratina
 	@ Shaymin
-	cry_not Cry_Shaymin_Sky
 	@ Arceus
 	cry_not Cry_Arceus
 	cry_not Cry_Arceus
@@ -1099,12 +1047,7 @@ gCryTable:: @ 869DCF4
 	cry_not Cry_Sawsbuck
 	cry_not Cry_Sawsbuck
 	@ Therian Forms
-	cry_not Cry_Tornadus_Therian
-	cry_not Cry_Thundurus_Therian
-	cry_not Cry_Landorus_Therian
 	@ Kyurem
-	cry_not Cry_Kyurem_White
-	cry_not Cry_Kyurem_Black
 	@ Keldeo
 	cry_not Cry_Keldeo
 	@ Meloetta
@@ -1147,7 +1090,6 @@ gCryTable:: @ 869DCF4
 	cry_not Cry_Floette
 	cry_not Cry_Floette
 	cry_not Cry_Floette
-	cry_not Cry_Floette_Eternal_Flower
 	@ Florges
 	cry_not Cry_Florges
 	cry_not Cry_Florges
@@ -1170,31 +1112,19 @@ gCryTable:: @ 869DCF4
 	@ Pumpkaboo
 	cry_not Cry_Pumpkaboo
 	cry_not Cry_Pumpkaboo
-	cry_not Cry_Pumpkaboo_Super
 	@ Gourgeist
 	cry_not Cry_Gourgeist
 	cry_not Cry_Gourgeist
-	cry_not Cry_Gourgeist_Super
 	@ Xerneas
 	cry_not Cry_Xerneas
 	@ Zygarde
-	cry_not Cry_Zygarde_10
-	cry_not Cry_Zygarde_10
 	cry_not Cry_Zygarde
-	cry_not Cry_Zygarde_Complete
 	@ Hoopa
-	cry_not Cry_Hoopa_Unbound
 	@ Oricorio
-	cry_not Cry_Oricorio_Pom_Pom
-	cry_not Cry_Oricorio_Pa_u
-	cry_not Cry_Oricorio_Sensu
 	@ Rockruff
 	cry_not Cry_Rockruff
 	@ Lycanroc
-	cry_not Cry_Lycanroc_Midnight
-	cry_not Cry_Lycanroc_Dusk
 	@ Wishiwashi
-	cry_not Cry_Wishiwashi_School
 	@ Silvally
 	cry_not Cry_Silvally
 	cry_not Cry_Silvally
@@ -1230,16 +1160,12 @@ gCryTable:: @ 869DCF4
 	@ Mimikyu
 	cry_not Cry_Mimikyu
 	@ Necrozma
-	cry_not Cry_Necrozma_Dusk_Mane
-	cry_not Cry_Necrozma_Dawn_Wings
-	cry_not Cry_Necrozma_Ultra
 	@ Magearna
 	cry_not Cry_Magearna
 	@ Cramorant
 	cry_not Cry_Cramorant
 	cry_not Cry_Cramorant
 	@ Toxtricity
-	cry_not Cry_Toxtricity_Low_Key
 	@ Sinistea
 	cry_not Cry_Sinistea
 	@ Polteageist
@@ -1254,24 +1180,15 @@ gCryTable:: @ 869DCF4
 	cry_not Cry_Alcremie
 	cry_not Cry_Alcremie
 	@ Eiscue
-	cry_not Cry_Eiscue_Noice_Face
 	@ Indeedee
-	cry_not Cry_Indeedee_Female
 	@ Morpeko
-	cry_not Cry_Morpeko_Hangry
 	@ Zacian
-	cry_not Cry_Zacian_Crowned_Sword
 	@ Zamazenta
-	cry_not Cry_Zamazenta_Crowned_Shield
 	@ Eternatus
-	cry_not Cry_Eternatus_Eternamax
 	@ Urshifu
-	cry_not Cry_Urshifu_Rapid_Strike_Style
 	@ Zarude
 	cry_not Cry_Zarude
 	@ Calyrex
-	cry_not Cry_Calyrex_Ice_Rider
-	cry_not Cry_Calyrex_Shadow_Rider
 
 	.align 2
 gCryTable2:: @ 869EF24
@@ -2083,7 +2000,7 @@ gCryTable2:: @ 869EF24
 	cry2_not Cry_Blacephalon
 	cry2_not Cry_Zeraora
 	cry2_not Cry_Meltan
-	cry2_not Cry_Melmetal
+	cry2_not Cry_Meltan
 	cry2_not Cry_Grookey
 	cry2_not Cry_Thwackey
 	cry2_not Cry_Rillaboom
@@ -2174,57 +2091,7 @@ gCryTable2:: @ 869EF24
 	cry2_not Cry_Spectrier
 	cry2_not Cry_Calyrex
 	@ Megas
-	cry2_not Cry_Venusaur_Mega
-	cry2_not Cry_Charizard_Mega_X
-	cry2_not Cry_Charizard_Mega_Y
-	cry2_not Cry_Blastoise_Mega
-	cry2_not Cry_Beedrill_Mega
-	cry2_not Cry_Pidgeot_Mega
-	cry2_not Cry_Alakazam_Mega
-	cry2_not Cry_Slowbro_Mega
-	cry2_not Cry_Gengar_Mega
-	cry2_not Cry_Kangaskhan_Mega
-	cry2_not Cry_Pinsir_Mega
-	cry2_not Cry_Gyarados_Mega
-	cry2_not Cry_Aerodactyl_Mega
-	cry2_not Cry_Mewtwo_Mega_X
-	cry2_not Cry_Mewtwo_Mega_Y
-	cry2_not Cry_Ampharos_Mega
-	cry2_not Cry_Steelix_Mega
-	cry2_not Cry_Scizor_Mega
-	cry2_not Cry_Heracross_Mega
-	cry2_not Cry_Houndoom_Mega
-	cry2_not Cry_Tyranitar_Mega
-	cry2_not Cry_Sceptile_Mega
-	cry2_not Cry_Blaziken_Mega
-	cry2_not Cry_Swampert_Mega
-	cry2_not Cry_Gardevoir_Mega
-	cry2_not Cry_Sableye_Mega
-	cry2_not Cry_Mawile_Mega
-	cry2_not Cry_Aggron_Mega
-	cry2_not Cry_Medicham_Mega
-	cry2_not Cry_Manectric_Mega
-	cry2_not Cry_Sharpedo_Mega
-	cry2_not Cry_Camerupt_Mega
-	cry2_not Cry_Altaria_Mega
-	cry2_not Cry_Banette_Mega
-	cry2_not Cry_Absol_Mega
-	cry2_not Cry_Glalie_Mega
-	cry2_not Cry_Salamence_Mega
-	cry2_not Cry_Metagross_Mega
-	cry2_not Cry_Latias_Mega
-	cry2_not Cry_Latios_Mega
-	cry2_not Cry_Lopunny_Mega
-	cry2_not Cry_Garchomp_Mega
-	cry2_not Cry_Lucario_Mega
-	cry2_not Cry_Abomasnow_Mega
-	cry2_not Cry_Gallade_Mega
-	cry2_not Cry_Audino_Mega
-	cry2_not Cry_Diancie_Mega
 	@ Special Mega + Primals
-	cry2_not Cry_Rayquaza_Mega
-	cry2_not Cry_Kyogre_Primal
-	cry2_not Cry_Groudon_Primal
 	@ Alolan Forms
 	cry2 Cry_Rattata
 	cry2 Cry_Raticate
@@ -2248,7 +2115,6 @@ gCryTable2:: @ 869EF24
 	cry2 Cry_Meowth
 	cry2 Cry_Ponyta
 	cry2 Cry_Rapidash
-	cry2_not Cry_Slowpoke_Galarian
 	cry2 Cry_Slowbro
 	cry2 Cry_Farfetchd
 	cry2 Cry_Weezing
@@ -2340,7 +2206,6 @@ gCryTable2:: @ 869EF24
 	@ Giratina
 	cry2_not Cry_Giratina
 	@ Shaymin
-	cry2_not Cry_Shaymin_Sky
 	@ Arceus
 	cry2_not Cry_Arceus
 	cry2_not Cry_Arceus
@@ -2373,12 +2238,7 @@ gCryTable2:: @ 869EF24
 	cry2_not Cry_Sawsbuck
 	cry2_not Cry_Sawsbuck
 	@ Therian Forms
-	cry2_not Cry_Tornadus_Therian
-	cry2_not Cry_Thundurus_Therian
-	cry2_not Cry_Landorus_Therian
 	@ Kyurem
-	cry2_not Cry_Kyurem_White
-	cry2_not Cry_Kyurem_Black
 	@ Keldeo
 	cry2_not Cry_Keldeo
 	@ Meloetta
@@ -2421,7 +2281,6 @@ gCryTable2:: @ 869EF24
 	cry2_not Cry_Floette
 	cry2_not Cry_Floette
 	cry2_not Cry_Floette
-	cry2_not Cry_Floette_Eternal_Flower
 	@ Florges
 	cry2_not Cry_Florges
 	cry2_not Cry_Florges
@@ -2444,31 +2303,19 @@ gCryTable2:: @ 869EF24
 	@ Pumpkaboo
 	cry2_not Cry_Pumpkaboo
 	cry2_not Cry_Pumpkaboo
-	cry2_not Cry_Pumpkaboo_Super
 	@ Gourgeist
 	cry2_not Cry_Gourgeist
 	cry2_not Cry_Gourgeist
-	cry2_not Cry_Gourgeist_Super
 	@ Xerneas
 	cry2_not Cry_Xerneas
 	@ Zygarde
-	cry2_not Cry_Zygarde_10
-	cry2_not Cry_Zygarde_10
 	cry2_not Cry_Zygarde
-	cry2_not Cry_Zygarde_Complete
 	@ Hoopa
-	cry2_not Cry_Hoopa_Unbound
 	@ Oricorio
-	cry2_not Cry_Oricorio_Pom_Pom
-	cry2_not Cry_Oricorio_Pa_u
-	cry2_not Cry_Oricorio_Sensu
 	@ Rockruff
 	cry2_not Cry_Rockruff
 	@ Lycanroc
-	cry2_not Cry_Lycanroc_Midnight
-	cry2_not Cry_Lycanroc_Dusk
 	@ Wishiwashi
-	cry2_not Cry_Wishiwashi_School
 	@ Silvally
 	cry2_not Cry_Silvally
 	cry2_not Cry_Silvally
@@ -2504,16 +2351,12 @@ gCryTable2:: @ 869EF24
 	@ Mimikyu
 	cry2_not Cry_Mimikyu
 	@ Necrozma
-	cry2_not Cry_Necrozma_Dusk_Mane
-	cry2_not Cry_Necrozma_Dawn_Wings
-	cry2_not Cry_Necrozma_Ultra
 	@ Magearna
 	cry2_not Cry_Magearna
 		@ Cramorant
 	cry2_not Cry_Cramorant
 	cry2_not Cry_Cramorant
 	@ Toxtricity
-	cry2_not Cry_Toxtricity_Low_Key
 	@ Sinistea
 	cry2_not Cry_Sinistea
 	@ Polteageist
@@ -2528,21 +2371,12 @@ gCryTable2:: @ 869EF24
 	cry2_not Cry_Alcremie
 	cry2_not Cry_Alcremie
 	@ Eiscue
-	cry2_not Cry_Eiscue_Noice_Face
 	@ Indeedee
-	cry2_not Cry_Indeedee_Female
 	@ Morpeko
-	cry2_not Cry_Morpeko_Hangry
 	@ Zacian
-	cry2_not Cry_Zacian_Crowned_Sword
 	@ Zamazenta
-	cry2_not Cry_Zamazenta_Crowned_Shield
 	@ Eternatus
-	cry2_not Cry_Eternatus_Eternamax
 	@ Urshifu
-	cry2_not Cry_Urshifu_Rapid_Strike_Style
 	@ Zarude
 	cry2_not Cry_Zarude
 	@ Calyrex
-	cry2_not Cry_Calyrex_Ice_Rider
-	cry2_not Cry_Calyrex_Shadow_Rider
