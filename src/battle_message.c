@@ -56,6 +56,10 @@ static void ChooseTypeOfMoveUsedString(u8 *dst);
 static EWRAM_DATA u16 sBattlerAbilities[MAX_BATTLERS_COUNT] = {0};
 EWRAM_DATA struct BattleMsgData *gBattleMsgDataPtr = NULL;
 
+//
+static const u8 sText_PlayerLostToEnemyTrainer[] = _("{B_PLAYER_NAME} is out of\nusable POKéMON!\pPlayer lost against\n{B_TRAINER1_CLASS} {B_TRAINER1_NAME}!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_PlayerPaidPrizeMoney[] = _("{B_PLAYER_NAME} paid ¥{B_BUFF1} as the prize\nmoney…\p… … … …\p{B_PLAYER_NAME} whited out!{PAUSE_UNTIL_PRESS}");
+
 // const rom data
 // todo: make some of those names less vague: attacker/target vs pkmn, etc.
 
@@ -703,6 +707,8 @@ static const u8 sText_TerrainReturnedToNormal[] = _("The terrain returned to\nno
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
+    [STRINGID_PLAYERLOSTTOENEMYTRAINER - 12] = sText_PlayerLostToEnemyTrainer,
+    [STRINGID_PLAYERPAIDPRIZEMONEY - 12] = sText_PlayerPaidPrizeMoney,
     [STRINGID_ZPOWERSURROUNDS - 12] = sText_ZPowerSurrounds,
     [STRINGID_ZMOVEUNLEASHED - 12] = sText_ZPowerUnleashed,
     [STRINGID_ZMOVERESETSSTATS - 12] = sText_ZMoveResetsStats,
