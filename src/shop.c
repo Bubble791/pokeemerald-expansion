@@ -91,6 +91,7 @@ static void Task_HandleShopMenuSell(u8 taskId);
 static void BuyMenuPrintItemDescriptionAndShowItemIcon(s32 item, bool8 onInit, struct ListMenu *list);
 static void BuyMenuPrintPriceInList(u8 windowId, s32 item, u8 y);
 
+const u8 gText_YouAlreadyHaveThis[] = _("You already have this item.{PAUSE_UNTIL_PRESS}");
 static const struct YesNoFuncTable sShopPurchaseYesNoFuncs =
 {
     BuyMenuTryMakePurchase,
@@ -943,6 +944,10 @@ static void Task_BuyMenu(u8 taskId)
             if (!IsEnoughMoney(&gSaveBlock1Ptr->money, gShopDataPtr->totalCost))
             {
                 BuyMenuDisplayMessage(taskId, gText_YouDontHaveMoney, BuyMenuReturnToItemList);
+            }
+            else if (ItemId_GetPocket(itemId) == POCKET_TM_HM && CheckBagHasItem(itemId, 1))
+            {
+                BuyMenuDisplayMessage(taskId, gText_YouAlreadyHaveThis, BuyMenuReturnToItemList);
             }
             else
             {
