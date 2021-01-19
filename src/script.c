@@ -3,6 +3,7 @@
 #include "event_data.h"
 #include "mevent.h"
 #include "util.h"
+#include "trainer_see.h"
 #include "constants/map_scripts.h"
 
 #define RAM_SCRIPT_MAGIC 51
@@ -438,5 +439,9 @@ u8* ReadWord(u8 index)
     struct ScriptContext *ctx = &sScriptContext1;
     
     return (T1_READ_PTR(&ctx->data[index]));
+// trainer sight scripts
+bool8 LoadTrainerObjectScript(void)
+{
+    sScriptContext1.scriptPtr = gApproachingTrainers[gNoOfApproachingTrainers - 1].trainerScriptPtr;
 }
 
