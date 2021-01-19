@@ -208,6 +208,7 @@ void NewGameInitData(void)
     ResetContestLinkResults();
     
     memset(&gSaveBlock2Ptr->follower, 0, sizeof(gSaveBlock2Ptr->follower));
+    gSaveBlock2Ptr->autoRun = FALSE;
 }
 
 static void ResetMiniGamesResults(void)
