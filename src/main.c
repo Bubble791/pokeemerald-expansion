@@ -195,9 +195,11 @@ void StartTimer1(void)
 
 void SeedRngAndSetTrainerId(void)
 {
-    u16 val = REG_TM1CNT_L;
+    u32 seed = RtcGetMinuteCount();
+    u16 val = RtcGetMinuteCount();
+    seed = (seed >> 16) ^ (seed & 0xFFFF);
+    SeedRng(seed);
     SeedRng(val);
-    REG_TM1CNT_H = 0;
     gTrainerId = val;
 }
 
@@ -397,8 +399,7 @@ static void WaitForVBlank(void)
 {
     gMain.intrCheck &= ~INTR_FLAG_VBLANK;
 
-    while (!(gMain.intrCheck & INTR_FLAG_VBLANK))
-        ;
+    asm("swi 0x5");
 }
 
 void SetTrainerHillVBlankCounter(u32 *counter)
