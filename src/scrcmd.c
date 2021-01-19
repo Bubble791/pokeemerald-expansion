@@ -2258,7 +2258,9 @@ bool8 ScrCmd_gotoram(struct ScriptContext *ctx)
     return FALSE;
 }
 
-bool8 ScrCmd_warpD1(struct ScriptContext *ctx)
+// Unused
+// For the warp used by the Aqua Hideout, see DoTeleportTileWarp
+bool8 ScrCmd_warpspinenter(struct ScriptContext *ctx)
 {
     u8 mapGroup = ScriptReadByte(ctx);
     u8 mapNum = ScriptReadByte(ctx);
@@ -2267,8 +2269,8 @@ bool8 ScrCmd_warpD1(struct ScriptContext *ctx)
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
     SetWarpDestination(mapGroup, mapNum, warpId, x, y);
-    sub_808D074(GetPlayerFacingDirection());
-    sub_80B0244();
+    SetSpinStartFacingDir(GetPlayerFacingDirection());
+    DoSpinEnterWarp();
     ResetInitialPlayerAvatarState();
     return TRUE;
 }
@@ -2325,3 +2327,33 @@ bool8 ScrCmd_warpsootopolislegend(struct ScriptContext *ctx)
     ResetInitialPlayerAvatarState();
     return TRUE;
 }
+
+// follow me script commands
+#include "follow_me.h"
+bool8 ScrCmd_setfollower(struct ScriptContext *ctx)
+{
+    u8 localId = ScriptReadByte(ctx);
+    u8 flags = ScriptReadByte(ctx);
+    
+    SetUpFollowerSprite(localId, flags);
+    return FALSE;
+}
+
+bool8 ScrCmd_destroyfollower(struct ScriptContext *ctx)
+{
+    DestroyFollower();
+    return FALSE;
+}
+
+bool8 ScrCmd_facefollower(struct ScriptContext *ctx)
+{
+    PlayerFaceFollowerSprite();
+    return FALSE;
+}
+
+bool8 ScrCmd_checkfollower(struct ScriptContext *ctx)
+{
+    CheckPlayerHasFollower();
+    return FALSE;
+}
+

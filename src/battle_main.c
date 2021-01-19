@@ -1841,7 +1841,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                     nameHash += gSpeciesNames[partyData[i].species][j];
 
                 personalityValue += nameHash << 8;
-                fixedIV = partyData[i].iv * 31 / 255;
+                fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
                 CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 break;
             }
@@ -1853,7 +1853,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                     nameHash += gSpeciesNames[partyData[i].species][j];
 
                 personalityValue += nameHash << 8;
-                fixedIV = partyData[i].iv * 31 / 255;
+                fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
                 CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
 
                 for (j = 0; j < MAX_MON_MOVES; j++)
@@ -1871,7 +1871,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                     nameHash += gSpeciesNames[partyData[i].species][j];
 
                 personalityValue += nameHash << 8;
-                fixedIV = partyData[i].iv * 31 / 255;
+                fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
                 CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
 
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
@@ -1885,7 +1885,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                     nameHash += gSpeciesNames[partyData[i].species][j];
 
                 personalityValue += nameHash << 8;
-                fixedIV = partyData[i].iv * 31 / 255;
+                fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
                 CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
 
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
@@ -4935,6 +4935,12 @@ static void ReturnFromBattleToOverworld(void)
 
     m4aSongNumStop(SE_LOW_HEALTH);
     SetMainCallback2(gMain.savedCallback);
+    
+    // if you experience the follower de-syncing with the player after battle, set POST_BATTLE_FOLLOWER_FIX to TRUE in include/constants/global.h
+    #if POST_BATTLE_FOLLOWER_FIX
+        FollowMe_WarpSetEnd();
+        gObjectEvents[GetFollowerObjectId()].invisible = TRUE;
+    #endif
 }
 
 void RunBattleScriptCommands_PopCallbacksStack(void)

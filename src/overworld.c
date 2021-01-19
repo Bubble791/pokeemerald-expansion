@@ -59,6 +59,7 @@
 #include "scanline_effect.h"
 #include "wild_encounter.h"
 #include "frontier_util.h"
+#include "follow_me.h"
 #include "constants/abilities.h"
 #include "constants/layouts.h"
 #include "constants/map_types.h"
@@ -67,6 +68,7 @@
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
 #include "constants/weather.h"
+#include "constants/event_object_movement.h"
 
 #define PLAYER_TRADING_STATE_IDLE 0x80
 #define PLAYER_TRADING_STATE_BUSY 0x81
@@ -409,6 +411,8 @@ static void Overworld_ResetStateAfterWhiteOut(void)
         VarSet(VAR_SHOULD_END_ABNORMAL_WEATHER, 0);
         VarSet(VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_NONE);
     }
+    
+    FollowMe_TryRemoveFollowerOnWhiteOut();
 }
 
 static void sub_8084788(void)
@@ -1434,6 +1438,10 @@ static void DoCB1_Overworld(u16 newKeys, u16 heldKeys)
             PlayerStep(inputStruct.dpadDirection, newKeys, heldKeys);
         }
     }
+    
+    // if stop running but keep holding B -> fix follower frame
+    if (PlayerHasFollower() && IsPlayerOnFoot() && IsPlayerStandingStill())
+        ObjectEventSetHeldMovement(&gObjectEvents[GetFollowerObjectId()], GetFaceDirectionAnimNum(gObjectEvents[GetFollowerObjectId()].facingDirection));
 }
 
 void CB1_Overworld(void)
@@ -1919,7 +1927,7 @@ static bool32 LoadMapInStepsLocal(u8 *state, bool32 a2)
         (*state)++;
         break;
     case 10:
-        InitTilesetAnimations();
+        InitTilesetAnimations();        
         (*state)++;
         break;
     case 11:
@@ -1953,6 +1961,7 @@ static bool32 ReturnToFieldLocal(u8 *state)
     case 1:
         InitViewGraphics();
         TryLoadTrainerHillEReaderPalette();
+        FollowMe_BindToSurbBlobOnReloadScreen();
         (*state)++;
         break;
     case 2:
@@ -2152,6 +2161,8 @@ static void InitObjectEventsLocal(void)
     ResetInitialPlayerAvatarState();
     TrySpawnObjectEvents(0, 0);
     TryRunOnWarpIntoMapScript();
+    
+    FollowMe_HandleSprite();
 }
 
 static void sub_8086A68(void)
