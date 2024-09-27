@@ -1799,6 +1799,7 @@ static bool8 _fossilGetMessage(void)
                 StringCopy(gStringVar1, gItemsInfo[item].name);
                 StringExpandPlaceholders(gStringVar4, gText_GameGetItem);
                 AddBagItem(item, 1);
+                UnderGroundSetFossilDig(sFossilGameData->aDeposit[i].partsType);
             }
             FossilGame_AddTextPrinterForMessage(gStringVar4);
             return TRUE;

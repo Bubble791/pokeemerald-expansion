@@ -680,11 +680,6 @@ static const struct FossilParts gFossilGamePartsData[] =
     {NULL, 1, 1, 1, 1, 8, 6, DIG_PARTS_PLATE_IRON,
      NARC_ug_parts_kaseki_pla_n_NCGR,
      NARC_ug_parts_kaseki_pla_iron_NCLR},
-
-
-    // 其他新增的宝物放在这里
-
-
     // 掘れない岩	kaseki_iwa01	面積が４マス	棒形の真っ黒の石
     {NULL, 1, 1, 1, 1, 8, 2, DIG_PARTS_NODIG1,
      NARC_ug_parts_kaseki_iwa01_NCGR,

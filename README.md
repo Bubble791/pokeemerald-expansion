@@ -1,206 +1,155 @@
-# pokeemerald-expansion
+# 白金挖矿代码移植
 
-### Important: DO NOT use GitHub's "Download Zip" option. Using this option will not download the commit history required to update your expansion version or merge other feature branches. Instead, please read [this guide](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/The-Basics-of-GitHub) to learn how to fork the repository and clone locally from there.
+### 注: 该项目的代码基于泄露的白金源码移植，很多函数命名都是GF的，并且保留了一些日文的注释，可能会存在乱码
+### 使用前请阅读设置
+![Screenshots1](1.gif)
+## 功说明
 
-## What is pokeemerald-expansion?
+- ***第一次挖矿时***:
+    - 触发特殊文本提示
+    - 不会生成铁块
+    - 必定出现三件宝物
 
-pokeemerald-expansion is a decomp hack base project based off pret's [pokeemerald](https://github.com/pret/pokeemerald) decompilation project. It's recommended that any new projects that plan on using it, to clone this repository instead of pret's vanilla repository, as we regurlarly incorporate pret's documentation changes. This is ***NOT*** a standalone romhack, and as such, most features will be unavailable and/or unbalanced if played as is.
+- ***宝物的稀有度***
+    - 每种宝物支持四种概率设置(```_fossilRandGet```)
+        - 根据玩家的`训练师id`奇偶确定概率
+        - 根据玩家的是否获得了全国图鉴确定概率
+    - 石板类道具的概率为1，并且在获得后不会再出现
 
-If you use pokeemerald-expansion in your hack, please add RHH (Rom Hacking Hideout) to your credits list. Optionally, you can list the version used, so it can help players know what features to expect.
-You can phrase it as the following:
+
+## 设置
+
+### 参数设置
+
+请设置`src/ug_dig_fossil.c`文件的下列参数
+
+```c
+#define _PARTS_NUM_MAX   (8)            // 最大出现物品的数量，包含了铁块
+#define _PARTS_TREASURE_NUM_MAX (4)     // 最大出现的宝物数量，原版为2到4种
+#define DIG_FOSSIL_DEBUG 1              // 是否开启debug功能，开启后按住B键会隐藏掉遮挡层直接显示宝物
 ```
-Based off RHH's pokeemerald-expansion 1.9.2 https://github.com/rh-hideout/pokeemerald-expansion/
+
+### 初次挖掘Flag
+
+设置`include/dig_fossil.h`的`UnderGroundIsFirstFossil`和`UnderGroundSetFirstFossil`的`flag`或者根据需求改成其他的代码
+
+```c
+static inline bool8 UnderGroundIsFirstFossil(void) // 检查是否第一次挖掘
+{    
+    return !FlagGet(FLAG_UNUSED_0x055);
+}
+
+static inline void UnderGroundSetFirstFossil(void) // 设置第一次挖掘
+{    
+    FlagSet(FLAG_UNUSED_0x055);
+}
 ```
 
-## What features are included?
-- ***IMPORTANT*❗❗ Read through these to learn what features you can toggle**:
-    - [Battle configurations](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/include/config/battle.h)
-    - [Pokémon configurations](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/include/config/pokemon.h)
-    - [Item configurations](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/include/config/item.h)
-    - [Overworld configurations](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/include/config/overworld.h)
-    - [Debug configurations](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/include/config/debug.h)
-- ***Upgraded battle engine.***
-    - Gen5+ damage calculation.
-    - 2v2 Wild battles support.
-    - 1v2/2v1 battles support.
-    - Fairy Type (configurable).
-    - Physical/Special/Status Category (configurable).
-    - New moves and abilities up to Scarlet and Violet.
-        - Custom Contest data up to SwSh, newer moves are WIP. ([source](https://pokemonurpg.com/info/contests/rse-move-list/))
-    - Battle gimmick support:
-        - Mega Evolution
-        - Primal Reversion
-        - Ultra Burst
-        - Z-Moves
-            - Gen 8+ damaging moves are given power extrapolated from Gen 7.
-            - Gen 8+ status moves have no additional effects, like Healing Wish.
-        - Dynamax and Gigantamax
-    - Initial battle parameters
-        - Queueing stat boosts (aka, Totem Boosts)
-        - Setting Terrains.
-    - Mid-turn speed recalculation.
-    - Quick Poké Ball selection in Wild Battles
-        - Hold `R` to change selection with the D-Pad.
-        - Press `R` to use last selected Poké Ball.
-    - Run option shortcut
-    - Faster battle intro - Message and animation/cry happens at the same time.
-    - Faster HP drain.
-    - Battle Debug menu.
-        - Accessed by pressing `Select` on the "Fight/Bag/Pokémon/Run" menu.
-    - Option to use AI flags in wild Pokémon battles.
-    - FRLG/Gen4+ whiteout money calculation.
-    - Configurable experience settings
-        - Experience on catch.
-        - Splitting experience.
-        - Trainer experience.
-        - Scaled experience.
-        - Unevolved experience boost.
-    - Frostbite.
-        - Doesn't replace freezing unless a config is enabled, so you can mix and match.
-    - Critical capture.
-    - Removed badge boosts (configurable).
-    - Recalculating stats at the end of every battle.
-    - Level 100 Pokémon can earn EVs.
-    - Inverse battle support.
-    - TONS of other features listed [here](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/include/config/battle.h).
-- ***Full Trainer customization***
-    - Nickname, EVs, IVs, moves, ability, ball, friendship, nature, gender, shininess.
-    - Custom tag battle support (teaming up an NPC in a double battle).
-    - Sliding trainer messages.
-    - Upgraded Trainer AI
-        - Considers newer move effects.
-        - New flag options to let you customize the intelligence of your trainers.
-        - Faster calculations.
-    - Specify Poké Balls by Trainer class.
-- ***Pokémon Species from Generations 1-9.***
-    - Simplified process to add new Pokémon.
-    - Option to disable unwanted families.
-    - Updated sprites to DS style.
-    - Updated stats, types, abilities and egg groups (configurable).
-    - Updated Hoenn's Regional Dex to match ORAS' (configurable).
-    - Updated National Dex incorporating the new species.
-    - Sprite and animation visualizer.
-        - Accesible by pressing `Select` on a Pokémon's Summary screen.
-    - Gen4+ evolution methods, with some changes:
-        - Mossy Rock, Icy Rock and Magnetic Field locations match ORAS'.
-            - Leaf, Ice and Thunder Stones may also be used.
-        - Inkay just needs level 30 to evolve.
-            - You can't physically have both the RTC and gyroscope, so we skip this requirement.
-        - Sylveon uses Gen8+'s evolution method (friendship + Fairy Move).
-        - Option to use hold evolution items directly like stones.
-    - Hidden Abilities.
-        - Available via Ability Patch.
-        - Compatible with Ghoul's DexNav branch.
-    - All gender differences.
-        - Custom female icons for female Hippopotas Hippowdon, Pikachu and Wobbufett
-    - 3 Perfect IVs on Legendaries, Mythicals and Ultra Beasts.
-- ***Customizable form change tables. Full list of methods [here](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/include/constants/form_change_types.h).***
-    - Item holding (eg. Giratina/Arceus)
-    - Item using (eg. Oricorio)
-        - Time of day option for Shaymin
-    - Fainting
-    - Battle begin and end (eg. Xerneas)
-        - Move change option for Zacian/Zamazenta
-    - Battle end in terrains (eg. Burmy)
-    - Switched in battle (eg. Palafin)
-    - HP Threshold (eg. Darmanitan)
-    - Weather (eg. Castform)
-    - End of turn (eg. Morpeko)
-    - Time of day (eg. Shaymin)
-    - Fusions (eg. Kyurem)
-- ***Breeding Improvements***
-    - Incense Baby Pokémon now happen automatically (configurable).
-    - Level 1 eggs (configurable).
-    - Poké Ball inheriting (configurable).
-    - Egg Move Transfer, including Mirror Herb (configurable).
-    - Nature inheriting 100% of the time with Everstone (configurable)
-    - Gen6+ Ability inheriting (configurable).
-- ***Items from newer Generations. Full list [here](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/include/constants/items.h).***
-    - ***Gen 6+ Exp. Share*** (configurable)
-    - Berserk Gene
-    - Most battle items from Gen 4+
-    - Existing item data but missing effects:
-        - Gimmighoul Coin
-        - Booster Energy
-        - Tera Shards
-        - Tera Orb
-- ***Feature branches incorporated (with permission):***
-    - [RHH intro credits](https://github.com/Xhyzi/pokeemerald/tree/rhh-intro-credits) by @Xhyzi.
-        - A small signature from all of us to show the collective effort in the project :)
-    - [Overworld debug](https://github.com/TheXaman/pokeemerald/tree/tx_debug_system) by @TheXaman
-        - May be disabled.
-        - Accesible by pressing `R + Start` in the overworld by default.
-        - **Additional features**:
-            - *Clear Boxes*: cleans every Pokémon from the Boxes.
-            - *Hatch an Egg*: lets you choose an Egg in your party and immediately hatch it.
-    - [HGSS Pokédex](https://github.com/TheXaman/pokeemerald/tree/tx_pokedexPlus_hgss) by @TheXaman
-        - May be disabled.
-        - **Additional features**:
-            - *Support for new evolution methods*.
-            - *Dark Mode*.
-    - [Nature Colors](https://github.com/DizzyEggg/pokeemerald/tree/nature_color) in summary screen by @DizzyEggg
-    - [Dynamic Multichoice](https://github.com/SBird1337/pokeemerald/tree/feature/dynmulti) by @SBird1337
-    - [Saveblock Cleansing](https://github.com/ghoulslash/pokeemerald/tree/saveblock) by @ghoulslash
-    - [Followers & Expanded IDs](https://github.com/aarant/pokeemerald/tree/followers-expanded-id) by @aarant
-        - May be disabled.
-        - Includes Pokémon followers like in HGSS, including interactions.
-        - ***Expands the amount of possible object event IDs beyond 255.***
-        - ***Includes an implementation of dynamic overworld palettes (DOWP).***
-        - **Additional features**:
-            - *Pokémon overworld sprites up to Generation 8.*
-            - *Integration with our Pokémon Sprite Visualizer, allowing users to browse through the follower sprites alongside battle sprites.*
-- ***Other features***
-    - Pressing B while holding a Pokémon drops them like in modern games (configurable).
-    - Running indoors (configurable).
-    - Configurable overworld poison damage.
-    - Configurable flags for disabling Wild encounters and Trainer battles.
-    - Configurable flags for forcing or disabling Shinies.
-    - Reusable TM (configurable).
-    - B2W2+ Repel system that also supports LGPE's Lures
-    - Gen6+'s EV cap.
-    - All bugfixes from pret included.
-    - Fixed overworld snow effect.
+### 石板道具的获得
 
-There are some mechanics, moves and abilities that are missing and being developed. Check [the project's milestones](https://github.com/rh-hideout/pokeemerald-expansion/milestones) to see which ones.
+设置`include/dig_fossil.h`的`FossilGetPlateBit`和`FossilSetPlateBit`的`var`或者根据需求改成其他的代码
+#### 注意：这里使用了var来储存石板情况，但是var只有两字节所以只支持16个石板，如果需要添加自行修改代码
 
+```c
+// 检查石板时候已经获得
+static inline u32 FossilGetPlateBit(u8 type)
+{
+    return VarGet(VAR_UNUSED_0x404E) & (0x0001 << (type - DIG_PARTS_PLATE_FIRE));
+}
 
-### [Documentation on features can be found here](https://github.com/rh-hideout/pokeemerald-expansion/wiki)
+// 设置已经获取石板的flag
+static inline void FossilSetPlateBit(u8 type)
+{
+    u32 digBit = VarGet(VAR_UNUSED_0x404E);
 
-## If I already have a project based on regular pokeemerald, can I use pokeemerald-expansion?
-Yes! Keep in mind that we keep up with pret's documentation of pokeemerald, which means that if your project a bit old, you might get merge conflicts that you need to solve manually.
-- If you haven't set up a remote, run the command `git remote add RHH https://github.com/rh-hideout/pokeemerald-expansion`.
-- Once you have your remote set up, run the command `git pull RHH master`.
+    digBit |= (0x0001 << (type - DIG_PARTS_PLATE_FIRE));
 
-With this, you'll get the latest version of pokeemerald-expansion, plus a couple of bugfixes that haven't been released into the next patch version :)
+    VarSet(VAR_UNUSED_0x404E, digBit);
+}
+```
 
-## **How do I update my version of pokeemerald-expansion?**
-- If you haven't set up a remote, run the command `git remote add RHH https://github.com/rh-hideout/pokeemerald-expansion`.
-- Check your current version.
-    - You can check in the debug menu's `Utilities -> Expansion Version` option.
-    - If the option is not available, you possibly have version 1.6.2 or older. In that case, please check the [changelogs](CHANGELOG.md) to determine your version based on the features available on your repository.
-- Once you have your remote set up, run the command `git pull RHH expansion/X.Y.Z`, replacing X, Y and Z with the digits of the respective version you want to update to (eg, to update to 1.9.2, use `git pull RHH expansion/1.9.2`).
-    - ***Important:*** If you are several versions behind, we recommend updating one minor version at a time, skipping directly to the latest patch version (eg, 1.5.3 -> 1.6.2 -> 1.7.4 and so on)
-- Alternatively, you can update to unreleased versions of the expansion.
-    - ***master (stable):*** It contains unreleased **bugfixes** that will come in the next patch version. To merge, use `git pull RHH master`.
-    - ***upcoming (unstable, with potential bugs):*** It contains unreleased **features** that will come in the next minor version. To merge, use `git pull RHH upcoming`.
+## 添加新的宝物
 
-### Please consider crediting the entire [list of contributors](https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits) in your project, as they have all worked hard to develop this project :)
+宝物数据位于`src/data/dig_fossil.h`的表格`gFossilGamePartsData`, 由于直接复制的dp数据所以看起来很乱，找到结尾添加新的宝物数据
 
-## There's a bug in the project. How do I let you guys know?
-Please submit any issues with the project [here](https://github.com/rh-hideout/pokeemerald-expansion/issues). Make sure that the issue wasn't reported by someone else by searching using the filters.
+宝物数据示例：
+```c
+{
+    .attribute = NULL, // 宝物实体的范围，NULL则整个宽x高的范围都是宝物的一部分
+    .random = 1,    // 训练师ID为偶数且没获得全国图鉴时的概率
+    .random1 = 1,   // 训练师ID为奇数且没获得全国图鉴时的概率
+    .random2 = 1,   // 训练师ID为偶数且获得全国图鉴时的概率
+    .random3 = 1,   // 训练师ID为奇数且获得全国图鉴时的概率
+    .width = 8,       // 宝物宽度，素材的宽/16
+    .height = 8,       // 宝物高度，素材的高/16
+    .partsType = DIG_PARTS_NONE, // 宝物类型，用于确定该宝物的道具Id
+    .ncg = NARC_ug_parts_kaseki_midotama_s_NCGR, // 宝物的素材图片地址
+    .ncl = NARC_ug_parts_kaseki_midotama_NCLR, // 宝物的素材色板地址
+};
+```
 
-## Can I contribute even if I'm not a member of ROM Hacking Hideout?
+打开`include/dig_fossil.h`添加宝物的类型
+找到下列代码，在注释的后面新增一项宝物类型
+```c
+#define DIG_PARTS_PLATE_DARK (58)                 // こわもてプレート
+#define DIG_PARTS_PLATE_IRON (59)                 // こうてつプレート
 
-Yes! Contributions are welcome via Pull Requests and they will be reviewed by maintainers. Don't feel discouraged if we take a bit to review your PR, we'll get to it.
+// 新增宝物类型
 
-## Who maintains the project?
+#define DIG_PARTS_TREASURE_MAX (60)
+```
+新增后将`DIG_PARTS_TREASURE_MAX`改为你新增的最后一个编号+1
 
-The project was originally started by DizzyEgg alongside other contributors.
+添加宝物对应的道具编号在下列表格里：
+```c
+static const u16 gFossilTypeToItemIndex[DIG_PARTS_TREASURE_MAX] = 
+{
+    // ...
+    [新增的宝物类型] = 对应的道具编号,
+}
+```
 
-The project has now gotten larger and DizzyEgg is now maintaining the project as part of the ROM Hacking Hideout community. Some members of this community are taking on larger roles to help maintain the project.
+## 玉的获取
+暂时没有对挖到的玉进行处理，请在下面函数里添加代码处理
 
-## What is the ROM Hacking Hideout?
+### 注意：由于玉没有新增道具，所以名字使用的0号道具，自行修改代码适配项目
+```c
+static bool8 _fossilGetMessage(void)
+{
+    int i;
 
-A Discord-based ROM hacking community that has many members who hack using the disassembly and decompilation projects for Pokémon. Quite a few contributors to the original feature branches by DizzyEgg were members of ROM Hacking Hideout. You can call it RHH for short!
+    for (i = 0; i < sFossilGameData->_PARTS_TREASURE_NUM; i++)
+    {
+        if (sFossilGameData->aDeposit[i].bGetItem == TRUE)
+        {
+            u16 item = gFossilTypeToItemIndex[sFossilGameData->aDeposit[i].partsType];
+            int digCarat = _calcDigStoneCarat(sFossilGameData->aDeposit[i].partsType);
 
-[Click here to join the RHH Discord Server!](https://discord.gg/6CzjAG6GZk)
+            sFossilGameData->aDeposit[i].bGetItem = FALSE;
+            sFossilGameData->digCarat = digCarat;
+            
+            if (CommDigIsStone(sFossilGameData->aDeposit[i].partsType))
+            {
+                StringCopy(gStringVar1, gItemsInfo[item].name);
+                ConvertIntToDecimalStringN(gStringVar2, sFossilGameData->digCarat, STR_CONV_MODE_LEFT_ALIGN, 2);
+                StringExpandPlaceholders(gStringVar4, gText_GetTreasure);
+                // 玉的获取代码
+                // 
+            }
+            else
+            {
+                StringCopy(gStringVar1, gItemsInfo[item].name);
+                StringExpandPlaceholders(gStringVar4, gText_GameGetItem);
+                AddBagItem(item, 1);
+                UnderGroundSetFossilDig(sFossilGameData->aDeposit[i].partsType);
+            }
+            FossilGame_AddTextPrinterForMessage(gStringVar4);
+            return TRUE;
+        }
+    }
+    return FALSE;
+}
+```
+`sFossilGameData->aDeposit[i].partsType`玉的类型
+
+`sFossilGameData->digCarat`玉的尺寸

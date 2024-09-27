@@ -74,6 +74,8 @@
 #define DIG_PARTS_PLATE_DARK (58)                 // こわもてプレート
 #define DIG_PARTS_PLATE_IRON (59)                 // こうてつプレート
 
+// 新增宝物类型
+
 #define DIG_PARTS_TREASURE_MAX (60)
 
 #define DIG_PARTS_NODIG1 (DIG_PARTS_TREASURE_MAX)                         // 掘れない岩	kaseki_iwa01	面積が４マス	棒形の真っ黒の石
