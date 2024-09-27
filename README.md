@@ -153,3 +153,6 @@ static bool8 _fossilGetMessage(void)
 `sFossilGameData->aDeposit[i].partsType`玉的类型
 
 `sFossilGameData->digCarat`玉的尺寸
+
+## 如何使用
+将`Special_StartDigFossilGame`添加到`data/special.inc`中，脚本中使用`special + waitstate`启动
