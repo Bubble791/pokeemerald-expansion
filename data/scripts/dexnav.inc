@@ -45,3 +45,4 @@ sText_LostSignal:
 
 sText_TooDark:
 	.string "It's too dark to search\nfor a Pokémon!$"
+//TODO 汉化

@@ -46,3 +46,4 @@ sText_MysteryGiftVisitingTrainerArrived:
 	.string "entering other passwords.\p"
 	.string "Try looking for other passwords\n"
 	.string "that may work.$"
+//TODO 汉化

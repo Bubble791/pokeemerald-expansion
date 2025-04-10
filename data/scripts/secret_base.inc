@@ -21,6 +21,7 @@ SecretBase_Text_ClumpUseSecretPower:
 
 SecretBase_Text_DiscoveredSmallEntrance:
 	.string "Discovered a small entrance!$"
+	//TODO 汉化
 
 	.include "data/text/secret_base_trainers.inc"
 
@@ -736,3 +737,4 @@ SecretBase_Text_WouldYouLikeToMoveBases:
 SecretBase_Text_MovingCompletedUseSecretPower:
 	.string "Moving completed.\p"
 	.string "Would you like to use the SECRET POWER?$"
+	//TODO 汉化

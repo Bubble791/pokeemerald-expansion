@@ -787,6 +787,7 @@ MauvilleCity_PokemonCenter_1F_Text_HotSpringsStory::
 	.string "{STR_VAR_1} times!\p"
 	.string "{STR_VAR_3} must be a TRAINER with\n"
 	.string "baby-smooth skin!$"
+//TODO 汉化
 
 
 MauvilleCity_PokemonCenter_1F_EventScript_Storyteller::
@@ -871,6 +872,7 @@ MauvilleCity_PokemonCenter_1F_Text_WeShouldChatAgain:
 	.string "That's about it, I think…\p"
 	.string "We should chat again!\n"
 	.string "Bye-bye!$"
+//TODO 汉化
 
 MauvilleCity_PokemonCenter_1F_EventScript_Giddy::
 	lock
@@ -974,3 +976,4 @@ MauvilleCity_PokemonCenter_1F_Text_HaveYouHeardOfWord:
 	.string "“{STR_VAR_1}”?\p"
 	.string "What's it mean? Well…\n"
 	.string "Ask your daddy or mommy, okay?$"
+//TODO 汉化

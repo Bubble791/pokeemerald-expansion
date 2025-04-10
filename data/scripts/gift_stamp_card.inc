@@ -19,3 +19,4 @@ sText_MysteryGiftStampCard:
 	.string "System.\p"
 	.string "You have {STR_VAR_1} more to collect to\n"
 	.string "fill your STAMP CARD.$"
+//TODO 汉化

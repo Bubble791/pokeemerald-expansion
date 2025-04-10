@@ -164,3 +164,4 @@ ProfileMan_Text_YouKnowSecretSaying:
 	.string "You know the secret saying!\p"
 	.string "That means you're now a fellow member\n"
 	.string "of the MYSTERY EVENT CLUB!$"
+//TODO 汉化

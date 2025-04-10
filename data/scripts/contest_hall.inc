@@ -1800,3 +1800,4 @@ ContestHall_Text_SecondStageOfJudging:
 ContestHall_Text_LetsAppeal:
 	.string "Let's see a little enthusiasm!\n"
 	.string "Let's appeal!$"
+//TODO 汉化

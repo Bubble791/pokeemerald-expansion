@@ -1,0 +1,1235 @@
+	gText_ExpandedPlaceholder_Empty
+	gText_ExpandedPlaceholder_Kun
+	gText_ExpandedPlaceholder_Chan
+蓝宝石	gText_ExpandedPlaceholder_Sapphire
+红宝石	gText_ExpandedPlaceholder_Ruby
+绿宝石	gText_ExpandedPlaceholder_Emerald
+水舰	gText_ExpandedPlaceholder_Aqua
+火岩	gText_ExpandedPlaceholder_Magma
+水梧桐	gText_ExpandedPlaceholder_Archie
+赤焰松	gText_ExpandedPlaceholder_Maxie
+盖欧卡	gText_ExpandedPlaceholder_Kyogre
+固拉多	gText_ExpandedPlaceholder_Groudon
+小悠	gText_ExpandedPlaceholder_Brendan
+小遥	gText_ExpandedPlaceholder_May
+蛋	gText_EggNickname
+宝可梦	gText_Pokemon
+玩家	gText_Player
+图鉴	gText_Pokedex
+冒险时间	gText_Time
+徽章	gText_Badges
+A键	gText_AButton
+B键	gText_BButton
+R键	gText_RButton
+L键	gText_LButton
+START	gText_Start
+SELECT	gText_Select
++ 十字键	gText_ControlPad
+L键  R键	gText_LButtonRButton
+控制器	gText_Controls
+{DPAD_UPDOWN}选择 {A_BUTTON}好	gText_PickOk
+{A_BUTTON}下个	gText_Next
+{A_BUTTON}下个 {B_BUTTON}返回	gText_NextBack
+{DPAD_UPDOWN}选择 {A_BUTTON}下个 {B_BUTTON}取消	gText_PickNextCancel
+{DPAD_UPDOWN}选择 {A_BUTTON}{B_BUTTON}取消	gText_PickCancel
+{A_BUTTON}退出	gText_AButtonExit
+这就是被我们称为\n“宝可梦”的生物。{PAUSE 96}\p	gText_ThisIsAPokemon
+???宝可梦	gText_5MarksPokemon
+{CLEAR_TO 0x0C}??.?m	gText_UnkHeight
+???.? m	gText_UnkHeightMetric
+???.?kg	gText_UnkWeight
+???.? kg.	gText_UnkWeightMetric
+宝可梦	gText_EmptyPkmnCategory
+{CLEAR_TO 0x0C}    .    m	gText_EmptyHeight
+.   kg	gText_EmptyWeight
+	gText_EmptyPokedexInfo1
+声音	gText_CryOf
+	gText_EmptyPokedexInfo2
+体型相对于	gText_SizeComparedTo
+图鉴登记完毕。	gText_PokedexRegistration
+身高	gText_HTHeight
+体重	gText_WTWeight
+搜索中……\n请稍后。	gText_SearchingPleaseWait
+搜索完毕。	gText_SearchCompleted
+没有找到符合条件的宝可梦。	gText_NoMatchingPkmnWereFound
+搜索宝可梦\n请选择条件。	gText_SearchForPkmnBasedOnParameters
+切换图鉴排列。	gText_SwitchPokedexListings
+返回图鉴。	gText_ReturnToPokedex
+选择图鉴模式。	gText_SelectPokedexMode
+选择图鉴排列模式。	gText_SelectPokedexListingMode
+请指定名字的首字,\n限已发现的宝可梦。	gText_ListByFirstLetter
+请指定宝可梦的体色,\n限已发现的宝可梦。	gText_ListByBodyColor
+请指定属性\n限已抓过的宝可梦。	gText_ListByType
+开始搜索。	gText_ExecuteSearchSwitch
+丰缘图鉴	gText_DexHoennTitle
+全国图鉴	gText_DexNatTitle
+编号模式	gText_DexSortNumericalTitle
+拼音模式	gText_DexSortAtoZTitle
+体重降序模式	gText_DexSortHeaviestTitle
+体重升序模式	gText_DexSortLightestTitle
+身高降序模式	gText_DexSortTallestTitle
+身高升序模式	gText_DexSortSmallestTitle
+ABC	gText_DexSearchAlphaABC
+DEF	gText_DexSearchAlphaDEF
+GHI	gText_DexSearchAlphaGHI
+JKL	gText_DexSearchAlphaJKL
+MNO	gText_DexSearchAlphaMNO
+PQR	gText_DexSearchAlphaPQR
+STU	gText_DexSearchAlphaSTU
+VWX	gText_DexSearchAlphaVWX
+YZ	gText_DexSearchAlphaYZ
+红	gText_DexSearchColorRed
+蓝	gText_DexSearchColorBlue
+黄	gText_DexSearchColorYellow
+绿	gText_DexSearchColorGreen
+黑	gText_DexSearchColorBlack
+棕	gText_DexSearchColorBrown
+紫	gText_DexSearchColorPurple
+灰	gText_DexSearchColorGray
+白	gText_DexSearchColorWhite
+粉	gText_DexSearchColorPink
+丰缘地区的图鉴	gText_DexHoennDescription
+全国版本的图鉴	gText_DexNatDescription
+按图鉴的编号来\n排列宝可梦。	gText_DexSortNumericalDescription
+按字母的顺序来排列已发现\n和已获得的宝可梦。	gText_DexSortAtoZDescription
+按重到轻的顺序来排列\n已获得的宝可梦。	gText_DexSortHeaviestDescription
+按轻到重的顺序来排列\n已获得的宝可梦。	gText_DexSortLightestDescription
+按高到低的顺序来排列\n已获得的宝可梦。	gText_DexSortTallestDescription
+按低到高的顺序来排列\n已获得的宝可梦。	gText_DexSortSmallestDescription
+	gText_DexEmptyString
+没有指定	gText_DexSearchDontSpecify
+无	gText_DexSearchTypeNone
+▶	gText_SelectorArrow
+	gText_EmptySpace
+欢迎进入殿堂!	gText_WelcomeToHOF
+已发现的宝可梦:{STR_VAR_1}!\n已抓到的宝可梦:{STR_VAR_2}!\p小田卷博士的图鉴评价!\p小田卷博士:让我看看……\p	gText_HOFDexRating
+保存中…\n不要关闭电源。	gText_HOFDexSaving
+殿堂的数据损坏了。	gText_HOFCorrupted
+荣誉殿堂 No.{STR_VAR_1}	gText_HOFNumber
+联盟冠军!\n热烈祝贺!	gText_LeagueChamp
+No.	gText_Number
+Lv.	gText_Level
+{ID}{NO} /	gText_IdNumberSlash
+名字	gText_Name
+{ID}{NO}	gText_IDNumber
+小田卷博士遇到麻烦了!\n请拿出宝可梦去救助他吧!	gText_BirchInTrouble
+确定选择这个宝可梦?	gText_ConfirmStarterChoice
+宝可梦	gText_Pokemon4
+要飞到哪里?	gText_FlyToWhere
+USE	gMenuText_Use
+TOSS	gMenuText_Toss
+REGISTER	gMenuText_Register
+给予	gMenuText_Give
+CONFIRM	gMenuText_Confirm
+取消	gText_Cancel
+取消	gText_Cancel2
+	gText_EmptyString2
+无	gText_None
+???	gText_FiveMarks
+/	gText_Slash
+-	gText_OneDash
+--	gText_TwoDashes
+---	gText_ThreeDashes
+♂	gText_MaleSymbol
+♀	gText_FemaleSymbol
+{LV}	gText_LevelSymbol
+{NO}{CLEAR 0x01}	gText_NumberClear01
+{RIGHT_ARROW}	gText_RightArrow
+{ID}{NO}	gText_IDNumber2
+ 	gText_Space
+▶	gText_SelectorArrow2
+返回\n上一级菜单。	gText_GoBackPrevMenu
+请选择。	gText_WhatWouldYouLike
+给予	gMenuText_Give2
+×{STR_VAR_1}	gText_xVar1
+树果	gText_Berry2
+{STR_VAR_1}枚代币	gText_Coins
+合上包包	gText_CloseBag
+{STR_VAR_1} \n要做什么?	gText_Var1IsSelected
+你不能在这\n写邮件。	gText_CantWriteMail
+没有宝可梦。	gText_NoPokemon
+移动\n{STR_VAR_1}\n去哪?	gText_MoveVar1Where
+{STR_VAR_1}无法携带。	gText_Var1CantBeHeld
+丢弃多少个\n{STR_VAR_1}?	gText_TossHowManyVar1s
+丢弃了{STR_VAR_2}个\n{STR_VAR_1}。	gText_ThrewAwayVar2Var1s
+是否确定\n丢弃{STR_VAR_2}个\n{STR_VAR_1}?	gText_ConfirmTossItems
+老爸说过……\n{PLAYER},道具是要看场合来用的啊!{PAUSE_UNTIL_PRESS}	gText_DadsAdvice
+{PLAYER}使用了\n{STR_VAR_2}。{PAUSE_UNTIL_PRESS}	gText_PlayerUsedVar2
+之前使用的喷雾效果还留着!{PAUSE_UNTIL_PRESS}	gText_RepelEffectsLingered
+之前使用的香水效果还留着!{PAUSE_UNTIL_PRESS}	gText_LureEffectsLingered
+这个箱子满了。{PAUSE_UNTIL_PRESS}	gText_BoxFull
+野外	gText_TheField
+战斗	gText_TheBattle
+宝可梦列表	gText_ThePokemonList
+宝可梦商店	gText_TheShop
+宝可梦中心	gText_ThePC
+返回{STR_VAR_1}。	gText_ReturnToVar1
+{NO}{STR_VAR_1}{CLEAR 0x07}{STR_VAR_2}	gText_NumberItem_TMBerry
+{CLEAR_TO 0x11}{STR_VAR_1}{CLEAR 0x05}{STR_VAR_2}	gText_NumberItem_HM
+购买	gText_ShopBuy
+出售	gText_ShopSell
+退出	gText_ShopQuit
+不好意思!\n该商品已售罄!{PAUSE_UNTIL_PRESS}	gText_ThatItemIsSoldOut
+售罄	gText_SoldOut
+持有: {STR_VAR_1}	gText_InBagVar1
+结束购物	gText_QuitShopping
+您要买几个{STR_VAR_1}?	gText_Var1CertainlyHowMany
+您要买几个{STR_VAR_1}?	gText_Var1CertainlyHowMany2
+是{STR_VAR_1}啊。\n{STR_VAR_2}个一共是¥{STR_VAR_3}。	gText_Var1AndYouWantedVar2
+是{STR_VAR_1}啊。\n价格是¥{STR_VAR_2}。	gText_Var1IsItThatllBeVar2
+是{STR_VAR_1}啊。\n价格是¥{STR_VAR_2},可以吗?	gText_YouWantedVar1ThatllBeVar2
+请拿好。\n谢谢惠顾。	gText_HereYouGoThankYou
+谢谢惠顾。\n我会把商品送到您家的电脑中。	gText_ThankYouIllSendItHome
+谢谢惠顾。\n我会把商品送到您家的电脑中。	gText_ThanksIllSendItHome
+您的钱不够呢!{PAUSE_UNTIL_PRESS}	gText_YouDontHaveMoney
+不好意思,\n您好像已经拿不下呢……{PAUSE_UNTIL_PRESS}	gText_NoMoreRoomForThis
+您已经拿不下\n更多的{STR_VAR_1}了!{PAUSE_UNTIL_PRESS}	gText_SpaceForVar1Full
+还有什么其他需要吗?	gText_AnythingElseICanHelp
+还有什么其他需要吗?	gText_CanIHelpWithAnythingElse
+还要多送个纪念球给您哦!{PAUSE_UNTIL_PRESS}	gText_ThrowInPremierBall
+还要多送{STR_VAR_1}个纪念球给您哦!{PAUSE_UNTIL_PRESS}	gText_ThrowInPremierBalls
+{STR_VAR_2}吗?不好意思。\n这个我们无法收购呢。{PAUSE_UNTIL_PRESS}	gText_CantBuyKeyItem
+要卖出多少个{STR_VAR_2}?	gText_HowManyToSell
+那么我用¥{STR_VAR_1}跟您收购吧。\n可以吗?	gText_ICanPayVar1
+给出{STR_VAR_2},\n拿到了¥{STR_VAR_1}。	gText_TurnedOverVar1ForVar2
+¥{STR_VAR_1}	gText_PokedollarVar1
+HP	gText_HP3
+特攻	gText_SpAtk3
+特防	gText_SpDef3
+没有任何效果。{PAUSE_UNTIL_PRESS}	gText_WontHaveEffect
+要和哪只宝可梦合体呢?	gText_NextFusionMon
+这个不能对\n那个宝可梦使用。{PAUSE_UNTIL_PRESS}	gText_CantBeUsedOnPkmn
+{STR_VAR_1}不能\n交换!{PAUSE_UNTIL_PRESS}	gText_PkmnCantSwitchOut
+{STR_VAR_1}已经在\n战斗了!{PAUSE_UNTIL_PRESS}	gText_PkmnAlreadyInBattle
+{STR_VAR_1}已经被\n选择了。{PAUSE_UNTIL_PRESS}	gText_PkmnAlreadySelected
+{STR_VAR_1}场上已经没有\n对手了!{PAUSE_UNTIL_PRESS}	gText_PkmnHasNoEnergy
+你不能交换{STR_VAR_1}的\n宝可梦!{PAUSE_UNTIL_PRESS}	gText_CantSwitchWithAlly
+{PAUSE_UNTIL_PRESS},宝可梦蛋不能参战!	gText_EggCantBattle
+直至得到新的徽章前\n这个不能使用。{PAUSE_UNTIL_PRESS}	gText_CantUseUntilNewBadge
+不超过{STR_VAR_1}宝可梦\n才能进入。{PAUSE_UNTIL_PRESS}	gText_NoMoreThanVar1Pkmn
+取下邮件并发去\n你的电脑吗?	gText_SendMailToPC
+邮件已经发送去你的电脑了!{PAUSE_UNTIL_PRESS}	gText_MailSentToPC
+你电脑的邮箱已经满了!{PAUSE_UNTIL_PRESS}	gText_PCMailboxFull
+如果把邮件取下来,内容\n会丢失,确定吗?	gText_MailMessageWillBeLost
+取下邮件才能\n携带道具!{PAUSE_UNTIL_PRESS}	gText_RemoveMailBeforeItem
+给{STR_VAR_1}\n携带了{STR_VAR_2}!{PAUSE_UNTIL_PRESS}	gText_PkmnWasGivenItem
+{STR_VAR_1}已经携带了\n{STR_VAR_2}。\p要和持有的道具\n交换吗?	gText_PkmnAlreadyHoldingItemSwitch
+{STR_VAR_1}没有携带\n任何道具!{PAUSE_UNTIL_PRESS}	gText_PkmnNotHolding
+从{STR_VAR_1}那里\n拿到了{STR_VAR_2}!{PAUSE_UNTIL_PRESS}	gText_ReceivedItemFromPkmn
+将宝可梦身上的邮件\n取下来了。{PAUSE_UNTIL_PRESS}	gText_MailTakenFromPkmn
+取回了{STR_VAR_2}\n并携带了{STR_VAR_1}。{PAUSE_UNTIL_PRESS}	gText_SwitchedPkmnItem
+宝可梦已经携带了\n道具,不能再持有邮件了。{PAUSE_UNTIL_PRESS}	gText_PkmnHoldingItemCantHoldMail
+从邮箱里拿出了\n邮件。{PAUSE_UNTIL_PRESS}	gText_MailTransferredFromMailbox
+包包已经满了,宝可梦的\n道具不能放进去了。{PAUSE_UNTIL_PRESS}	gText_BagFullCouldNotRemoveItem
+{STR_VAR_1}学会了\n{STR_VAR_2}!	gText_PkmnLearnedMove3
+{STR_VAR_1}与{STR_VAR_2}\n不匹配!\p{STR_VAR_2}是学不会的!{PAUSE_UNTIL_PRESS}	gText_PkmnCantLearnMove
+{STR_VAR_1}想要学习\n{STR_VAR_2}……\p为了学习{STR_VAR_2},\p要忘记其他的招式吗?	gText_PkmnNeedsToReplaceMove
+放弃学习{STR_VAR_2}吗?	gText_StopLearningMove2
+{STR_VAR_1}没有学习\n{STR_VAR_2}就结束了。{PAUSE_UNTIL_PRESS}	gText_MoveNotLearned
+要忘记哪个招式呢?{PAUSE_UNTIL_PRESS}	gText_WhichMoveToForget
+1,{PAUSE 15}2,{PAUSE 15}… {PAUSE 15}… {PAUSE 15}… {PAUSE 15}{PLAY_SE SE_BALL_BOUNCE_1}空!\p{STR_VAR_1}把{STR_VAR_2}的\n使用方法忘得干干净净了!\p于是……!{PAUSE_UNTIL_PRESS}	gText_12PoofForgotMove
+{STR_VAR_1}学会了\n{STR_VAR_2}!{PAUSE_UNTIL_PRESS}	gText_PkmnAlreadyKnows
+{STR_VAR_1}的体力回复了\n{STR_VAR_2}。{PAUSE_UNTIL_PRESS}	gText_PkmnHPRestoredByVar2
+{STR_VAR_1}的毒\n消失得干干净净!{PAUSE_UNTIL_PRESS}	gText_PkmnCuredOfPoison
+{STR_VAR_1}身体的\n麻痹状态消除了!{PAUSE_UNTIL_PRESS}	gText_PkmnCuredOfParalysis
+{STR_VAR_1}醒过来了!{PAUSE_UNTIL_PRESS}	gText_PkmnWokeUp2
+{STR_VAR_1}的灼伤治愈了!{PAUSE_UNTIL_PRESS}	gText_PkmnBurnHealed
+{STR_VAR_1}的冻伤治愈了!{PAUSE_UNTIL_PRESS}	gText_PkmnFrostbiteHealed
+{STR_VAR_1}身体的冰融化了!{PAUSE_UNTIL_PRESS}	gText_PkmnThawedOut
+回复PP了!{PAUSE_UNTIL_PRESS}	gText_PPWasRestored
+{STR_VAR_1}回复体力了!{PAUSE_UNTIL_PRESS}	gText_PkmnRegainhedHealth
+{STR_VAR_1}变得健康了!{PAUSE_UNTIL_PRESS}	gText_PkmnBecameHealthy
+{STR_VAR_1}的PP上升了!{PAUSE_UNTIL_PRESS}	gText_MovesPPIncreased
+{STR_VAR_1}的等级升到了\nLv.{STR_VAR_2}!	gText_PkmnElevatedToLvVar2
+{STR_VAR_1}获得了{STR_VAR_2}经验值!{PAUSE_UNTIL_PRESS}	gText_PkmnGainedExp
+{STR_VAR_1}获得了{STR_VAR_2}经验值,\n等级提升到了Lv. {STR_VAR_3}!	gText_PkmnGainedExpAndElevatedToLvVar3
+{STR_VAR_1}的基础{STR_VAR_2}\n上升了!{PAUSE_UNTIL_PRESS}	gText_PkmnBaseVar2StatIncreased
+{STR_VAR_1}和你有点亲密了!\n{STR_VAR_2}的基础点数降低了!{PAUSE_UNTIL_PRESS}	gText_PkmnFriendlyBaseVar2Fell
+{STR_VAR_1}和你的亲密度已经最高了!\n{STR_VAR_2}的基础点数降低了!{PAUSE_UNTIL_PRESS}	gText_PkmnAdoresBaseVar2Fell
+{STR_VAR_1}和你有点亲密了!\n{STR_VAR_2}的基础点数不再降低!{PAUSE_UNTIL_PRESS}	gText_PkmnFriendlyBaseVar2CantFall
+{STR_VAR_1}的\n混乱解除了!{PAUSE_UNTIL_PRESS}	gText_PkmnSnappedOutOfConfusion
+{STR_VAR_1}的\n着迷解除了!{PAUSE_UNTIL_PRESS}	gText_PkmnGotOverInfatuation
+{STR_VAR_1}变身了!{PAUSE_UNTIL_PRESS}	gText_PkmnTransformed
+丢弃这个\n{STR_VAR_1}吗?	gText_ThrowAwayItem
+{STR_VAR_1}\n被丢掉了。{PAUSE_UNTIL_PRESS}	gText_ItemThrownAway
+让哪个宝可梦学会?	gText_TeachWhichPokemon2
+请选择一个宝可梦。	gText_ChoosePokemon
+移动到哪里?	gText_MoveToWhere
+让哪个宝可梦学会?	gText_TeachWhichPokemon
+用于哪个宝可梦?	gText_UseOnWhichPokemon
+给予哪个宝可梦?	gText_GiveToWhichPokemon
+对这个宝可梦做什么?	gText_DoWhatWithPokemon
+这里没有东西可以砍。	gText_NothingToCut
+你不能在这冲浪。	gText_CantSurfHere
+你已经在冲浪了。	gText_AlreadySurfing
+不能在这里使用!	gText_CantUseHere
+回复哪个招式?	gText_RestoreWhichMove
+增加哪个招式的PP?	gText_BoostPp
+对这个道具做什么?	gText_DoWhatWithItem
+没有宝可梦出战!	gText_NoPokemonForBattle
+请选择一个宝可梦。	gText_ChoosePokemon2
+没有足够体力……	gText_NotEnoughHp
+{STR_VAR_1}宝可梦是必须的!	gText_PokemonAreNeeded
+宝可梦不能一样!	gText_PokemonCantBeSame
+不能携带相同的道具!	gText_NoIdenticalHoldItems
+水流太急了!	gText_CurrentIsTooFast
+怎样处理这个邮件?	gText_DoWhatWithMail
+请选择宝可梦或者取消。	gText_ChoosePokemonCancel
+请选择宝可梦并且确认。	gText_ChoosePokemonConfirm
+Send which POKéMON to the PC?	gText_SendWhichMonToPC
+让我们享受兜风吧!	gText_EnjoyCycling
+这个已经在使用了!	gText_InUseAlready_PM
+{STR_VAR_1}已经携带了\n一个{STR_VAR_2}!	gText_AlreadyHoldingOne
+要购买哪种电器呢?	gText_WhichAppliance
+不使用。	gText_NoUse
+可用	gText_Able
+第一	gText_First_PM
+第二	gText_Second_PM
+第三	gText_Third_PM
+可用	gText_Able2
+不可用	gText_NotAble
+能学!	gText_Able3
+不能学!	gText_NotAble2
+已学会	gText_Learned
+已有	gText_Have
+没有	gText_DontHave
+第四	gText_Fourth
+这个宝可梦不能参加!{PAUSE_UNTIL_PRESS}	gText_PkmnCantParticipate
+取消参加?	gText_CancelParticipation
+取消战斗?	gText_CancelBattle
+返回等候大厅吗?	gText_ReturnToWaitingRoom
+取消挑战吗?	gText_CancelChallenge
+准备从这里脱离并\n返回{STR_VAR_1}吗?	gText_EscapeFromHere
+准备返回上一个\n在{STR_VAR_1}的回复点吗?	gText_ReturnToHealingSpot
+{PAUSE_UNTIL_PRESS}	gText_PauseUntilPress
+{STR_VAR_1}を ぐるぐるこうかんに\nだして よろしいですか？	gJPText_AreYouSureYouWantToSpinTradeMon
+这是你最后一个能\n战斗的宝可梦了!	gText_OnlyPkmnForBattle
+这个宝可梦暂时不能\n交换!	gText_PkmnCantBeTradedNow
+这个宝可梦不能\n交换!	gText_PkmnCantBeTraded
+蛋不能交换!	gText_EggCantBeTradedNow
+对方训练家的宝可梦\n暂时不能交换!	gText_OtherTrainersPkmnCantBeTraded
+对方训练家暂时不能\n接受这个宝可梦!	gText_OtherTrainerCantAcceptPkmn
+你暂时不能和那个\n训练家交换!	gText_CantTradeWithTrainer
+这不是对方训练家\n想要的宝可梦种类!	gText_NotPkmnOtherTrainerWants
+那不是宝可梦蛋!	gText_ThatIsntAnEgg
+登记	gText_Register
+攻击	gText_Attack3
+防御	gText_Defense3
+特攻	gText_SpAtk4
+特防	gText_SpDef4
+速度	gText_Speed2
+HP	gText_HP4
+	gText_EmptyString8
+初训家/	gText_OTSlash
+租借宝可梦	gText_RentalPkmn
+属性/	gText_TypeSlash
+威力	gText_Power
+命中	gText_Accuracy2
+吸引力	gText_Appeal
+干扰力	gText_Jam
+状态	gText_Status
+经验值	gText_ExpPoints
+再升级需	gText_NextLv
+缎带数:{STR_VAR_1}	gText_RibbonsVar1
+	gText_EmptyString5
+事件	gText_Events
+换位	gText_Switch
+宝可梦情报	gText_PkmnInfo
+宝可梦能力	gText_PkmnSkills
+战斗招式	gText_BattleMoves
+华丽大赛招式	gText_ContestMoves
+说明	gText_Info
+看着来,这个蛋像是\n要很久才能孵化。	gText_EggWillTakeALongTime
+会孵化出什么呢?\n还需要一段时间。	gText_EggWillTakeSomeTime
+偶然会摇动,\n应该快要孵化了。	gText_EggWillHatchSoon
+从里面传出了声音,\n即将孵化了!	gText_EggAboutToHatch
+暂时不能忘记秘传招式。	gText_HMMovesCantBeForgotten2
+性格{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5},\n{LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}时\n在{DYNAMIC 0}{DYNAMIC 4}{DYNAMIC 1}遇到。	gText_XNatureMetAtYZ
+性格{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5},\n{LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}时\n在{DYNAMIC 0}{DYNAMIC 4}{DYNAMIC 1}孵化。。	gText_XNatureHatchedAtYZ
+性格{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5},\n通过交换得到。	gText_XNatureObtainedInTrade
+性格{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5},\n在{LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}发生命运的邂逅后得到。	gText_XNatureFatefulEncounter
+性格{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5},\n{LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}时\n大概在{DYNAMIC 0}{DYNAMIC 4}{DYNAMIC 1}遇到。	gText_XNatureProbablyMetAt
+性格{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5}	gText_XNature
+性格{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5},\n{LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}时\n在某处遇到。	gText_XNatureMetSomewhereAt
+性格{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5},\n{LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}时\n在某处孵化。	gText_XNatureHatchedSomewhereAt
+从抚养屋夫妇那里发现的\n不可思议的宝可梦蛋。	gText_OddEggFoundByCouple
+在一个好地方得到\n的罕见的宝可梦蛋。	gText_PeculiarEggNicePlace
+通过交换得到的\n罕见的宝可梦蛋。	gText_PeculiarEggTrade
+在温泉那里\n得到的宝可梦蛋。	gText_EggFromHotSprings
+在一个旅行者那里得到的\n不可思议的宝可梦蛋。	gText_EggFromTraveler
+的基地	gText_ApostropheSBase
+是否可以从注册簿\n删除{STR_VAR_1}?	gText_OkayToDeleteFromRegistry
+注册记录已被删除。{PAUSE_UNTIL_PRESS}	gText_RegisteredDataDeleted
+没有任何的注册条目。{PAUSE_UNTIL_PRESS}	gText_NoRegistry
+删除注册项。	gText_DelRegist
+{STR_VAR_3}{STR_VAR_1}/{STR_VAR_2}	gText_Var3Var1SlashVar2
+装饰	gText_Decorate
+收好	gText_PutAway
+扔掉	gText_Toss2
+{COLOR 161}{SHADOW 161}	gText_Color161Shadow161
+取出了选择的装饰物品。	gText_PutOutSelectedDecorItem
+将选择的装饰物品存入了电脑中。	gText_StoreChosenDecorInPC
+丢弃了不想要的装饰物品。	gText_ThrowAwayUnwantedDecors
+目前没有任何装饰物品。{PAUSE_UNTIL_PRESS}	gText_NoDecorations
+桌子	gText_Desk
+椅子	gText_Chair
+盆栽	gText_Plant
+物品	gText_Ornament
+地毯	gText_Mat
+海报	gText_Poster
+玩偶哦	gText_Doll
+垫子	gText_Cushion
+金	gText_Gold
+银	gText_Silver
+放在这里吗?	gText_PlaceItHere
+不能放在这里!	gText_CantBePlacedHere
+停止装饰?	gText_CancelDecorating
+这个已经在使用了。	gText_InUseAlready
+不能再摆放装饰物品了!\n最多可以摆放{STR_VAR_1}个。	gText_NoMoreDecorations
+不能再摆放装饰物品了!\n最多可以摆放{STR_VAR_1}个。	gText_NoMoreDecorations2
+不能放在这里。\n这里只能放桌子。	gText_MustBePlacedOnDesk
+这个装饰物品不能\n放在你的个人房间。	gText_CantPlaceInRoom
+这个装饰物品已经在使用了。\n现在不能丢弃!	gText_CantThrowAwayInUse
+{STR_VAR_1}将被丢弃,\n确定吗?	gText_DecorationWillBeDiscarded
+该装饰物品被丢掉了。	gText_DecorationThrownAway
+停止收拾装饰物品?	gText_StopPuttingAwayDecorations
+这里没有装饰物品。	gText_NoDecorationHere
+将这个装饰物品收回电脑吗?	gText_ReturnDecorationToPC
+该装饰物品被收回了电脑。	gText_DecorationReturnedToPC
+没有在使用的装饰物品。{PAUSE_UNTIL_PRESS}	gText_NoDecorationsInUse
+崔斯坦	gText_Tristan
+菲利普	gText_Philip
+丹尼斯	gText_Dennis
+罗伯托	gText_Roberto
+这里没有道具。{PAUSE_UNTIL_PRESS}	gText_NoItems
+这里没有邮件。{PAUSE_UNTIL_PRESS}	gText_NoMailHere
+你打算如何处理\n{STR_VAR_1}的邮件?	gText_WhatToDoWithVar1sMail
+邮件信息将会丢失。\n确定吗?	gText_MessageWillBeLost
+包包已经满了。{PAUSE_UNTIL_PRESS}	gText_BagIsFull
+邮件信息被清除掉了,\n邮件放回了包包。{PAUSE_UNTIL_PRESS}	gText_MailToBagMessageErased
+爸爸	gText_Dad
+妈妈	gText_Mom
+米可利	gText_Wallace
+大吾	gText_Steven
+藤树	gText_Brawly
+娜琪	gText_Winona
+芙蓉	gText_Phoebe
+波妮	gText_Glacia
+信息	gText_Info2
+帅气组	gText_CoolnessContest
+美丽组	gText_BeautyContest
+可爱组	gText_CutenessContest
+聪明组	gText_SmartnessContest
+强壮组	gText_ToughnessContest
+装饰	gText_Decoration2
+收好	gText_PackUp
+登记	gText_Registry
+信息	gText_Information
+是	gText_Yes
+否	gText_No
+LV. 50	gText_Lv50
+自由级	gText_OpenLevel
+红色碎片	gText_RedShard
+黄色碎片	gText_YellowShard
+蓝色碎片	gText_BlueShard
+绿色碎片	gText_GreenShard
+对战开拓区	gText_BattleFrontier
+帅气	gText_Cool
+美丽	gText_Beauty
+可爱	gText_Cute
+聪明	gText_Smart
+强壮	gText_Tough
+普通	gText_Normal
+超级	gText_Super
+专家	gText_Hyper
+大师	gText_Master
+帅气	gText_Cool2
+美丽	gText_Beauty2
+可爱	gText_Cute2
+聪明	gText_Smart2
+强壮	gText_Tough2
+道具	gText_Items
+重要道具	gText_Key_Items
+精灵球	gText_Poke_Balls
+招式学习器	gText_TMs_Hms
+树果	gText_Berries2
+某人的电脑	gText_SomeonesPC
+真由美的电脑	gText_LanettesPC
+{PLAYER}的电脑	gText_PlayersPC
+进入殿堂	gText_HallOfFame
+注销	gText_LogOff
+对手	gText_Opponent
+对阵树	gText_Tourney_Tree
+准备开始	gText_ReadyToStart
+单人	gText_Single2
+双人	gText_Double2
+多人	gText_Multi
+多人联机	gText_MultiLink
+图鉴	gText_MenuOptionPokedex
+宝可梦	gText_MenuOptionPokemon
+包包	gText_MenuOptionBag
+导航器	gText_MenuOptionPokenav
+	gText_Blank
+保存	gText_MenuOptionSave
+设置	gText_MenuOptionOption
+退出	gText_MenuOptionExit
+南方孤岛	gText_SouthernIsland
+诞生之岛	gText_BirthIsland
+边境的小岛	gText_FarawayIsland
+脐之岩	gText_NavelRock
+普通类比赛	gText_NormalTagMatch
+多样类比赛	gText_VarietyTagMatch
+唯一类比赛	gText_UniqueTagMatch
+专家类比赛	gText_ExpertTagMatch
+交换中心	gText_TradeCenter
+竞技场	gText_Colosseum
+联机中心	gText_RecordCorner
+树果混合	gText_BerryCrush3
+对战规则	gText_BattleRules
+判定:心	gText_JudgeMind
+判定:技	gText_JudgeSkill
+判定:体	gText_JudgeBody
+基本规则	gText_BasicRules
+交换:搭档	gText_SwapPartners
+交换:数量	gText_SwapNumber
+交换:记录	gText_SwapNotes
+对战基础	gText_BattleBasics
+宝可梦性格	gText_PokemonNature
+宝可梦招式	gText_PokemonMoves
+失去战斗力	gText_Underpowered
+在危险时	gText_WhenInDanger
+对战宝可梦	gText_BattlePokemon
+对战训练家	gText_BattleTrainers
+继续	gText_GoOn
+记录	gText_Record2
+休息	gText_Rest
+退赛	gText_Retire
+1F	gText_1F
+2F	gText_2F
+3F	gText_3F
+4F	gText_4F
+5F	gText_5F
+6F	gText_6F
+7F	gText_7F
+8F	gText_8F
+9F	gText_9F
+10F	gText_10F
+11F	gText_11F
+B1F	gText_B1F
+B2F	gText_B2F
+B3F	gText_B3F
+B4F	gText_B4F
+屋顶	gText_Rooftop
+现在:	gText_ElevatorNowOn
+BP	gText_BP
+排名大厅	gText_RankingHall
+交换服务	gText_ExchangeService
+水静市	gText_LilycoveCity
+凯那市	gText_SlateportCity
+退出	gText_Exit
+同行宝可梦满了!{PAUSE_UNTIL_PRESS}	gText_YourPartysFull
+性格/	gText_NatureSlash
+同行中	gText_InParty
+{DYNAMIC 0}{COLOR_HIGHLIGHT_SHADOW LIGHT_RED WHITE GREEN}♂{COLOR_HIGHLIGHT_SHADOW DARK_GRAY WHITE LIGHT_GRAY}/{LV}{DYNAMIC 1}	gText_PokemonMaleLv
+{DYNAMIC 0}{COLOR_HIGHLIGHT_SHADOW LIGHT_GREEN WHITE BLUE}♀{COLOR_HIGHLIGHT_SHADOW DARK_GRAY WHITE LIGHT_GRAY}/{LV}{DYNAMIC 1}	gText_PokemonFemaleLv
+{DYNAMIC 0}/{LV}{DYNAMIC 1}	gText_PokemonNoGenderLv
+{DYNAMIC 0}{COLOR_HIGHLIGHT_SHADOW LIGHT_RED WHITE GREEN}♂{COLOR_HIGHLIGHT_SHADOW DARK_GRAY WHITE LIGHT_GRAY}/{LV}{DYNAMIC 1}{DYNAMIC 2}	gText_PokemonMaleLv2
+{DYNAMIC 0}{COLOR_HIGHLIGHT_SHADOW LIGHT_GREEN WHITE BLUE}♀{COLOR_HIGHLIGHT_SHADOW DARK_GRAY WHITE LIGHT_GRAY}/{LV}{DYNAMIC 1}{DYNAMIC 2}	gText_PokemonFemaleLv2
+{DYNAMIC 0}/{LV}{DYNAMIC 1}{DYNAMIC 2}	gText_PokemonNoGenderLv2
+请组合四个词语或者短语	gText_CombineFourWordsOrPhrases
+构成你的个人简介	gText_AndMakeYourProfile
+请组合六个词语或者短语	gText_CombineSixWordsOrPhrases
+构成一段信息。	gText_AndMakeAMessage
+找出词语来描述	gText_FindWordsThatDescribeYour
+你当前的感觉吧!	gText_FeelingsRightNow
+使用四个句子	gText_WithFourPhrases
+组合九个词语或者短语	gText_CombineNineWordsOrPhrases
+来构成一段信息。	gText_AndMakeAMessage2
+更改一个词或者短语	gText_ChangeJustOneWordOrPhrase
+来改进诗人的歌词。	gText_AndImproveTheBardsSong
+你的简况	gText_YourProfile
+你在战斗开始时的感觉	gText_YourFeelingAtTheBattlesStart
+战斗获胜后你会说什么	gText_WhatYouSayIfYouWin
+战斗输掉后你会说什么	gText_WhatYouSayIfYouLose
+答案	gText_TheAnswer
+邮件信息	gText_TheMailMessage
+邮件的称呼语	gText_TheMailSalutation
+新歌	gText_TheBardsSong2
+请组合两个词语或者短语	gText_CombineTwoWordsOrPhrases
+作为流行语。	gText_AndMakeATrendySaying
+如你所见,这样的	gText_TheTrendySaying
+流行语可以吗?	gText_IsAsShownOkay
+请组合两个词语或者短语	gText_CombineTwoWordsOrPhrases2
+来教她一句好谚语。	gText_ToTeachHerAGoodSaying
+请找出适合形容	gText_FindWordsWhichFit
+这个训练家的形象。	gText_TheTrainersImage
+形象:	gText_TheImage
+在列出的选项之外,	gText_OutOfTheListedChoices
+选择测试的答案!	gText_SelectTheAnswerToTheQuiz
+并创建一个测试!	gText_AndCreateAQuiz
+挑选一个词语或者短语	gText_PickAWordOrPhraseAnd
+并设置测试的答案	gText_SetTheQuizAnswer
+答案:	gText_TheAnswerColon
+测试:	gText_TheQuizColon
+新手词汇:	gText_ApprenticePhrase
+停止编辑吗?	gText_QuitEditing
+停止给予精灵邮件吗?	gText_StopGivingPkmnMail
+并找出问卷。	gText_AndFillOutTheQuestionnaire
+让我们回复采访吧!	gText_LetsReplyToTheInterview
+所有正在编辑的内容会被删除,	gText_AllTextBeingEditedWill
+这样可以吗?	gText_BeDeletedThatOkay
+停止编辑吗?	gText_QuitEditing2
+已编辑的内容不会被保存,	gText_EditedTextWillNotBeSaved
+这样可以吗?	gText_IsThatOkay
+请输入一个短语或者词语,	gText_PleaseEnterPhraseOrWord
+不能删除完整的文本内容!	gText_EntireTextCantBeDeleted
+只可以更改一个短语。	gText_OnlyOnePhrase
+将会使用最初的歌曲。	gText_OriginalSongWillBeUsed
+这已经很流行了!	gText_ThatsTrendyAlready
+请组合两个词语或者短语。	gText_CombineTwoWordsOrPhrases3
+放弃给予信息吗?	gText_QuitGivingInfo
+停止给予宝可梦邮件吗?	gText_StopGivingPkmnMail2
+完成一个测试!	gText_CreateAQuiz2
+请设置答案!	gText_SetTheAnswer
+是否取消选择?	gText_CancelSelection
+档案	gText_Profile
+在战斗开始时:	gText_AtTheBattlesStart
+在战斗获胜时:	gText_UponWinningABattle
+在战斗输掉时:	gText_UponLosingABattle
+诗人之歌	gText_TheBardsSong
+发生了什么流行的事情?	gText_WhatsHipAndHappening
+采访	gText_Interview
+好的言辞	gText_GoodSaying
+粉丝的问题	gText_FansQuestion
+クイズの こたえは？	gJPText_WhatIsTheQuizAnswer
+新手词组	gText_ApprenticesPhrase
+问卷	gText_Questionnaire
+你不能退出这里。	gText_YouCannotQuitHere
+必须完成这部分!	gText_SectionMustBeCompleted
+{DYNAMIC 0}的测试	gText_F700sQuiz
+女士	gText_Lady
+阅读完测试问题后,	gText_AfterYouHaveReadTheQuiz
+请按A键。	gText_QuestionPressTheAButton
+该测试答案是?	gText_TheQuizAnswerIs
+是否退出这个	gText_LikeToQuitQuiz
+测试挑战?	gText_ChallengeQuestionMark
+这个测试可以吗?	gText_IsThisQuizOK
+完成一个测试!	gText_CreateAQuiz
+请选择答案!	gText_SelectTheAnswer
+不能删除这段词句!	gText_LyricsCantBeDeleted
+宝可梦联盟	gText_PokemonLeague
+宝可梦中心	gText_PokemonCenter
+要吃宝可方块吗?	gText_GetsAPokeBlockQuestion
+帅气度	gText_Coolness
+美丽度	gText_Beauty3
+可爱度	gText_Cuteness
+聪明度	gText_Smartness
+强壮度	gText_Toughness
+增加了!	gText_WasEnhanced
+没有任何变化!	gText_NothingChanged
+不能再吃了……	gText_WontEatAnymore
+记录失败。\n检查备份记录中……请稍等。\n{COLOR RED}“T所需时间:约1分钟”	gText_SaveFailedCheckingBackup
+备份记录已被损坏,\n或者内部电量已耗尽。\n你可以继续游戏,但是不能存档。	gText_BackupMemoryDamaged
+{COLOR RED}“游戏无法继续,\n正在返回标题画面……”	gText_GamePlayCannotBeContinued
+检查完毕,\n正在尝试再次存档,\n请稍候。	gText_CheckCompleted
+保存完毕。\n{COLOR RED}“游戏无法继续,\n正在返回标题画面……”	gText_SaveCompleteGameCannotContinue
+保存完毕。\n{COLOR RED}“请按下A键。”	gText_SaveCompletePressA
+港口	gText_Ferry
+秘密基地	gText_SecretBase
+藏身所	gText_Hideout
+重置实时时钟吗?\nA: 确认, B: 取消	gText_ResetRTCConfirmCancel
+当前游戏中的时间	gText_PresentTime
+以前游戏中的时间	gText_PreviousTime
+请重置时间。	gText_PleaseResetTime
+时钟已经被重置了,\n即将保存数据,请稍候。	gText_ClockHasBeenReset
+保存完毕。	gText_SaveCompleted
+保存失败……	gText_SaveFailed
+没有记录档案,\n因此不能设置时间。	gText_NoSaveFileCantSetTime
+游戏时钟的调节系统\n现在可以使用了。	gText_InGameClockUsable
+插槽	gText_Slots
+轮盘赌	gText_Roulette
+很好	gText_Good
+非常好	gText_VeryGood
+优秀	gText_Excellent
+一般	gText_SoSo
+差	gText_Bad
+最糟糕	gText_TheWorst
+辣的	gText_Spicy2
+涩的	gText_Dry2
+甜的	gText_Sweet2
+苦的	gText_Bitter2
+酸的	gText_Sour2
+单人	gText_Single
+双人	gText_Double
+赌注	gText_Jackpot
+第一	gText_First
+第二	gText_Second
+第三	gText_Third
+{STR_VAR_1}忍住了毒素,\n毒素消退了!\p	gText_PkmnFainted_FldPsn
+{STR_VAR_1}忍住了毒素,\n毒素消退了!\p	gText_PkmnFainted_FldPsn
+浩二	gText_Marco
+名字:	gText_TrainerCardName
+IDNo.	gText_TrainerCardIDNo
+金钱	gText_TrainerCardMoney
+$	gText_PokeDollar
+图鉴	gText_TrainerCardPokedex
+	gText_EmptyString6
+:	gText_Colon2
+点数	gText_Points
+时间	gText_TrainerCardTime
+ゲ-ムポイント	gJPText_BattlePoints
+{STR_VAR_1}的训练家卡片	gText_Var1sTrainerCard
+初次进入殿堂	gText_HallOfFameDebut
+联机对战	gText_LinkBattles
+有线联机对战	gText_LinkCableBattles
+W:{COLOR RED}{SHADOW LIGHT_RED}{STR_VAR_1}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} L:{COLOR RED}{SHADOW LIGHT_RED}{STR_VAR_2}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}	gText_WinsLosses
+宝可梦交换	gText_PokemonTrades
+联合交换和对战	gText_UnionTradesAndBattles
+树果混合	gText_BerryCrush
+正在等待另一位训练家\n结束查看你的训练家卡片。	gText_WaitingTrainerFinishReading
+宝可方块 赢/个朋友	gText_PokeblocksWithFriends
+{STR_VAR_1}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}	gText_NumPokeblocks
+赢得华丽大赛赢/个朋友	gText_WonContestsWFriends
+赢得对战点数	gText_BattlePtsWon
+{STR_VAR_1}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}BP	gText_NumBP
+对战塔	gText_BattleTower
+胜/{COLOR RED}{SHADOW LIGHT_RED}{STR_VAR_1}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} 连续/{COLOR RED}{SHADOW LIGHT_RED}{STR_VAR_2}	gText_WinsStraight
+对战塔	gText_BattleTower2
+对战巨蛋	gText_BattleDome
+对战宫殿	gText_BattlePalace
+对战工厂	gText_BattleFactory
+对战竞技场	gText_BattleArena
+对战水管	gText_BattlePike
+对战金字塔	gText_BattlePyramid
+{STR_VAR_1}单人	gText_FacilitySingle
+{STR_VAR_1}双人	gText_FacilityDouble
+{STR_VAR_1}多人	gText_FacilityMulti
+{STR_VAR_1}联机	gText_FacilityLink
+{STR_VAR_1}	gText_Facility
+给予	gText_Give
+不需要	gText_NoNeed
+{COLOR LIGHT_GRAY}{SHADOW DARK_GRAY}	gText_ColorLightShadowDarkGray
+{COLOR BLUE}	gText_ColorBlue
+{HIGHLIGHT TRANSPARENT}{COLOR TRANSPARENT}	gText_ColorTransparent
+C.	gText_CDot
+B.	gText_BDot
+公布结果!	gText_AnnouncingResults
+初步结果!	gText_PreliminaryResults
+第2轮结果!	gText_Round2Results
+{STR_VAR_1}的{STR_VAR_2}赢了!	gText_ContestantsMonWon
+通信等待中……	gText_CommunicationStandby
+{COLOR DARK_GRAY}	gText_ColorDarkGray
+{COLOR_HIGHLIGHT_SHADOW DYNAMIC_COLOR6 WHITE DYNAMIC_COLOR5}	gText_ColorDynamic6WhiteDynamic5
+{HIGHLIGHT DARK_GRAY}	gText_HealthboxNickname
+	gText_EmptySpace2
+{COLOR DYNAMIC_COLOR2}♂	gText_HealthboxGender_Male
+{COLOR DYNAMIC_COLOR1}♀	gText_HealthboxGender_Female
+{COLOR DYNAMIC_COLOR2}	gText_HealthboxGender_None
+上升	gText_Upper
+下降	gText_Lower
+其他人	gText_Others
+象征	gText_Symbols
+登记	gText_Register2
+退出	gText_Exit2
+是否退出聊天?	gText_QuitChatting
+在哪里登记文本?	gText_RegisterTextWhere
+在这里登记文本?	gText_RegisterTextHere
+输入正文。	gText_InputText
+{DYNAMIC 0}参与聊天!	gText_F700JoinedChat
+{DYNAMIC 0}不聊了。	gText_F700LeftChat
+{DYNAMIC 0}の{DYNAMIC 1}ひきめ:	gJPText_PlayersXPokemon
+{DYNAMIC 0}の{DYNAMIC 1}ひきめは いません	gJPText_PlayersXPokmonDoesNotExist
+正在退出聊天……	gText_ExitingChat
+队长{DYNAMIC 0}已经离开,\n聊天结束。	gText_LeaderLeftEndingChat
+登记的文本已经更改。\n是否保存游戏?	gText_RegisteredTextChangedOKToSave
+已经有记录存档了,\n是否覆盖记录?	gText_AlreadySavedFile_Chat
+保存中……\n请不要关闭电源。	gText_SavingDontTurnOff_Chat
+{DYNAMIC 0}保存了游戏。	gText_PlayerSavedGame_Chat
+如果队长离开了,\n聊天就会结束。这样可以吗?	gText_IfLeaderLeavesChatEnds
+你好	gText_Hello
+宝可梦	gText_Pokemon2
+交换	gText_Trade
+对战	gText_Battle
+让我们	gText_Lets
+好!	gText_Ok
+抱歉	gText_Sorry
+哈!{EMOJI_BIGSMILE}	gText_YaySmileEmoji
+谢谢	gText_ThankYou
+拜拜!	gText_ByeBye
+{PLAYER} scurried to a POKéMON CENTER,\nprotecting the exhausted and fainted\nPOKéMON from further harm…\p	gText_PlayerScurriedToCenter
+{PLAYER} scurried back home, protecting\nthe exhausted and fainted POKéMON from\nfurther harm…\p	gText_PlayerScurriedBackHome
+{STR_VAR_1}从蛋里面孵化了!	gText_HatchedFromEgg
+是否给新出生的\n{STR_VAR_1}取个名字?	gText_NicknameHatchPrompt
+是否准备开始树果混合?\n请选择一个树果。\p	gText_ReadyPickBerry
+请等待每一位\n成员选择好树果。	gText_WaitForAllChooseBerry
+{PAUSE_MUSIC}{PLAY_BGM MUS_LEVEL_UP}你最终获得{STR_VAR_1}单位\n圆滑的树果粉末。{RESUME_MUSIC}\p你树果粉末的\n总数是{STR_VAR_2}。\p	gText_EndedWithXUnitsPowder
+在存档中记录\n你的结果,请稍候。	gText_RecordingGameResults
+是否再来一次树果混合?	gText_PlayBerryCrushAgain
+你没有树果。\n即将取消游戏。	gText_YouHaveNoBerries
+有一位成员退出,\n即将取消游戏。	gText_MemberDroppedOut
+时间到。\p不能制作出好的\n树果粉末……\p	gText_TimesUpNoGoodPowder
+通信等待中……	gText_CommunicationStandby2
+1. {COLOR BLUE}{SHADOW LIGHT_BLUE}{DYNAMIC 0}	gText_1DotBlueF700
+1. {DYNAMIC 0}	gText_1DotF700
+次	gText_SpaceTimes2
+{STR_VAR_1}.{STR_VAR_2}	gText_XDotY
+{STR_VAR_1}个树果	gText_Var1Berry
+时间:	gText_TimeColon
+按键速度:	gText_PressingSpeed
+圆滑度:	gText_Silkiness
+{STR_VAR_1}	gText_StrVar1
+分	gText_SpaceMin
+{STR_VAR_1}.{STR_VAR_2}	gText_XDotY2
+秒	gText_SpaceSec
+{STR_VAR_1}.{STR_VAR_2}	gText_XDotY3
+次/秒	gText_TimesPerSec
+{STR_VAR_1}%	gText_Var1Percent
+键速排名No.	gText_PressesRankings
+混合结果	gText_CrushingResults
+圆滑度排名	gText_NeatnessRankings
+协力合作排名	gText_CoopRankings
+按压力度排名	gText_PressingPowerRankings
+树果混合	gText_BerryCrush2
+按压速度排名	gText_PressingSpeedRankings
+{STR_VAR_1}个玩家	gText_Var1Players
+已获得的象征	gText_SymbolsEarned
+战斗记录	gText_BattleRecord
+战斗点数	gText_BattlePoints
+取消	gText_UnusedCancel
+	gText_EmptyString7
+查看对战开拓区地图。	gText_CheckFrontierMap
+查看训练家卡片。	gText_CheckTrainerCard
+重播战斗过程。	gText_ViewRecordedBattle
+放好开拓区通行证。	gText_PutAwayFrontierPass
+当前的战斗点数。	gText_CurrentBattlePoints
+已收集的象征。	gText_CollectedSymbols
+对战塔——能力的象征	gText_BattleTowerAbilitySymbol
+对战巨蛋——战术的象征	gText_BattleDomeTacticsSymbol
+对战宫殿——精神的象征	gText_BattlePalaceSpiritsSymbol
+对战竞技场——毅力的象征	gText_BattleArenaGutsSymbol
+对战工厂——知识的象征	gText_BattleFactoryKnowledgeSymbol
+对战水管——运气的象征	gText_BattlePikeLuckSymbol
+战斗金字塔——英勇的象征	gText_BattlePyramidBraveSymbol
+没有战斗记录。	gText_ThereIsNoBattleRecord
+对战塔	gText_BattleTower3
+对战巨蛋	gText_BattleDome2
+对战宫殿	gText_BattlePalace2
+对战竞技场	gText_BattleArena2
+对战工厂	gText_BattleFactory2
+对战水管	gText_BattlePike2
+对战金字塔	gText_BattlePyramid2
+瞄准目标并解决对手,向顶层冲刺吧!\n这里将会考验你的能力。	gText_BattleTowerDesc
+在比赛期间一直保持胜利!\n这里将会考验你的战术。	gText_BattleDomeDesc
+注视你的宝可梦战斗!\n这里将会考验你的精神。	gText_BattlePalaceDesc
+通过宝可梦的合作来赢取战斗!\n这里将会考验你的毅力。	gText_BattleArenaDesc
+以胜利为目标,使用租借的宝可梦吧!\n这里将会考验你的知识。	gText_BattleFactoryDesc
+从三条路中选择一条去战斗吧!\n这里将会考验你的运气。	gText_BattlePikeDesc
+在探险中瞄准塔顶吧!\n这里将会考验你的勇气。	gText_BattlePyramidDesc
+粉末	gText_Powder
+嘟嘟利摘树果记录	gText_BerryPickingRecords
+摘得树果:	gText_BerriesPicked
+最高得分:	gText_BestScore
+树果被五位玩家挑选\n放到一起:	gText_BerriesInRowFivePlayers
+公布摘树果结果!	gText_BerryPickingResults
+{CLEAR_TO 0x03}10P{CLEAR_TO 0x2B}30P{CLEAR_TO 0x53}50P{CLEAR_TO 0x77}{EMOJI_MINUS}50P	gText_10P30P50P50P
+宣布名次!	gText_AnnouncingRankings
+宣布奖品!	gText_AnnouncingPrizes
+1:00	gText_1Colon
+2:00	gText_2Colon
+3:00	gText_3Colon
+4:00	gText_4Colon
+5:00	gText_5Colon
+第一名获得\n这个{DYNAMIC 0}!	gText_FirstPlacePrize
+你不能携带更多了!	gText_CantHoldAnyMore
+存储空间已经满了。	gText_FilledStorageSpace
+再玩一次吗?	gText_WantToPlayAgain
+有人退出了,\n连接会断开。	gText_SomeoneDroppedOut
+点数	gText_SpacePoints
+通信等待中……	gText_CommunicationStandby3
+点数	gText_SpacePoints2
+次	gText_SpaceTimes3
+宝可梦跳绳记录	gText_PkmnJumpRecords
+连续跳跃:	gText_JumpsInARow
+最高分:	gText_BestScore2
+连续优秀:	gText_ExcellentsInARow
+了不起的得分!\n你赢得了{DYNAMIC 1} {DYNAMIC 0}!	gText_AwesomeWonF701F700
+存储空间已经满了。	gText_FilledStorageSpace2
+你不能携带更多了!	gText_CantHoldMore
+再玩一次吗?	gText_WantToPlayAgain2
+有人退出了,\n连接会断开。	gText_SomeoneDroppedOut2
+通信等待中……	gText_CommunicationStandby4
+{PLAYER}的联机竞赛结果	gText_LinkContestResults
+1st	gText_1st
+2nd	gText_2nd
+3rd	gText_3rd
+4th	gText_4th
+好友	gText_Friend
+宝可梦	gText_Pokemon3
+ふしぎなもらいもの	gJPText_MysteryGift
+{A_BUTTON}けってい {B_BUTTON}やめる	gJPText_DecideStop
+カードeリーダー{PLUS}　で\nふしぎなもらいものを　よみこみます	gJPText_ReceiveMysteryGiftWithEReader
+カードeリーダー{PLUS}の　メニューから\n‘つうしん'を　えらび	gJPText_SelectConnectFromEReaderMenu
+‘ゲームボーイアドバンスとつうしん'\nを　せんたく　してください	gJPText_SelectConnectWithGBA
+カードeリーダー{PLUS}の　‘つうしん'を\nえらんで　Aボタンを　おしてください	gJPText_SelectConnectAndPressA
+せつぞくが　まちがっています	gJPText_LinkIsIncorrect
+カードの　よみこみを\nちゅうし　しました	gJPText_CardReadingHasBeenHalted
+カードeリーダー{PLUS}と\nつうしん　できません	gJPText_UnableConnectWithEReader
+つうしん　ちゅう　です	gJPText_Connecting
+つうしん　エラーです\nせつぞくを　たしかめて　ください	gJPText_ConnectionErrorCheckLink
+つうしん　エラーです\nはじめから　やりなおして　ください	gJPText_ConnectionErrorTryAgain
+カードeリーダー{PLUS}　に\nカードを　よみこませて　ください	gJPText_AllowEReaderToLoadCard
+つうしん　しゅうりょう！	gJPText_ConnectionComplete
+あらたな　トレーナーが\nホウエンに　やってきた！	gJPText_NewTrainerHasComeToHoenn
+しばらく　おまちください	gJPText_PleaseWaitAMoment
+かきこみ　エラー　です\nデータが　ほぞん　できませんでした	gJPText_WriteErrorUnableToSaveData
+{PLAYER}的单人对战结果	gText_SingleBattleRoomResults
+{PLAYER}的双人对战结果	gText_DoubleBattleRoomResults
+{PLAYER}的多人对战结果	gText_MultiBattleRoomResults
+{PLAYER}的联机多人对战结果	gText_LinkMultiBattleRoomResults
+{PLAYER}的单人对战比赛结果	gText_SingleBattleTourneyResults
+{PLAYER}的双打对战比赛结果	gText_DoubleBattleTourneyResults
+{PLAYER}的单人对战殿堂结果	gText_SingleBattleHallResults
+{PLAYER}的双打对战殿堂结果	gText_DoubleBattleHallResults
+{PLAYER}的战斗选择结果	gText_BattleChoiceResults
+{PLAYER}的击倒设置比赛结果	gText_SetKOTourneyResults
+{PLAYER}的单人接力对战结果	gText_BattleSwapSingleResults
+{PLAYER}的双人接力对战结果	gText_BattleSwapDoubleResults
+{PLAYER}的战斗探索结果	gText_BattleQuestResults
+LV. 50	gText_Lv502
+自由级	gText_OpenLv
+连胜: {STR_VAR_1}	gText_WinStreak
+当前	gText_Current
+记录	gText_Record
+之前	gText_Prev
+租用/交换	gText_RentalSwap
+合计	gText_Total
+连胜场次:{STR_VAR_1}	gText_ClearStreak
+冠军:{STR_VAR_1}	gText_Championships
+通过房间:{STR_VAR_1}	gText_RoomsCleared
+通过次数:{CLEAR 0x05}{STR_VAR_1}	gText_TimesCleared
+连续击倒:{STR_VAR_1}	gText_KOsInARow
+次数:{STR_VAR_1}	gText_TimesVar1
+通过楼层:{STR_VAR_1}	gText_FloorsCleared
+50级	gText_RecordsLv50
+自由级	gText_RecordsOpenLevel
+连胜:{STR_VAR_2}	gText_FrontierFacilityWinStreak
+连续过关:{STR_VAR_2}	gText_FrontierFacilityClearStreak
+通过房间:{STR_VAR_2}	gText_FrontierFacilityRoomsCleared
+连续击败:{STR_VAR_2}	gText_FrontierFacilityKOsStreak
+通过楼层:{STR_VAR_2}	gText_FrontierFacilityFloorsCleared
+保存中…\n请不要关闭电源。	gText_SavingDontTurnOff2
+树果混合机\n最快记录!	gText_BlenderMaxSpeedRecord
+2位玩家\n3位玩家\n4位玩家	gText_234Players
+是\n否	gText_YesNo
+▶	gText_SelectorArrow3
+躲猫猫!	gText_Peekaboo
+通信错误……\n请检查所有的连接,\n然后关机重启。	gText_CommErrorCheckConnections
+通信错误……	gText_CommErrorEllipsis
+请靠近你的联机朋友，\n避免朋友之间的障碍物。	gText_MoveCloserToLinkPartner
+A键：登记柜台	gText_ABtnRegistrationCounter
+A键：标题画面	gText_ABtnTitleScreen
+游戏设定	gText_Option
+文字速度	gText_TextSpeed
+战斗动画	gText_BattleScene
+对战方式	gText_BattleStyle
+声音	gText_Sound
+边框类型	gText_Frame
+取消	gText_OptionMenuCancel
+按键模式	gText_ButtonMode
+{COLOR GREEN}{SHADOW LIGHT_GREEN}慢	gText_TextSpeedSlow
+{COLOR GREEN}{SHADOW LIGHT_GREEN}中	gText_TextSpeedMid
+{COLOR GREEN}{SHADOW LIGHT_GREEN}快	gText_TextSpeedFast
+{COLOR GREEN}{SHADOW LIGHT_GREEN}开	gText_BattleSceneOn
+{COLOR GREEN}{SHADOW LIGHT_GREEN}关	gText_BattleSceneOff
+{COLOR GREEN}{SHADOW LIGHT_GREEN}接力制	gText_BattleStyleShift
+{COLOR GREEN}{SHADOW LIGHT_GREEN}淘汰制	gText_BattleStyleSet
+{COLOR GREEN}{SHADOW LIGHT_GREEN}单声道	gText_SoundMono
+{COLOR GREEN}{SHADOW LIGHT_GREEN}立体声	gText_SoundStereo
+{COLOR GREEN}{SHADOW LIGHT_GREEN}类型	gText_FrameType
+{COLOR GREEN}{SHADOW LIGHT_GREEN}	gText_FrameTypeNumber
+{COLOR GREEN}{SHADOW LIGHT_GREEN}一般	gText_ButtonTypeNormal
+{COLOR GREEN}{SHADOW LIGHT_GREEN}LR	gText_ButtonTypeLR
+{COLOR GREEN}{SHADOW LIGHT_GREEN}L同A	gText_ButtonTypeLEqualsA
+{STR_VAR_1}P连接	gText_NumPlayerLink
+青铜	gText_BronzeCard
+铜	gText_CopperCard
+银	gText_SilverCard
+金	gText_GoldCard
+天	gText_Day
+:	gText_Colon3
+确定	gText_Confirm2
+天	gText_Days
+时间:	gText_TimeColon2
+游戏时间	gText_GameTime
+时钟时间	gText_RTCTime
+更新时间	gText_UpdatedTime
+图鉴	gText_MenuPokedex
+宝可梦	gText_MenuPokemon
+包包	gText_MenuBag
+导航器	gText_MenuPokenav
+{PLAYER}	gText_MenuPlayer
+保存	gText_MenuSave
+设置	gText_MenuOption
+退出	gText_MenuExit
+撤退	gText_MenuRetire
+重置	gText_MenuRest
+图鉴导航	gText_MenuDexNav
+原野球\n还有：{STR_VAR_1}	gText_SafariBallStock
+对战金字塔\n{STR_VAR_1}	gText_BattlePyramidFloor
+1F	gText_Floor1
+2F	gText_Floor2
+3F	gText_Floor3
+4F	gText_Floor4
+5F	gText_Floor5
+6F	gText_Floor6
+7F	gText_Floor7
+天台	gText_Peak
+连接待机…\n… … B键:取消	gText_LinkStandby2
+请按A键加载事件。\n… … B键:取消	gText_PressAToLoadEvent
+加载事件中…	gText_LoadingEvent
+请不要拔除GBA连接线。\n请不要关闭电源。	gText_DontRemoveCableTurnOff
+事件已成功加载。	gText_EventSafelyLoaded
+加载错误。\n结束进程。	gText_LoadErrorEndingSession
+玩家	gJPText_Player
+さま	gJPText_Sama
+丰缘	gText_DexHoenn
+全国	gText_DexNational
+玩家:{CLEAR 0x10}{COLOR RED}{SHADOW LIGHT_RED}{PLAYER}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}\n\n此证书证明\n你已经成功完成了\n你的{STR_VAR_1}口袋导航器\n\n{CLEAR_TO 0x42}{COLOR RED}{SHADOW LIGHT_RED}GAME FREAK	gText_PokedexDiploma
+{COLOR RED}{SHADOW LIGHT_RED}ゲ-ムフリ-ク	gJPText_GameFreak
+{COLOR RED}{SHADOW LIGHT_RED}	gText_DiplomaEmpty
+丰缘	gText_Hoenn
+啊!咬钩了!	gText_OhABite
+有宝可梦上钩了!{PAUSE_UNTIL_PRESS}	gText_PokemonOnHook
+什么也没有……{PAUSE_UNTIL_PRESS}	gText_NotEvenANibble
+逃走了……{PAUSE_UNTIL_PRESS}	gText_ItGotAway
+{STR_VAR_2}将会\n被送到{STR_VAR_1}。	gText_XWillBeSentToY
+再见,{STR_VAR_2}!	gText_ByeByeVar1
+{STR_VAR_1}送到了{STR_VAR_3}。	gText_XSentOverY
+好好照顾{STR_VAR_3}!	gText_TakeGoodCareOfX
+POKéMON	gEasyChatGroupName_Pokemon
+TRAINER	gEasyChatGroupName_Trainer
+STATUS	gEasyChatGroupName_Status
+BATTLE	gEasyChatGroupName_Battle
+GREETINGS	gEasyChatGroupName_Greetings
+PEOPLE	gEasyChatGroupName_People
+VOICES	gEasyChatGroupName_Voices
+SPEECH	gEasyChatGroupName_Speech
+ENDINGS	gEasyChatGroupName_Endings
+FEELINGS	gEasyChatGroupName_Feelings
+CONDITIONS	gEasyChatGroupName_Conditions
+ACTIONS	gEasyChatGroupName_Actions
+LIFESTYLE	gEasyChatGroupName_Lifestyle
+HOBBIES	gEasyChatGroupName_Hobbies
+TIME	gEasyChatGroupName_Time
+MISC.	gEasyChatGroupName_Misc
+ADJECTIVES	gEasyChatGroupName_Adjectives
+EVENTS	gEasyChatGroupName_Events
+MOVE 1	gEasyChatGroupName_Move1
+MOVE 2	gEasyChatGroupName_Move2
+TRENDY SAYING	gEasyChatGroupName_TrendySaying
+POKéMON2	gEasyChatGroupName_Pokemon2
+???	gText_ThreeQuestionMarks
+最大HP	gText_MaxHP
+攻击	gText_Attack
+防御	gText_Defense
+速度	gText_Speed
+特攻	gText_SpAtk
+特防	gText_SpDef
+{PLUS}	gText_Plus
+-	gText_Dash
+从	gText_FromSpace
+混合存档中…	gText_MixingRecords
+存档混合完成。\n感谢您的等待。	gText_RecordMixingComplete
+你的名字?	gText_YourName
+盒子的名字?	gText_BoxName
+{STR_VAR_1}的昵称?	gText_PkmnsNickname
+告诉他那个单词。	gText_TellHimTheWords
+{DPAD_NONE}移动 {A_BUTTON}确认 {B_BUTTON}返回	gText_MoveOkBack
+租借宝可梦	gText_RentalPkmn2
+选择第一个宝可梦。	gText_SelectFirstPkmn
+选择第二个宝可梦。	gText_SelectSecondPkmn
+选择第三个宝可梦。	gText_SelectThirdPkmn
+租借	gText_Rent
+概况	gText_Summary
+其它	gText_Others2
+取消选择	gText_Deselect
+这三个宝可梦可以吗?	gText_TheseThreePkmnOkay
+是	gText_Yes2
+否	gText_No2
+不能选择相同的宝可梦。	gText_CantSelectSamePkmn
+宝可梦交换	gText_PkmnSwap
+选择要交换的宝可梦。	gText_SelectPkmnToSwap
+选择要接受的宝可梦。	gText_SelectPkmnToAccept
+交换	gText_Swap
+概况	gText_Summary2
+重选	gText_Rechoose
+退出交换?	gText_QuitSwapping
+是	gText_Yes3
+否	gText_No3
+要换的宝可梦取消	gText_PkmnForSwap
+取消选择	gText_Cancel3
+交换	gText_Swap2
+接受	gText_Accept
+接受这个宝可梦?	gText_AcceptThisPkmn
+	gText_4Spaces
+同样的宝可梦已在队伍中。	gText_SamePkmnInPartyAlready
+.	gText_DecimalPoint
+主人公	gText_SavingPlayer
+徽章	gText_SavingBadges
+图鉴	gText_SavingPokedex
+冒险时间	gText_SavingTime
+无线通信状态	gText_WirelessCommStatus
+在交换的人们:	gText_PeopleTrading
+在对战的人们:	gText_PeopleBattling
+联合房间中的人们:	gText_PeopleInUnionRoom
+交流中的人们:	gText_PeopleCommunicating
+{DYNAMIC 0}名玩家	gText_F700Players
+{DYNAMIC 1}名玩家	gText_F701Players
+{DYNAMIC 2}名玩家	gText_F702Players
+{DYNAMIC 3}名玩家	gText_F703Players
+神秘卡片	gText_WonderCards
+神秘新闻	gText_WonderNews
+无线通信	gText_WirelessCommunication
+好友	gText_Friend2
+退出	gText_Exit3
+接收	gText_Receive
+发送	gText_Send
+投掷	gText_Toss
+各种各样的事件将会通过\n无线通信中载入。	gText_VarietyOfEventsImportedWireless
+阅读你拥有的神秘卡片。	gText_WonderCardsInPossession
+阅读最新的新闻。	gText_ReadNewsThatArrived
+返回标题画面。	gText_ReturnToTitle
+你现在没有神秘卡片,\n所以你将会收到一张新的卡片。	gText_DontHaveCardNewOneInput
+你没有任何神秘新闻,\n所以你将会收到新的新闻。	gText_DontHaveNewsNewOneInput
+你希望从哪里获取\n神秘卡片?	gText_WhereShouldCardBeAccessed
+你希望在哪里察看\n神秘新闻?	gText_WhereShouldNewsBeAccessed
+通信待机中……\nB键:取消	gText_CommunicationStandbyBButtonCancel
+通信中……	gText_Communicating
+通信完成。	gText_CommunicationCompleted
+通信错误。	gText_CommunicationError
+通信已被取消。	gText_CommunicationCanceled
+丢弃神秘卡片\n并重新领取新的?	gText_ThrowAwayWonderCard
+你还未收到卡片的赠礼\n确认继续?	gText_HaventReceivedCardsGift
+从{STR_VAR_1}处收到了一张\n神秘卡片。	gText_WonderCardReceivedFrom
+从{STR_VAR_1}处收到了一条\n神秘新闻。	gText_WonderNewsReceivedFrom
+已收到了新的神秘卡片	gText_WonderCardReceived
+已收到了新的神秘新闻	gText_WonderNewsReceived
+已收到了新的印章。	gText_NewStampReceived
+新的训练家已经到达。	gText_NewTrainerReceived
+你已经拥有那张神秘卡片。	gText_AlreadyHadCard
+你已经拥有那条神秘新闻。	gText_AlreadyHadNews
+你已经拥有那个印章。	gText_AlreadyHadStamp
+没有增加印章的空间了。	gText_NoMoreRoomForStamps
+你的记录已用无线通信更新。	gText_RecordUploadedViaWireless
+你不能从这个训练家处接收\n神秘卡片。	gText_CantAcceptCardFromTrainer
+你不能从这个训练家处接收\n神秘新闻。	gText_CantAcceptNewsFromTrainer
+什么也没发生……	gText_NothingSentOver
+你想用神秘卡片做什么?	gText_WhatToDoWithCards
+你想用神秘新闻做什么?	gText_WhatToDoWithNews
+正在发送你的神秘卡片……	gText_SendingWonderCard
+正在发送你的神秘新闻……	gText_SendingWonderNews
+你的神秘卡片已发送给{STR_VAR_1}。	gText_WonderCardSentTo
+你的神秘新闻已发送给{STR_VAR_1}。	gText_WonderNewsSentTo
+一个印章已发送给{STR_VAR_1}。	gText_StampSentTo
+一份礼物也发送给{STR_VAR_1}。	gText_GiftSentTo
+对方训练家已有同样的神秘卡片。	gText_OtherTrainerHasCard
+对方训练家已有同样的神秘新闻。	gText_OtherTrainerHasNews
+对方训练家已有同样的印章。	gText_OtherTrainerHasStamp
+对方训练家取消了通信。	gText_OtherTrainerCanceled
+你不能将神秘礼物送给这个训练家。	gText_CantSendGiftToTrainer
+如果丢弃卡片,\n其中的事件将不会发生。可以吗?	gText_IfThrowAwayCardEventWontHappen
+删除这条新闻可以吗?	gText_OkayToDiscardNews
+你还未收到礼物,真的确定删除吗?	gText_HaventReceivedGiftOkayToDiscard
+资料保存中……\n请稍候。	gText_DataWillBeSaved
+保存完毕。\n请按A键。	gText_SaveCompletedPressA
+丢弃了神秘卡片。	gText_WonderCardThrownAway
+删除了神秘新闻。	gText_WonderNewsThrownAway
+神秘礼物	gText_MysteryGift
+{DPAD_UPDOWN}选择 {A_BUTTON}确认 {B_BUTTON}退出	gText_PickOKExit
+{DPAD_UPDOWN}选择 {A_BUTTON}确认 {B_BUTTON}取消	gText_PickOKCancel
+{PLAYER}的对战结果	gText_PlayersBattleResults
+总战绩 胜:{STR_VAR_1} 负:{STR_VAR_2} 平:{STR_VAR_3}	gText_TotalRecordWLD
+{CLEAR_TO 0x53}胜{CLEAR_TO 0x80}负{CLEAR_TO 0xB0}平	gText_WinLoseDraw
+通信待机…	gText_CommunicationStandby5
+退出游戏?	gText_QuitTheGame
+你已经有9,999枚代币。	gText_YouveGot9999Coins
+你用光了所有的代币。\n游戏结束!	gText_YouveRunOutOfCoins
+你没有3枚代币。	gText_YouDontHaveThreeCoins
+奖励时间\n属于你的高光时刻来了！\n持续期间内，机器转动速度\n将逐渐减缓。瞄准目标吧！\n轮数耗尽或中超级大奖后，\n奖励时间将会结束。	gText_ReelTimeHelp
+这2只的关系\n好像挺好的！	gDaycareText_GetAlongVeryWell
+这2只的关系\n感觉还不错啊。	gDaycareText_GetAlong
+这2只的关系\n似乎不太好啊。	gDaycareText_DontLikeOther
+这2只各自跑去\n和其他宝可梦玩了……	gDaycareText_PlayOther
+\n	gText_NewLine2
+退出	gText_Exit4
+{LV}	gText_Lv
+时间板	gText_TimeBoard
+完成时间	gText_TimeCleared
+{STR_VAR_1} 分{STR_VAR_2}.{STR_VAR_3} 秒。	gText_XMinYDotZSec
+1F	gText_TrainerHill1F
+2F	gText_TrainerHill2F
+3F	gText_TrainerHill3F
+4F	gText_TrainerHill4F
+要让{STR_VAR_1}学习哪个技能呢?	gText_TeachWhichMoveToPkmn
+要学习{STR_VAR_2}吗?	gText_MoveRelearnerTeachMoveConfirm
+{STR_VAR_1}学会了\n{STR_VAR_2}!	gText_MoveRelearnerPkmnLearnedMove
+{STR_VAR_1}想要学习\n{STR_VAR_2}……\p为了学习{STR_VAR_2},\p要忘记其他的招式吗?	gText_MoveRelearnerPkmnTryingToLearnMove
+放弃学习{STR_VAR_2}吗?	gText_MoveRelearnerStopTryingToTeachMove
+{PAUSE 32}1, {PAUSE 15}2, {PAUSE 15}… {PAUSE 15}… {PAUSE 15}… {PAUSE 15}{PLAY_SE SE_BALL_BOUNCE_1}空!\p	gText_MoveRelearnerAndPoof
+{STR_VAR_1}忘记了{STR_VAR_3}!\p并且学会了{STR_VAR_2}!	gText_MoveRelearnerPkmnForgotMoveAndLearnedNew
+{STR_VAR_1}没有学习{STR_VAR_2}。	gText_MoveRelearnedPkmnDidNotLearnMove
+要放弃让{STR_VAR_1}学习新招式吗?	gText_MoveRelearnerGiveUp
+要忘记哪个招式呢?\p	gText_MoveRelearnerWhichMoveToForget
+战斗招式	gText_MoveRelearnerBattleMoves
+华丽大赛招式	gText_MoveRelearnerContestMovesTitle
+属性/	gText_MoveRelearnerType
+PP/	gText_MoveRelearnerPP
+威力/	gText_MoveRelearnerPower
+命中/	gText_MoveRelearnerAccuracy
+吸引力	gText_MoveRelearnerAppeal
+干扰力	gText_MoveRelearnerJam
+奇拉	gText_Kira
+久美	gText_Amy
+约翰	gText_John
+加古	gText_Roy
+玛丽	gText_Gabby
+美穗	gText_Anna
+清除所有的资料?	gText_ClearAllSaveData
+资料清除中……\n请等待。	gText_ClearingData
+这是正确的时间吗?	gText_IsThisTheCorrectTime
+确定	gText_Confirm3
+取消	gText_Cancel4
+通信待机中……\n等待其他玩家选择。	gText_CommStandbyAwaitingOtherPlayer
+对战要求被拒绝。{PAUSE 60}!	gText_BattleWasRefused
+拒绝对战。{PAUSE 60}!	gText_RefusedBattle
+天气正常 // Below are unused debug names for weather types	gText_NoWeather
+晴天	gText_Sunny
+晴天2	gText_Sunny2
+下雨	gText_Rain
+下雪	gText_Snow
+闪电	gText_Lightning
+雾	gText_Fog
+火山灰	gText_VolcanoAsh
+沙尘暴	gText_Sandstorm
+雾2	gText_Fog2
+海底	gText_Seafloor
+多云	gText_Cloudy
+晴天3	gText_Sunny3
+大雨	gText_HeavyRain
+海底2	gText_Seafloor2
+全部清除	gText_DelAll
+取消	gText_Cancel5
+好	gText_Ok2
+测验	gText_Quiz
+回答	gText_Answer
+精灵球	gText_PokeBalls
+树果	gText_Berry
+树果	gText_Berries
+打开了学习装置。{PAUSE_UNTIL_PRESS}	gText_ExpShareOn
+关闭了学习装置。{PAUSE_UNTIL_PRESS}	gText_ExpShareOff
+{STR_VAR_1}的\n基础点数消失得干干净净了!{PAUSE_UNTIL_PRESS}	gText_BasePointsResetToZero
+AM	gText_AM
+PM	gText_PM
+{START_BUTTON} 回忆	gText_Relearn
+更改昵称	gText_Rename
+不能把那只精灵送回电脑，\n因为它学会了秘传技能。{PAUSE_UNTIL_PRESS}	gText_CannotSendMonToBoxHM

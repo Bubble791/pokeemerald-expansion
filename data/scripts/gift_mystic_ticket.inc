@@ -56,3 +56,4 @@ sText_MysticTicketBagFull:
 	.string "Your BAG's KEY ITEMS POCKET is full.\p"
 	.string "Please store something on your PC,\n"
 	.string "then come back for this.$"
+//TODO 汉化

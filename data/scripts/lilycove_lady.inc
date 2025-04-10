@@ -788,3 +788,4 @@ LilycoveCity_PokemonCenter_1F_Text_Pikachu:
 
 LilycoveCity_PokemonCenter_1F_Text_Skitty:
 	.string "{STR_VAR_1}: Umyaaaan!$"
+//TODO 汉化

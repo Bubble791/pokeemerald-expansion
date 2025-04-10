@@ -21,3 +21,4 @@ sText_MysteryGiftAlteringCave:
 	.string "the ALTERING CAVE on ROUTE 103.\p"
 	.string "Perhaps it would be worthwhile for\n"
 	.string "you to investigate this rumor.$"
+//TODO 汉化
