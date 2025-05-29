@@ -59,25 +59,11 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
-	.string "Welcome, my name is GLACIA\n"
-	.string "of the ELITE FOUR.\p"
-	.string "I've traveled from afar to HOENN\n"
-	.string "so that I may hone my ice skills.\p"
-	.string "But all I have seen are challenges by\n"
-	.string "weak TRAINERS and their POKéMON.\p"
-	.string "What about you?\p"
-	.string "It would please me to no end if I could\n"
-	.string "go all out against you!$"
+    .string "欢迎您。我叫波妮，\n是四天王的一员。\p我千里迢迢来到丰缘\n磨砺我的冰属性技巧。\p但是我在这儿见到的尽是些\n弱不禁风的训练家和宝可梦。\p您又如何呢？\p要是能让我使出全力也没问题，那就太棒了……！$"
 
 EverGrandeCity_GlaciasRoom_Text_Defeat:
-	.string "You and your POKéMON…\n"
-	.string "How hot your spirits burn!\p"
-	.string "The all-consuming heat overwhelms.\p"
-	.string "It's no surprise that my icy skills\n"
-	.string "failed to harm you.$"
+    .string "您和您的宝可梦……\n灵魂燃烧的那么炽烈！\p这激烈的热量仿佛能吞噬一切。\p难怪我的冰属性技巧\n奈何不了您。$"
 
 EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
-	.string "Advance to the next room.\p"
-	.string "And there, confirm the truly fearsome\n"
-	.string "side of the POKéMON LEAGUE.$"
+    .string "前往下一个房间吧。\p在那里，您会见识到宝可梦联盟\n真正可怕的一面。$"
 

@@ -692,10 +692,10 @@ static const u8 sAlphabetGroupIdMap[NUM_ALPHABET_ROWS][NUM_ALPHABET_COLUMNS] = {
 };
 
 static const u16 sMysteryGiftPhrase[NUM_QUESTIONNAIRE_WORDS] = {
-    EC_WORD_LINK,
+    EC_WORD_AND,
+    EC_WORD_SON,
     EC_WORD_TOGETHER,
-    EC_WORD_WITH,
-    EC_WORD_ALL,
+    EC_WORD_LINK,
 };
 
 static const u16 sBerryMasterWifePhrases[][2] = {
@@ -1240,36 +1240,36 @@ static const u8 *const sEasyChatGroupNamePointers[EC_NUM_GROUPS] = {
 
 static const u16 sDefaultProfileWords[EASY_CHAT_BATTLE_WORDS_COUNT - 2] = {
     EC_WORD_I_AM,
-    EC_WORD_A,
     EC_WORD_POKEMON,
-    EC_WORD_FRIEND,
+    EC_WORD_OF,
+    EC_WORD_FRIEND,    
 };
 
 static const u16 sDefaultBattleStartWords[EASY_CHAT_BATTLE_WORDS_COUNT] = {
-    EC_WORD_ARE,
     EC_WORD_YOU,
     EC_WORD_READY,
-    EC_WORD_QUES,
+    EC_WORD_IS,
+    EC_WORD_WAS,
     EC_WORD_HERE_I_COME,
-    EC_WORD_EXCL,
+    EC_WORD_EXCL,    
 };
 
 static const u16 sDefaultBattleWonWords[EASY_CHAT_BATTLE_WORDS_COUNT] = {
     EC_WORD_YAY,
     EC_WORD_YAY,
     EC_WORD_EXCL_EXCL,
-    EC_WORD_I_VE,
+    EC_WORD_ME,
     EC_WORD_WON,
-    EC_WORD_EXCL_EXCL,
+    EC_WORD_EXCL_EXCL,    
 };
 
 static const u16 sDefaultBattleLostWords[EASY_CHAT_BATTLE_WORDS_COUNT] = {
-    EC_WORD_TOO,
-    EC_WORD_BAD,
+    EC_WORD_YEAH,
+    EC_WORD_AWFUL,
     EC_WORD_ELLIPSIS,
     EC_WORD_WE,
     EC_WORD_LOST,
-    EC_WORD_ELLIPSIS,
+    EC_WORD_ELLIPSIS,    
 };
 
 static const u16 sRestrictedWordSpecies[] = {
@@ -5225,7 +5225,7 @@ u8 *CopyEasyChatWord(u8 *dest, u16 easyChatWord)
     {
         u16 index = EC_INDEX(easyChatWord);
         u8 groupId = EC_GROUP(easyChatWord);
-        resultStr = StringCopyUppercase(dest, GetEasyChatWord(groupId, index));
+        resultStr = StringCopy(dest, GetEasyChatWord(groupId, index));
     }
     else
     {

@@ -104,180 +104,76 @@ RustboroCity_Gym_EventScript_RegisterRoxanne::
 	end
 
 RustboroCity_Gym_Text_GymGuideAdvice:
-	.string "Yo, how's it going?\p"
-	.string "Listen, my friend!\n"
-	.string "Would you like to become the CHAMPION?\p"
-	.string "I'm no TRAINER, not me, but I can\n"
-	.string "sure give you winning advice.\p"
-	.string "That's settled, then! We'll aim for the\n"
-	.string "POKéMON CHAMPIONSHIP together!\p"
-	.string "It's your job as a TRAINER to collect\n"
-	.string "GYM BADGES, am I right?\p"
-	.string "But GYM LEADERS aren't pushovers!\p"
-	.string "And that's where I come in!\n"
-	.string "I'm here to provide expert advice!\p"
-	.string "ROXANNE, the GYM LEADER, is a user\n"
-	.string "of ROCK-type POKéMON.\p"
-	.string "The ROCK type is very durable, but\n"
-	.string "it can't stand WATER-type and\l"
-	.string "GRASS-type moves.\p"
-	.string "Come see me afterwards, if you beat\n"
-	.string "the GYM LEADER.\p"
-	.string "Well, go for it!$"
+    .string "哟，怎么样？\p听好，朋友！\n你想成为冠军吗？\p我不是训练家，但我可以\n给你一些取胜的建议。\p那么说定了！我们一起朝着\n宝可梦冠军的目标前进！\p作为训练家，任务之一\n就是收集道馆徽章，对吗？\p但击败道馆馆主并没那么容易！\p因此我才会在这里！\n我会给你专业的建议！\p道馆馆主杜娟\n使用岩石属性宝可梦。\p岩石属性非常坚固，\n但它抵挡不了水属性和\l草属性招式。\p你打败道馆馆主之后\n再来找我吧。\p好了，加油！$"
 
 RustboroCity_Gym_Text_GymGuidePostVictory:
-	.string "Whoa! What a breathtaking victory!\n"
-	.string "My cheering must've worked!\p"
-	.string "Great!\n"
-	.string "Check your TRAINER CARD.\p"
-	.string "The STONE BADGE you got should be\n"
-	.string "properly recorded on it.\p"
-	.string "In other words…\p"
-	.string "You've climbed the first step on\n"
-	.string "the stairs to the CHAMPIONSHIP!\p"
-	.string "That's got to feel awesome!$"
+    .string "哇！令人心驰的胜利！\n看来我的鼓励派上了用场！\p太好了！\n看看你的训练家卡，\p你得到的岩石徽章\n就记录在上面。\p换句话说……\p你踏上了通向冠军之路的\n第一级阶梯！\p感觉不错！$"
 
 RustboroCity_Gym_Text_JoshIntro:
-	.string "Don't take us GYM TRAINERS lightly!\n"
-	.string "I'll show you why we're better!$"
+    .string "别小看我们道馆训练家！\n我会告诉你为什么我是最好的！$"
 
 RustboroCity_Gym_Text_JoshDefeat:
-	.string "You were too good for me…$"
+    .string "你比我厉害多了……$"
 
 RustboroCity_Gym_Text_JoshPostBattle:
-	.string "You haven't seen anything of the ROCK\n"
-	.string "type's terrifying power!$"
+    .string "你还没有体会过岩石属性的\n可怕力量！$"
 
 RustboroCity_Gym_Text_TommyIntro:
-	.string "If you can't beat me, you won't stand\n"
-	.string "a chance against ROXANNE!$"
+    .string "如果你不能打败我，\n就不可能打败杜娟！$"
 
 RustboroCity_Gym_Text_TommyDefeat:
-	.string "Wow! You've got some potential!$"
+    .string "哇！你的潜力很大！$"
 
 RustboroCity_Gym_Text_TommyPostBattle:
-	.string "ROXANNE is stronger than me by\n"
-	.string "several times.\p"
-	.string "You'd better be on your guard!$"
+    .string "杜娟可比我厉害好几倍。\p你最好提高警惕！$"
 
 RustboroCity_Gym_Text_MarcIntro:
-	.string "We might be in the middle of town,\n"
-	.string "but so what?\p"
-	.string "My ROCK POKéMON need room to\n"
-	.string "rampage!$"
+    .string "虽然这里是城镇中心，\n但那又如何？\p我的岩石宝可梦可需要\n大闹一场的空间！$"
 
 RustboroCity_Gym_Text_MarcDefeat:
-	.string "Oh, man oh man!\n"
-	.string "Our challenger is one feisty customer!$"
+    .string "哦，天哪！\n我们的挑战者这么强大！$"
 
 RustboroCity_Gym_Text_MarcPostBattle:
-	.string "I have to hand it to our LEADER.\p"
-	.string "It took smarts and sense for her to\n"
-	.string "pick the ROCK type at her young age.$"
+    .string "只有交给我们的馆主了。\p这么年轻就培育岩石属性，\n真是辛苦她了。$"
 
 RustboroCity_Gym_Text_RoxanneIntro:
-	.string "Hello, I am ROXANNE, the RUSTBORO\n"
-	.string "POKéMON GYM LEADER.\p"
-	.string "I became a GYM LEADER so that I might\n"
-	.string "apply what I learned at the POKéMON\l"
-	.string "TRAINER'S SCHOOL in battle.\p"
-	.string "Would you kindly demonstrate how you\n"
-	.string "battle, and with which POKéMON?$"
+    .string "您好，我是卡那兹市宝可梦道馆的\n馆主杜娟。\p我想要把在宝可梦训练家学校中\n所学到的东西都运用到宝可梦对战\l里面，所以才成为了道馆馆主。\p您要使用哪种宝可梦，\n如何对战，可以告诉我吗？$"
 
 RustboroCity_Gym_Text_RoxanneDefeat:
-	.string "So…\n"
-	.string "I lost…\p"
-	.string "It seems that I still have much more\n"
-	.string "to learn…\p"
-	.string "I understand.\p"
-	.string "The POKéMON LEAGUE's rules state\n"
-	.string "that TRAINERS are to be given this\l"
-	.string "if they defeat a GYM LEADER.\p"
-	.string "Please accept the official POKéMON\n"
-	.string "LEAGUE STONE BADGE.$"
+    .string "啊……\n是我输了……\p看来我还有\n许多东西要学……\p我知道了。\p宝可梦联盟规定\n战胜道馆馆主的训练家\l可以得到这个。\p请收下这枚宝可梦联盟\n公认的岩石徽章。$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge:
-	.string "{PLAYER} received the STONE BADGE\n"
-	.string "from ROXANNE.$"
+    .string "{PLAYER}从杜娟那里\n得到了岩石徽章。$"
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
-	.string "The STONE BADGE heightens the ATTACK\n"
-	.string "power of your POKéMON.\p"
-	.string "It also enables them to use the HM move\n"
-	.string "CUT outside of battle.\p"
-	.string "Please take this with you, too.$"
+    .string "岩石徽章能提高您的\n宝可梦的攻击力。\p有了它，您的宝可梦也能在对战外\n使用秘传招式居合劈了。\p然后……\n请您也收下这个。$"
 
 RustboroCity_Gym_Text_ExplainRockTomb:
-	.string "That TECHNICAL MACHINE, TM39,\n"
-	.string "contains ROCK TOMB.\p"
-	.string "It not only inflicts damage by dropping\n"
-	.string "rocks, it also lowers SPEED.\p"
-	.string "If you use a TM, it instantly teaches\n"
-	.string "the move to a POKéMON.\p"
-	.string "Remember, a TM can be used only once,\n"
-	.string "so think before you use it.$"
+    .string "那个招式学习器39中\n装着岩石封锁。\p用落石攻击对手的同时\n也能降低对手的速度。\p如果您使用招式学习器，\n宝可梦能立刻学会其中的招式。\p但一个招式学习器使用后就会消失，\n所以使用前要仔细考虑才行呢。$"
 
 RustboroCity_Gym_Text_RoxannePostBattle:
-	.string "Since you are so strong, you should\n"
-	.string "challenge other GYM LEADERS.\p"
-	.string "By battling many TRAINERS, you should\n"
-	.string "learn many things.$"
+    .string "像您这么强的训练家为什么不去\n其他道馆挑战看看呢？\p通过和许许多多的训练家对战，\n您能够学到很多知识哟。$"
 
 RustboroCity_Gym_Text_GymStatue:
-	.string "RUSTBORO CITY POKéMON GYM$"
+    .string "卡那兹市宝可梦道馆$"
 
 RustboroCity_Gym_Text_GymStatueCertified:
-	.string "RUSTBORO CITY POKéMON GYM\p"
-	.string "ROXANNE'S CERTIFIED TRAINERS:\n"
-	.string "{PLAYER}$"
+    .string "卡那兹市宝可梦道馆\p杜娟认可的训练家：\n{PLAYER}$"
 
 RustboroCity_Gym_Text_RoxanneRegisterCall:
-	.string "… … … … … …\n"
-	.string "… … … … … Beep!\p"
-	.string "ROXANNE: Oh, hello, {PLAYER}?\n"
-	.string "This is ROXANNE of RUSTBORO CITY.\p"
-	.string "I heard from BRAWLY that you're\n"
-	.string "moving up through the ranks of\l"
-	.string "TRAINERS at an incredible clip.\p"
-	.string "Well, I'd rather not think that\n"
-	.string "I can't beat you.\p"
-	.string "I promise, I will shape up my GYM\n"
-	.string "so that you may challenge us again.\p"
-	.string "I hope you'll be looking forward to\n"
-	.string "that occasion as much as me!\p"
-	.string "… … … … … …\n"
-	.string "… … … … … Click!$"
+    .string "…… …… ……\n…… …… ……哔！\p杜娟：哦，您好，是{PLAYER}吗？\n我是卡那兹市的杜娟。\p我从藤树那儿听说您已经\n是个小有名气的训练家了。\p但是，我认为我不会\n再输给您了。\p我保证，我会提升道馆的实力，\n您可以再来挑战我们。\p我希望您会像我一样期待\n那个时刻的到来！\p…… …… ……\n…… ……咔哒！$"
 
 RustboroCity_Gym_Text_RegisteredRoxanne:
-	.string "Registered GYM LEADER ROXANNE\n"
-	.string "in the POKéNAV.$"
+    .string "把道馆馆主杜娟\n登记到宝可导航里了。$"
 
 RustboroCity_Gym_Text_RoxannePreRematch:
-	.string "ROXANNE: I'm so glad to see you again.\n"
-	.string "I'm ROXANNE, the GYM LEADER here.\p"
-	.string "I'm sure we've both experienced many\n"
-	.string "battles since we last met.\p"
-	.string "I would like to see how much better\n"
-	.string "we've become. Let us battle!$"
+    .string "杜娟：我真高兴能再见到您。\n我是这个道馆的馆主杜娟。\p我相信我们可以再享受很多场\n像上次那样精彩的对战。\p我想看看我们彼此都变强了多少。\n让我们开始吧！$"
 
 RustboroCity_Gym_Text_RoxanneRematchDefeat:
-	.string "Grr…\n"
-	.string "Again, I have lost…$"
+    .string "呃……\n我又输了……$"
 
 RustboroCity_Gym_Text_RoxannePostRematch:
-	.string "ROXANNE: I still have much to learn\n"
-	.string "when it comes to battling POKéMON.\p"
-	.string "That awareness makes me love battling\n"
-	.string "all that much more!$"
+    .string "杜娟：关于宝可梦对战，\n我还有许多事要学习。\p察觉到了这一点，\n让我更喜欢宝可梦对战了！$"
 
 RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
-	.string "ROXANNE: I'm so glad to see you again.\n"
-	.string "I'm ROXANNE, the GYM LEADER here.\p"
-	.string "I'm sure we've both experienced many\n"
-	.string "battles since we last met.\p"
-	.string "I would like to see how much better\n"
-	.string "we've become…\p"
-	.string "Oh, no…\n"
-	.string "You only have one POKéMON with you?\p"
-	.string "Please return with at least one more\n"
-	.string "POKéMON.$"
+    .string "杜娟：我真高兴能再见到您。\n我是这个道馆的馆主杜娟。\p我相信我们可以再享受很多场\n像上次那样精彩的对战。\p我想看看我们彼此都变强了……\p哎，不……\n您只带了1只宝可梦？\p带至少2只\n宝可梦回来吧。$"

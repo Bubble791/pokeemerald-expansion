@@ -155,7 +155,7 @@ struct UnionRoomChat
 
 struct UnionRoomChatDisplay_Subtask
 {
-    bool32 (* callback)(u8 *);
+    bool32 (*callback)(u8 *);
     bool8 active;
     u8 state;
 };
@@ -189,7 +189,7 @@ struct UnionRoomChatSprites
 struct SubtaskInfo
 {
     u16 idx;
-    bool32 (* callback)(u8 *);
+    bool32 (*callback)(u8 *);
 };
 
 struct MessageWindowInfo
@@ -741,7 +741,7 @@ static const struct MessageWindowInfo sDisplayStdMessages[] = {
     }
 };
 
-static const u8 sText_Ellipsis[] = _("…");
+static const u8 sText_Ellipsis[] = _("……");
 
 static const struct MenuAction sKeyboardPageTitleTexts[UNION_ROOM_KB_PAGE_COUNT + 1] = {
     [UNION_ROOM_KB_PAGE_UPPER]    = {gText_Upper, {NULL}},

@@ -219,116 +219,50 @@ BattleFrontier_BattlePyramidTop_Movement_CameraPanUp:
 	step_end
 
 BattleFrontier_BattlePyramidTop_Text_ReachedSummitUpYouGo:
-	.string "It is a delight to see you here!\n"
-	.string "You have reached the summit of\l"
-	.string "the BATTLE PYRAMID!\p"
-	.string "Above here is the PYRAMID's\n"
-	.string "lookout point.\p"
-	.string "It is a place open only to those\n"
-	.string "who have conquered the PYRAMID.\p"
-	.string "Now, please!\n"
-	.string "Up you go!$"
+    .string "很荣幸能在这里见到你！\n你已经来到了对战金字塔\l最顶层。\p这就是金字塔的\n观景台。\p这个地方只为征服了\n金字塔的人开放。\p来吧！\n继续向前吧！$"
 
 BattleFrontier_BattlePyramidTop_Text_PlayerConqueredPyramid:
-	.string "The PYRAMID's new conqueror!\n"
-	.string "Let the name {PLAYER} be known!$"
+    .string "金字塔的新任征服者。\n让众人铭记{PLAYER}这个名字吧！$"
 
 BattleFrontier_BattlePyramidTop_Text_ChiefBeatYouHere:
-	.string "It is a delight to see you here!\p"
-	.string "Unfortunately, you were second by\n"
-	.string "a mere fraction of time!\p"
-	.string "Our chief has already conquered\n"
-	.string "the PYRAMID ahead of you.\p"
-	.string "However, my young explorer…\n"
-	.string "You are a TRAINER!\p"
-	.string "Assert your power and take the glory\n"
-	.string "of the pinnacle from our chief!\p"
-	.string "Now, please! When you are ready,\n"
-	.string "take one more step of courage!$"
+    .string "很荣幸能在这里见到你！\p很可惜，\n你以分毫之差屈居第二抵达这里。\p我们的首领已经率先\n征服了金字塔。\p不过，年轻的探险家，\n你是一名训练家！\p用实力从法老手中夺取巅峰的荣耀吧！\p当你准备好时，\n请再度迈出这勇气的一步！$"
 
 BattleFrontier_BattlePyramidTop_Text_ExplorationsAreGrandestAdventure:
-	.string "Young adventurer…\p"
-	.string "Wouldn't you agree that explorations\n"
-	.string "are the grandest of adventures?\p"
-	.string "Your own wits!\p"
-	.string "Your own strength!\p"
-	.string "Your own POKéMON!\p"
-	.string "And, above all, only your own courage\n"
-	.string "to lead you through unknown worlds…$"
+    .string "年轻的冒险家……\p你不觉得探索才是最为\n伟大的冒险吗？\p凭借你的智慧！\p你的实力！\p你的宝可梦！\p还有最重要的，你的勇气！\n唯有它将指引你走遍未知的世界……$"
 
 BattleFrontier_BattlePyramidTop_Text_ImPyramidKingBrandon:
-	.string "Aah, yes, indeed this life is grand!\n"
-	.string "Grand, it is! Eh?\p"
-	.string "I'm BRANDON!\p"
-	.string "I'm the PYRAMID KING, which means\n"
-	.string "I'm in charge here.\p"
-	.string "Most people call me the chief!\p"
-	.string "You coming here means you have\n"
-	.string "that much confidence in yourself,\l"
-	.string "am I right?\p"
-	.string "Hahahah!\n"
-	.string "This should be exciting!$"
+    .string "嗯，生命何等壮阔！\n壮阔至极！\p我是神代！\p身为金字塔法老，\n这里由我掌管。\p人们都称我为首领！\p你能来到这里，\n说明了你对自己充满信心，\l我说得对吗？\p哈哈哈！\n这必将是一场精彩对决！$"
 
 BattleFrontier_BattlePyramidTop_Text_BringCourageToOurBattle:
-	.string "Now, then!\n"
-	.string "Bring your courage to our battle!$"
+    .string "现在！\n带着你的勇气来战斗吧！$"
 
 BattleFrontier_BattlePyramidTop_Text_BrandonFrontierPassPlease:
-	.string "BRANDON: Hahahah! Grand it was!\n"
-	.string "Grand, yes, indeed!\p"
-	.string "Well done! You've earned recognition!\n"
-	.string "Your FRONTIER PASS, please!$"
+    .string "神代：哈哈哈！壮阔！\n何等壮阔！\p做得好！这是属于你的荣耀！\n拿出你的开拓通行证吧！$"
 
 BattleFrontier_BattlePyramidTop_Text_ReceivedBraveSymbol:
-	.string "The Brave Symbol was embossed on\n"
-	.string "the FRONTIER PASS!$"
+    .string "英勇象征浮现在\n开拓通行证上。$"
 
 BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting:
-	.string "Young explorer!\n"
-	.string "I look forward to our next meeting!$"
+    .string "年轻的探险家！\n期待我们的下一次再会！$"
 
 BattleFrontier_BattlePyramidTop_Text_BrandonYouveReturned:
-	.string "BRANDON: …You've finally returned,\n"
-	.string "young explorer…\p"
-	.string "Your love of adventure seems to come\n"
-	.string "deep from within your heart…\p"
-	.string "Yes… You are exactly as I was in\n"
-	.string "my own youth…\p"
-	.string "… … …Ah…\p"
-	.string "The passionate!\p"
-	.string "The dangerous!\p"
-	.string "The desperate!\p"
-	.string "Those days of death-defying,\n"
-	.string "life-affirming adventures are back…$"
+    .string "神代：……你终于回来了，\n年轻的探险家……\p你对冒险的热情似乎源于\n你的内心深处……\p对……你简直就像是\n年轻时期的我自己\p…… ……啊……\p激情！\p危机！\p绝境！\p那些在生死边缘探寻生命意义的\n日子又在此重现了……$"
 
 BattleFrontier_BattlePyramidTop_Text_MyCourageIsOffMeter:
-	.string "Now, then!\p"
-	.string "I sense my own courage is off\n"
-	.string "the meter!$"
+    .string "现在！\p我已感受到澎湃的勇气\n即将满溢！$"
 
 BattleFrontier_BattlePyramidTop_Text_EverythingYouHave:
-	.string "Everything you have!\n"
-	.string "I'm braced for it all!$"
+    .string "倾尽你的一切吧！\n我已做好万全准备！$"
 
 BattleFrontier_BattlePyramidTop_Text_BrandonRemarkableHaveThis:
-	.string "BRANDON: Hahahah!\n"
-	.string "Remarkable!\l"
-	.string "Yes, it's grand, indeed!\p"
-	.string "Young explorer!\p"
-	.string "You've bested me through and through!\n"
-	.string "Here! I want you to have this!$"
+    .string "神代：哈哈哈！\n精彩绝伦！\l壮阔至极！\p年轻的探险家！\p你完全超越了我！\n来！我希望你收下这个！$"
 
 BattleFrontier_BattlePyramidTop_Text_BraveSymbolTookGoldenShine:
-	.string "The Brave Symbol took on\n"
-	.string "a golden shine!$"
+    .string "英勇象征闪耀着\n金色的光芒！$"
 
 BattleFrontier_BattlePyramidTop_Text_FarewellForNow:
-	.string "Ah, yes! It just goes to show that\n"
-	.string "I have much to learn still!\p"
-	.string "May our paths cross again!\n"
-	.string "Farewell for now, young explorer!$"
+    .string "啊，没错！\n看来我要学东西还有很多！\p愿我们再次相逢！\n让我们暂别吧，年轻的探险家！$"
 
 BattleFrontier_BattlePyramidTop_Text_StepForwardWhenReady:
-	.string "Now, when you are ready, take courage\n"
-	.string "and step forward.$"
+    .string "当你准备好时，\n请带着勇气向前迈进吧！$"
 

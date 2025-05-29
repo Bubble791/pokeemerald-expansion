@@ -704,7 +704,7 @@ const struct Trainer gBattlePartners[DIFFICULTY_COUNT][PARTNER_COUNT] =
 #include "data/battle_partners.h"
 };
 
-static void (* const sBattleTowerFuncs[])(void) =
+static void (*const sBattleTowerFuncs[])(void) =
 {
     [BATTLE_TOWER_FUNC_INIT]                = InitTowerChallenge,
     [BATTLE_TOWER_FUNC_GET_DATA]            = GetTowerData,
@@ -794,12 +794,12 @@ static const u8 sBattleTowerPartySizes[FRONTIER_MODE_COUNT] =
 
 static const u16 sRecordTrainerSpeechWon[] =
 {
-    EC_WORD_YAY, EC_WORD_YAY, EC_WORD_EXCL_EXCL, EC_WORD_I_VE, EC_WORD_WON, EC_WORD_EXCL_EXCL
+    EC_WORD_YAY, EC_WORD_YAY, EC_WORD_EXCL_EXCL, EC_WORD_ME, EC_WORD_WON, EC_WORD_EXCL_EXCL
 };
 
 static const u16 sRecordTrainerSpeechLost[] =
 {
-    EC_WORD_TOO, EC_WORD_BAD, EC_WORD_ELLIPSIS, EC_WORD_WE, EC_WORD_LOST, EC_WORD_ELLIPSIS
+    EC_WORD_YEAH, EC_WORD_AWFUL, EC_WORD_ELLIPSIS, EC_WORD_WE, EC_WORD_LOST, EC_WORD_ELLIPSIS
 };
 
 // code
@@ -2393,7 +2393,7 @@ static void LoadMultiPartnerCandidatesData(void)
 
 static void GetPotentialPartnerMoveAndSpecies(u16 trainerId, u16 monId)
 {
-    u16 move = 0;
+    u16 move = MOVE_NONE;
     u16 species = 0;
     SetFacilityPtrsGetLevel();
 

@@ -42,7 +42,7 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 
-extern const struct BattleBackground sBattleTerrainTable[];
+extern const struct BattleBackground sBattleEnvironmentTable[];
 extern const struct CompressedSpriteSheet gSpriteSheet_EnemyShadow;
 extern const struct CompressedSpriteSheet gSpriteSheet_EnemyShadowsSized;
 extern const struct SpriteTemplate gSpriteTemplate_EnemyShadow;
@@ -184,226 +184,226 @@ static const struct WindowTemplate sPokemonSpriteVisualizerWindowTemplate[] =
 //Lookup tables
 const u8 gBackAnimNames[][23 + 1] =
 {
-    [BACK_ANIM_NONE]                    = _("NONE"),
-    [BACK_ANIM_H_VIBRATE]               = _("H VIBRATE"),
-    [BACK_ANIM_H_SLIDE]                 = _("H SLIDE"),
-    [BACK_ANIM_H_SPRING]                = _("H SPRING"),
-    [BACK_ANIM_H_SPRING_REPEATED]       = _("H SPRING REPEATED"),
-    [BACK_ANIM_SHRINK_GROW]             = _("SHRINK GROW"),
-    [BACK_ANIM_GROW]                    = _("GROW"),
-    [BACK_ANIM_CIRCLE_COUNTERCLOCKWISE] = _("CIRCLE COUNTERCLOCKWISE"),
-    [BACK_ANIM_H_SHAKE]                 = _("H SHAKE"),
-    [BACK_ANIM_V_SHAKE]                 = _("V SHAKE"),
-    [BACK_ANIM_V_SHAKE_H_SLIDE]         = _("V SHAKE H SLIDE"),
-    [BACK_ANIM_V_STRETCH]               = _("V STRETCH"),
-    [BACK_ANIM_H_STRETCH]               = _("H STRETCH"),
-    [BACK_ANIM_GROW_STUTTER]            = _("GROW STUTTER"),
-    [BACK_ANIM_V_SHAKE_LOW]             = _("V SHAKE LOW"),
-    [BACK_ANIM_TRIANGLE_DOWN]           = _("TRIANGLE DOWN"),
-    [BACK_ANIM_CONCAVE_ARC_LARGE]       = _("CONCAVE ARC LARGE"),
-    [BACK_ANIM_CONVEX_DOUBLE_ARC]       = _("CONVEX DOUBLE ARC"),
-    [BACK_ANIM_CONCAVE_ARC_SMALL]       = _("CONCAVE ARC SMALL"),
-    [BACK_ANIM_DIP_RIGHT_SIDE]          = _("DIP RIGHT SIDE"),
-    [BACK_ANIM_SHRINK_GROW_VIBRATE]     = _("SHRINK GROW VIBRATE"),
-    [BACK_ANIM_JOLT_RIGHT]              = _("JOLT RIGHT"),
-    [BACK_ANIM_SHAKE_FLASH_YELLOW]      = _("SHAKE FLASH YELLOW"),
-    [BACK_ANIM_SHAKE_GLOW_RED]          = _("SHAKE GLOW RED"),
-    [BACK_ANIM_SHAKE_GLOW_GREEN]        = _("SHAKE GLOW GREEN"),
-    [BACK_ANIM_SHAKE_GLOW_BLUE]         = _("SHAKE GLOW BLUE"),
+    [BACK_ANIM_NONE]                    = _("无"),
+    [BACK_ANIM_H_VIBRATE]               = _("横向振动"),
+    [BACK_ANIM_H_SLIDE]                 = _("横向滑动"),
+    [BACK_ANIM_H_SPRING]                = _("横向弹跳"),
+    [BACK_ANIM_H_SPRING_REPEATED]       = _("重复横向弹跳"),
+    [BACK_ANIM_SHRINK_GROW]             = _("收缩变大"),
+    [BACK_ANIM_GROW]                    = _("变大"),
+    [BACK_ANIM_CIRCLE_COUNTERCLOCKWISE] = _("逆时针转圈"),
+    [BACK_ANIM_H_SHAKE]                 = _("横向摇晃"),
+    [BACK_ANIM_V_SHAKE]                 = _("纵向摇晃"),
+    [BACK_ANIM_V_SHAKE_H_SLIDE]         = _("纵向摇晃 横向滑动"),
+    [BACK_ANIM_V_STRETCH]               = _("纵向拉伸"),
+    [BACK_ANIM_H_STRETCH]               = _("横向拉伸"),
+    [BACK_ANIM_GROW_STUTTER]            = _("断断续续变大"),
+    [BACK_ANIM_V_SHAKE_LOW]             = _("纵向摇晃 低"),
+    [BACK_ANIM_TRIANGLE_DOWN]           = _("向下三角形移动"),
+    [BACK_ANIM_CONCAVE_ARC_LARGE]       = _("大凹弧"),
+    [BACK_ANIM_CONVEX_DOUBLE_ARC]       = _("双凸弧"),
+    [BACK_ANIM_CONCAVE_ARC_SMALL]       = _("小凹弧"),
+    [BACK_ANIM_DIP_RIGHT_SIDE]          = _("右侧倾斜"),
+    [BACK_ANIM_SHRINK_GROW_VIBRATE]     = _("收缩 变大 振动"),
+    [BACK_ANIM_JOLT_RIGHT]              = _("右摇"),
+    [BACK_ANIM_SHAKE_FLASH_YELLOW]      = _("摇晃 闪烁黄光"),
+    [BACK_ANIM_SHAKE_GLOW_RED]          = _("摇晃 闪烁红光"),
+    [BACK_ANIM_SHAKE_GLOW_GREEN]        = _("摇晃 闪烁绿光"),
+    [BACK_ANIM_SHAKE_GLOW_BLUE]         = _("摇晃 闪烁蓝光"),
 };
 const u8 gFrontAnimNames[][34] =
 {
-    [ANIM_V_SQUISH_AND_BOUNCE]               = _("V SQUISH AND BOUNCE"),
-    [ANIM_CIRCULAR_STRETCH_TWICE]            = _("CIRCULAR STRETCH TWICE"),
-    [ANIM_H_VIBRATE]                         = _("H VIBRATE"),
-    [ANIM_H_SLIDE]                           = _("H SLIDE"),
-    [ANIM_V_SLIDE]                           = _("V SLIDE"),
-    [ANIM_BOUNCE_ROTATE_TO_SIDES]            = _("BOUNCE ROTATE TO SIDES"),
-    [ANIM_V_JUMPS_H_JUMPS]                   = _("V JUMPS H JUMPS"),
-    [ANIM_ROTATE_TO_SIDES]                   = _("ROTATE TO SIDES"),
-    [ANIM_ROTATE_TO_SIDES_TWICE]             = _("ROTATE TO SIDES TWICE"),
-    [ANIM_GROW_VIBRATE]                      = _("GROW VIBRATE"),
-    [ANIM_ZIGZAG_FAST]                       = _("ZIGZAG FAST"),
-    [ANIM_SWING_CONCAVE]                     = _("SWING CONCAVE"),
-    [ANIM_SWING_CONCAVE_FAST]                = _("SWING CONCAVE FAST"),
-    [ANIM_SWING_CONVEX]                      = _("SWING CONVEX"),
-    [ANIM_SWING_CONVEX_FAST]                 = _("SWING CONVEX FAST"),
-    [ANIM_H_SHAKE]                           = _("H SHAKE"),
-    [ANIM_V_SHAKE]                           = _("V SHAKE"),
-    [ANIM_CIRCULAR_VIBRATE]                  = _("CIRCULAR VIBRATE"),
-    [ANIM_TWIST]                             = _("TWIST"),
-    [ANIM_SHRINK_GROW]                       = _("SHRINK GROW"),
-    [ANIM_CIRCLE_C_CLOCKWISE]                = _("CIRCLE C CLOCKWISE"),
-    [ANIM_GLOW_BLACK]                        = _("GLOW BLACK"),
-    [ANIM_H_STRETCH]                         = _("H STRETCH"),
-    [ANIM_V_STRETCH]                         = _("V STRETCH"),
-    [ANIM_RISING_WOBBLE]                     = _("RISING WOBBLE"),
-    [ANIM_V_SHAKE_TWICE]                     = _("V SHAKE TWICE"),
-    [ANIM_TIP_MOVE_FORWARD]                  = _("TIP MOVE FORWARD"),
-    [ANIM_H_PIVOT]                           = _("H PIVOT"),
-    [ANIM_V_SLIDE_WOBBLE]                    = _("V SLIDE WOBBLE"),
-    [ANIM_H_SLIDE_WOBBLE]                    = _("H SLIDE WOBBLE"),
-    [ANIM_V_JUMPS_BIG]                       = _("V JUMPS BIG"),
-    [ANIM_SPIN_LONG]                         = _("SPIN LONG"),
-    [ANIM_GLOW_ORANGE]                       = _("GLOW ORANGE"),
-    [ANIM_GLOW_RED]                          = _("GLOW RED"),
-    [ANIM_GLOW_BLUE]                         = _("GLOW BLUE"),
-    [ANIM_GLOW_YELLOW]                       = _("GLOW YELLOW"),
-    [ANIM_GLOW_PURPLE]                       = _("GLOW PURPLE"),
-    [ANIM_BACK_AND_LUNGE]                    = _("BACK AND LUNGE"),
-    [ANIM_BACK_FLIP]                         = _("BACK FLIP"),
-    [ANIM_FLICKER]                           = _("FLICKER"),
-    [ANIM_BACK_FLIP_BIG]                     = _("BACK FLIP BIG"),
-    [ANIM_FRONT_FLIP]                        = _("FRONT FLIP"),
-    [ANIM_TUMBLING_FRONT_FLIP]               = _("TUMBLING FRONT FLIP"),
-    [ANIM_FIGURE_8]                          = _("FIGURE 8"),
-    [ANIM_FLASH_YELLOW]                      = _("FLASH YELLOW"),
-    [ANIM_SWING_CONCAVE_FAST_SHORT]          = _("SWING CONCAVE FAST SHORT"),
-    [ANIM_SWING_CONVEX_FAST_SHORT]           = _("SWING CONVEX FAST SHORT"),
-    [ANIM_ROTATE_UP_SLAM_DOWN]               = _("ROTATE UP SLAM DOWN"),
-    [ANIM_DEEP_V_SQUISH_AND_BOUNCE]          = _("DEEP V SQUISH AND BOUNCE"),
-    [ANIM_H_JUMPS]                           = _("H JUMPS"),
-    [ANIM_H_JUMPS_V_STRETCH]                 = _("H JUMPS V STRETCH"),
-    [ANIM_ROTATE_TO_SIDES_FAST]              = _("ROTATE TO SIDES FAST"),
-    [ANIM_ROTATE_UP_TO_SIDES]                = _("ROTATE UP TO SIDES"),
-    [ANIM_FLICKER_INCREASING]                = _("FLICKER INCREASING"),
-    [ANIM_TIP_HOP_FORWARD]                   = _("TIP HOP FORWARD"),
-    [ANIM_PIVOT_SHAKE]                       = _("PIVOT SHAKE"),
-    [ANIM_TIP_AND_SHAKE]                     = _("TIP AND SHAKE"),
-    [ANIM_VIBRATE_TO_CORNERS]                = _("VIBRATE TO CORNERS"),
-    [ANIM_GROW_IN_STAGES]                    = _("GROW IN STAGES"),
-    [ANIM_V_SPRING]                          = _("V SPRING"),
-    [ANIM_V_REPEATED_SPRING]                 = _("V REPEATED SPRING"),
-    [ANIM_SPRING_RISING]                     = _("SPRING RISING"),
-    [ANIM_H_SPRING]                          = _("H SPRING"),
-    [ANIM_H_REPEATED_SPRING_SLOW]            = _("H REPEATED SPRING SLOW"),
-    [ANIM_H_SLIDE_SHRINK]                    = _("H SLIDE SHRINK"),
-    [ANIM_LUNGE_GROW]                        = _("LUNGE GROW"),
-    [ANIM_CIRCLE_INTO_BG]                    = _("CIRCLE INTO BG"),
-    [ANIM_RAPID_H_HOPS]                      = _("RAPID H HOPS"),
-    [ANIM_FOUR_PETAL]                        = _("FOUR PETAL"),
-    [ANIM_V_SQUISH_AND_BOUNCE_SLOW]          = _("V SQUISH AND BOUNCE SLOW"),
-    [ANIM_H_SLIDE_SLOW]                      = _("H SLIDE SLOW"),
-    [ANIM_V_SLIDE_SLOW]                      = _("V SLIDE SLOW"),
-    [ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL]      = _("BOUNCE ROTATE TO SIDES SMALL"),
-    [ANIM_BOUNCE_ROTATE_TO_SIDES_SLOW]       = _("BOUNCE ROTATE TO SIDES SLOW"),
-    [ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL_SLOW] = _("BOUNCE ROTATE TO SIDES SMALL SLOW"),
-    [ANIM_ZIGZAG_SLOW]                       = _("ZIGZAG SLOW"),
-    [ANIM_H_SHAKE_SLOW]                      = _("H SHAKE SLOW"),
-    [ANIM_V_SHAKE_SLOW]                      = _("V SHAKE SLOW"),
-    [ANIM_TWIST_TWICE]                       = _("TWIST TWICE"),
-    [ANIM_CIRCLE_C_CLOCKWISE_SLOW]           = _("CIRCLE C CLOCKWISE SLOW"),
-    [ANIM_V_SHAKE_TWICE_SLOW]                = _("V SHAKE TWICE SLOW"),
-    [ANIM_V_SLIDE_WOBBLE_SMALL]              = _("V SLIDE WOBBLE SMALL"),
-    [ANIM_V_JUMPS_SMALL]                     = _("V JUMPS SMALL"),
-    [ANIM_SPIN]                              = _("SPIN"),
-    [ANIM_TUMBLING_FRONT_FLIP_TWICE]         = _("TUMBLING FRONT FLIP TWICE"),
-    [ANIM_DEEP_V_SQUISH_AND_BOUNCE_TWICE]    = _("DEEP V SQUISH AND BOUNCE TWICE"),
-    [ANIM_H_JUMPS_V_STRETCH_TWICE]           = _("H JUMPS V STRETCH TWICE"),
-    [ANIM_V_SHAKE_BACK]                      = _("V SHAKE BACK"),
-    [ANIM_V_SHAKE_BACK_SLOW]                 = _("V SHAKE BACK SLOW"),
-    [ANIM_V_SHAKE_H_SLIDE_SLOW]              = _("V SHAKE H SLIDE SLOW"),
-    [ANIM_V_STRETCH_BOTH_ENDS_SLOW]          = _("V STRETCH BOTH ENDS SLOW"),
-    [ANIM_H_STRETCH_FAR_SLOW]                = _("H STRETCH FAR SLOW"),
-    [ANIM_V_SHAKE_LOW_TWICE]                 = _("V SHAKE LOW TWICE"),
-    [ANIM_H_SHAKE_FAST]                      = _("H SHAKE FAST"),
-    [ANIM_H_SLIDE_FAST]                      = _("H SLIDE FAST"),
-    [ANIM_H_VIBRATE_FAST]                    = _("H VIBRATE FAST"),
-    [ANIM_H_VIBRATE_FASTEST]                 = _("H VIBRATE FASTEST"),
-    [ANIM_V_SHAKE_BACK_FAST]                 = _("V SHAKE BACK FAST"),
-    [ANIM_V_SHAKE_LOW_TWICE_SLOW]            = _("V SHAKE LOW TWICE SLOW"),
-    [ANIM_V_SHAKE_LOW_TWICE_FAST]            = _("V SHAKE LOW TWICE FAST"),
-    [ANIM_CIRCLE_C_CLOCKWISE_LONG]           = _("CIRCLE C CLOCKWISE LONG"),
-    [ANIM_GROW_STUTTER_SLOW]                 = _("GROW STUTTER SLOW"),
-    [ANIM_V_SHAKE_H_SLIDE]                   = _("V SHAKE H SLIDE"),
-    [ANIM_V_SHAKE_H_SLIDE_FAST]              = _("V SHAKE H SLIDE FAST"),
-    [ANIM_TRIANGLE_DOWN_SLOW]                = _("TRIANGLE DOWN SLOW"),
-    [ANIM_TRIANGLE_DOWN]                     = _("TRIANGLE DOWN"),
-    [ANIM_TRIANGLE_DOWN_TWICE]               = _("TRIANGLE DOWN TWICE"),
-    [ANIM_GROW]                              = _("GROW"),
-    [ANIM_GROW_TWICE]                        = _("GROW TWICE"),
-    [ANIM_H_SPRING_FAST]                     = _("H SPRING FAST"),
-    [ANIM_H_SPRING_SLOW]                     = _("H SPRING SLOW"),
-    [ANIM_H_REPEATED_SPRING_FAST]            = _("H REPEATED SPRING FAST"),
-    [ANIM_H_REPEATED_SPRING]                 = _("H REPEATED SPRING"),
-    [ANIM_SHRINK_GROW_FAST]                  = _("SHRINK GROW FAST"),
-    [ANIM_SHRINK_GROW_SLOW]                  = _("SHRINK GROW SLOW"),
-    [ANIM_V_STRETCH_BOTH_ENDS]               = _("V STRETCH BOTH ENDS"),
-    [ANIM_V_STRETCH_BOTH_ENDS_TWICE]         = _("V STRETCH BOTH ENDS TWICE"),
-    [ANIM_H_STRETCH_FAR_TWICE]               = _("H STRETCH FAR TWICE"),
-    [ANIM_H_STRETCH_FAR]                     = _("H STRETCH FAR"),
-    [ANIM_GROW_STUTTER_TWICE]                = _("GROW STUTTER TWICE"),
-    [ANIM_GROW_STUTTER]                      = _("GROW STUTTER"),
-    [ANIM_CONCAVE_ARC_LARGE_SLOW]            = _("CONCAVE ARC LARGE SLOW"),
-    [ANIM_CONCAVE_ARC_LARGE]                 = _("CONCAVE ARC LARGE"),
-    [ANIM_CONCAVE_ARC_LARGE_TWICE]           = _("CONCAVE ARC LARGE TWICE"),
-    [ANIM_CONVEX_DOUBLE_ARC_SLOW]            = _("CONVEX DOUBLE ARC SLOW"),
-    [ANIM_CONVEX_DOUBLE_ARC]                 = _("CONVEX DOUBLE ARC"),
-    [ANIM_CONVEX_DOUBLE_ARC_TWICE]           = _("CONVEX DOUBLE ARC TWICE"),
-    [ANIM_CONCAVE_ARC_SMALL_SLOW]            = _("CONCAVE ARC SMALL SLOW"),
-    [ANIM_CONCAVE_ARC_SMALL]                 = _("CONCAVE ARC SMALL"),
-    [ANIM_CONCAVE_ARC_SMALL_TWICE]           = _("CONCAVE ARC SMALL TWICE"),
-    [ANIM_H_DIP]                             = _("H DIP"),
-    [ANIM_H_DIP_FAST]                        = _("H DIP FAST"),
-    [ANIM_H_DIP_TWICE]                       = _("H DIP TWICE"),
-    [ANIM_SHRINK_GROW_VIBRATE_FAST]          = _("SHRINK GROW VIBRATE FAST"),
-    [ANIM_SHRINK_GROW_VIBRATE]               = _("SHRINK GROW VIBRATE"),
-    [ANIM_SHRINK_GROW_VIBRATE_SLOW]          = _("SHRINK GROW VIBRATE SLOW"),
-    [ANIM_JOLT_RIGHT_FAST]                   = _("JOLT RIGHT FAST"),
-    [ANIM_JOLT_RIGHT]                        = _("JOLT RIGHT"),
-    [ANIM_JOLT_RIGHT_SLOW]                   = _("JOLT RIGHT SLOW"),
-    [ANIM_SHAKE_FLASH_YELLOW_FAST]           = _("SHAKE FLASH YELLOW FAST"),
-    [ANIM_SHAKE_FLASH_YELLOW]                = _("SHAKE FLASH YELLOW"),
-    [ANIM_SHAKE_FLASH_YELLOW_SLOW]           = _("SHAKE FLASH YELLOW SLOW"),
-    [ANIM_SHAKE_GLOW_RED_FAST]               = _("SHAKE GLOW RED FAST"),
-    [ANIM_SHAKE_GLOW_RED]                    = _("SHAKE GLOW RED"),
-    [ANIM_SHAKE_GLOW_RED_SLOW]               = _("SHAKE GLOW RED SLOW"),
-    [ANIM_SHAKE_GLOW_GREEN_FAST]             = _("SHAKE GLOW GREEN FAST"),
-    [ANIM_SHAKE_GLOW_GREEN]                  = _("SHAKE GLOW GREEN"),
-    [ANIM_SHAKE_GLOW_GREEN_SLOW]             = _("SHAKE GLOW GREEN SLOW"),
-    [ANIM_SHAKE_GLOW_BLUE_FAST]              = _("SHAKE GLOW BLUE FAST"),
-    [ANIM_SHAKE_GLOW_BLUE]                   = _("SHAKE GLOW BLUE"),
-    [ANIM_SHAKE_GLOW_BLUE_SLOW]              = _("SHAKE GLOW BLUE SLOW"),
-    [ANIM_SHAKE_GLOW_BLACK_SLOW]             = _("SHAKE GLOW BLACK SLOW"),
-    [ANIM_SHAKE_GLOW_WHITE_SLOW]             = _("SHAKE GLOW WHITE SLOW"),
-    [ANIM_SHAKE_GLOW_PURPLE_SLOW]            = _("SHAKE GLOW PURPLE SLOW"),
+    [ANIM_V_SQUISH_AND_BOUNCE]               = _("纵向挤压和弹跳"),
+    [ANIM_CIRCULAR_STRETCH_TWICE]            = _("两次圆形拉伸"),
+    [ANIM_H_VIBRATE]                         = _("横向振动"),
+    [ANIM_H_SLIDE]                           = _("横向滑动"),
+    [ANIM_V_SLIDE]                           = _("纵向滑动"),
+    [ANIM_BOUNCE_ROTATE_TO_SIDES]            = _("弹跳 向侧面旋转"),
+    [ANIM_V_JUMPS_H_JUMPS]                   = _("纵向跳跃 横向跳跃"),
+    [ANIM_ROTATE_TO_SIDES]                   = _("向侧面旋转"),
+    [ANIM_ROTATE_TO_SIDES_TWICE]             = _("向侧面旋转两下"),
+    [ANIM_GROW_VIBRATE]                      = _("变大震动"),
+    [ANIM_ZIGZAG_FAST]                       = _("快速Z形"),
+    [ANIM_SWING_CONCAVE]                     = _("凹摆"),
+    [ANIM_SWING_CONCAVE_FAST]                = _("快速凹摆"),
+    [ANIM_SWING_CONVEX]                      = _("凸摆"),
+    [ANIM_SWING_CONVEX_FAST]                 = _("快速凸摆"),
+    [ANIM_H_SHAKE]                           = _("横向摇晃"),
+    [ANIM_V_SHAKE]                           = _("纵向摇晃"),
+    [ANIM_CIRCULAR_VIBRATE]                  = _("圆形震动"),
+    [ANIM_TWIST]                             = _("扭转"),
+    [ANIM_SHRINK_GROW]                       = _("收缩变大"),
+    [ANIM_CIRCLE_C_CLOCKWISE]                = _("顺时针旋转"),
+    [ANIM_GLOW_BLACK]                        = _("黑色发光"),
+    [ANIM_H_STRETCH]                         = _("横向伸展"),
+    [ANIM_V_STRETCH]                         = _("纵向伸展"),
+    [ANIM_RISING_WOBBLE]                     = _("上升摆动"),
+    [ANIM_V_SHAKE_TWICE]                     = _("纵向摇晃两下"),
+    [ANIM_TIP_MOVE_FORWARD]                  = _("尖端向前移动"),
+    [ANIM_H_PIVOT]                           = _("横向旋转"),
+    [ANIM_V_SLIDE_WOBBLE]                    = _("纵向滑动摆动"),
+    [ANIM_H_SLIDE_WOBBLE]                    = _("横向滑动摆动"),
+    [ANIM_V_JUMPS_BIG]                       = _("纵向大跳跃"),
+    [ANIM_SPIN_LONG]                         = _("长旋转"),
+    [ANIM_GLOW_ORANGE]                       = _("发橙光"),
+    [ANIM_GLOW_RED]                          = _("发红光"),
+    [ANIM_GLOW_BLUE]                         = _("发蓝光"),
+    [ANIM_GLOW_YELLOW]                       = _("发黄光"),
+    [ANIM_GLOW_PURPLE]                       = _("发紫光"),
+    [ANIM_BACK_AND_LUNGE]                    = _("后弓箭步"),
+    [ANIM_BACK_FLIP]                         = _("后空翻"),
+    [ANIM_FLICKER]                           = _("闪烁"),
+    [ANIM_BACK_FLIP_BIG]                     = _("大后空翻"),
+    [ANIM_FRONT_FLIP]                        = _("前空翻"),
+    [ANIM_TUMBLING_FRONT_FLIP]               = _("翻滚前空翻"),
+    [ANIM_FIGURE_8]                          = _("8字形"),
+    [ANIM_FLASH_YELLOW]                      = _("黄色闪烁"),
+    [ANIM_SWING_CONCAVE_FAST_SHORT]          = _("快速短距离凹摆"),
+    [ANIM_SWING_CONVEX_FAST_SHORT]           = _("快速短距离凹摆"),
+    [ANIM_ROTATE_UP_SLAM_DOWN]               = _("向上旋转猛击向下"),
+    [ANIM_DEEP_V_SQUISH_AND_BOUNCE]          = _("深纵向挤压弹跳"),
+    [ANIM_H_JUMPS]                           = _("横向跳跃"),
+    [ANIM_H_JUMPS_V_STRETCH]                 = _("横向跳跃纵向伸展"),
+    [ANIM_ROTATE_TO_SIDES_FAST]              = _("快速向侧面旋转"),
+    [ANIM_ROTATE_UP_TO_SIDES]                = _("向上向侧面旋转"),
+    [ANIM_FLICKER_INCREASING]                = _("渐增闪烁"),
+    [ANIM_TIP_HOP_FORWARD]                   = _("向前倾斜跳跃"),
+    [ANIM_PIVOT_SHAKE]                       = _("旋转摇晃"),
+    [ANIM_TIP_AND_SHAKE]                     = _("倾斜并摇晃"),
+    [ANIM_VIBRATE_TO_CORNERS]                = _("向角落震动"),
+    [ANIM_GROW_IN_STAGES]                    = _("分阶段变大"),
+    [ANIM_V_SPRING]                          = _("纵向弹跳"),
+    [ANIM_V_REPEATED_SPRING]                 = _("纵向重复弹跳"),
+    [ANIM_SPRING_RISING]                     = _("弹跳上升"),
+    [ANIM_H_SPRING]                          = _("横向弹跳"),
+    [ANIM_H_REPEATED_SPRING_SLOW]            = _("横向重复弹跳慢速"),
+    [ANIM_H_SLIDE_SHRINK]                    = _("横向滑动收缩"),
+    [ANIM_LUNGE_GROW]                        = _("弓步变大"),
+    [ANIM_CIRCLE_INTO_BG]                    = _("转圈入背景"),
+    [ANIM_RAPID_H_HOPS]                      = _("快速横向跳跃"),
+    [ANIM_FOUR_PETAL]                        = _("四瓣形移动"),
+    [ANIM_V_SQUISH_AND_BOUNCE_SLOW]          = _("纵向挤压弹跳慢速"),
+    [ANIM_H_SLIDE_SLOW]                      = _("横向滑动慢速"),
+    [ANIM_V_SLIDE_SLOW]                      = _("纵向滑动慢速"),
+    [ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL]      = _("弹跳向侧面小幅旋转"),
+    [ANIM_BOUNCE_ROTATE_TO_SIDES_SLOW]       = _("弹跳向侧面慢速旋转"),
+    [ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL_SLOW] = _("弹跳向侧面小幅旋转慢速"),
+    [ANIM_ZIGZAG_SLOW]                       = _("锯齿形慢速"),
+    [ANIM_H_SHAKE_SLOW]                      = _("横向慢速摇晃"),
+    [ANIM_V_SHAKE_SLOW]                      = _("纵向慢速摇晃"),
+    [ANIM_TWIST_TWICE]                       = _("扭动两次"),
+    [ANIM_CIRCLE_C_CLOCKWISE_SLOW]           = _("顺时针慢速旋转"),
+    [ANIM_V_SHAKE_TWICE_SLOW]                = _("纵向慢速摇晃两次"),
+    [ANIM_V_SLIDE_WOBBLE_SMALL]              = _("纵向滑行小幅度摇摆"),
+    [ANIM_V_JUMPS_SMALL]                     = _("纵向小幅度跳跃"),
+    [ANIM_SPIN]                              = _("旋转"),
+    [ANIM_TUMBLING_FRONT_FLIP_TWICE]         = _("翻滚前空翻两次"),
+    [ANIM_DEEP_V_SQUISH_AND_BOUNCE_TWICE]    = _("纵向深蹲挤压 弹跳两次"),
+    [ANIM_H_JUMPS_V_STRETCH_TWICE]           = _("横向跳跃 纵向伸展两次"),
+    [ANIM_V_SHAKE_BACK]                      = _("纵向向后摇晃"),
+    [ANIM_V_SHAKE_BACK_SLOW]                 = _("纵向慢速向后摇晃"),
+    [ANIM_V_SHAKE_H_SLIDE_SLOW]              = _("纵向摇晃 横向慢速滑动"),
+    [ANIM_V_STRETCH_BOTH_ENDS_SLOW]          = _("纵向缓慢拉伸两端"),
+    [ANIM_H_STRETCH_FAR_SLOW]                = _("横向缓慢拉伸远距离"),
+    [ANIM_V_SHAKE_LOW_TWICE]                 = _("纵向低速摇晃两次"),
+    [ANIM_H_SHAKE_FAST]                      = _("横向快速摇晃"),
+    [ANIM_H_SLIDE_FAST]                      = _("横向快速滑动"),
+    [ANIM_H_VIBRATE_FAST]                    = _("横向快速振动"),
+    [ANIM_H_VIBRATE_FASTEST]                 = _("横向最快振动"),
+    [ANIM_V_SHAKE_BACK_FAST]                 = _("纵向快速向后摇晃"),
+    [ANIM_V_SHAKE_LOW_TWICE_SLOW]            = _("纵向慢速低速摇晃两次"),
+    [ANIM_V_SHAKE_LOW_TWICE_FAST]            = _("纵向快速低速摇晃两次"),
+    [ANIM_CIRCLE_C_CLOCKWISE_LONG]           = _("顺时针转圈 长"),
+    [ANIM_GROW_STUTTER_SLOW]                 = _("慢速变大"),
+    [ANIM_V_SHAKE_H_SLIDE]                   = _("纵向摇动 横向滑动"),
+    [ANIM_V_SHAKE_H_SLIDE_FAST]              = _("纵向摇动 横向快速滑动"),
+    [ANIM_TRIANGLE_DOWN_SLOW]                = _("三角形向下缓慢"),
+    [ANIM_TRIANGLE_DOWN]                     = _("三角形向下"),
+    [ANIM_TRIANGLE_DOWN_TWICE]               = _("三角形向下两次"),
+    [ANIM_GROW]                              = _("变大"),
+    [ANIM_GROW_TWICE]                        = _("变大两次"),
+    [ANIM_H_SPRING_FAST]                     = _("横向快速弹起"),
+    [ANIM_H_SPRING_SLOW]                     = _("横向缓慢弹起"),
+    [ANIM_H_REPEATED_SPRING_FAST]            = _("横向反复快速弹起"),
+    [ANIM_H_REPEATED_SPRING]                 = _("横向反复弹起"),
+    [ANIM_SHRINK_GROW_FAST]                  = _("收缩 快速变大"),
+    [ANIM_SHRINK_GROW_SLOW]                  = _("收缩 缓慢变大"),
+    [ANIM_V_STRETCH_BOTH_ENDS]               = _("纵向两端拉伸"),
+    [ANIM_V_STRETCH_BOTH_ENDS_TWICE]         = _("纵向两端拉伸两次"),
+    [ANIM_H_STRETCH_FAR_TWICE]               = _("横向向远拉伸两次"),
+    [ANIM_H_STRETCH_FAR]                     = _("横向向远拉伸"),
+    [ANIM_GROW_STUTTER_TWICE]                = _("变大 停顿两次"),
+    [ANIM_GROW_STUTTER]                      = _("变大 停顿"),
+    [ANIM_CONCAVE_ARC_LARGE_SLOW]            = _("大凹弧 慢速"),
+    [ANIM_CONCAVE_ARC_LARGE]                 = _("大凹弧"),
+    [ANIM_CONCAVE_ARC_LARGE_TWICE]           = _("大凹弧 两次"),
+    [ANIM_CONVEX_DOUBLE_ARC_SLOW]            = _("双凸弧 慢速"),
+    [ANIM_CONVEX_DOUBLE_ARC]                 = _("双凸弧"),
+    [ANIM_CONVEX_DOUBLE_ARC_TWICE]           = _("双凸弧 两次"),
+    [ANIM_CONCAVE_ARC_SMALL_SLOW]            = _("小凹弧 慢速"),
+    [ANIM_CONCAVE_ARC_SMALL]                 = _("小凹弧"),
+    [ANIM_CONCAVE_ARC_SMALL_TWICE]           = _("小凹弧 两次"),
+    [ANIM_H_DIP]                             = _("水平倾斜"),
+    [ANIM_H_DIP_FAST]                        = _("水平快速倾斜"),
+    [ANIM_H_DIP_TWICE]                       = _("水平倾斜两圈"),
+    [ANIM_SHRINK_GROW_VIBRATE_FAST]          = _("快速收缩变大振动"),
+    [ANIM_SHRINK_GROW_VIBRATE]               = _("快速收缩变大振动"),
+    [ANIM_SHRINK_GROW_VIBRATE_SLOW]          = _("慢速收缩变大振动"),
+    [ANIM_JOLT_RIGHT_FAST]                   = _("快速右摇"),
+    [ANIM_JOLT_RIGHT]                        = _("右摇"),
+    [ANIM_JOLT_RIGHT_SLOW]                   = _("慢速右摇"),
+    [ANIM_SHAKE_FLASH_YELLOW_FAST]           = _("快速摇晃闪黄光"),
+    [ANIM_SHAKE_FLASH_YELLOW]                = _("快速摇晃闪黄光"),
+    [ANIM_SHAKE_FLASH_YELLOW_SLOW]           = _("慢速摇晃闪黄光"),
+    [ANIM_SHAKE_GLOW_RED_FAST]               = _("快速摇晃发红光"),
+    [ANIM_SHAKE_GLOW_RED]                    = _("快速摇晃发红光"),
+    [ANIM_SHAKE_GLOW_RED_SLOW]               = _("慢速摇晃发红光"),
+    [ANIM_SHAKE_GLOW_GREEN_FAST]             = _("快速摇晃发绿光"),
+    [ANIM_SHAKE_GLOW_GREEN]                  = _("快速摇晃发绿光"),
+    [ANIM_SHAKE_GLOW_GREEN_SLOW]             = _("慢速摇晃发绿光"),
+    [ANIM_SHAKE_GLOW_BLUE_FAST]              = _("快速摇晃发蓝光"),
+    [ANIM_SHAKE_GLOW_BLUE]                   = _("快速摇晃发蓝光"),
+    [ANIM_SHAKE_GLOW_BLUE_SLOW]              = _("慢速摇晃发蓝光"),
+    [ANIM_SHAKE_GLOW_BLACK_SLOW]             = _("慢速摇晃发黑光"),
+    [ANIM_SHAKE_GLOW_WHITE_SLOW]             = _("慢速摇晃发白光"),
+    [ANIM_SHAKE_GLOW_PURPLE_SLOW]            = _("慢速摇晃发紫光"),
 };
 const u8 gBattleBackgroundNames[][30] =
 {
-    [MAP_BATTLE_SCENE_NORMAL]   = _("NORMAL                  "),
-    [MAP_BATTLE_SCENE_GYM]      = _("GYM                     "),
-    [MAP_BATTLE_SCENE_MAGMA]    = _("MAGMA                   "),
-    [MAP_BATTLE_SCENE_AQUA]     = _("AQUA                    "),
-    [MAP_BATTLE_SCENE_SIDNEY]   = _("SIDNEY                  "),
-    [MAP_BATTLE_SCENE_PHOEBE]   = _("PHOEBE                  "),
-    [MAP_BATTLE_SCENE_GLACIA]   = _("GLACIA                  "),
-    [MAP_BATTLE_SCENE_DRAKE]    = _("DRAKE                   "),
-    [MAP_BATTLE_SCENE_FRONTIER] = _("FRONTIER                "),
-    [MAP_BATTLE_SCENE_LEADER]   = _("LEADER                  "),
-    [MAP_BATTLE_SCENE_WALLACE]  = _("WALLACE                 "),
-    [MAP_BATTLE_SCENE_GROUDON]  = _("GROUDON                 "),
-    [MAP_BATTLE_SCENE_KYOGRE]   = _("KYOGRE                  "),
-    [MAP_BATTLE_SCENE_RAYQUAZA] = _("RAYQUAZA                "),
+    [MAP_BATTLE_SCENE_NORMAL]   = _("普通                       "),
+    [MAP_BATTLE_SCENE_GYM]      = _("道馆                       "),
+    [MAP_BATTLE_SCENE_MAGMA]    = _("熔岩队                    "),
+    [MAP_BATTLE_SCENE_AQUA]     = _("海洋队                    "),
+    [MAP_BATTLE_SCENE_SIDNEY]   = _("花月                       "),
+    [MAP_BATTLE_SCENE_PHOEBE]   = _("芙蓉                       "),
+    [MAP_BATTLE_SCENE_GLACIA]   = _("波妮                       "),
+    [MAP_BATTLE_SCENE_DRAKE]    = _("源治                       "),
+    [MAP_BATTLE_SCENE_FRONTIER] = _("开拓区                    "),
+    [MAP_BATTLE_SCENE_LEADER]   = _("馆主                       "),
+    [MAP_BATTLE_SCENE_WALLACE]  = _("米可利                    "),
+    [MAP_BATTLE_SCENE_GROUDON]  = _("固拉多                    "),
+    [MAP_BATTLE_SCENE_KYOGRE]   = _("盖欧卡                    "),
+    [MAP_BATTLE_SCENE_RAYQUAZA] = _("烈空坐                    "),
 };
 const u8 gBattleBackgroundTerrainNames[][26] =
 {
-    [BATTLE_TERRAIN_GRASS]      = _("NORMAL - GRASS           "),
-    [BATTLE_TERRAIN_LONG_GRASS] = _("NORMAL - LONG GRASS      "),
-    [BATTLE_TERRAIN_SAND]       = _("NORMAL - SAND            "),
-    [BATTLE_TERRAIN_UNDERWATER] = _("NORMAL - UNDERWATER      "),
-    [BATTLE_TERRAIN_WATER]      = _("NORMAL - WATER           "),
-    [BATTLE_TERRAIN_POND]       = _("NORMAL - POND            "),
-    [BATTLE_TERRAIN_MOUNTAIN]   = _("NORMAL - MOUNTAIN        "),
-    [BATTLE_TERRAIN_CAVE]       = _("NORMAL - CAVE            "),
-    [BATTLE_TERRAIN_BUILDING]   = _("NORMAL - BUILDING        "),
-    [BATTLE_TERRAIN_PLAIN]      = _("NORMAL - PLAIN           "),
+    [BATTLE_ENVIRONMENT_GRASS]      = _("普通 - 草丛          "),
+    [BATTLE_ENVIRONMENT_LONG_GRASS] = _("普通 - 长草丛       "),
+    [BATTLE_ENVIRONMENT_SAND]       = _("普通 - 沙地          "),
+    [BATTLE_ENVIRONMENT_UNDERWATER] = _("普通 - 水中          "),
+    [BATTLE_ENVIRONMENT_WATER]      = _("普通 - 水面          "),
+    [BATTLE_ENVIRONMENT_POND]       = _("普通 - 池塘          "),
+    [BATTLE_ENVIRONMENT_MOUNTAIN]   = _("普通 - 山地          "),
+    [BATTLE_ENVIRONMENT_CAVE]       = _("普通 - 洞窟          "),
+    [BATTLE_ENVIRONMENT_BUILDING]   = _("普通 - 室内          "),
+    [BATTLE_ENVIRONMENT_PLAIN]      = _("普通 - 平地          "),
 };
-const u8 sShadowSizeLabels[][4] =
+const u8 sShadowSizeLabels[][8] =
 {
-    [SHADOW_SIZE_S]                 = _(" S"),
-    [SHADOW_SIZE_M]                 = _(" M"),
-    [SHADOW_SIZE_L]                 = _(" L"),
-    [SHADOW_SIZE_XL_BATTLE_ONLY]    = _(" XL"),
+    [SHADOW_SIZE_S]                 = _(" 小   "),
+    [SHADOW_SIZE_M]                 = _(" 中   "),
+    [SHADOW_SIZE_L]                 = _(" 大   "),
+    [SHADOW_SIZE_XL_BATTLE_ONLY]    = _(" 特大"),
 };
 //Function declarations
 static void PrintDigitChars(struct PokemonSpriteVisualizer *data);
@@ -435,27 +435,27 @@ static void PrintInstructionsOnWindow(struct PokemonSpriteVisualizer *data)
 {
     u8 fontId = 0;
     u8 x = 2;
-    u8 textInstructions[] = _("{START_BUTTON} Shiny\n{B_BUTTON} Exit  {A_BUTTON} Anims and BG$");
-    u8 textInstructionsGender[] = _("{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n{B_BUTTON} Exit  {A_BUTTON} Anims and BG$");
-    u8 textInstructionsSubmenuOne[] = _("{START_BUTTON} Shiny\n{B_BUTTON} Back  {A_BUTTON} Sprite Coords$");
-    u8 textInstructionsSubmenuOneGender[] = _("{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n{B_BUTTON} Back  {A_BUTTON} Sprite Coords$");
+    u8 textInstructions[] = _("{START_BUTTON} 异色\n{B_BUTTON} 退出  {A_BUTTON} 动画与背景$");
+    u8 textInstructionsGender[] = _("{START_BUTTON} 异色 {SELECT_BUTTON} 性别\n{B_BUTTON} 退出  {A_BUTTON} 动画与背景$");
+    u8 textInstructionsSubmenuOne[] = _("{START_BUTTON} 异色\n{B_BUTTON} 返回  {A_BUTTON} 图片坐标$");
+    u8 textInstructionsSubmenuOneGender[] = _("{START_BUTTON} 异色 {SELECT_BUTTON} 性别\n{B_BUTTON} 返回  {A_BUTTON} 图片坐标$");
 #if B_ENEMY_MON_SHADOW_STYLE >= GEN_4 && P_GBA_STYLE_SPECIES_GFX == FALSE
-    u8 textInstructionsSubmenuTwo[] = _("{START_BUTTON} Shiny\n{B_BUTTON} Back  {A_BUTTON} Shadow Coords$");
-    u8 textInstructionsSubmenuTwoGender[] = _("{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n{B_BUTTON} Back  {A_BUTTON} Shadow Coords$");
-    u8 textInstructionsSubmenuThree[] = _("{START_BUTTON} Shiny\n{B_BUTTON} Back");
-    u8 textInstructionsSubmenuThreeGender[] = _("{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n{B_BUTTON} Back$");
+    u8 textInstructionsSubmenuTwo[] = _("{START_BUTTON} 异色\n{B_BUTTON} 返回  {A_BUTTON} 影子坐标$");
+    u8 textInstructionsSubmenuTwoGender[] = _("{START_BUTTON} 异色 {SELECT_BUTTON} 性别\n{B_BUTTON} 返回  {A_BUTTON} 影子坐标$");
+    u8 textInstructionsSubmenuThree[] = _("{START_BUTTON} 异色\n{B_BUTTON} 返回");
+    u8 textInstructionsSubmenuThreeGender[] = _("{START_BUTTON} 异色 {SELECT_BUTTON} 性别\n{B_BUTTON} 返回$");
 #else
-    u8 textInstructionsSubmenuTwo[] = _("{START_BUTTON} Shiny\n{B_BUTTON} Back$");
-    u8 textInstructionsSubmenuTwoGender[] = _("{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n{B_BUTTON} Back$");
+    u8 textInstructionsSubmenuTwo[] = _("{START_BUTTON} 异色\n{B_BUTTON} 返回$");
+    u8 textInstructionsSubmenuTwoGender[] = _("{START_BUTTON} 异色 {SELECT_BUTTON} 性别\n{B_BUTTON} 返回$");
     u8 textInstructionsSubmenuThree[] = _("$");
     u8 textInstructionsSubmenuThreeGender[] = _("$");
 #endif
 
 
-    u8 textBottom[] = _("BACK:\nFRONT:\nBG:$");
-    u8 textBottomForms[] = _("BACK:\nFRONT:\nBG:\nFORMS:$");
-    u8 textBottomSubmenuTwo[] = _("B coords:\nF coords:\nF elev:");
-    u8 textBottomSubmenuThree[] = _("X coords:\nY coords:\nSize:");
+    u8 textBottom[] = _("背面：\n正面：\n背景：$");
+    u8 textBottomForms[] = _("背面：\n正面：\n背景：\n形态：$");
+    u8 textBottomSubmenuTwo[] = _("背面坐标：\n正面坐标：\n正面高度：");
+    u8 textBottomSubmenuThree[] = _("横坐标：\n纵坐标：\n大小：");
     u16 species = data->modifyArrows.currValue;
 
     u8 textL[] = _("{L_BUTTON}");
@@ -923,80 +923,80 @@ static void LoadAndCreateEnemyShadowSpriteCustom(struct PokemonSpriteVisualizer 
 }
 
 //Battle background functions
-static void LoadBattleBg(u8 battleBgType, u8 battleTerrain)
+static void LoadBattleBg(u8 battleBgType, u8 battleEnvironment)
 {
     switch (battleBgType)
     {
     default:
     case MAP_BATTLE_SCENE_NORMAL:
-        LZDecompressVram(sBattleTerrainTable[battleTerrain].tileset, (void*)(BG_CHAR_ADDR(2)));
-        LZDecompressVram(sBattleTerrainTable[battleTerrain].tilemap, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(sBattleTerrainTable[battleTerrain].palette, 0x20, 0x60);
+        LZDecompressVram(sBattleEnvironmentTable[battleEnvironment].tileset, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(sBattleEnvironmentTable[battleEnvironment].tilemap, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(sBattleEnvironmentTable[battleEnvironment].palette, 0x20, 0x60);
         break;
     case MAP_BATTLE_SCENE_GYM:
-        LZDecompressVram(gBattleTerrainTiles_Building, (void*)(BG_CHAR_ADDR(2)));
-        LZDecompressVram(gBattleTerrainTilemap_Building, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(gBattleTerrainPalette_BuildingGym, 0x20, 0x60);
+        LZDecompressVram(gBattleEnvironmentTiles_Building, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Building, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_BuildingGym, 0x20, 0x60);
         break;
     case MAP_BATTLE_SCENE_MAGMA:
-        LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
-        LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(gBattleTerrainPalette_StadiumMagma, 0x20, 0x60);
+        LZDecompressVram(gBattleEnvironmentTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_StadiumMagma, 0x20, 0x60);
         break;
     case MAP_BATTLE_SCENE_AQUA:
-        LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
-        LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(gBattleTerrainPalette_StadiumAqua, 0x20, 0x60);
+        LZDecompressVram(gBattleEnvironmentTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_StadiumAqua, 0x20, 0x60);
         break;
     case MAP_BATTLE_SCENE_SIDNEY:
-        LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
-        LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(gBattleTerrainPalette_StadiumSidney, 0x20, 0x60);
+        LZDecompressVram(gBattleEnvironmentTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_StadiumSidney, 0x20, 0x60);
         break;
     case MAP_BATTLE_SCENE_PHOEBE:
-        LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
-        LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(gBattleTerrainPalette_StadiumPhoebe, 0x20, 0x60);
+        LZDecompressVram(gBattleEnvironmentTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_StadiumPhoebe, 0x20, 0x60);
         break;
     case MAP_BATTLE_SCENE_GLACIA:
-        LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
-        LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(gBattleTerrainPalette_StadiumGlacia, 0x20, 0x60);
+        LZDecompressVram(gBattleEnvironmentTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_StadiumGlacia, 0x20, 0x60);
         break;
     case MAP_BATTLE_SCENE_DRAKE:
-        LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
-        LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(gBattleTerrainPalette_StadiumDrake, 0x20, 0x60);
+        LZDecompressVram(gBattleEnvironmentTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_StadiumDrake, 0x20, 0x60);
         break;
     case MAP_BATTLE_SCENE_FRONTIER:
-        LZDecompressVram(gBattleTerrainTiles_Building, (void*)(BG_CHAR_ADDR(2)));
-        LZDecompressVram(gBattleTerrainTilemap_Building, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(gBattleTerrainPalette_Frontier, 0x20, 0x60);
+        LZDecompressVram(gBattleEnvironmentTiles_Building, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Building, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_Frontier, 0x20, 0x60);
         break;
     case MAP_BATTLE_SCENE_LEADER:
-        LZDecompressVram(gBattleTerrainTiles_Building, (void*)(BG_CHAR_ADDR(2)));
-        LZDecompressVram(gBattleTerrainTilemap_Building, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(gBattleTerrainPalette_BuildingLeader, 0x20, 0x60);
+        LZDecompressVram(gBattleEnvironmentTiles_Building, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Building, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_BuildingLeader, 0x20, 0x60);
         break;
     case MAP_BATTLE_SCENE_WALLACE:
-        LZDecompressVram(gBattleTerrainTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
-        LZDecompressVram(gBattleTerrainTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(gBattleTerrainPalette_StadiumWallace, 0x20, 0x60);
+        LZDecompressVram(gBattleEnvironmentTiles_Stadium, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Stadium, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_StadiumWallace, 0x20, 0x60);
         break;
     case MAP_BATTLE_SCENE_GROUDON:
-        LZDecompressVram(gBattleTerrainTiles_Cave, (void*)(BG_CHAR_ADDR(2)));
-        LZDecompressVram(gBattleTerrainTilemap_Cave, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(gBattleTerrainPalette_Groudon, 0x20, 0x60);
+        LZDecompressVram(gBattleEnvironmentTiles_Cave, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Cave, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_Groudon, 0x20, 0x60);
         break;
     case MAP_BATTLE_SCENE_KYOGRE:
-        LZDecompressVram(gBattleTerrainTiles_Water, (void*)(BG_CHAR_ADDR(2)));
-        LZDecompressVram(gBattleTerrainTilemap_Water, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(gBattleTerrainPalette_Kyogre, 0x20, 0x60);
+        LZDecompressVram(gBattleEnvironmentTiles_Water, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Water, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_Kyogre, 0x20, 0x60);
         break;
     case MAP_BATTLE_SCENE_RAYQUAZA:
-        LZDecompressVram(gBattleTerrainTiles_Rayquaza, (void*)(BG_CHAR_ADDR(2)));
-        LZDecompressVram(gBattleTerrainTilemap_Rayquaza, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(gBattleTerrainPalette_Rayquaza, 0x20, 0x60);
+        LZDecompressVram(gBattleEnvironmentTiles_Rayquaza, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleEnvironmentTilemap_Rayquaza, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleEnvironmentPalette_Rayquaza, 0x20, 0x60);
         break;
     }
 }
@@ -1020,14 +1020,14 @@ static void UpdateBattleBg(u8 taskId, bool8 increment)
     {
         if (increment)
         {
-            if (data->battleTerrain == BATTLE_TERRAIN_PLAIN)
+            if (data->battleTerrain == BATTLE_ENVIRONMENT_PLAIN)
                 data->battleBgType += 1;
             else
                 data->battleTerrain += 1;
         }
         else
         {
-            if (data->battleTerrain == BATTLE_TERRAIN_GRASS)
+            if (data->battleTerrain == BATTLE_ENVIRONMENT_GRASS)
                 data->battleBgType = MAP_BATTLE_SCENE_RAYQUAZA;
             else
                 data->battleTerrain -= 1;
@@ -1040,7 +1040,7 @@ static void UpdateBattleBg(u8 taskId, bool8 increment)
         else
         {
             data->battleBgType = MAP_BATTLE_SCENE_NORMAL;
-            data->battleTerrain = BATTLE_TERRAIN_PLAIN;
+            data->battleTerrain = BATTLE_ENVIRONMENT_PLAIN;
         }
     }
     else if (data->battleBgType == MAP_BATTLE_SCENE_RAYQUAZA)
@@ -1048,7 +1048,7 @@ static void UpdateBattleBg(u8 taskId, bool8 increment)
         if (increment)
         {
             data->battleBgType = MAP_BATTLE_SCENE_NORMAL;
-            data->battleTerrain = BATTLE_TERRAIN_GRASS;
+            data->battleTerrain = BATTLE_ENVIRONMENT_GRASS;
         }
         else
             data->battleBgType -= 1;
@@ -1097,8 +1097,8 @@ static void UpdateYPosOffsetText(struct PokemonSpriteVisualizer *data)
 {
     u8 text[34];
     u8 fontId = 0;
-    u8 textConst[] = _("const val:");
-    u8 textNew[] = _("new val:");
+    u8 textConst[] = _("原数值：");
+    u8 textNew[] = _("新数值：");
     u8 x_const_val = 50;
     u8 x_new_text = 70;
     u8 x_new_val = 110;
@@ -1158,8 +1158,8 @@ static void UpdateShadowSettingsText(struct PokemonSpriteVisualizer *data)
 
     u8 text[16];
     u8 fontId = 0;
-    u8 textConst[] = _("const val:");
-    u8 textNew[] = _("new val:");
+    u8 textConst[] = _("原数值：");
+    u8 textNew[] = _("新数值：");
     u8 x_const_val = 50;
     u8 x_new_text = 70;
     u8 x_new_val = 110;
@@ -1246,7 +1246,7 @@ void CB2_Pokemon_Sprite_Visualizer(void)
 
             FillBgTilemapBufferRect(0, 0, 0, 0, 32, 20, 15);
             InitBgsFromTemplates(0, sBgTemplates, ARRAY_COUNT(sBgTemplates));
-            LoadBattleBg(0, BATTLE_TERRAIN_GRASS);
+            LoadBattleBg(0, BATTLE_ENVIRONMENT_GRASS);
 
             gMain.state++;
             break;

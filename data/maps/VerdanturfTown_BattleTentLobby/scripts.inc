@@ -328,56 +328,22 @@ VerdanturfTown_BattleTentLobby_EventScript_ExitRules::
 	end
 
 VerdanturfTown_BattleTentLobby_Text_MonsReluctantToUseDislikedMoves:
-	.string "If it doesn't like a certain move,\n"
-	.string "a POKéMON will be reluctant to use it.\p"
-	.string "It doesn't matter how strong it is,\n"
-	.string "either.\p"
-	.string "For example, a POKéMON with a GENTLE\n"
-	.string "nature probably won't enjoy hurting\l"
-	.string "its opponents.\p"
-	.string "If it can't seem to live up to its\n"
-	.string "potential, it's probably failing at\l"
-	.string "using a disliked move against its will.$"
+    .string "如果宝可梦不喜欢一个招式，\n它就不愿使用这招式，\p无论招式多么强大\n都一样。\p比如说，一只拥有温顺性格的\n宝可梦很可能不想\l伤害对手。\p如果不能因材施教，\n它们使用自己讨厌的招式时\l可能会失败。$"
 
 VerdanturfTown_BattleTentLobby_Text_GentleMonsScaryIfAngry:
-	.string "My big sister is gentle usually.\n"
-	.string "But when she gets angry,\l"
-	.string "she's really, really scary!\p"
-	.string "I bet a gentle POKéMON will be scary\n"
-	.string "if it gets angry!$"
+    .string "我姐姐通常很温柔，\n但如果把她惹怒了，\l她会变得非常非常可怕！\p我敢说温顺性格的宝可梦\n生气的时候也会很可怕！$"
 
 VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep:
-	.string "My feelings toward my POKéMON…\n"
-	.string "The attraction runs deep…\p"
-	.string "Oh, hi, you didn't see that, did you?\n"
-	.string "Well, it doesn't matter.\p"
-	.string "How would you like this TM for\n"
-	.string "your POKéMON?$"
+    .string "我对宝可梦感到……\n它那么地迷人……\p啊，你好，你没看见吧？\n啊，算了，没关系，\p你想给你的宝可梦用\n这个招式学习器吗？$"
 
 VerdanturfTown_BattleTentLobby_Text_AttractionMutual:
-	.string "My feelings toward my POKéMON…\n"
-	.string "I'm sure the attraction is mutual!\p"
-	.string "They battle exactly the way I want\n"
-	.string "them to!$"
+    .string "我对宝可梦感到……\n我想这吸引力一定是相互的！\p它们对战时完全按照\n我想的那样做！$"
 
 VerdanturfTown_BattleTentLobby_Text_TaughtWhatKindsOfMoves:
-	.string "What kind of moves have you taught\n"
-	.string "your POKéMON?\p"
-	.string "I think you would give yourself\n"
-	.string "an advantage if they knew how to\l"
-	.string "heal or protect themselves.$"
+    .string "你给你的宝可梦\n教了些什么招式？\p我想如果它们会回复或者\n保护自己的话，\l会让你在战斗中更有优势。$"
 
 VerdanturfTown_BattleTentLobby_Text_ScottCanMeetToughTrainers:
-	.string "SCOTT: Hey there, {PLAYER}{KUN}!\n"
-	.string "I thought I might see you here.\p"
-	.string "A BATTLE TENT's a place where\n"
-	.string "you can meet tough TRAINERS.\p"
-	.string "It doesn't matter what the rules are,\n"
-	.string "or how battles are waged, either.\p"
-	.string "{PLAYER}{KUN}, I expect you to do\n"
-	.string "the best you can!$"
+    .string "亚希达：嗨，{PLAYER}{KUN}！\n我就知道能在这儿遇到你，\p因为，无论规则如何，\n无论战斗怎样，\p你总能在对战帐篷中\n碰见强大的训练家。\p{PLAYER}{KUN}，\n我希望你能全力以赴！$"
 
 VerdanturfTown_BattleTentLobby_Text_ScottVisitRegularly:
-	.string "SCOTT: I visit here regularly in hopes\n"
-	.string "of seeing tough TRAINERS in action\l"
-	.string "in whatever the situation.$"
+    .string "亚希达：我经常来这儿，\n为了能观摩强大的训练家\l在不同的处境下如何战斗。$"

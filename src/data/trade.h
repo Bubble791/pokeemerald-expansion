@@ -33,27 +33,27 @@ static const u8 sText_UnusedTextFormat[] = _("{COLOR WHITE}{HIGHLIGHT TRANSPAREN
 const u8 gText_MaleSymbol4[] = _("♂");
 const u8 gText_FemaleSymbol4[] = _("♀");
 const u8 gText_GenderlessSymbol[] = _("");
-static const u8 sText_SpaceMove[] = _(" MOVE"); // unused
+static const u8 sText_SpaceMove[] = _("移动"); // unused
 static const u8 sText_NewLine[] = _("\n");
 static const u8 sText_Slash[] = _("/");
 static const u8 sText_Lv[] = _("Lv. ");
 static const u8 sText_ThreeDashes[] = _("---");
 static const u8 sText_FourQuestionMarks[] = _("????");
 static const u8 sText_UnusedEmpty[] = _("");
-static const u8 sText_IsThisTradeOkay[] = _("Is this trade okay?");
-static const u8 sText_Cancel[] = _("CANCEL");
-static const u8 sText_ChooseAPkmn[] = _("Choose a POKéMON.");
-static const u8 sText_Summary[] = _("SUMMARY");
-static const u8 sText_Trade[] = _("TRADE");
-static const u8 sText_CancelTrade[] = _("Cancel trade?");
+static const u8 sText_IsThisTradeOkay[] = _("确定进行交换吗？");
+static const u8 sText_Cancel[] = _("取消");
+static const u8 sText_ChooseAPkmn[] = _("请选择宝可梦。");
+static const u8 sText_Summary[] = _("查看能力");
+static const u8 sText_Trade[] = _("交换");
+static const u8 sText_CancelTrade[] = _("要结束宝可梦交换吗？");
 static const u8 sJPText_PressBButtonToQuit[] = _("Bボタン　で　もどります");
-static const u8 sText_Summary2[] = _("SUMMARY");
-static const u8 sText_Trade2[] = _("TRADE");
-static const u8 sText_CommunicationStandby[] = _("{COLOR DARK_GRAY}{HIGHLIGHT WHITE}{SHADOW LIGHT_GRAY}Communication standby…\nPlease wait.");
-static const u8 sText_TheTradeHasBeenCanceled[] = _("{COLOR DARK_GRAY}{HIGHLIGHT WHITE}{SHADOW LIGHT_GRAY}The trade has\nbeen canceled.");
-static const u8 sText_OnlyPkmnForBattle[] = _("That's your only\nPOKéMON for battle.");
-static const u8 sText_WaitingForYourFriend[] = _("{COLOR DARK_GRAY}{HIGHLIGHT WHITE}{SHADOW LIGHT_GRAY}Waiting for your friend\nto finish…");
-static const u8 sText_YourFriendWantsToTrade[] = _("Your friend wants\nto trade POKéMON.");
+static const u8 sText_Summary2[] = _("查看能力");
+static const u8 sText_Trade2[] = _("交换");
+static const u8 sText_CommunicationStandby[] = _("{COLOR DARK_GRAY}{HIGHLIGHT WHITE}{SHADOW LIGHT_GRAY}正在等待连接……\n请稍等片刻。");
+static const u8 sText_TheTradeHasBeenCanceled[] = _("{COLOR DARK_GRAY}{HIGHLIGHT WHITE}{SHADOW LIGHT_GRAY}宝可梦交换\n已中止。");
+static const u8 sText_OnlyPkmnForBattle[] = _("最后1只同行的宝可梦\n不能用来交换。");
+static const u8 sText_WaitingForYourFriend[] = _("{COLOR DARK_GRAY}{HIGHLIGHT WHITE}{SHADOW LIGHT_GRAY}正在等待对方的回复……\n请稍等片刻。");
+static const u8 sText_YourFriendWantsToTrade[] = _("对方想要\n交换宝可梦。");
 
 static const struct OamData sOamData_MenuText =
 {
@@ -986,7 +986,7 @@ static const struct InGameTrade sIngameTrades[] =
 {
     [INGAME_TRADE_SEEDOT] =
     {
-        .nickname = _("DOTS"),
+        .nickname = _("七号"),
         .species = SPECIES_SEEDOT,
         .ivs = {5, 4, 5, 4, 4, 4},
         .abilityNum = 1,
@@ -995,14 +995,14 @@ static const struct InGameTrade sIngameTrades[] =
         .personality = 0x84,
         .heldItem = ITEM_CHESTO_BERRY,
         .mailNum = -1,
-        .otName = _("KOBE"),
+        .otName = _("小马"),
         .otGender = MALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_RALTS
     },
     [INGAME_TRADE_PLUSLE] =
     {
-        .nickname = _("PLUSES"),
+        .nickname = _("正正"),
         .species = SPECIES_PLUSLE,
         .ivs = {4, 4, 4, 5, 5, 4},
         .abilityNum = 0,
@@ -1011,14 +1011,14 @@ static const struct InGameTrade sIngameTrades[] =
         .personality = 0x6F,
         .heldItem = ITEM_WOOD_MAIL,
         .mailNum = 0,
-        .otName = _("ROMAN"),
+        .otName = _("阿秋"),
         .otGender = MALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_VOLBEAT
     },
     [INGAME_TRADE_HORSEA] =
     {
-        .nickname = _("SEASOR"),
+        .nickname = _("五郎"),
         .species = SPECIES_HORSEA,
         .ivs = {5, 4, 4, 4, 5, 4},
         .abilityNum = 0,
@@ -1027,14 +1027,14 @@ static const struct InGameTrade sIngameTrades[] =
         .personality = 0x7F,
         .heldItem = ITEM_WAVE_MAIL,
         .mailNum = 1,
-        .otName = _("SKYLAR"),
+        .otName = _("苏加仔"),
         .otGender = MALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_BAGON
     },
     [INGAME_TRADE_MEOWTH] =
     {
-        .nickname = _("MEOWOW"),
+        .nickname = _("小奇"),
         .species = SPECIES_MEOWTH,
         .ivs = {4, 5, 4, 5, 4, 4},
         .abilityNum = 0,
@@ -1043,7 +1043,7 @@ static const struct InGameTrade sIngameTrades[] =
         .personality = 0x8B,
         .heldItem = ITEM_RETRO_MAIL,
         .mailNum = 2,
-        .otName = _("ISIS"),
+        .otName = _("玛莉贝"),
         .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_SKITTY
@@ -1053,35 +1053,35 @@ static const struct InGameTrade sIngameTrades[] =
 static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
 {
     {
-        EC_WORD_BE,
-        EC_WORD_NICE,
-        EC_WORD_TO,
+        EC_WORD_FOE,
         EC_POKEMON(PLUSLE),
+        EC_WORD_OH_KAY,
+        EC_WORD_OF,
         EC_WORD_EXCL,
         EC_POKEMON(VOLBEAT),
-        EC_WORD_WILL,
-        EC_WORD_BE,
-        EC_WORD_FANTASTIC
+        EC_WORD_WOULD,
+        EC_WORD_WELL,
+        EC_WORD_OF,        
     }, {
-        EC_WORD_I,
-        EC_WORD_WILL,
-        EC_WORD_MAKE,
+        EC_WORD_ME,
+        EC_WORD_WOULD,
+        EC_WORD_LEARN,
         EC_POKEMON(BAGON),
-        EC_WORD_TOUGH,
+        EC_WORD_ROUGH_SKIN,
         EC_WORD_PLEASE,
-        EC_WORD_TRAIN,
-        EC_POKEMON(HORSEA),
-        EC_WORD_WELL
+        EC_WORD_OH_KAY,
+        EC_WORD_TRAINS,
+        EC_POKEMON(HORSEA),        
     }, {
         EC_WORD_THANK_YOU,
-        EC_WORD_FOR,
+        EC_WORD_OF,
         EC_POKEMON(SKITTY),
         EC_POKEMON_NATIONAL(MEOWTH),
-        EC_WORD_CRIES,
-        EC_WORD_IN,
-        EC_WORD_A,
-        EC_WORD_CUTE,
-        EC_WORD_WAY
+        EC_WORD_OF,
+        EC_WORD_GRAAAH,
+        EC_WORD_ALSO,
+        EC_WORD_VERY,
+        EC_WORD_CUTE,        
     }
 };
 

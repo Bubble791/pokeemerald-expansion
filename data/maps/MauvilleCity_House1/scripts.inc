@@ -19,28 +19,11 @@ MauvilleCity_House1_EventScript_ReceivedRockSmash::
 	end
 
 MauvilleCity_House1_Text_ImRockSmashDudeTakeThis:
-	.string "Woohoo!\p"
-	.string "I hear people call me the ROCK SMASH\n"
-	.string "GUY, but I find that sort of degrading.\p"
-	.string "I think I deserve a bit more respect,\n"
-	.string "like maybe the ROCK SMASH DUDE.\p"
-	.string "Woohoo!\p"
-	.string "Anyways, your POKéMON look pretty\n"
-	.string "strong.\p"
-	.string "I like that!\n"
-	.string "Here, take this HIDDEN MACHINE!$"
+    .string "呀嗬！\p人们叫我碎岩大叔，\n但我不喜欢被这么叫，\p我应该有个更棒的称呼，\n比如碎岩小哥什么的。\p呀嗬！\p不管怎样，\n你的宝可梦似乎很强。\p我喜欢！\n那，这个秘传学习器给你！$"
 
 MauvilleCity_House1_Text_ExplainRockSmash:
-	.string "That HM contains ROCK SMASH.\p"
-	.string "If you come across large boulders\n"
-	.string "that block your path…\p"
-	.string "Well, use that HM move and smash\n"
-	.string "them right out of your way!\p"
-	.string "Yes, sir! Smash rocks aside, I say!\n"
-	.string "Woohoo!$"
+    .string "那个秘传学习器的内容是\n碎岩，\p如果你碰到有巨石\n挡了你的路……\p那么，就用这秘传\n学习器把它们打得粉碎！\p是的！我说，把巨岩打碎！\n呀嗬！$"
 
 MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock:
-	.string "Oh, yes, if you smash a rock, a POKéMON\n"
-	.string "could come flying out of hiding.\p"
-	.string "Woohoo!$"
+    .string "哦，对了，如果你打碎了岩石，\n藏在里面的宝可梦可能会跳出来。\p呀嗬！$"
 

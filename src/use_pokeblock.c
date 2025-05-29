@@ -866,9 +866,11 @@ static void CloseUsePokeblockMenu(void)
 static void AskUsePokeblock(void)
 {
     u8 stringBuffer[0x40];
-
-    GetMonData(&gPlayerParty[GetPartyIdFromSelectionId(sMenu->info.curSelection)], MON_DATA_NICKNAME, stringBuffer);
-    StringGet_Nickname(stringBuffer);
+    u8 stringBuffer2[0x40];
+    StringCopy(stringBuffer, COMPOUND_STRING("要给"));
+    GetMonData(&gPlayerParty[GetPartyIdFromSelectionId(sMenu->info.curSelection)], MON_DATA_NICKNAME, stringBuffer2);
+    StringGet_Nickname(stringBuffer2);
+    StringAppend(stringBuffer, stringBuffer2);
     StringAppend(stringBuffer, gText_GetsAPokeBlockQuestion);
     StringCopy(gStringVar4, stringBuffer);
     FillWindowPixelBuffer(WIN_TEXT, 17);
@@ -976,8 +978,9 @@ static void BufferEnhancedText(u8 *dest, u8 condition, s16 enhancement)
     case -32768 ... -1: // if < 0
         if (enhancement)
             dest[(u16)enhancement] += 0; // something you can't imagine
-        StringCopy(dest, sConditionNames[condition]);
-        StringAppend(dest, gText_WasEnhanced);
+        StringCopy(dest, gText_WasEnhanced);
+        StringAppend(dest, sConditionNames[condition]);
+        StringAppend(dest, COMPOUND_STRING("！"));
         break;
     case 0:
         StringCopy(dest, gText_NothingChanged);

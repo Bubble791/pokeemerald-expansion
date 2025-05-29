@@ -15,7 +15,7 @@
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
 #line 4
         .trainerPic = TRAINER_BACK_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .partySize = 0,
@@ -27,12 +27,12 @@
     [DIFFICULTY_NORMAL][PARTNER_STEVEN] =
     {
 #line 9
-        .trainerName = _("STEVEN"),
+        .trainerName = _("大吾"),
 #line 10
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 11
         .trainerPic = TRAINER_BACK_PIC_STEVEN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .partySize = 3,

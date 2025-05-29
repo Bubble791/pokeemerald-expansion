@@ -192,7 +192,7 @@ bool8 HasAnotherPlayerGivenFavorLadyItem(void)
 
 static void BufferItemName(u8 *dest, u16 itemId)
 {
-    StringCopy(dest, ItemId_GetName(itemId));
+    StringCopy(dest, GetItemName(itemId));
 }
 
 void BufferFavorLadyItemName(void)
@@ -396,7 +396,7 @@ static u8 BufferQuizAuthorName(void)
     sQuizLadyPtr = &gSaveBlock1Ptr->lilycoveLady.quiz;
     if (sQuizLadyPtr->playerName[0] == EOS)
     {
-        StringCopy_PlayerName(gStringVar1, COMPOUND_STRING("Lady"));
+        StringCopy_PlayerName(gStringVar1, COMPOUND_STRING("姐姐"));
         authorNameId = QUIZ_AUTHOR_NAME_LADY;
     }
     else
@@ -451,7 +451,7 @@ static u8 GetPlayerNameLength(const u8 *playerName)
 
 void BufferQuizPrizeName(void)
 {
-    StringCopy(gStringVar1, ItemId_GetName(sQuizLadyPtr->prize));
+    StringCopy(gStringVar1, GetItemName(sQuizLadyPtr->prize));
 }
 
 bool8 BufferQuizAuthorNameAndCheckIfLady(void)

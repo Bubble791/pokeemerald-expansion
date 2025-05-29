@@ -62,59 +62,20 @@ CaveOfOrigin_B1F_EventScript_AtSkyPillar::
 	end
 
 CaveOfOrigin_B1F_Text_WallaceStory:
-	.string "Ah, so you are {PLAYER}{KUN}?\n"
-	.string "I've heard tales of your exploits.\p"
-	.string "My name is WALLACE.\p"
-	.string "I was once the GYM LEADER of\n"
-	.string "SOOTOPOLIS, but something came up.\p"
-	.string "So now, I've entrusted my mentor JUAN\n"
-	.string "with the GYM's operation.\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "GROUDON and KYOGRE, the two POKéMON\n"
-	.string "wreaking havoc here, are considered\l"
-	.string "to be super-ancient POKéMON.\p"
-	.string "But there aren't just two super-\n"
-	.string "ancient POKéMON.\p"
-	.string "There is one more somewhere.\p"
-	.string "Somewhere, there is a super-\n"
-	.string "ancient POKéMON named RAYQUAZA.\p"
-	.string "It's said that it was RAYQUAZA that\n"
-	.string "becalmed the two combatants in\l"
-	.string "the distant past.\p"
-	.string "But even I have no clue as to\n"
-	.string "RAYQUAZA's whereabouts…$"
+    .string "啊，你就是{PLAYER}{KUN}吗？\n你的活跃表现我早有耳闻。\p我是米可利，\p曾经是琉璃市的道馆馆主，\n不过因为某些原因，\p现在我把管理道馆的事情\n托付给我的老师亚当了。\p…… …… ……\n…… …… ……\p在这里肆虐的2只宝可梦——\n固拉多和盖欧卡，\l被称为超古代宝可梦，\p然而，超古代宝可梦\n并不止这2只……\p在世界的某处\n还存在着第3只——\p没错，那就是被称为烈空坐\n的超古代宝可梦。\p传说在远古时期，\n正是烈空坐平息了\l那2只宝可梦的的斗争。\p可就连我也不清楚它\n如今究竟身在何处……$"
 
 CaveOfOrigin_B1F_Text_WhereIsRayquaza:
-	.string "WALLACE: {PLAYER}{KUN}, do you perhaps\n"
-	.string "know where RAYQUAZA is now?\p"
-	.string "If you do, please tell me.$"
+    .string "米可利：{PLAYER}{KUN}，\n莫非你知晓如今烈空坐的下落？\p可以的话，\n请务必告诉我。$"
 
 CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin:
-	.string "WALLACE: The CAVE OF ORIGIN?\p"
-	.string "But that's right here!\n"
-	.string "I need you to do better than that!\p"
-	.string "Please, I need you to think about\n"
-	.string "where RAYQUAZA might be right now.$"
+    .string "米可利：觉醒神殿？\p那不就是这里吗！\n拜托你再认真点！\p请你帮我再想想烈空坐\n现在究竟可能会在哪里。$"
 
 CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat:
-	.string "WALLACE: MT. PYRE?\p"
-	.string "But when I met the old lady there\n"
-	.string "earlier, she made no mention of it.\p"
-	.string "I very much doubt that the old lady\n"
-	.string "would try to hide something from me…\p"
-	.string "{PLAYER}{KUN}, could you think about this\n"
-	.string "more carefully for me?$"
+    .string "米可利：送神山？\p但在我之前去见那里的老婆婆时，\n她并未提及此事。\p我不认为她会刻意地\n隐瞒什么……\p{PLAYER}{KUN}，\n能请你再认真想想吗？$"
 
 CaveOfOrigin_B1F_Text_CantYouRememberSomehow:
-	.string "WALLACE: Huh? You don't remember?\n"
-	.string "Hmm… That's a problem…\p"
-	.string "Can't you remember somehow?$"
+    .string "米可利：哎？不记得了？\n唔……这就难办了……\p真的什么也回想\n不起来了吗？$"
 
 CaveOfOrigin_B1F_Text_WellHeadToSkyPillar:
-	.string "WALLACE: The SKY PILLAR?\p"
-	.string "That's it!\n"
-	.string "It must be the SKY PILLAR!\p"
-	.string "{PLAYER}{KUN}, there's not a moment to lose!\n"
-	.string "We'll head to the SKY PILLAR right away!$"
+    .string "米可利：天空之柱？\p没错！\n一定就是那里！\p{PLAYER}{KUN}，事不宜迟！\n我们这就出发去天空之柱！$"
 

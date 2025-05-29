@@ -299,212 +299,98 @@ BattleFrontier_ReceptionGate_EventScript_ExitFrontierPassGuide::
 	end
 
 BattleFrontier_ReceptionGate_Text_FirstTimeHereThisWay:
-	.string "Is it your first time here?\n"
-	.string "Please step this way!$"
+    .string "您是第一次来吗？\n这边请！$"
 
 BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier:
-	.string "The front lines of POKéMON battling!\n"
-	.string "Welcome to the BATTLE FRONTIER!$"
+    .string "这里是宝可梦对战的最前线！\n欢迎来到对战开拓区！$"
 
 BattleFrontier_ReceptionGate_Text_IssueFrontierPass:
-	.string "For a first-time visitor, we issue\n"
-	.string "the FRONTIER PASS.\p"
-	.string "It's for use at all the facilities\n"
-	.string "in the BATTLE FRONTIER.\p"
-	.string "Here you are!$"
+    .string "每位初次来访的客人都可以\n得到一张开拓通行证。\p它可以在对战开拓区的\n所有设施中使用。\p给，这是您的！$"
 
 BattleFrontier_ReceptionGate_Text_ObtainedFrontierPass:
-	.string "{PLAYER} obtained\n"
-	.string "the FRONTIER PASS.$"
+    .string "{PLAYER}获得了\n开拓通行证。$"
 
 BattleFrontier_ReceptionGate_Text_PlacedTrainerCardInFrontierPass:
-	.string "{PLAYER} placed the TRAINER CARD\n"
-	.string "in the FRONTIER PASS.$"
+    .string "{PLAYER}把训练家卡\n放进了开拓通行证中。$"
 
 BattleFrontier_ReceptionGate_Text_EnjoyBattleFrontier:
-	.string "We hope you enjoy all that the BATTLE\n"
-	.string "FRONTIER has to offer!$"
+    .string "希望您能尽情享受\n对战开拓区的一切！$"
 
 BattleFrontier_ReceptionGate_Text_IfItIsntPlayerYouCame:
-	.string "???: Well, if it isn't {PLAYER}{KUN}!\n"
-	.string "You came out here!$"
+    .string "？？？：嗨，这不是{PLAYER}{KUN}吗！\n你终于来啦！$"
 
 BattleFrontier_ReceptionGate_Text_OhMrScottGoodDay:
-	.string "GUIDE: Oh! MR. SCOTT, sir!\n"
-	.string "Good day to you, sir!$"
+    .string "向导：啊，亚希达先生！\n您好！$"
 
 BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere:
-	.string "SCOTT: It's great to see you here,\n"
-	.string "it really is!\p"
-	.string "I hope you'll take your time and\n"
-	.string "explore everywhere.\p"
-	.string "Naturally, I hope you'll also experience\n"
-	.string "the pure essence of battling.\p"
-	.string "I also have my quarters here, so feel\n"
-	.string "free to visit if you have time.$"
+    .string "亚希达：能在这里见到你真是太好了，\n真的！\p希望你慢慢探索\n这里的每个角落。\p当然，也希望你能在这里\n体验到最纯粹的对战精髓。\p我在这儿也有房间，\n有空记得随时来坐坐。$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFacilities:
-	.string "I'm your guide to the various facilities\n"
-	.string "here in the BATTLE FRONTIER.$"
+    .string "我是对战开拓区的\n各个设施的向导。$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich2:
-	.string "Which would you like to learn about?$"
+    .string "您想了解哪个设施呢？$"
 
 BattleFrontier_ReceptionGate_Text_BattleTowerInfo:
-	.string "It is the gigantic tower considered\n"
-	.string "to be the BATTLE FRONTIER's symbol.\p"
-	.string "There are four kinds of BATTLE ROOMS\n"
-	.string "in the tower for SINGLE, DOUBLE, MULTI,\l"
-	.string "and LINK MULTI BATTLES.$"
+    .string "这座巨大的高塔被视为\n对战开拓区的标志。\p塔内有4种类型的对战间，\n分别用于单打、双打、多人和\l多人连线对战。$"
 
 BattleFrontier_ReceptionGate_Text_BattleDomeInfo:
-	.string "The BATTLE DOME is the large building\n"
-	.string "shaped like a huge egg.\p"
-	.string "Events named Battle Tourneys are held\n"
-	.string "in this facility.\p"
-	.string "The Battle Tourneys are offered in\n"
-	.string "two courses--for SINGLE and DOUBLE\l"
-	.string "BATTLES.$"
+    .string "对战巨蛋是外形像是巨大的\n蛋一样的建筑。\p这里会举办名为\n对战锦标赛的活动。\p对战锦标赛有2种模式——\n单打和双打对战。$"
 
 BattleFrontier_ReceptionGate_Text_BattlePalaceInfo:
-	.string "The BATTLE PALACE is the red building\n"
-	.string "on the right of the BATTLE FRONTIER.\p"
-	.string "There are two kinds of BATTLE HALLS\n"
-	.string "for SINGLE and DOUBLE BATTLES.$"
+    .string "对战宫殿是位于对战开拓区\n右侧的红色建筑。\p里面有2种对战厅，\n分别用于单打和双打对战。$"
 
 BattleFrontier_ReceptionGate_Text_BattleArenaInfo:
-	.string "The BATTLE ARENA is the dojo-like\n"
-	.string "building at the center-right of\l"
-	.string "the BATTLE FRONTIER.\p"
-	.string "An event called the Set KO Tourney\n"
-	.string "takes place at the BATTLE ARENA.$"
+    .string "对战竞技场是位于对战开拓区\n中央偏右的道场式建筑。\p这里会举办名为三回合\n定胜负锦标赛的活动。$"
 
 BattleFrontier_ReceptionGate_Text_BattleFactoryInfo:
-	.string "The BATTLE FACTORY is the large\n"
-	.string "building that is the closest to us.\p"
-	.string "An event called the Battle Swap\n"
-	.string "is conducted there.\p"
-	.string "The Battle Swap event is offered in\n"
-	.string "two courses for SINGLE and DOUBLE\l"
-	.string "BATTLES.$"
+    .string "对战工厂是离我们最近的那个\n大型建筑。\p这里会举办名为\n交换式对战的活动。\p交换式对战分2种，\n分别是单打和双打对战。$"
 
 BattleFrontier_ReceptionGate_Text_BattlePikeInfo:
-	.string "The BATTLE PIKE is the building shaped\n"
-	.string "like a POKéMON at the center-left of\l"
-	.string "the BATTLE FRONTIER.\p"
-	.string "An event called the Battle Choice\n"
-	.string "is conducted there.$"
+    .string "对战管道是位于对战开拓区\n中央偏左的宝可梦造型的建筑。\p这里会举办名为\n选择式对战的活动。$"
 
 BattleFrontier_ReceptionGate_Text_BattlePyramidInfo:
-	.string "The BATTLE PYRAMID is the enormous\n"
-	.string "pyramid.\p"
-	.string "An event called the Battle Quest\n"
-	.string "is conducted there.$"
+    .string "对战金字塔是巨大的金字塔建筑。\p这里会举办名为\n探索式对战的活动。$"
 
 BattleFrontier_ReceptionGate_Text_RankingHallInfo:
-	.string "The RANKING HALL is located near\n"
-	.string "the BATTLE TOWER.\p"
-	.string "There, you may see the most fantastic\n"
-	.string "records left by the TRAINERS that\l"
-	.string "took on the many challenges of\l"
-	.string "the BATTLE FRONTIER.$"
+    .string "排名大厅位于对战塔附近。\p那里可以看到挑战过对战开拓区各个\n设施的训练家们所留下的非凡纪录。$"
 
 BattleFrontier_ReceptionGate_Text_ExchangeCornerInfo:
-	.string "The EXCHANGE SERVICE CORNER is near\n"
-	.string "the BATTLE TOWER.\p"
-	.string "The Battle Points you have earned in\n"
-	.string "the BATTLE FRONTIER may be exchanged\l"
-	.string "for fabulous prizes there.$"
+    .string "兑换服务区位于对战塔附近。\p可以用在对战开拓区得到的对战点数\n兑换精美的奖品。$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToRules:
-	.string "I'm your guide to the basic rules that\n"
-	.string "are common to all the challenges\l"
-	.string "offered by the facilities in the BATTLE\l"
-	.string "FRONTIER.$"
+    .string "我是对战开拓区各个设施中\n各项通用基本规则的向导。$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhat:
-	.string "What would you like to learn about?$"
+    .string "您想了解什么内容呢？$"
 
 BattleFrontier_ReceptionGate_Text_LevelModeInfo:
-	.string "All the challenges at the BATTLE\n"
-	.string "FRONTIER's facilities come in\l"
-	.string "two courses--Level 50 and Open Level.$"
+    .string "对战开拓区的所有挑战设施\n都提供2种模式可供选择——\lLv. 50级和自由等级。$"
 
 BattleFrontier_ReceptionGate_Text_Level50Info:
-	.string "The Level 50 course is open to POKéMON\n"
-	.string "up to and including Level 50.\p"
-	.string "Please keep in mind, however, that\n"
-	.string "no TRAINER you face will have any\l"
-	.string "POKéMON below Level 50.\p"
-	.string "This course is the entry level for\n"
-	.string "battles at the BATTLE FRONTIER.\p"
-	.string "To begin, we hope you will challenge\n"
-	.string "this course.$"
+    .string "Lv. 50级允许等级50级以内的\n宝可梦参加。\p但是，您遇到的训练家不会\n使用等级50以内的宝可梦。\p这是对战开拓区的\n入门级对战，\p我们建议您从这个模式\n开始挑战。$"
 
 BattleFrontier_ReceptionGate_Text_OpenLevelInfo:
-	.string "The Open Level course places no limit\n"
-	.string "on the levels of POKéMON entering\l"
-	.string "challenges.\p"
-	.string "The levels of your opponents will\n"
-	.string "be adjusted to match the levels of\l"
-	.string "your POKéMON.\p"
-	.string "However, no TRAINER you face will\n"
-	.string "have any POKéMON below Level 60.$"
+    .string "自由等级对于参加的宝可梦\n没有等级限制。\p对手的宝可梦等级会根据\n您的宝可梦等级进行调整。\p但是，您遇到的训练家不会\n使用等级60以内的宝可梦。$"
 
 BattleFrontier_ReceptionGate_Text_MonEntryInfo:
-	.string "Virtually any kind of POKéMON may take\n"
-	.string "on the challenges at all facilities.\p"
-	.string "EGGS and certain kinds of POKéMON,\n"
-	.string "however, are not permitted.\p"
-	.string "The numbers of POKéMON required for\n"
-	.string "challenges will depend on the facility.\p"
-	.string "At all facilities, however, two or more\n"
-	.string "of the same kind of POKéMON are not\l"
-	.string "permitted.$"
+    .string "绝大多数种类的宝可梦都可以\n参加所有设施里面的挑战，\p但蛋和某些特定种类的宝可梦\n无法参加。\p挑战所需的宝可梦数量\n取决于具体设施。\p但在所有设施中，都无法使用2只\n或以上的相同种类的宝可梦。$"
 
 BattleFrontier_ReceptionGate_Text_HoldItemsInfo:
-	.string "When entering a challenge at a BATTLE\n"
-	.string "FRONTIER facility, POKéMON may not\l"
-	.string "be holding the same kind of item.\p"
-	.string "Please make sure that all POKéMON\n"
-	.string "entering a challenge are holding\l"
-	.string "different items.$"
+    .string "在对战开拓区参加挑战时，\n宝可梦不能携带相同的道具。\p请确保所有参加挑战的宝可梦\n都携带了不同的道具。$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFrontierPass:
-	.string "I'm your guide to the FRONTIER PASS.$"
+    .string "我是开拓通行证的向导。$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich1:
-	.string "Which would you like to learn about?$"
+    .string "您想了解什么内容呢？$"
 
 BattleFrontier_ReceptionGate_Text_SymbolsInfo:
-	.string "There are seven facilities at\n"
-	.string "the BATTLE FRONTIER.\p"
-	.string "TRAINERS who gain recognition for\n"
-	.string "their abilities may be rewarded with\l"
-	.string "symbols from each of the facilities.\p"
-	.string "To earn a symbol, TRAINERS may need\n"
-	.string "to defeat other TRAINERS in a row,\l"
-	.string "and may need to win events repeatedly.\p"
-	.string "It's certainly not easy to win symbols.\n"
-	.string "I wish you the best of luck!$"
+    .string "对战开拓区共设有\n7个挑战设施。\p训练家若展现出卓越实力，\n就能获得各设施颁发的象征。\p要获得象征，训练家可能需要\n连续击败多位对手，\l或多次赢得赛事。\p赢得象征绝非易事，\n祝您好运！$"
 
 BattleFrontier_ReceptionGate_Text_RecordedBattleInfo:
-	.string "It is possible to record one battle\n"
-	.string "on your FRONTIER PASS.\p"
-	.string "You may record a battle you had with\n"
-	.string "a friend or friends.\p"
-	.string "Or you may record a battle conducted\n"
-	.string "at the BATTLE FRONTIER excluding\l"
-	.string "matches at the BATTLE PIKE or\l"
-	.string "the BATTLE PYRAMID.\p"
-	.string "You may choose to record your match\n"
-	.string "at the end of a battle.$"
+    .string "可以在您的开拓通行证上\n记录下您的一场对战。\p您可以记录您与朋友\n之间进行的对战，\p或记录下在对战开拓区进行过的对战，\n但不包括对战管道以及对战金字塔中\l的对战。\p对战结束时您可以选择\n是否要记录对战。$"
 
 BattleFrontier_ReceptionGate_Text_BattlePointsInfo:
-	.string "Battle Points are rewards given to\n"
-	.string "TRAINERS who battled outstandingly\l"
-	.string "at the BATTLE FRONTIER.\p"
-	.string "You may trade in your Battle Points\n"
-	.string "for prizes at the EXCHANGE SERVICE\l"
-	.string "CORNER.$"
+    .string "对战点数是向对战开拓区中表现出色\n的训练家给予的奖励。\p您可以在兑换服务区用\n对战点数兑换奖品。$"
 

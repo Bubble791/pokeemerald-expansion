@@ -1394,27 +1394,27 @@ static void LoadContestResultsTitleBarTilemaps(void)
     if (gLinkContestFlags & LINK_CONTEST_FLAG_IS_LINK)
     {
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Link_Tilemap, 5, 1, 5, 2);
-        x = 10;
+        x = 7;
     }
     else if (gSpecialVar_ContestRank == CONTEST_RANK_NORMAL)
     {
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Normal_Tilemap, 5, 1, 10, 2);
-        x = 15;
+        x = 12;
     }
     else if (gSpecialVar_ContestRank == CONTEST_RANK_SUPER)
     {
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Super_Tilemap, 5, 1, 10, 2);
-        x = 15;
+        x = 12;
     }
     else if (gSpecialVar_ContestRank == CONTEST_RANK_HYPER)
     {
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Hyper_Tilemap, 5, 1, 10, 2);
-        x = 15;
+        x = 12;
     }
     else // CONTEST_RANK_MASTER
     {
         CopyToBgTilemapBufferRect(2, gContestResultsTitle_Master_Tilemap, 5, 1, 10, 2);
-        x = 15;
+        x = 12;
     }
 
     if (gSpecialVar_ContestCategory == CONTEST_CATEGORY_COOL)
@@ -1444,7 +1444,9 @@ static void LoadContestResultsTitleBarTilemaps(void)
     }
 
     x += 5;
-    CopyToBgTilemapBufferRect(2, gContestResultsTitle_Tilemap, x, y, 6, 2);
+    //CopyToBgTilemapBufferRect(2, gContestResultsTitle_Tilemap, x, y, 6, 2);
+    //修改，修改华丽大赛Tilemap宽度
+    CopyToBgTilemapBufferRect(2, gContestResultsTitle_Tilemap, x, y, 8, 2);
     CopyToBgTilemapBufferRect_ChangePalette(2, sContestResults->tilemapBuffers[2], 0, 0, 32, 4, palette);
 }
 

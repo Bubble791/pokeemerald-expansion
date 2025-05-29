@@ -80,20 +80,20 @@ static void CB2_OpenPokeblockFromBag(void);
 static void ItemUseOnFieldCB_Honey(u8 taskId);
 static bool32 IsValidLocationForVsSeeker(void);
 
-static const u8 sText_CantDismountBike[] = _("You can't dismount your BIKE here.{PAUSE_UNTIL_PRESS}");
-static const u8 sText_ItemFinderNearby[] = _("Huh?\nThe ITEMFINDER's responding!\pThere's an item buried around here!{PAUSE_UNTIL_PRESS}");
-static const u8 sText_ItemFinderOnTop[] = _("Oh!\nThe ITEMFINDER's shaking wildly!{PAUSE_UNTIL_PRESS}");
-static const u8 sText_ItemFinderNothing[] = _("… … … …Nope!\nThere's no response.{PAUSE_UNTIL_PRESS}");
-static const u8 sText_CoinCase[] = _("Your COINS:\n{STR_VAR_1}{PAUSE_UNTIL_PRESS}");
-static const u8 sText_PowderQty[] = _("POWDER QTY: {STR_VAR_1}{PAUSE_UNTIL_PRESS}");
-static const u8 sText_BootedUpTM[] = _("Booted up a TM.");
-static const u8 sText_BootedUpHM[] = _("Booted up an HM.");
-static const u8 sText_TMHMContainedVar1[] = _("It contained\n{STR_VAR_1}.\pTeach {STR_VAR_1}\nto a POKéMON?");
-static const u8 sText_UsedVar2WildLured[] = _("{PLAYER} used the\n{STR_VAR_2}.\pWild POKéMON will be lured.{PAUSE_UNTIL_PRESS}");
-static const u8 sText_UsedVar2WildRepelled[] = _("{PLAYER} used the\n{STR_VAR_2}.\pWild POKéMON will be repelled.{PAUSE_UNTIL_PRESS}");
-static const u8 sText_PlayedPokeFluteCatchy[] = _("Played the POKé FLUTE.\pNow, that's a catchy tune!{PAUSE_UNTIL_PRESS}");
-static const u8 sText_PlayedPokeFlute[] = _("Played the POKé FLUTE.");
-static const u8 sText_PokeFluteAwakenedMon[] = _("The POKé FLUTE awakened sleeping\nPOKéMON.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_CantDismountBike[] = _("这里不能下车！{PAUSE_UNTIL_PRESS}");
+static const u8 sText_ItemFinderNearby[] = _("哦！\n机器有反应了！\p附近有埋着道具！{PAUSE_UNTIL_PRESS}");
+static const u8 sText_ItemFinderOnTop[] = _("机器在脚下\n反应得很剧烈了！{PAUSE_UNTIL_PRESS}");
+static const u8 sText_ItemFinderNothing[] = _("…………呼！\n……什么反应都没有！{PAUSE_UNTIL_PRESS}");
+static const u8 sText_CoinCase[] = _("你现在的代币\n{STR_VAR_1}枚{PAUSE_UNTIL_PRESS}");
+static const u8 sText_PowderQty[] = _("粉末量 {STR_VAR_1}{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BootedUpTM[] = _("启动了招式学习器！");
+static const u8 sText_BootedUpHM[] = _("启动了秘传招式学习器！");
+static const u8 sText_TMHMContainedVar1[] = _("招式学习器的内容是\n{STR_VAR_1}！\p要让宝可梦学会\n{STR_VAR_1}吗？");
+static const u8 sText_UsedVar2WildLured[] = _("{PLAYER}\n使用了{STR_VAR_2}！\p野生的宝可梦们\n会被引诱过来。{PAUSE_UNTIL_PRESS}");
+static const u8 sText_UsedVar2WildRepelled[] = _("{PLAYER}\n使用了{STR_VAR_2}！\p野生的宝可梦们\n会被驱赶不再出现。{PAUSE_UNTIL_PRESS}");
+static const u8 sText_PlayedPokeFluteCatchy[] = _("吹响了宝可梦之笛！\p嗯……不错的音色！{PAUSE_UNTIL_PRESS}");
+static const u8 sText_PlayedPokeFlute[] = _("吹响了宝可梦之笛！");
+static const u8 sText_PokeFluteAwakenedMon[] = _("听到宝可梦之笛声音的\n宝可梦醒来了！{PAUSE_UNTIL_PRESS}");
 
 // EWRAM variables
 EWRAM_DATA static void(*sItemUseOnFieldCB)(u8 taskId) = NULL;
@@ -126,7 +126,7 @@ static void SetUpItemUseCallback(u8 taskId)
     if (gSpecialVar_ItemId == ITEM_ENIGMA_BERRY_E_READER)
         type = gTasks[taskId].tEnigmaBerryType - 1;
     else
-        type = ItemId_GetType(gSpecialVar_ItemId) - 1;
+        type = GetItemType(gSpecialVar_ItemId) - 1;
     if (!InBattlePyramid())
     {
         gBagMenu->newScreenCallback = sItemUseCallbacks[type];
@@ -200,9 +200,9 @@ static void Task_CloseCantUseKeyItemMessage(u8 taskId)
 
 u8 CheckIfItemIsTMHMOrEvolutionStone(u16 itemId)
 {
-    if (ItemId_GetFieldFunc(itemId) == ItemUseOutOfBattle_TMHM)
+    if (GetItemFieldFunc(itemId) == ItemUseOutOfBattle_TMHM)
         return 1;
-    else if (ItemId_GetFieldFunc(itemId) == ItemUseOutOfBattle_EvolutionStone)
+    else if (GetItemFieldFunc(itemId) == ItemUseOutOfBattle_EvolutionStone)
         return 2;
     else
         return 0;
@@ -277,7 +277,7 @@ void ItemUseOutOfBattle_Bike(u8 taskId)
 
 static void ItemUseOnFieldCB_Bike(u8 taskId)
 {
-    if (ItemId_GetSecondaryId(gSpecialVar_ItemId) == MACH_BIKE)
+    if (GetItemSecondaryId(gSpecialVar_ItemId) == MACH_BIKE)
         GetOnOffBike(PLAYER_AVATAR_FLAG_MACH_BIKE);
     else // ACRO_BIKE
         GetOnOffBike(PLAYER_AVATAR_FLAG_ACRO_BIKE);
@@ -331,7 +331,7 @@ void ItemUseOutOfBattle_Rod(u8 taskId)
 
 static void ItemUseOnFieldCB_Rod(u8 taskId)
 {
-    StartFishing(ItemId_GetSecondaryId(gSpecialVar_ItemId));
+    StartFishing(GetItemSecondaryId(gSpecialVar_ItemId));
     DestroyTask(taskId);
 }
 
@@ -756,7 +756,7 @@ void ItemUseOutOfBattle_Berry(u8 taskId)
     }
     else
     {
-        ItemId_GetFieldFunc(gSpecialVar_ItemId)(taskId);
+        GetItemFieldFunc(gSpecialVar_ItemId)(taskId);
     }
 }
 
@@ -922,8 +922,8 @@ static void RemoveUsedItem(void)
     StringExpandPlaceholders(gStringVar4, gText_PlayerUsedVar2);
     if (!InBattlePyramid())
     {
-        UpdatePocketItemList(ItemId_GetPocket(gSpecialVar_ItemId));
-        UpdatePocketListPosition(ItemId_GetPocket(gSpecialVar_ItemId));
+        UpdatePocketItemList(GetItemPocket(gSpecialVar_ItemId));
+        UpdatePocketListPosition(GetItemPocket(gSpecialVar_ItemId));
     }
     else
     {
@@ -958,7 +958,7 @@ static void Task_UseRepel(u8 taskId)
 {
     if (!IsSEPlaying())
     {
-        VarSet(VAR_REPEL_STEP_COUNT, ItemId_GetHoldEffectParam(gSpecialVar_ItemId));
+        VarSet(VAR_REPEL_STEP_COUNT, GetItemHoldEffectParam(gSpecialVar_ItemId));
     #if VAR_LAST_REPEL_LURE_USED != 0
         VarSet(VAR_LAST_REPEL_LURE_USED, gSpecialVar_ItemId);
     #endif
@@ -972,7 +972,7 @@ static void Task_UseRepel(u8 taskId)
 void HandleUseExpiredRepel(struct ScriptContext *ctx)
 {
 #if VAR_LAST_REPEL_LURE_USED != 0
-    VarSet(VAR_REPEL_STEP_COUNT, ItemId_GetHoldEffectParam(VarGet(VAR_LAST_REPEL_LURE_USED)));
+    VarSet(VAR_REPEL_STEP_COUNT, GetItemHoldEffectParam(VarGet(VAR_LAST_REPEL_LURE_USED)));
 #endif
 }
 
@@ -1002,7 +1002,7 @@ static void Task_UseLure(u8 taskId)
 {
     if (!IsSEPlaying())
     {
-        VarSet(VAR_REPEL_STEP_COUNT, ItemId_GetHoldEffectParam(gSpecialVar_ItemId) | REPEL_LURE_MASK);
+        VarSet(VAR_REPEL_STEP_COUNT, GetItemHoldEffectParam(gSpecialVar_ItemId) | REPEL_LURE_MASK);
     #if VAR_LAST_REPEL_LURE_USED != 0
         VarSet(VAR_LAST_REPEL_LURE_USED, gSpecialVar_ItemId);
     #endif
@@ -1017,7 +1017,7 @@ static void Task_UseLure(u8 taskId)
 void HandleUseExpiredLure(struct ScriptContext *ctx)
 {
 #if VAR_LAST_REPEL_LURE_USED != 0
-    VarSet(VAR_REPEL_STEP_COUNT, ItemId_GetHoldEffectParam(VarGet(VAR_LAST_REPEL_LURE_USED)) | REPEL_LURE_MASK);
+    VarSet(VAR_REPEL_STEP_COUNT, GetItemHoldEffectParam(VarGet(VAR_LAST_REPEL_LURE_USED)) | REPEL_LURE_MASK);
 #endif
 }
 
@@ -1118,9 +1118,9 @@ bool32 CanThrowBall(void)
     return (GetBallThrowableState() == BALL_THROW_ABLE);
 }
 
-static const u8 sText_CantThrowPokeBall_TwoMons[] = _("Cannot throw a ball!\nThere are two Pokémon out there!\p");
-static const u8 sText_CantThrowPokeBall_SemiInvulnerable[] = _("Cannot throw a ball!\nThere's no Pokémon in sight!\p");
-static const u8 sText_CantThrowPokeBall_Disabled[] = _("POKé BALLS cannot be used\nright now!\p");
+static const u8 sText_CantThrowPokeBall_TwoMons[] = _("有2只野生的宝可梦，\n这样没法使用精灵球！\p");
+static const u8 sText_CantThrowPokeBall_SemiInvulnerable[] = _("看不见宝可梦，\n这样没法使用精灵球！\p");
+static const u8 sText_CantThrowPokeBall_Disabled[] = _("现在无法使用精灵球！\p");
 void ItemUseInBattle_PokeBall(u8 taskId)
 {
     switch (GetBallThrowableState())
@@ -1198,7 +1198,7 @@ static bool32 SelectedMonHasStatus2(u16 itemId)
 // Returns whether an item can be used in battle and sets the fail text.
 bool32 CannotUseItemsInBattle(u16 itemId, struct Pokemon *mon)
 {
-    u16 battleUsage = ItemId_GetBattleUsage(itemId);
+    u16 battleUsage = GetItemBattleUsage(itemId);
     bool8 cannotUse = FALSE;
     const u8* failStr = NULL;
     u32 i;
@@ -1215,7 +1215,7 @@ bool32 CannotUseItemsInBattle(u16 itemId, struct Pokemon *mon)
     switch (battleUsage)
     {
     case EFFECT_ITEM_INCREASE_STAT:
-        if (gBattleMons[gBattlerInMenuId].statStages[ItemId_GetEffect(itemId)[1]] == MAX_STAT_STAGE)
+        if (gBattleMons[gBattlerInMenuId].statStages[GetItemEffect(itemId)[1]] == MAX_STAT_STAGE)
             cannotUse = TRUE;
         break;
     case EFFECT_ITEM_SET_FOCUS_ENERGY:
@@ -1281,7 +1281,7 @@ bool32 CannotUseItemsInBattle(u16 itemId, struct Pokemon *mon)
             cannotUse = TRUE;
         break;
     case EFFECT_ITEM_RESTORE_PP:
-        if (ItemId_GetEffect(itemId)[4] == ITEM4_HEAL_PP)
+        if (GetItemEffect(itemId)[4] == ITEM4_HEAL_PP)
         {
             for (i = 0; i < MAX_MON_MOVES; i++)
             {
@@ -1318,7 +1318,7 @@ void ItemUseInBattle_BagMenu(u8 taskId)
     else
     {
         PlaySE(SE_SELECT);
-        if (!ItemId_GetImportance(gSpecialVar_ItemId) && !(B_TRY_CATCH_TRAINER_BALL >= GEN_4 && (ItemId_GetBattleUsage(gSpecialVar_ItemId) == EFFECT_ITEM_THROW_BALL) && (gBattleTypeFlags & BATTLE_TYPE_TRAINER)))
+        if (!GetItemImportance(gSpecialVar_ItemId) && !(B_TRY_CATCH_TRAINER_BALL >= GEN_4 && (GetItemBattleUsage(gSpecialVar_ItemId) == EFFECT_ITEM_THROW_BALL) && (gBattleTypeFlags & BATTLE_TYPE_TRAINER)))
             RemoveUsedItem();
         ScheduleBgCopyTilemapToVram(2);
         if (!InBattlePyramid())

@@ -480,135 +480,56 @@ Route119_EventScript_ScottWonAtFortreeGymCall::
 	end
 
 Route119_Text_MayIntro:
-	.string "MAY: {PLAYER}{KUN}!\n"
-	.string "Where were you? I was looking for you!\p"
-	.string "How much stronger have you gotten?\n"
-	.string "Let me check for you!\p"
-	.string "Ready with your POKéMON?\n"
-	.string "Of course you are! Go!$"
+    .string "小遥：{PLAYER}{KUN}！\n你去哪儿了？我找你很久了！\p让我来看看你\n变强了多少！\p准备好宝可梦了吗？\n你肯定没问题的，接招吧！$"
 
 Route119_Text_MayDefeat:
-	.string "Achah!\n"
-	.string "{PLAYER}{KUN}, you're strong!\p"
-	.string "I was worried that you might be\n"
-	.string "struggling with your training.$"
+    .string "呜哇！\n{PLAYER}{KUN}变得好强！\p我之前还担心你会不会\n训练得不够呢。$"
 
 Route119_Text_MayPresentForYou:
-	.string "MAY: But I had absolutely nothing to\n"
-	.string "worry about! Keep it up!\p"
-	.string "And, here! I have a present for you.$"
+    .string "小遥：看来完全不用担心嘛！\n保持这个势头吧！\p来！\n这个送给你。$"
 
 Route119_Text_MayExplainFly:
-	.string "MAY: Use FLY, and your POKéMON will\n"
-	.string "instantly carry you to any town you've\l"
-	.string "already visited.\p"
-	.string "But, to use FLY, you have to get\n"
-	.string "the GYM BADGE from FORTREE CITY.\l"
-	.string "That's important, so don't forget.\p"
-	.string "You should FLY home and visit\n"
-	.string "LITTLEROOT for a change.\p"
-	.string "I bet your mom's worried about you,\n"
-	.string "{PLAYER}{KUN}.\p"
-	.string "Well, let's meet again somewhere!$"
+    .string "小遥：使用飞翔的话，\n宝可梦会瞬间带你飞回\l曾经去过的城镇，\p但必须先拿到茵郁市的\n道馆徽章才能够使用，\l这很重要，不要忘了哦！\p偶尔也该飞回未白镇\n回家里看看，\p你妈妈会担心你的，\n{PLAYER}{KUN}。\p好了，下次再见！$"
 
 Route119_Text_BrendanIntro:
-	.string "BRENDAN: {PLAYER}! So this is where\n"
-	.string "you've been looking for POKéMON?\p"
-	.string "Let me see how good you got.\n"
-	.string "I'll test you!\p"
-	.string "Now!\n"
-	.string "It's a battle, so battle!$"
+    .string "小悠：{PLAYER}！\n来这里找宝可梦吗？\p让我检验下你的实力\n成长得如何了！\p现在！\n来对战吧！$"
 
 Route119_Text_BrendanDefeat:
-	.string "Hmm…\n"
-	.string "You've gotten pretty darn decent.$"
+    .string "唔……\n你进步得真快啊。$"
 
 Route119_Text_BrendanIllGiveYouThis:
-	.string "BRENDAN: I'd say you're good enough\n"
-	.string "to search for POKéMON anywhere.\p"
-	.string "Here, I'll give you this.\n"
-	.string "Try it out.$"
+    .string "小悠：我想你无论去哪儿\n找宝可梦都没问题。\p这个给你，\n试试吧。$"
 
 Route119_Text_BrendanExplainFly:
-	.string "BRENDAN: Use FLY, and your POKéMON\n"
-	.string "instantly carries you to any town\l"
-	.string "you've already visited.\p"
-	.string "But you need the FORTREE GYM BADGE \n"
-	.string "to do that.\p"
-	.string "Anyway, I have to move along.$"
+    .string "小悠：使用飞翔的话，\n宝可梦会瞬间带你飞回\l曾经去过的城镇，\p但必须先拿到茵郁市的\n道馆徽章才能用。\p好了，\n我先走一步啦！$"
 
 Route119_Text_ScottWayToGoBeSeeingYou:
-	.string "SCOTT: Hahahah!\n"
-	.string "Way to go, {PLAYER}{KUN}!\p"
-	.string "I just passed by a TRAINER riding\n"
-	.string "a BIKE.\p"
-	.string "You just beat that TRAINER, didn't you?\n"
-	.string "It was pretty obvious that you did.\p"
-	.string "The kid looked really upset with\n"
-	.string "a face all red from anger.\p"
-	.string "I sure seem to run into you often.\n"
-	.string "Are you off to FORTREE GYM next?\p"
-	.string "I expect that you'll do well at the GYM.\n"
-	.string "Well, I'll be seeing you!$"
+    .string "亚希达：哈哈哈哈！\n干得漂亮，{PLAYER}{KUN}！\p我刚刚遇到了个\n骑着自行车的训练家。\p你刚刚打败了那个训练家对吧？\n不用想都知道是你。\p那孩子气得脸红红的，\n好像很不甘心。\p我们看起来很有缘呢。\n你现在要去茵郁市道馆是吗？\p相信你一定会表现出色。\n好了，回头见！$"
 
 
 Route119_Text_ScottYouWonAtFortreeGym:
-	.string "… … … … … …\n"
-	.string "… … … … … Beep!\p"
-	.string "SCOTT: Hiya, {PLAYER}{KUN}, it's me!\p"
-	.string "Just as I thought, you won at\n"
-	.string "the FORTREE GYM.\p"
-	.string "Your strength…\n"
-	.string "Perhaps you really are the TRAINER\l"
-	.string "that I've been searching for.\p"
-	.string "Remember, you have a fan in me.\n"
-	.string "I'll be cheering from the sidelines.\l"
-	.string "Keep up the great work!\p"
-	.string "… … … … … …\n"
-	.string "… … … … … Click!$"
+    .string "…… …… ……\n…… …… ……哔！\p亚希达：嗨，{PLAYER}{KUN}，是我！\p你果然如我所料，\n赢下了茵郁市道馆。\p你的实力……\n或许正是我一直在找的训练家。\p记住我是你的头号粉丝，\n我会一直默默为你加油的。\l继续加油！\p…… …… ……\n…… …… ……咔哒！$"
 
 Route119_Text_StayAwayFromWeatherInstitute:
-	.string "We're standing lookout here.\p"
-	.string "Hey, you! Stay away from the WEATHER\n"
-	.string "INSTITUTE. It's not safe.$"
+    .string "我们在这里放哨。\p喂，你！别接近\n天气研究所，那儿不安全。$"
 
 Route119_Text_DontGoNearWeatherInstitute:
-	.string "Lookout duty is surprisingly boring.\p"
-	.string "Hey, you! Please don't go near the\n"
-	.string "WEATHER INSTITUTE.$"
+    .string "放哨的任务实在太无聊了。\p喂，你！别跑到\n天气研究所附近去。$"
 
 Route119_Text_ThoughtFlyByCatchingBirdMons:
-	.string "I thought you FLY by catching a whole\n"
-	.string "flock of BIRD POKéMON, and then\l"
-	.string "hanging on to them somehow.\p"
-	.string "But it turns out there's an HM move\n"
-	.string "called FLY!\p"
-	.string "I wish I'd known about that a long\n"
-	.string "time ago…$"
+    .string "我本以为所谓飞翔是指\n捉一大群鸟宝可梦，然后\l不知怎么挂在它们身上，\p但实际上飞翔是\n一种秘传招式！\p我要是早点知道\n就好了……$"
 
 Route119_Text_TallGrassSnaresBikeTires:
-	.string "Tch…\n"
-	.string "It's a no-go…\p"
-	.string "The tall grass snares BIKE tires.\n"
-	.string "There's no way you can cycle here.$"
+    .string "切……\n过不去……\p长草会卷进自行车的轮胎里，\n不可能骑车过去。$"
 
 Route119_Text_CanYourMonMakeSecretBase:
-	.string "Can your POKéMON use its SECRET POWER\n"
-	.string "on a big pile of grass and make a\l"
-	.string "SECRET BASE?$"
+    .string "你的宝可梦能用秘密之力\n在一大团草中打出一个\l秘密基地吗？$"
 
 Route119_Text_RouteSignFortree:
-	.string "ROUTE 119\n"
-	.string "{RIGHT_ARROW} FORTREE CITY$"
+    .string "119号道路\n{RIGHT_ARROW} 茵郁市$"
 
 Route119_Text_WeatherInstitute:
-	.string "WEATHER INSTITUTE$"
+    .string "天气研究所$"
 
 Route119_Text_TrainerTipsDecoration:
-	.string "TRAINER TIPS\p"
-	.string "Up to sixteen decorations and\n"
-	.string "furniture items can be placed in\l"
-	.string "a SECRET BASE.\p"
-	.string "Pick your favorite items and create\n"
-	.string "your very own SECRET BASE exactly the\l"
-	.string "way you want.$"
+    .string "有用的公告牌！\p秘密基地里面\n最多只能放16个\l装饰物品和家具。\p用你最喜欢的\n物品装扮出你自己的\l秘密基地吧。$"

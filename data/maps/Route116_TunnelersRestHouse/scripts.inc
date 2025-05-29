@@ -28,35 +28,14 @@ Route116_TunnelersRestHouse_EventScript_TunnelOpened::
 	end
 
 Route116_TunnelersRestHouse_Text_WeHadToStopBoring:
-	.string "That RUSTURF TUNNEL there…\p"
-	.string "At first, we had a huge work crew boring\n"
-	.string "through rock with the latest machinery.\l"
-	.string "But, we had to stop.\p"
-	.string "It turns out that we would have had\n"
-	.string "a negative effect on wild POKéMON in\l"
-	.string "the area.\p"
-	.string "So, we've got nothing to do but loll\n"
-	.string "around here doing nothing.$"
+    .string "那边的卡绿隧道啊……\p起初我们动用大型机械组织了\n庞大的施工队开凿岩层。\l但后来不得不停工了。\p因为发现这样会严重影响到\n野生宝可梦的栖息环境。\p所以现在我们只能\n无所事事地闲逛了。$"
 
 Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf:
-	.string "There's a man digging his way to\n"
-	.string "VERDANTURF all by his lonesome.\l"
-	.string "He's desperate to get through.\p"
-	.string "He says that if he digs little by little\n"
-	.string "without using machines, he won't\l"
-	.string "disturb POKéMON, and he'll avoid\l"
-	.string "harming the natural environment.\p"
-	.string "I wonder if he made it through yet.$"
+    .string "有个男人正独自向\n绿茵镇方向挖掘。\l他急着想打通隧道。\p说是只要不用机械慢慢挖\n就不会惊扰宝可梦\l也能保护自然环境。\p不知道他现在挖通了没有？$"
 
 Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel:
-	.string "To get to VERDANTURF without using\n"
-	.string "this TUNNEL, you'd have to cross the\l"
-	.string "sea to DEWFORD, sail on to SLATEPORT,\l"
-	.string "then travel through MAUVILLE.$"
+    .string "要绕开隧道去绿茵镇的话，\n得先渡海到武斗镇，\l再坐船到凯那市，\l最后穿过紫堇市才行。$"
 
 Route116_TunnelersRestHouse_Text_TunnelHasGoneThrough:
-	.string "Did you hear? The TUNNEL to VERDANTURF\n"
-	.string "has gone through!\p"
-	.string "Sometimes, if you hope strongly enough,\n"
-	.string "dreams do come true.$"
+    .string "听到了吗？到绿茵镇的隧道\n已经打通了！\p看来只要怀抱足够强烈的愿望，\n梦想就真的能实现呢。$"
 
