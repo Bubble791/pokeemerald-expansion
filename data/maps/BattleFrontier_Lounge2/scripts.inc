@@ -177,7 +177,7 @@ BattleFrontier_Lounge2_Text_PalaceMavenIsThere::
     .string "告诉你个秘密！\p被亚希达称作开拓之脑\n的顶级训练家之一现在就在那里。\p那里就是由那个名叫宫殿守护者的\n凶险的训练家所掌管的。$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenSilverMons::
-    .string "你跟宫殿守护者\n交过手了吗？\p据说他测试对手的心灵的时候，\n通常会用这些宝可梦：\p毒和飞行属性的蝙蝠宝可梦，\n一般属性的怕麻烦宝可梦，还有\l水和冰属性的乘载宝可梦。$"
+    .string "你跟宫殿守护者\n交过手了吗？\p据说他测试对手的心灵的时候，\n通常会用这些宝可梦：\p毒和飞行属性的蝙蝠宝可梦，\n一般属性的怕麻烦宝可梦，\l还有水和冰属性的乘载宝可梦。$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenGoldMons::
     .string "你跟认真起来的宫殿守护者\n交过手了吗？\p据说他把精力全部集中到对战的时候，\n通常会使用这些宝可梦：\p火属性的传说宝可梦，\n一般属性的怕麻烦宝可梦，\l还有水属性的极光宝可梦。$"
@@ -204,7 +204,7 @@ BattleFrontier_Lounge2_Text_MultiBattleAdvice::
     .string "对战塔里聚集了\n各种各样的训练家。\p想想吧——你可能会遇到\n你的朋友或粉丝！\l要好好注意周围啊！$"
 
 BattleFrontier_Lounge2_Text_LinkMultiBattleAdvice::
-    .string "如果遇到了朋友，就去\n多人连线对战间吧。\p有一个很厉害的朋友在旁边的话，\n就有可能碰上很强的对手！$"
+    .string "如果遇到了朋友，\n就去多人连线对战间吧。\p有一个很厉害的朋友在旁边的话，\n就有可能碰上很强的对手！$"
 
 BattleFrontier_Lounge2_Text_NewsGatheringPower::
     .string "收集消息好厉害！\n老师果然非同一般！$"

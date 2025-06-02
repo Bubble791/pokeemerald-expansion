@@ -18,7 +18,7 @@ FallarborTown_BattleTentLobby_Text_WhichLevelMode::
     .string "我们提供2个级别的比赛，\nLv. 50级和自由等级\l您要参加哪个？$"
 
 FallarborTown_BattleTentLobby_Text_SelectThreeMons::
-    .string "很好，请选择\n3只宝可梦。$"
+    .string "好的，请选择\n3只宝可梦。$"
 
 FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLv50::
     .string "这位客人！\p您能够参加对战的\n宝可梦不满3只。\p您需要准备3只等级50以内的\n不同种类的宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}无法参加对战！\p请在准备就绪之后，\n再来参加吧！$"
@@ -33,7 +33,7 @@ FallarborTown_BattleTentLobby_Text_DidntSaveBeforeQuitting::
     .string "这位客人！\p您在上次结束时\n没有写入记录吧？\p非常遗憾，没有写入记录的\n挑战我们将视其为无效。\p当然，您可以随时开始\n一次新的挑战。$"
 
 FallarborTown_BattleTentLobby_Text_BeatThreeTrainers::
-    .string "太棒了！您连续打败了\n3名训练家！$"
+    .string "太棒了！您连续打败了\n3位训练家！$"
 
 FallarborTown_BattleTentLobby_Text_WaitWhileSaveGame::
     .string "正在写入记录……请稍候。$"
@@ -63,7 +63,7 @@ VerdanturfTown_BattleTentLobby_Text_TakeChallenge::
     .string "要挑战绿茵镇对战帐篷吗？$"
 
 VerdanturfTown_BattleTentLobby_Text_ExplainVerdanturfTent::
-    .string "在绿茵镇对战帐篷中，\n需要遵守一条关键规则——\p训练家只能替换宝可梦，\p禁止对宝可梦下达\n任何战斗指令。\p宝可梦将完全凭借自己的\n本能战斗，\p您需要完全信赖您的宝可梦，\n在一边旁观它们对战。\p如果您能成功地连续\n打败7个训练家，\l我们将向您呈上精美奖品。\p如果您在挑战途中\n想要暂停的话，\p请确保在退出前完好地写下了记录。\n否则我们将视挑战为无效。$"
+    .string "在绿茵镇对战帐篷中，\n需要遵守一条关键规则——\p训练家只能替换\n自己的宝可梦，\p禁止对它们下达\n任何战斗指令。\p宝可梦将完全凭借自己的\n本能战斗，\p您需要完全信赖您的宝可梦，\n在一边旁观它们对战。\p如果您能成功地连续\n打败7个训练家，\l我们将向您呈上精美奖品。\p如果您在挑战途中\n想要暂停的话，\p请确保在退出前完好地写下了记录。\n否则我们将视挑战为无效。$"
 
 VerdanturfTown_BattleTentLobby_Text_ReturnFortified::
     .string "当您的心灵与您的宝可梦都变得\n更强的时候，再回到这里来吧。$"
@@ -192,7 +192,7 @@ VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules::
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainNatureRules::
-    .string "由于它所处自然环境，宝可梦\n可能会不知原因的攻击。\p另外的宝可梦可能会\n保护自己免受伤害。\p有的还喜欢干扰\n和迷惑自己的敌人。\p由于它所处的自然环境，宝可梦\n可能有它所最喜欢的招式\l并且可以熟练使用。\p它也有可能存在不喜欢的招式\n于是不擅长使用。$"
+    .string "由于它所处自然环境，宝可梦可能\n会不知原因的攻击。\p另外的宝可梦可能会\n保护自己免受伤害。\p有的还喜欢干扰\n和迷惑自己的敌人。\p由于它所处的自然环境，宝可梦可能\n有它所最喜欢的招式\l并且可以熟练使用。\p它也有可能存在不喜欢的招式\n于是不擅长使用。$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules::

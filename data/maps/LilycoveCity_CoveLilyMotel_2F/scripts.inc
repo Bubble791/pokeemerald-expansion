@@ -88,7 +88,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy:
     .string "你永远不知道什么时候\n会碰上挑战的人，\p所以我出门的时候\n从来都带着GBA。$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles:
-    .string "亚希达： …… …… ……\n…… …… ……Zzz……\p…… …… ……嗯？！\n哦，抱歉抱歉！我在打盹了！\p我是来看\n宝可梦华丽大赛的。\p虽说看上去也确实挺有趣的，\n但是……\p像我这样的纯粹主义者——\n更钟爱对战与强大的训练家。\p但这只是就我而言。\p{PLAYER}{KUN}，希望你能享受一切，\n包括道馆，华丽大赛，对战帐篷，\l所有的一切！$"
+    .string "亚希达： …… …… ……\n…… …… ……Zzz……\p…… …… ……嗯？！\n哦，抱歉抱歉！我在打盹了！\p我是来看看\n宝可梦华丽大赛的。\p虽说看上去也确实挺有趣的，\n但是……\p像我这样的纯粹主义者——\n更钟爱对战与强大的训练家。\p但这只是就我而言。\p{PLAYER}{KUN}，希望你能享受一切，\n包括道馆，华丽大赛，对战帐篷，\l所有的一切！$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy:
     .string "亚希达：我想赢得华丽大赛\n也需要策略。\p要我说，制定华丽大赛的战略\n也是成为一个优秀训练家的途径之一。$"

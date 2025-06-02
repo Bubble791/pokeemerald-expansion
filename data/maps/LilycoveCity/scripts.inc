@@ -1,6 +1,3 @@
-.set LOCALID_WOMAN_1, 19
-.set LOCALID_MAN_1, 20
-
 LilycoveCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LilycoveCity_OnTransition
 	map_script MAP_SCRIPT_ON_LOAD, LilycoveCity_OnLoad
@@ -136,13 +133,13 @@ LilycoveCity_EventScript_FatMan::
 LilycoveCity_EventScript_Man1::
 	lockall
 	msgbox LilycoveCity_Text_JustArrivedAndSawRarePokemon, MSGBOX_NPC
-	applymovement LOCALID_MAN_1, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_LILYCOVE_MAN_1, Common_Movement_FaceOriginalDirection
 	end
 
 LilycoveCity_EventScript_Woman1::
 	lockall
 	msgbox LilycoveCity_Text_HoneymoonVowToSeeRarePokemon, MSGBOX_NPC
-	applymovement LOCALID_WOMAN_1, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_LILYCOVE_WOMAN_1, Common_Movement_FaceOriginalDirection
 	end
 
 LilycoveCity_EventScript_CitySign::
@@ -425,7 +422,7 @@ LilycoveCity_Text_MayWontBeBeaten:
     .string "小遥：我培育的宝可梦才不会\n输给你呢，{PLAYER}{KUN}！$"
 
 LilycoveCity_Text_MayDefeat:
-    .string "…… …… …… ……\p想起我们之前\n在103号道路的对战了，{PLAYER}{KUN}。\p那场对战让你变得这么强了，\n是吗，{PLAYER}{KUN}？$"
+    .string "…… …… …… ……\p想起我们之前在103号道路的\n对战了，{PLAYER}{KUN}。\p那场对战让你变得这么强了，\n是吗，{PLAYER}{KUN}？$"
 
 LilycoveCity_Text_MayGoingBackToLittleroot:
     .string "小遥：我打算不久后\n回未白镇了。\p我已经捕捉了不少宝可梦，\n宝可梦图鉴也进展顺利，\l我想回家给爸爸看。$"
@@ -455,10 +452,10 @@ LilycoveCity_Text_BrendanDefeat:
     .string "唔……\n你的宝可梦培育得不错。\p明明我才是前辈训练家……\n有点不甘心啊。$"
 
 LilycoveCity_Text_BrendanGoingBackToLittleroot:
-    .string "小悠：我……\n我打算回未白镇了。\p你也知道我在帮爸爸收集\n宝可梦图鉴，现在进展得还挺不错，\l我要回去给他看看。$"
+    .string "小悠：我……\n我打算回未白镇了。\p你也知道我在帮爸爸收集宝可梦图鉴，\n现在进展得还挺不错，\l我要回去给他看看。$"
 
 LilycoveCity_Text_BrendanYouGoingToCollectBadges:
-    .string "{PLAYER}，你接下来打算做什么？\p收集所有的道馆徽章，然后\n去挑战宝可梦联盟吗？\p也许我也会试试……\p好了，无论如何，加油吧！$"
+    .string "{PLAYER}，你接下来打算做什么？\p收集所有的道馆徽章，\n然后去挑战宝可梦联盟吗？\p也许我也会试试……\p好了，无论如何，加油吧！$"
 
 LilycoveCity_Text_BrendanYouGoingToPokemonLeague:
     .string "{PLAYER}，你接下来打算做什么？\p你变得这么强了，\n试试挑战宝可梦联盟去吗？\p呵呵，就算我——如果能再\n努力训练一下，\l也许会比你更强的，{PLAYER}。\p好了，无论如何，加油吧！$"
@@ -539,10 +536,10 @@ LilycoveCity_Text_MuseumSignPlayersExhibit:
     .string "水静市美术馆\p“{PLAYER}的宝可梦收藏品\n正在展出！”$"
 
 LilycoveCity_Text_HarborSignUnderConstruction:
-    .string "水静市港口\p“破浪号游船正在\n凯那市建造中，\p预计近期\n即可通航。”$"
+    .string "水静市港口\p“破浪号渡轮正在\n凯那市建造中，\p预计近期\n即可通航。”$"
 
 LilycoveCity_Text_HarborSign:
-    .string "水静市港口\p“愿破浪号游船\n能为您带来最快乐的旅行体验。”$"
+    .string "水静市港口\p“愿破浪号渡轮\n能为您带来最快乐的旅行体验。”$"
 
 LilycoveCity_Text_TrainerFanClubSign:
     .string "宝可梦训练家俱乐部\p牌子上潦草地写着一些\n训练家的名字……$"

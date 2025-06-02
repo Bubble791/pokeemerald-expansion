@@ -1,6 +1,3 @@
-.set LOCALID_SAILOR, 1
-.set LOCALID_SCOTT, 5
-
 SSTidalCorridor_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, SSTidalCorridor_OnFrame
 	.byte 0
@@ -188,20 +185,20 @@ SSTidalCorridor_EventScript_TrainerNotDefeated::
 
 SSTidalCorridor_EventScript_ScottScene::
 	lockall
-	applymovement LOCALID_SCOTT, SSTidalCorridor_Movement_ScottApproachPlayer
+	applymovement LOCALID_SS_TIDAL_SCOTT, SSTidalCorridor_Movement_ScottApproachPlayer
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	msgbox SSTidalCorridor_Text_ScottBattleFrontierInvite, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, SSTidalCorridor_Movement_PlayerWatchScottExit
-	applymovement LOCALID_SAILOR, SSTidalCorridor_Movement_SailorMoveForScott
-	applymovement LOCALID_SCOTT, SSTidalCorridor_Movement_ScottExit
+	applymovement LOCALID_PLAYER, SSTidalCorridor_Movement_PlayerWatchScottExit
+	applymovement LOCALID_SS_TIDAL_EXIT_SAILOR, SSTidalCorridor_Movement_SailorMoveForScott
+	applymovement LOCALID_SS_TIDAL_SCOTT, SSTidalCorridor_Movement_ScottExit
 	waitmovement 0
 	playse SE_EXIT
 	waitse
-	removeobject LOCALID_SCOTT
-	applymovement LOCALID_SAILOR, SSTidalCorridor_Movement_SailorReturn
+	removeobject LOCALID_SS_TIDAL_SCOTT
+	applymovement LOCALID_SS_TIDAL_EXIT_SAILOR, SSTidalCorridor_Movement_SailorReturn
 	waitmovement 0
 	delay 30
 	setflag FLAG_MET_SCOTT_ON_SS_TIDAL
@@ -284,7 +281,7 @@ SSTidalCorridor_Text_HorizonSpreadsBeyondPorthole:
     .string "舷窗外地平线\n愈加宽广。$"
 
 SSTidalCorridor_Text_BrineyWelcomeAboard:
-    .string "哈奇：欢迎上船，{PLAYER}{KUN}！\p我被选作破浪号的\n荣誉船长了！\p现在你可以叫我船长哈奇了！\p其实我本已是退休的人了，\n但当我看见这艘雄伟的渡轮时……\p怎么说呢，它唤醒了我心中的\n水手之魂！$"
+    .string "哈奇：欢迎上船，{PLAYER}{KUN}！\p我被选作破浪号的\n荣誉船长了！\p现在你可以叫我哈奇船长了！\p其实我本已是退休的人了，\n但当我看见这艘雄伟的渡轮时……\p怎么说呢，它唤醒了我心中的\n水手之魂！$"
 
 SSTidalCorridor_Text_Peeko:
     .string "小皮：皮可皮可……$"

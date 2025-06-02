@@ -1,5 +1,3 @@
-.set LOCALID_TRICK_MASTER, 1
-
 Route110_TrickHouseEnd_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route110_TrickHouseEnd_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, Route110_TrickHouseEnd_OnTransition
@@ -22,9 +20,9 @@ Route110_TrickHouseEnd_OnWarp:
 	.2byte 0
 
 Route110_TrickHouseEnd_EventScript_SetTrickMasterPos::
-	addobject LOCALID_TRICK_MASTER
-	showobjectat LOCALID_TRICK_MASTER, MAP_ROUTE110_TRICK_HOUSE_END
-	turnobject LOCALID_TRICK_MASTER, DIR_EAST
+	addobject LOCALID_TRICK_MASTER_END
+	showobjectat LOCALID_TRICK_MASTER_END, MAP_ROUTE110_TRICK_HOUSE_END
+	turnobject LOCALID_TRICK_MASTER_END, DIR_EAST
 	end
 
 Route110_TrickHouseEnd_OnFrame:
@@ -151,7 +149,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle8::
 	delay 30
 	msgbox Route110_TrickHouseEnd_Text_FountainOfIdeasRunDry, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_TRICK_MASTER, Common_Movement_FacePlayer
+	applymovement LOCALID_TRICK_MASTER_END, Common_Movement_FacePlayer
 	waitmovement 0
 	delay 30
 	msgbox Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent, MSGBOX_DEFAULT
@@ -179,12 +177,12 @@ Route110_TrickHouseEnd_EventScript_GiveBlueTent::
 	return
 
 Route110_TrickHouseEnd_EventScript_TrickMasterExit::
-	applymovement LOCALID_TRICK_MASTER, Route110_TrickHouse_Movement_TrickMasterSpin
+	applymovement LOCALID_TRICK_MASTER_END, Route110_TrickHouse_Movement_TrickMasterSpin
 	waitmovement 0
 	playse SE_M_EXPLOSION
-	applymovement LOCALID_TRICK_MASTER, Route110_TrickHouse_Movement_TrickMasterJumpAway
+	applymovement LOCALID_TRICK_MASTER_END, Route110_TrickHouse_Movement_TrickMasterJumpAway
 	waitmovement 0
-	removeobject LOCALID_TRICK_MASTER
+	removeobject LOCALID_TRICK_MASTER_END
 	addvar VAR_TRICK_HOUSE_LEVEL, 1
 	return
 
@@ -201,43 +199,43 @@ Route110_TrickHouseEnd_EventScript_NoRoomForTent::
 	return
 
 Route110_TrickHouseEnd_EventScript_TrickMasterFaceAwaySouth::
-	applymovement LOCALID_TRICK_MASTER, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_TRICK_MASTER_END, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	return
 
 Route110_TrickHouseEnd_EventScript_TrickMasterFaceAwayNorth::
-	applymovement LOCALID_TRICK_MASTER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_TRICK_MASTER_END, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	return
 
 Route110_TrickHouseEnd_EventScript_TrickMasterFaceAwayWest::
-	applymovement LOCALID_TRICK_MASTER, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_TRICK_MASTER_END, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	return
 
 Route110_TrickHouseEnd_EventScript_TrickMasterFaceAwayEast::
-	applymovement LOCALID_TRICK_MASTER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_TRICK_MASTER_END, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	return
 
 Route110_TrickHouseEnd_EventScript_TrickMasterExitTrigger::
 	lockall
-	turnobject LOCALID_TRICK_MASTER, DIR_WEST
+	turnobject LOCALID_TRICK_MASTER_END, DIR_WEST
 	playse SE_PIN
-	applymovement LOCALID_TRICK_MASTER, Common_Movement_ExclamationMark
+	applymovement LOCALID_TRICK_MASTER_END, Common_Movement_ExclamationMark
 	waitmovement 0
 	delay 20
-	applymovement LOCALID_TRICK_MASTER, Route110_TrickHouseEnd_Movement_TrickMasterSurprise
+	applymovement LOCALID_TRICK_MASTER_END, Route110_TrickHouseEnd_Movement_TrickMasterSurprise
 	waitmovement 0
 	playse SE_M_EXPLOSION
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	msgbox Route110_TrickHouseEnd_Text_YoureIgnoringMe, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Route110_TrickHouseEnd_Movement_KeepPlayerInRoom
+	applymovement LOCALID_PLAYER, Route110_TrickHouseEnd_Movement_KeepPlayerInRoom
 	waitmovement 0
 	delay 4
-	turnobject LOCALID_TRICK_MASTER, DIR_EAST
+	turnobject LOCALID_TRICK_MASTER_END, DIR_EAST
 	releaseall
 	end
 
@@ -280,7 +278,7 @@ Route110_TrickHouseEnd_Text_FountainOfIdeasRunDry:
     .string "我……我该怎么办？\n我对谜题的灵感\l已经枯竭了……\p也许我该去环游全国\n来寻找灵感……$"
 
 Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent:
-    .string "我不喜欢认输，但你\n确实比我优秀！\p不过，你一定是被我的魅力\n所吸引，才会一次又一次地\l来到这儿。一定是的！\p然而，这与我的失败\n没有关系！\p作为拥有紧迫感的你和\n拥有天才的头脑的我两个人之间\l友谊的证明，希望你能\l收下这件纪念品！\p其实，这里有两个——\n红色帐篷和蓝色帐篷。\l你喜欢哪一个？$"
+    .string "我不喜欢认输，\n但你确实比我优秀！\p不过，你一定是被我的魅力\n所吸引，才会一次又一次地\l来到这儿。一定是的！\p然而，这与我的失败\n没有关系！\p作为拥有紧迫感的你和\n拥有天才的头脑的我两个人之间\l友谊的证明，希望你能\l收下这件纪念品！\p其实，这里有两个——\n红色帐篷和蓝色帐篷。\l你喜欢哪一个？$"
 
 Route110_TrickHouseEnd_Text_NoRoomInPC:
     .string "什么？你的电脑里没有空间了？\n我该怎么办？\p我是一个心地非常善良的人，\n你以后再来拿吧！$"

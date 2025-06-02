@@ -287,7 +287,7 @@ Route124_DivingTreasureHuntersHouse_Text_Greeting:
     .string "我是水下宝藏寻宝者！\p专门潜到深海打捞\n沉睡在海底的宝物！$"
 
 Route124_DivingTreasureHuntersHouse_Text_HaveYouSeenAnyShards:
-    .string "告诉我，你见过\n古代工具的碎片吗？$"
+    .string "告诉我，\n你见过古代工具的碎片吗？$"
 
 Route124_DivingTreasureHuntersHouse_Text_YouHaventGotAnyShards:
     .string "你手头没有宝物啊……\p如果你找到了碎片，比如红色碎片\n之类的，就来和我交换吧！$"

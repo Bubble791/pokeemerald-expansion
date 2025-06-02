@@ -631,7 +631,7 @@ BattleFrontier_ExchangeServiceCorner_Text_BrightpowderDesc::
     .string "一件能射出眩目的光降低\n命中率的道具。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDesc::
-    .string "提升物理招式的威力，但不能\n使用其他招式了。$"
+    .string "提升物理招式的威力，但无法\n使用其他招式。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc::
     .string "一件在接触攻击时能使对手\n畏缩的道具。$"

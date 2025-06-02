@@ -1,5 +1,3 @@
-.set LOCALID_FAMILIAR_GRUNT, 13
-
 SlateportCity_OceanicMuseum_1F_MapScripts::
 	.byte 0
 
@@ -9,14 +7,14 @@ SlateportCity_OceanicMuseum_1F_EventScript_EntranceAttendant::
 
 SlateportCity_OceanicMuseum_1F_EventScript_PayEntranceFeeLeft::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	goto SlateportCity_OceanicMuseum_1F_EventScript_PayEntranceFee
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_PayEntranceFeeRight::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	goto SlateportCity_OceanicMuseum_1F_EventScript_PayEntranceFee
 	end
@@ -27,7 +25,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_PayEntranceFee::
 	goto_if_eq VAR_RESULT, YES, SlateportCity_OceanicMuseum_1F_EventScript_CheckMoneyForFee
 	closemessage
 	hidemoneybox
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PushPlayerBackFromCounter
+	applymovement LOCALID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PushPlayerBackFromCounter
 	waitmovement 0
 	releaseall
 	end
@@ -49,7 +47,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_NotEnoughMoney::
 	msgbox SlateportCity_OceanicMuseum_1F_Text_NotEnoughMoney, MSGBOX_DEFAULT
 	closemessage
 	hidemoneybox
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PushPlayerBackFromCounter
+	applymovement LOCALID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PushPlayerBackFromCounter
 	waitmovement 0
 	releaseall
 	end
@@ -146,9 +144,9 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
 	faceplayer
 	delay 8
 	playse SE_PIN
-	applymovement LOCALID_FAMILIAR_GRUNT, Common_Movement_ExclamationMark
+	applymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_FAMILIAR_GRUNT, Common_Movement_Delay48
+	applymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, Common_Movement_Delay48
 	waitmovement 0
 	msgbox SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM_THIEF
@@ -163,21 +161,21 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitNorth::
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PlayerWatchGruntExitNorth
-	applymovement LOCALID_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExitNorth
+	applymovement LOCALID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PlayerWatchGruntExitNorth
+	applymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExitNorth
 	waitmovement 0
 	goto SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitSouth::
-	applymovement LOCALID_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExit
+	applymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExit
 	waitmovement 0
 	goto SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited
 	end
 
 SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitWestEast::
-	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PlayerWatchGruntExitWestEast
-	applymovement LOCALID_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExit
+	applymovement LOCALID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PlayerWatchGruntExitWestEast
+	applymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExit
 	waitmovement 0
 	goto SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited
 	end
@@ -185,7 +183,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitWestEast::
 SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited::
 	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_FAMILIAR_AQUA_GRUNT
 	playse SE_EXIT
-	removeobject LOCALID_FAMILIAR_GRUNT
+	removeobject LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT
 	release
 	end
 
@@ -288,7 +286,7 @@ SlateportCity_OceanicMuseum_1F_Text_BeachSandDisplay:
     .string "海滩沙子的样品。\p“河流冲下\n高山上的石块，在颠簸中\l粉碎成小石子，\p最后成为海滩上\n松散的沙粒”。$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact1:
-    .string "“海洋小常识 1\n为什么海水是蓝的？\p光分成多种颜色，\p穿过海水时，\n大部分光失去了颜色。\p但蓝色光能留住颜色，\n所以海水看上去就成了蓝色。”$"
+    .string "“海洋小常识 1\n为什么海水是蓝的？\p光分成多种颜色。\p穿过海水时，\n大部分光失去了颜色。\p但蓝色光能留住颜色，\n所以海水看上去就成了蓝色。”$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact2:
     .string "“海洋小常识 2\n为什么海水是咸的？\p“海水中溶解的盐\n以钠离子和氯离子的形式存在。\p这些离子由礁石分离，\n被雨水冲进大海。\p溶解的盐慢慢聚集，\n使海水变咸。”$"

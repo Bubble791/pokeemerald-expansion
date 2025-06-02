@@ -413,7 +413,7 @@ gTVPokemonTodaySuccessfulText11::
 	.string "大姐姐：啊呀！\n时间到了！\p那么各位，今天就到这里。\n下次节目再见！\p大哥哥：记住，下次可能\n就会介绍你的宝可梦哦！$"
 
 SmartShopper_Text_Intro::
-	.string "大家好！\p欢迎收看《精明购物达人》！\p记者：观众朋友们好！\p今天我们来到{STR_VAR_2}的商店，\p看看最近的热销商品\n都有哪些。$"
+	.string "大家好！\p欢迎收看《精明购物达人》！\p记者：观众朋友们好！\p今天我们来到\n{STR_VAR_2}的商店，\p看看最近的热销商品\n都有哪些。$"
 
 SmartShopper_Text_ClerkNormal::
 	.string "让我们采访店员\n了解一下情况。\p您好，生意怎么样？\p店员：哦，相当不错。\p最近{STR_VAR_2}卖得特别好。\p前几天有位叫{STR_VAR_1}的训练家\n一口气买了{STR_VAR_3}个呢。$"
@@ -559,10 +559,10 @@ gTVBreakingNewsText06::
 	.string "当{STR_VAR_1}遇到稀有的\n{STR_VAR_2}时，训练家派出了\l宝可梦{STR_VAR_3}。$"
 
 gTVBreakingNewsText07::
-	.string "训练家让{STR_VAR_2}\n使用了招式{STR_VAR_1}。\p一不小心，训练家\n使稀有宝可梦昏厥了……$"
+	.string "训练家让{STR_VAR_2}\n使用了招式{STR_VAR_1}。\p一不小心，训练家使稀有宝可梦\n昏厥了……$"
 
 gTVBreakingNewsText12::
-	.string "然而，{STR_VAR_1}看到稀有的\n{STR_VAR_2}时慌了神。\p慌乱中，训练家命令\n{STR_VAR_3}发动攻击。\p一不小心，训练家\n使稀有宝可梦昏厥了。$"
+	.string "然而，{STR_VAR_1}看到稀有的\n{STR_VAR_2}时慌了神。\p慌乱中，训练家命令\n{STR_VAR_3}发动攻击。\p一不小心，训练家使稀有宝可梦\n昏厥了。$"
 
 gTVBreakingNewsText08::
 	.string "那一刻，{STR_VAR_2}\n回荡着{STR_VAR_1}沮丧的\l尖叫声……$"
@@ -964,7 +964,7 @@ gTVSafariFanClubText07::
 	.string "这位训练家的确用了宝可方块。\n那次用了{STR_VAR_2}个。\p不过真希望这位训练家\n做得更好一些啊。$"
 
 gTVSafariFanClubText08::
-	.string "我觉得这位训练家要是用些\n宝可方块会更好，但那次\l一个都没用呢。$"
+	.string "我觉得这位训练家要是用些宝可方块\n会更好，但那次一个都没用呢。$"
 
 gTVSafariFanClubText09::
 	.string "记者：是这样吗？\p看来我们的朋友{STR_VAR_1}\n还需要多磨练狩猎技巧呢。\p向导：希望这位训练家多来\n练习掌握诀窍。$"
@@ -1051,7 +1051,7 @@ ContestLiveUpdates_Text_LastInBothRounds::
 	.string "它在第1轮评审和第2轮评审中\n都排名垫底。\p希望{STR_VAR_1}能重新训练\n{STR_VAR_2}，洗刷这次\l惨败的耻辱。$"
 
 ContestLiveUpdates_Text_NotExcitingEnough::
-	.string "它没能抓住观众情绪\n做出恰当的表演。\p希望{STR_VAR_1}学会把握\n观众心理，下次能\l点燃全场热情。$"
+	.string "它没能抓住观众情绪\n做出恰当的表演。\p希望{STR_VAR_1}学会把握观众心理，\n下次能点燃全场热情。$"
 
 ContestLiveUpdates_Text_LostAfterWinningRound1::
 	.string "虽然第1轮评审获得第1，\n但第2轮评审表演完全失败。\p遭遇了耻辱性的\n逆转败北。\p相信{STR_VAR_1}正在研究\n如何提升表演效果。$"
@@ -1069,7 +1069,7 @@ ContestLiveUpdates_Text_ValiantEffortButLost::
 	.string "{STR_VAR_1}虽然奋力拼搏，\n但……\p最终仍以垫底收场。\p希望{STR_VAR_1}能吸取教训，\n将经验化为成长动力。$"
 
 ContestLiveUpdates_Text_Outro::
-	.string "节目最后，按惯例\n向冠军致以祝福。\p本次的冠军是{STR_VAR_1}\n和{STR_VAR_2}！\p主持人：准备好了吗？\n大家一起！\p观众：{STR_VAR_1}！{STR_VAR_2}！\n恭喜夺冠！\l你们是最棒的！$"
+	.string "节目最后，\n按惯例向冠军致以祝福。\p本次的冠军是{STR_VAR_1}\n和{STR_VAR_2}！\p主持人：准备好了吗？\n大家一起！\p观众：{STR_VAR_1}！{STR_VAR_2}！\n恭喜夺冠！\l你们是最棒的！$"
 
 gTVPokemonBattleUpdateText00::
 	.string "《宝可梦对战快报》！\p为您带来最新最热的\n宝可梦对战实况！$"
@@ -1186,7 +1186,7 @@ gTVInSearchOfTrainersText06::
 	.string "{PLAYER}擅长预判\n对手的行动。\p道具使用的时机\n精准得惊人！$"
 
 gTVInSearchOfTrainersText07::
-	.string "说实话，我原本以为\n自己还算厉害。\p虽然最终落败，但确实\n进行了势均力敌的战斗。\p不过如果连和我对战都吃力，\n{PLAYER}你还要继续努力啊！$"
+	.string "说实话，我原本以为\n自己还算厉害。\p虽然最终落败，\n但确实进行了势均力敌的战斗。\p不过如果连和我对战都吃力，\n{PLAYER}你还要继续努力啊！$"
 
 gTVInSearchOfTrainersText08::
 	.string "对战结束后，我们请{PLAYER}\n用一句话总结。\p训练家回答：“{STR_VAR_1}”。\p{PLAYER}的宝可梦{STR_VAR_2}与\n{STR_VAR_3}……\l还有“{STR_VAR_1}”……\p嗯！意味深长！\n这句话蕴含深刻意义！\p不愧是优秀训练家，\n说的话也充满智慧。\p今天节目就到这里！\n下期再见！$"

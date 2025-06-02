@@ -173,7 +173,7 @@ MatchCall_DifferentRouteBattleRequestText1::
     .string "嗨！{PLAYER}，你好！\n我是{STR_VAR_1}。\p想和我对战一场吗？\p我就在\n{STR_VAR_2}等你！$"
 
 MatchCall_DifferentRouteBattleRequestText2::
-    .string "你好啊，{PLAYER}！\n我是{STR_VAR_1}。\p你想不想再和我比试一场？\p你能在\n{STR_VAR_2}这边找到我。我等着你！$"
+    .string "你好啊，{PLAYER}！\n我是{STR_VAR_1}。\p你想不想再和我比试一场？\p你能在{STR_VAR_2}\n这边找到我。我等着你！$"
 
 MatchCall_DifferentRouteBattleRequestText3::
     .string "你好啊，{PLAYER}！\n是我，{STR_VAR_1}。\p我的宝可梦比起之前\n成长了许多。\p我想看看它们和你的\n宝可梦比起来谁更强，{PLAYER}。\p我们对战吧！\p我就在{STR_VAR_2}这里等你。$"
@@ -209,7 +209,7 @@ MatchCall_DifferentRouteBattleRequestText13::
     .string "啊，你好，{PLAYER}{KUN}！\n我是{STR_VAR_1}！\l你的宝可梦都好吗？\p我的宝可梦非常健康，\n看起来不会输给你！\p我很想再和你对战一场。\p如果你在{STR_VAR_2}附近，\n一定要来找我们。$"
 
 MatchCall_DifferentRouteBattleRequestText14::
-    .string "哦，好，{PLAYER}{KUN}。\n我是{STR_VAR_1}。\l一切都好吧。\p哦，对了！我的宝可梦已经\n比以前强大了不少。\p你不觉得我们应该\n再战一场吗，{PLAYER}{KUN}？\p我会在\n{STR_VAR_2}等着你的。\p随时来找我们，好吗？$"
+    .string "哦，好，{PLAYER}{KUN}。\n我是{STR_VAR_1}。\l一切都好吧。\p哦，对了！我的宝可梦已经\n比以前强大了不少。\p你不觉得我们应该\n再战一场吗，{PLAYER}{KUN}？\p我会在{STR_VAR_2}\n等着你的。\p随时来找我们，好吗？$"
 
 MatchCall_PersonalizedText1::
     .string "是我啊，热爱大山的\n{STR_VAR_1}！\p那个，上次见过以后，你是不是\n也开始喜欢群山了呢？\p我很少在山里看见你呀……\p下一次，让我们在\n{STR_VAR_2}碰头吧。$"
@@ -326,7 +326,7 @@ MatchCall_PersonalizedText38::
     .string "哦，我是{STR_VAR_1}，你好。\p我已经游了很久了，\n可看起来还是到不了彩悠市。\p我不会在兜圈子吧。\p不，那绝对不可能啦。\n哇哈哈哈。\l保重！$"
 
 MatchCall_PersonalizedText39::
-    .string "嘿，我是{STR_VAR_1}……\n哎呀！\p扑通！\p咕噜——咕噜——\n咕噜——咕噜……\p哗啦！\p呼——呼！呼——呼！\p嘿！不好意思啊！\n我刚刚在抹防晒油。\p结果我手滑了一下，\n宝可导航一下子掉到水里了！\p不过，得文的\n宝可导航还真是结实啊。\p泡到水里都没事！\p总之，我要晒日光浴了，\n改日再聊吧。$"
+    .string "嘿，我是{STR_VAR_1}……\n哎呀！\p扑通！\p咕噜——咕噜——\n咕噜——咕噜……\p哗啦！\p呼——呼！呼——呼！\p嘿！不好意思啊！\n我刚刚在抹防晒油。\p结果我手滑了一下，\n宝可导航一下子掉到水里了！\p不过，得文的宝可导航\n还真是结实啊。\p泡到水里都没事！\p总之，我要晒日光浴了，\n改日再聊吧。$"
 
 MatchCall_PersonalizedText40::
     .string "你好，我是{STR_VAR_1}。\p铁人三项赛里面，\n我最喜欢游泳了。\p但要是泡海里太久，\n皮肤会不会皱成梅干啊？\p哦，铁人三项赛真是对\n人类耐力的严酷考验啊！再见！$"
@@ -833,7 +833,7 @@ MatchCall_Text_Wally5::
     .string "满充：{PLAYER}？太不可思议了！还记得我们\n一起捕捉的拉鲁拉丝吗？\l它进化了，{PLAYER}！\p我或许有些天赋……\p啊，\n我不该得意忘形！\p毕竟被称赞的应该是\n宝可梦才对！$"
 
 MatchCall_Text_Wally6::
-    .string "…… …… ……\n…… …… ……\p满充似乎\n不在宝可导航的服务区内……$"
+    .string "…… …… ……\n…… …… ……\p满充似乎不在宝可导航的\n服务区内……$"
 
 MatchCall_Text_Wally7::
     .string "满充：哦，{PLAYER}！\p在遇见你之前，\n我几乎从不出门……\p但现在，我正在和自己的\n宝可梦一起冒险呢……\p{PLAYER}……\n谢谢你……$"
@@ -854,7 +854,7 @@ MatchCall_Text_Scott5::
     .string "亚希达：哦，嗨，{PLAYER}{KUN}。\p在海底可能会有\n强大的训练家吗？\p我不能亲自一探究竟。\n首先我不会游泳。\l再说我也不培育宝可梦啊……$"
 
 MatchCall_Text_Scott6::
-    .string "亚希达：嗨，嗨，{PLAYER}{KUN}！\p你知道吧？\n当你收集到了所有的道馆徽章，\l就能够挑战宝可梦联盟啦！\p以你的实力要成为冠军\n绝非痴人说梦。\p但是你要知道，\n还有更进一步的东西……\p不过就先说这些吧，\n你可以好好期待一下。\p当你打赢宝可梦联盟，\n进入名人堂之后！$"
+    .string "亚希达：嗨，嗨，{PLAYER}{KUN}！\p你知道吧？\n当你收集到了所有的道馆徽章，\l就能够挑战宝可梦联盟啦！\p以你的实力要成为冠军\n绝非痴人说梦。\p但是你要知道，\n还有更进一步的东西……\p不过就先说这些吧，\n你可以好好期待一下。\p当你打赢宝可梦联盟，\n登入名人堂之后！$"
 
 MatchCall_Text_Scott7::
     .string "…… …… ……\n…… …… ……\p亚希达似乎\n不在宝可导航的服务区内……$"
@@ -905,7 +905,7 @@ MatchCall_Text_Steven6::
     .string "…… …… ……\p大吾似乎没有\n接电话……$"
 
 MatchCall_Text_Steven7::
-    .string "大吾：{PLAYER}{KUN}……恭喜你\n进入了名人堂。\p…… …… ……\n…… …… ……\p希望我们后会有期！$"
+    .string "大吾：{PLAYER}{KUN}……\n恭喜你登入名人堂。\p…… …… ……\n…… …… ……\p希望我们后会有期！$"
 
 MatchCall_Text_BirchRegisterCall::
     .string "小田卷博士：哦，{PLAYER}{KUN}！\n我已经听说了！\p你的宝可导航已经升级了\n对战寻呼功能对吧？\p我也来登记一下！\p这样你在外面时我也可以检查\n你的宝可梦图鉴进度了！\p…… …… ……$"
@@ -914,10 +914,10 @@ MatchCall_Text_RegisteredBirch::
     .string "将小田卷博士的信息\n登录进宝可导航。$"
 
 MatchCall_Text_UnusedProfBirch::
-    .string "小田卷博士：同时拥有宝可梦图鉴和\n宝可导航的话，研究\l宝可梦会更有趣吧？$"
+    .string "小田卷博士：同时拥有宝可梦图鉴\n和宝可导航的话，研究宝可梦会\l更有趣吧？$"
 
 MatchCall_Text_MrStone1::
-    .string "兹伏奇：哦？{PLAYER}{KUN}！\p既然你给我打电话，那说明\n宝可导航工作正常！\p其他人的信息也可以登录，\n试着联系他们吧！\p好！好！\n你看上去很开心嘛！\p嗯……\n我是怎么知道的？\p因为我正从办公室的窗户里\n往外看着你呢！\p哇哈哈哈！\n回头见！$"
+    .string "兹伏奇：哦？{PLAYER}{KUN}！\p既然你给我打电话，那说明\n宝可导航正常工作！\p其他人的信息也可以登录，\n试着联系他们吧！\p好！好！\n你看上去很开心嘛！\p嗯……\n我是怎么知道的？\p因为我正从办公室的窗户里\n往外看着你呢！\p哇哈哈哈！\n回头见！$"
 
 MatchCall_Text_MrStone2::
     .string "兹伏奇：哦？{PLAYER}{KUN}！\p怎么了？\n难道忘记我拜托你的事了吗？\p我想请你帮我送信给\n武斗镇的大吾那里。\p之后再把那个包裹送给\n凯那市的楠木馆长。\p还记得吧？\p身为忙碌的社长，\n我得先挂了！再见！$"
@@ -935,7 +935,7 @@ MatchCall_Text_MrStone6::
     .string "兹伏奇：什么？\p你和自己的父亲对战\n并获得了胜利？\p太了不起了！\p我从没想到能交到像你这样\n特别的朋友！哇哈哈！$"
 
 MatchCall_Text_MrStone7::
-    .string "您好！\n这里是得文公司……\l哦，你好，{PLAYER}！\p我们社长刚刚还在这里，\n但是现在外出了。\p我们社长是很忙的，不过你\n好像也一样忙啊，{PLAYER}。$"
+    .string "您好！\n这里是得文公司……\l哦，你好，{PLAYER}！\p我们社长刚刚还在这里，\n但是现在外出了。\p我们社长是很忙的，不过你好像\n也一样忙啊，{PLAYER}。$"
 
 MatchCall_Text_MrStone8::
     .string "……啊？……什么？\p固拉……什么？……多？\p断断续续的……\n……听不清……\p沙沙沙……$"

@@ -780,7 +780,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
             {
                 .name = _("洁登"),
                 .facilityClass = FACILITY_CLASS_PKMN_BREEDER_F,
-                .speechBefore = {EC_WORD_SOME, EC_WORD_THOSE_WERE, EC_WORD_YOU, EC_WORD_ALONE, EC_WORD_APPEAR, EC_WORD_DOES},
+                .speechBefore = {EC_WORD_SOME, EC_WORD_THOSE_WERE, EC_WORD_YOU, EC_WORD_APPEAR, EC_WORD_ALONE, EC_WORD_DOES},
                 .speechWin = {EC_WORD_AS, EC_WORD_A, EC_WORD_GROUP, EC_WORD_YOURS, EC_WORD_TALENT, EC_WORD_VICTORY},
                 .speechLose = {EC_WORD_WE, EC_WORD_COULDN_T, EC_WORD_TOGETHER, EC_WORD_WINS, EC_WORD_WAS, EC_EMPTY_WORD},
                 .speechAfter = {EC_WORD_MY, EC_WORD_MAKING, EC_WORD_WILL_BE_HERE, EC_WORD_NO, EC_WORD_NORMAL, EC_EMPTY_WORD},
@@ -2739,7 +2739,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                         {
                             .name = _("伯纳德"),
                             .facilityClass = FACILITY_CLASS_KINDLER,
-                            .speechBefore = {EC_WORD_THIS, EC_WORD_RANK, EC_WORD_BATTLE, EC_WORD_ME, EC_WORD_COULDN_T, EC_WORD_LOSS},
+                            .speechBefore = {EC_WORD_THIS, EC_WORD_RANK, EC_WORD_FIGHT, EC_WORD_ME, EC_WORD_COULDN_T, EC_WORD_LOSS},
                             .speechWin = {EC_WORD_ME, EC_WORD_LEARN, EC_WORD_YOU, EC_WORD_SMARTNESS, EC_WORD_SNORT, EC_EMPTY_WORD},
                             .speechLose = {EC_WORD_OOPS, EC_WORD_YOU_RE, EC_WORD_A, EC_WORD_SCARY, EC_WORD_OF, EC_WORD_PERSON},
                             .speechAfter = {EC_WORD_YOU, EC_WORD_VERY, EC_WORD_BUSY, EC_WORD_QUES, EC_WORD_DON_T, EC_WORD_GIVE_UP},
@@ -3438,9 +3438,9 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                             .name = _("戴恩"),
                             .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
                             .speechBefore = {EC_WORD_ME, EC_WORD_PLANS, EC_WORD_CURRENT, EC_WORD_GET, EC_WORD_IS, EC_WORD_POKEMON},
-                            .speechWin = {EC_WORD_TRAVEL, EC_WORD_AND, EC_WORD_BATTLE, EC_WORD_YEAH, EC_WORD_AWESOME, EC_WORD_EXCL},
+                            .speechWin = {EC_WORD_TRAVEL, EC_WORD_AND, EC_WORD_FIGHT, EC_WORD_YEAH, EC_WORD_AWESOME, EC_WORD_EXCL},
                             .speechLose = {EC_WORD_WAAAH, EC_WORD_EXCL, EC_WORD_MY, EC_WORD_RARE, EC_WORD_POKEMON, EC_WORD_EXCL},
-                            .speechAfter = {EC_WORD_YOU, EC_WORD_HAVE, EC_WORD_HAS, EC_WORD_TEACHER, EC_WORD_WAS, EC_EMPTY_WORD},
+                            .speechAfter = {EC_WORD_YOU, EC_WORD_HAVE, EC_WORD_A, EC_WORD_HAS, EC_WORD_TEACHER, EC_WORD_WAS},
                             .mons =
                                 {
                                     [0] =
@@ -4130,7 +4130,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                             .speechBefore = {EC_WORD_ME, EC_WORD_NO, EC_WORD_NEED, EC_WORD_ANY, EC_MOVE2(HELPING_HAND), EC_WORD_EXCL},
                             .speechWin = {EC_WORD_PARDON, EC_WORD_THIS, EC_WORD_FOE, EC_WORD_YOU, EC_WORD_VERY, EC_WORD_AWFUL},
                             .speechLose = {EC_WORD_THAT, EC_WORD_YEAH, EC_WORD_UNBELIEVABLE, EC_WORD_OF, EC_MOVE2(STRUGGLE), EC_WORD_EXCL},
-                            .speechAfter = {EC_WORD_HEHEHE, EC_WORD_YEAH, EC_WORD_GO, EC_WORD_LOUSY, EC_WORD_BATTLE, EC_WORD_EXCL},
+                            .speechAfter = {EC_WORD_HEHEHE, EC_WORD_YEAH, EC_WORD_GO, EC_WORD_LOUSY, EC_WORD_FIGHT, EC_WORD_EXCL},
                             .mons =
                                 {
                                     [0] =
@@ -4274,7 +4274,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                         {
                             .name = _("泰伦斯"),
                             .facilityClass = FACILITY_CLASS_EXPERT_M,
-                            .speechBefore = {EC_WORD_OH_DEAR, EC_WORD_THIS, EC_WORD_MATCH, EC_WORD_BE, EC_WORD_FOR, EC_WORD_YOUR},
+                            .speechBefore = {EC_WORD_OH_DEAR, EC_WORD_THIS, EC_WORD_MATCH, EC_WORD_BE, EC_WORD_FOR, EC_WORD_YOU},
                             .speechWin = {EC_WORD_OH_DEAR, EC_EMPTY_WORD, EC_WORD_YOU, EC_WORD_SEES, EC_WORD_SNORT, EC_EMPTY_WORD},
                             .speechLose = {EC_WORD_OH_DEAR, EC_WORD_ME, EC_WORD_VERY, EC_WORD_PARDON, EC_EMPTY_WORD, EC_EMPTY_WORD},
                             .speechAfter = {EC_WORD_IS, EC_WORD_YOUR, EC_WORD_GRANDMOTHER, EC_WORD_STRONG, EC_WORD_QUES, EC_EMPTY_WORD},

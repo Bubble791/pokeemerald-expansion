@@ -1,10 +1,3 @@
-.set LOCALID_GRUNT_1, 1
-.set LOCALID_GRUNT_2, 2
-.set LOCALID_SHELLY, 3
-.set LOCALID_SCIENTIST, 5
-.set LOCALID_GRUNT_3, 7
-.set LOCALID_GRUNT_4, 8
-
 Route119_WeatherInstitute_2F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route119_WeatherInstitute_2F_OnTransition
 	.byte 0
@@ -16,18 +9,18 @@ Route119_WeatherInstitute_2F_OnTransition:
 	end
 
 Route119_WeatherInstitute_2F_EventScript_SetScientistPosAquaHere::
-	setobjectxyperm LOCALID_SCIENTIST, 1, 6
-	setobjectmovementtype LOCALID_SCIENTIST, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST, 1, 6
+	setobjectmovementtype LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST, MOVEMENT_TYPE_FACE_RIGHT
 	return
 
 Route119_WeatherInstitute_2F_EventScript_SetScientistPosAquaGone::
-	setobjectxyperm LOCALID_SCIENTIST, 4, 6
-	setobjectmovementtype LOCALID_SCIENTIST, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST, 4, 6
+	setobjectmovementtype LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST, MOVEMENT_TYPE_FACE_RIGHT
 	return
 
 Route119_WeatherInstitute_2F_EventScript_SetScientistPosGameClear::
-	setobjectxyperm LOCALID_SCIENTIST, 2, 2
-	setobjectmovementtype LOCALID_SCIENTIST, MOVEMENT_TYPE_FACE_UP
+	setobjectxyperm LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST, 2, 2
+	setobjectmovementtype LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST, MOVEMENT_TYPE_FACE_UP
 	return
 
 Route119_WeatherInstitute_2F_EventScript_Grunt5::
@@ -53,16 +46,16 @@ Route119_WeatherInstitute_2F_EventScript_Shelly::
 Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::
 	msgbox Route119_WeatherInstitute_2F_Text_ShellyPostBattle, MSGBOX_DEFAULT
 	closemessage
-	addobject LOCALID_GRUNT_3
-	applymovement LOCALID_GRUNT_3, Route119_WeatherInstitute_2F_Movement_GruntApproachShelly
-	applymovement OBJ_EVENT_ID_PLAYER, Route119_WeatherInstitute_2F_Movement_ShovePlayerOutOfWay
+	addobject LOCALID_WEATHER_INSTITUTE_2F_GRUNT_3
+	applymovement LOCALID_WEATHER_INSTITUTE_2F_GRUNT_3, Route119_WeatherInstitute_2F_Movement_GruntApproachShelly
+	applymovement LOCALID_PLAYER, Route119_WeatherInstitute_2F_Movement_ShovePlayerOutOfWay
 	waitmovement 0
 	msgbox Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy, MSGBOX_DEFAULT
 	closemessage
 	playse SE_PIN
-	applymovement LOCALID_SHELLY, Common_Movement_ExclamationMark
+	applymovement LOCALID_WEATHER_INSTITUTE_2F_SHELLY, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_SHELLY, Common_Movement_Delay48
+	applymovement LOCALID_WEATHER_INSTITUTE_2F_SHELLY, Common_Movement_Delay48
 	waitmovement 0
 	msgbox Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre, MSGBOX_DEFAULT
 	closemessage
@@ -72,17 +65,17 @@ Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::
 	fadescreen FADE_TO_BLACK
 	setflag FLAG_HIDE_ROUTE_119_TEAM_AQUA
 	setflag FLAG_HIDE_WEATHER_INSTITUTE_2F_AQUA_GRUNT_M
-	removeobject LOCALID_GRUNT_1
-	removeobject LOCALID_GRUNT_2
-	removeobject LOCALID_SHELLY
-	removeobject LOCALID_GRUNT_4
-	removeobject LOCALID_GRUNT_3
-	applymovement OBJ_EVENT_ID_PLAYER, Route119_WeatherInstitute_2F_Movement_PlayerReturnToPosition
+	removeobject LOCALID_WEATHER_INSTITUTE_2F_GRUNT_1
+	removeobject LOCALID_WEATHER_INSTITUTE_2F_GRUNT_2
+	removeobject LOCALID_WEATHER_INSTITUTE_2F_SHELLY
+	removeobject LOCALID_WEATHER_INSTITUTE_2F_GRUNT_4
+	removeobject LOCALID_WEATHER_INSTITUTE_2F_GRUNT_3
+	applymovement LOCALID_PLAYER, Route119_WeatherInstitute_2F_Movement_PlayerReturnToPosition
 	waitmovement 0
 	fadescreen FADE_FROM_BLACK
-	applymovement LOCALID_SCIENTIST, Route119_WeatherInstitute_2F_Movement_ScientistApproachPlayer
+	applymovement LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST, Route119_WeatherInstitute_2F_Movement_ScientistApproachPlayer
 	waitmovement 0
-	copyobjectxytoperm LOCALID_SCIENTIST
+	copyobjectxytoperm LOCALID_WEATHER_INSTITUTE_2F_SCIENTIST
 	goto Route119_WeatherInstitute_2F_EventScript_ReceiveCastform
 	end
 
@@ -223,10 +216,10 @@ Route119_WeatherInstitute_2F_Text_Grunt3Intro:
     .string "我们是海洋队！\n稀有的东西出现的地方，\l就会有我们！$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Defeat:
-    .string "你赢了我了！$"
+    .string "你赢了！$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3PostBattle:
-    .string "你根本不可能了解我们\n海洋队的理想！\l不要挡住我们前进的道路！$"
+    .string "你根本不了解我们\n海洋队的理想！\l少来碍事！$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Intro:
     .string "别告诉我你也想\n要那只天气宝可梦，\p绝对不可能！\n先得到的一定是我们！$"
@@ -235,7 +228,7 @@ Route119_WeatherInstitute_2F_Text_Grunt5Defeat:
     .string "啊，看看我的宝可梦怎么样？$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5PostBattle:
-    .string "哼，那又怎么样？\n我们想要的……\p我们真正想要的并不在这里……\n咿哈哈哈哈……$"
+    .string "哼，那又怎么样？\n我们想要的……\p我们真正想要的并不在这里……\n咿嘻嘻嘻嘻……$"
 
 Route119_WeatherInstitute_2F_Text_ShellyIntro:
     .string "啊哈哈哈哈！\p竟敢插手我们\n海洋队的行动吗？\p你是无畏，还是无知，\n或是两者兼有呢？\p太可爱了，太可恨了！\n我这就打倒你，小家伙！$"
@@ -247,13 +240,13 @@ Route119_WeatherInstitute_2F_Text_ShellyPostBattle:
     .string "有熔岩队在周围没头苍蝇似的\n乱晃就够讨厌了，现在又多了个你！\p你究竟为什么要\n插手我们的事情？$"
 
 Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy:
-    .string "紧急情况！\p有一批熔岩队的家伙刚刚\n经过天气研究所，\p他们好像是要去\n送神山！$"
+    .string "紧急情况！\p有一批熔岩队的家伙刚刚\n经过天气研究所，\p他们好像是朝着\n送神山去了！$"
 
 Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre:
     .string "什么？！\p我们不能再在这里浪费时间了！\n我们也得赶紧去送神山了！\p啊哈哈哈哈！\n熔岩队，你们给我等着！$"
 
 Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon:
-    .string "谢谢！\n多亏你救了我们！\p也许作为谢礼有点奇怪，\n不过，收下这只宝可梦吧。$"
+    .string "谢谢！\n多亏你救了我们！\p也许作为谢礼有点特别，\n不过，收下这只宝可梦吧。$"
 
 @ Unused
 Route119_WeatherInstitute_2F_Text_NoRoomForPokemon:

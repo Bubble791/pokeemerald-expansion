@@ -1,6 +1,3 @@
-.set LOCALID_BRINEY, 11
-.set LOCALID_WANDAS_BF_OUTSIDE, 21
-
 Route116_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route116_OnTransition
 	map_script MAP_SCRIPT_ON_LOAD, Route116_OnLoad
@@ -15,7 +12,7 @@ Route116_OnTransition:
 	end
 
 Route116_EventScript_SetWandasBoyfriendPos::
-	setobjectxyperm LOCALID_WANDAS_BF_OUTSIDE, 38, 10
+	setobjectxyperm LOCALID_ROUTE116_WANDAS_BF, 38, 10
 	return
 
 Route116_OnLoad:
@@ -144,8 +141,8 @@ Route116_EventScript_Briney::
 
 Route116_EventScript_BrineyTrigger::
 	lockall
-	applymovement LOCALID_BRINEY, Common_Movement_WalkInPlaceFasterRight
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_ROUTE116_BRINEY, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox Route116_Text_ScoundrelMadeOffWithPeeko, MSGBOX_DEFAULT
 	setvar VAR_ROUTE116_STATE, 2
@@ -355,16 +352,16 @@ Route116_Text_ScoundrelMadeOffWithPeeko:
     .string "啊啊啊，我该怎么办？\p我和小皮散步的时候\n被一个奇怪的强盗袭击了……\p那混蛋抢走了\n我亲爱的小皮！\p哇啊啊啊啊啊啊！小皮！$"
 
 Route116_Text_WantToDigTunnel:
-    .string "呜……吼！\p我想要挖那条隧道！$"
+    .string "呜……吼！\p我一定要挖通那条隧道！$"
 
 Route116_Text_DiggingTunnelWhenGoonOrderedMeOut:
-    .string "呜……吼！\n发生了什么？\p我刚才在徒手挖隧道，\n突然过来个蠢货把我赶了出来！\p那隧道里到处是\n容易受惊的宝可梦，\l它们会引起大骚动的。\p所以我们才会停止\n使用大型机械挖隧道的工程……\p我担心那蠢货\n会做出些什么吓到\l宝可梦的蠢事。$"
+    .string "呜……吼！\n发生什么事了？\p我正徒手挖隧道呢，\n突然有个混混把我赶出来了！\p那隧道里的宝可梦\n对噪音特别敏感，\l可能会引发骚乱。\p所以我们才停用了重型机械……\p就怕那混混干蠢事，\n惊动宝可梦们暴动。$"
 
 Route116_Text_GoonHightailedItOutOfTunnel:
-    .string "呜……吼！\p那个蠢货夹着尾巴逃跑了！\n我可以回去挖隧道了！$"
+    .string "呜……吼！\p那混混慌慌张张\n逃出隧道了！\l我又能继续挖啦！$"
 
 Route116_Text_ThankYouTokenOfAppreciation:
-    .string "啊，是你！\p你就是那个在\n橙华森林里帮过我，\l又替我追回了被偷的包裹，\l然后好心地把它送到凯那市去的人！\p楠木馆长告诉我们\n包裹已经平安到达了！\p非常非常感谢！\p在下对您的感谢如同滔滔江水连绵不绝\n又如黄河泛滥一发不可收拾……\l大英雄啊！\p我给你这最优秀的训练家\n带来了个好消息！\p最近我们公司开发出\n一种新的精灵球，\p我们把它送给你，就当作\n我们对一个杰出的训练家的感谢！$"
+    .string "啊，是你！\p你就是那个在\n橙华森林里帮过我，\l又替我追回了被偷的包裹，\l然后好心地把它送到凯那市去的人！\p楠木馆长告诉我们\n包裹已经平安到达了！\p非常非常感谢！\p在下对您的感谢如同滔滔江水连绵不绝\n又如黄河泛滥一发不可收拾……\l大英雄啊！\p我给你这最优秀的训练家\n带来了个好消息！\p最近我们公司开发出\n一种新的精灵球，\p我们把它送给你，就当作我们对一个\n杰出的训练家的感谢！$"
 
 Route116_Text_NewBallAvailableAtMart:
     .string "我们的新精灵球很快\n会在卡那兹市的友好商店出售。\p到时一定要试试！\n谢谢，再见！$"
@@ -373,7 +370,7 @@ Route116_Text_BagIsJamPacked:
     .string "你的包包满了，\n装不下这重复球。$"
 
 Route116_Text_TokenOfAppreciation:
-    .string "我把这种新的精灵球\n送给你，我们最优秀的训练家，\l就当作是我们对你\l为我们递送包裹的谢礼！$"
+    .string "我把这种新的精灵球\n送给你，我们最优秀的训练家，\l就当作是我们对你\l为我们送包裹的谢礼！$"
 
 Route116_Text_CanYouHelpMeFindGlasses:
     .string "我的眼镜丢了……\n能帮我找找吗？$"
@@ -394,7 +391,7 @@ Route116_Text_RouteSignRustboro:
     .string "116号道路\n{LEFT_ARROW}卡那兹市$"
 
 Route116_Text_RusturfTunnelSign:
-    .string "卡绿隧道\n“连接卡那兹市和绿茵镇的隧道\p工程已被\n取消”$"
+    .string "卡绿隧道\n“连接卡那兹市和绿茵镇的隧道\p隧道工程现已\n终止施工”$"
 
 Route116_Text_TunnelersRestHouse:
     .string "隧道工人休息屋$"
@@ -403,5 +400,4 @@ Route116_Text_TrainerTipsBToStopEvolution:
     .string "有用的公告牌！\p如果你不希望宝可梦进化，\n则应在它试图进化时\l按下B键，\l受惊的宝可梦会停止进化。\p这叫做进化取消。$"
 
 Route116_Text_TrainerTipsBagHasPockets:
-    .string "有用的公告牌！\p包包由数个口袋组成，\p得到的道具会\n自动放入合适的口袋中。\p每个训练家都应\n有一个自己的包包。$"
-
+    .string "有用的公告牌！\p包包由数个\n口袋组成，\p得到的道具会\n自动放入合适的口袋中。\p每个训练家都应\n有一个自己的包包。$"

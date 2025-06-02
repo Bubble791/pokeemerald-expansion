@@ -1,6 +1,3 @@
-.set LOCALID_ATTENDANT_SINGLES, 1
-.set LOCALID_ATTENDANT_DOUBLES, 6
-
 BattleFrontier_BattleDomeLobby_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, BattleFrontier_BattleDomeLobby_OnResume
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattleDomeLobby_OnFrame
@@ -17,7 +14,7 @@ BattleFrontier_BattleDomeLobby_OnWarp:
 
 BattleFrontier_BattleDomeLobby_EventScript_TurnPlayerNorth::
 	setvar VAR_TEMP_1, 1
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 
 BattleFrontier_BattleDomeLobby_OnFrame:
@@ -235,14 +232,14 @@ BattleFrontier_BattleDomeLobby_EventScript_EndCancelChallenge::
 BattleFrontier_BattleDomeLobby_EventScript_WalkToDoor::
 	call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES, BattleFrontier_BattleDomeLobby_EventScript_SinglesAttendantWalkToDoor
 	call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_DOUBLES, BattleFrontier_BattleDomeLobby_EventScript_DoublesAttendantWalkToDoor
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleDomeLobby_Movement_WalkToDoor
+	applymovement LOCALID_PLAYER, BattleFrontier_BattleDomeLobby_Movement_WalkToDoor
 	waitmovement 0
 	call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES, BattleFrontier_BattleDomeLobby_EventScript_OpenSinglesDoor
 	call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_DOUBLES, BattleFrontier_BattleDomeLobby_EventScript_OpenDoublesDoor
 	waitdooranim
 	call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES, BattleFrontier_BattleDomeLobby_EventScript_SinglesAttendantEnterDoor
 	call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_DOUBLES, BattleFrontier_BattleDomeLobby_EventScript_DoublesAttendantEnterDoor
-	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleDomeLobby_Movement_PlayerEnterDoor
+	applymovement LOCALID_PLAYER, BattleFrontier_BattleDomeLobby_Movement_PlayerEnterDoor
 	waitmovement 0
 	call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES, BattleFrontier_BattleDomeLobby_EventScript_CloseSinglesDoor
 	call_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_DOUBLES, BattleFrontier_BattleDomeLobby_EventScript_CloseDoublesDoor
@@ -250,19 +247,19 @@ BattleFrontier_BattleDomeLobby_EventScript_WalkToDoor::
 	return
 
 BattleFrontier_BattleDomeLobby_EventScript_SinglesAttendantWalkToDoor::
-	applymovement LOCALID_ATTENDANT_SINGLES, BattleFrontier_BattleDomeLobby_Movement_WalkToDoor
+	applymovement LOCALID_DOME_ATTENDANT_SINGLES, BattleFrontier_BattleDomeLobby_Movement_WalkToDoor
 	return
 
 BattleFrontier_BattleDomeLobby_EventScript_DoublesAttendantWalkToDoor::
-	applymovement LOCALID_ATTENDANT_DOUBLES, BattleFrontier_BattleDomeLobby_Movement_WalkToDoor
+	applymovement LOCALID_DOME_ATTENDANT_DOUBLES, BattleFrontier_BattleDomeLobby_Movement_WalkToDoor
 	return
 
 BattleFrontier_BattleDomeLobby_EventScript_SinglesAttendantEnterDoor::
-	applymovement LOCALID_ATTENDANT_SINGLES, BattleFrontier_BattleDomeLobby_Movement_AttendantEnterDoor
+	applymovement LOCALID_DOME_ATTENDANT_SINGLES, BattleFrontier_BattleDomeLobby_Movement_AttendantEnterDoor
 	return
 
 BattleFrontier_BattleDomeLobby_EventScript_DoublesAttendantEnterDoor::
-	applymovement LOCALID_ATTENDANT_DOUBLES, BattleFrontier_BattleDomeLobby_Movement_AttendantEnterDoor
+	applymovement LOCALID_DOME_ATTENDANT_DOUBLES, BattleFrontier_BattleDomeLobby_Movement_AttendantEnterDoor
 	return
 
 BattleFrontier_BattleDomeLobby_EventScript_WelcomeSingles::
@@ -446,7 +443,7 @@ BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain:
     .string "期待您的再次光临！$"
 
 BattleFrontier_BattleDomeLobby_Text_ExplainSinglesChallenge:
-    .string "单打对战锦标赛\n正如其名——\l这是一项进行单打对战的锦标赛。\p所有的训练家需要选择\n3只宝可梦报名。\p每场对战中，3只宝可梦中的1只\n需要保留作为后备。\p另外2只宝可梦将\n进行1对1战斗。\p查看对手的3只宝可梦后，\n即可选择2只宝可梦出战。\p连续击败4名训练家\n即可获得胜利。\p锦标赛冠军将会\n获得对战点数。\p如果要暂停锦标赛\n请写入记录。\p请确保在退出前完好地写下了记录。\n否则我们将视挑战为无效。$"
+    .string "单打对战锦标赛\n正如其名——\l这是一项进行单打对战的锦标赛。\p所有的训练家需要选择\n3只宝可梦报名。\p每场对战中，3只宝可梦中的1只\n需要保留作为后备。\p另外2只宝可梦将\n进行1对1战斗。\p查看对手的3只宝可梦后，\n即可选择2只宝可梦出战。\p连续击败4位训练家\n即可获得胜利。\p锦标赛冠军将会\n获得对战点数。\p如果要暂停锦标赛\n请写入记录。\p请确保在退出前完好地写下了记录。\n否则我们将视挑战为无效。$"
 
 BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge:
     .string "在带您进入对战巨蛋前，\n需要先写入记录，可以吗？$"
@@ -455,7 +452,7 @@ BattleFrontier_BattleDomeLobby_Text_WhichLevelMode:
     .string "锦标赛提供了2种挑战等级——\nLv. 50级和自由等级。\l您要选择哪个？$"
 
 BattleFrontier_BattleDomeLobby_Text_SelectThreeMons:
-    .string "现在请挑选参赛的\n3只宝可梦。$"
+    .string "请挑选参加的\n3只宝可梦。$"
 
 BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLvOpen:
     .string "很抱歉！\p您能够参加对战的\n宝可梦不满3只。\p您需要准备3只不同种类的\n宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}无法参加对战！\p请在准备就绪之后，\n再来参加吧！$"
@@ -503,7 +500,7 @@ BattleFrontier_BattleDomeLobby_Text_TakeDoublesChallenge:
     .string "要挑战双打对战锦标赛吗？$"
 
 BattleFrontier_BattleDomeLobby_Text_ExplainDoublesChallenge:
-    .string "双打对战锦标赛\n正如其名——\l这是一项进行双打对战的锦标赛。\p所有的训练家需要选择\n3只宝可梦报名。\p每场对战中，3只宝可梦中的1只\n需要保留作为后备。\p另外2只宝可梦将\n进行2对2战斗。\p查看对手的3只宝可梦后，\n即可选择2只宝可梦出战。\p连续击败4名训练家\n即可获得胜利。\p锦标赛冠军将会\n获得对战点数。\p如果您在挑战途中\n想要暂停的话，\p请确保在退出前完好地写下了记录。\n否则我们将视挑战为无效。$"
+    .string "双打对战锦标赛\n正如其名——\l这是一项进行双打对战的锦标赛。\p所有的训练家需要选择\n3只宝可梦报名。\p每场对战中，3只宝可梦中的1只\n需要保留作为后备。\p另外2只宝可梦将\n进行2对2战斗。\p查看对手的3只宝可梦后，\n即可选择2只宝可梦出战。\p连续击败4位训练家\n即可获得胜利。\p锦标赛冠军将会\n获得对战点数。\p如果您在挑战途中\n想要暂停的话，\p请确保在退出前完好地写下了记录。\n否则我们将视挑战为无效。$"
 
 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsSinglesLv50:
     .string "这是上一次Lv. 50级\n单打对战锦标赛的结果。$"

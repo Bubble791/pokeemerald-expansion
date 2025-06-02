@@ -21,7 +21,7 @@ SeafloorCavern_Room3_Text_ShellyPostBattle:
     .string "啊哈哈哈！\n强得离谱啊你。\p你不是海洋队的一员\n真是让人失望透顶。\p本来你也能见证老大向我们\l承诺的美妙新世界的……$"
 
 SeafloorCavern_Room3_Text_Grunt5Intro:
-    .string "为了实现我们的梦想，我们\n需要宝可梦的力量。\p但是那些像你一样爱管闲事的人\n却总是用宝可梦的力量来碍事，\l甚至都追到了这里来！\p人生总是不能\n如我们所愿一般进行！$"
+    .string "为了实现我们的梦想，\n我们需要宝可梦的力量。\p但是那些像你一样爱管闲事的人\n却总是用宝可梦的力量来碍事，\l甚至都追到了这里来！\p人生总是不能\n如我们所愿一般进行！$"
 
 SeafloorCavern_Room3_Text_Grunt5Defeat:
     .string "呃！$"

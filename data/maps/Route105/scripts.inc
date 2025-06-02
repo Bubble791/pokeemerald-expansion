@@ -80,4 +80,4 @@ Route104_Text_DadPokenavCall:
     .string "…… …… ……\n…… …… ……哔！\p爸爸：喂，{PLAYER}？\p…… …… ……\n你现在在哪儿？\l听上去那儿刮着大风是吧？\p我刚刚从得文的兹伏奇那儿\n听说了你的宝可导航的事，\l所以我打算给你打个电话。\p似乎你干得不错，\n我也很高兴。\p一路小心。\p…… …… ……\n…… …… ……咔哒！$"
 
 Route104_Text_RegisteredDadInPokenav:
-    .string "把爸爸千里的信息\n登记到宝可导航里。$"
+    .string "把爸爸千里\n登记到宝可导航里了。$"

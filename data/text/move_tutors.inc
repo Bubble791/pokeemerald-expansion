@@ -26,7 +26,7 @@ MoveTutor_Text_RolloutTaught::
     .string "在草里打滚使我\n非常快乐。来吧，让我们滚起来！$"
 
 MoveTutor_Text_FuryCutterTeach::
-    .string "这是一个你连续使用\n就会变得更强大的招式。\p这是一个虫属性的招式，并且\n是很酷的招式。\p这个招式叫做连斩。\n想让我教你的宝可梦吗？$"
+    .string "这是一个你连续使用\n就会变得更强大的招式。\p这是一个虫属性的招式，\n并且是很酷的招式。\p这个招式叫做连斩。\n想让我教你的宝可梦吗？$"
 
 MoveTutor_Text_FuryCutterDeclined::
     .string "我们合不来。$"
@@ -62,16 +62,16 @@ MoveTutor_Text_MetronomeTaught::
     .string "当宝可梦使用\n挥指时，各种各样的好事情\l都会发生。\p我们使用它不是也很棒吗？$"
 
 MoveTutor_Text_SleepTalkTeach::
-    .string "嗯！我的妻子依靠觉醒\n力量来保持清醒。\p她明明可以像我一样打个盹，\n然后说梦话。\p我能让你的宝可梦\n学会梦话。有兴趣吗？$"
+    .string "嗯！我老伴依靠觉醒力量\n来保持清醒。\p她明明可以像我一样打个盹，\n然后说梦话的。\p我能让你的宝可梦学会梦话。\n有兴趣吗？$"
 
 MoveTutor_Text_SleepTalkDeclined::
-    .string "噢，好，好。你也想用\n觉醒力量来保持清醒……$"
+    .string "哦，好吧……\n你也想用觉醒力量来保持清醒……$"
 
 MoveTutor_Text_SleepTalkWhichMon::
     .string "啊，多有眼光的孩子呀！\n你想让我教哪只宝可梦？$"
 
 MoveTutor_Text_SleepTalkTaught::
-    .string "我从来都猜不对我老婆的\n硬币把戏。\p要是我能在梦话里说中了\n感觉也挺不错的。$"
+    .string "我从来都猜不对我老伴的\n硬币把戏。\p要是我能在梦话里说中了\n感觉也挺不错的。$"
 
 MoveTutor_Text_SubstituteTeach::
     .string "当我在屋顶上看着\n这广阔的世界时……\p我在想如果这个世界如果\n有不止一个自己该多有趣啊，\l那样我就能体验各种各样的人生了。\p当然这是不可能的。\n嘿嘿……\p明白了！\n不如让你的宝可梦学习替身吧？$"

@@ -115,13 +115,13 @@ SootopolisCity_Gym_B1F_Text_TiffanyPostBattle:
     .string "很明显，\n一个训练家有多强\l与年龄并无关系。$"
 
 SootopolisCity_Gym_B1F_Text_BethanyIntro:
-    .string "我和宝可梦在一起的时候，\n时光在“呀”地意识到之前已经飞逝！$"
+    .string "当我和宝可梦在一起时，\n时光飞逝得连说声“呀”都来不及！$"
 
 SootopolisCity_Gym_B1F_Text_BethanyDefeat:
     .string "呀！$"
 
 SootopolisCity_Gym_B1F_Text_BethanyPostBattle:
-    .string "真想忘掉这次\n连“呀”也来不及喊出来的失败！$"
+    .string "真希望我能在说“呀”之前\n就忘记这场注定的失败！$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaIntro:
     .string "我的稀有宝可梦\n也会和我一起战斗。$"

@@ -151,66 +151,66 @@ BattleFrontier_Lounge1_EventScript_Boy2::
 	end
 
 BattleFrontier_Lounge1_Text_PokemonBreederIntro:
-    .string "我培育宝可梦有70年了！\n我被人们尊为传奇性的\l顶级宝可梦培育家！\p当你变得和我一样成熟时，\n你就能一眼看出宝可梦的能力。\p你是一个训练家。难道你\n没兴趣知道你的宝可梦的\l能力吗？\p来吧！\n让我们看看你的宝可梦！$"
+    .string "我培育宝可梦有70年了！\n人们尊称为传说中的\l宝可梦顶尖培育家！\p若你能积累我这般经验，\n一眼就能看穿宝可梦的能力。\p你是训练家吧？\n难道不想了解自己宝可梦的能力？\p来！\n让我看看你的宝可梦！$"
 
 BattleFrontier_Lounge1_Text_AverageAbility:
-    .string "……嗯……\p这一只，总而言之，我的评价\n是能力一般。$"
+    .string "……嗯……\p这一只，总的来说，\n有还算可以的能力。$"
 
 BattleFrontier_Lounge1_Text_BetterThanAverageAbility:
-    .string "……嗯……\p这一只，总而言之，我的评价\n是能力较好。$"
+    .string "……嗯……\p这一只，总的来说，\n有中等偏上的能力。$"
 
 BattleFrontier_Lounge1_Text_ImpressiveAbility:
-    .string "……嗯……\p这一只，总而言之，我要说\n能力相当不错！$"
+    .string "……嗯……\p这一只，总的来说，\n有相当优秀的能力！$"
 
 BattleFrontier_Lounge1_Text_OutstandingAbility:
-    .string "……嗯……\p这一只，总而言之，我要说\n能力非凡的杰出！$"
+    .string "……嗯……\p这一只，总的来说，\n有了不起的能力！$"
 
 BattleFrontier_Lounge1_Text_BestAspectHP:
-    .string "顺便提一句，它最出色的方面，\n我认为，是它的体力……$"
+    .string "要说它最突出的地方，\n应该是它的体力……$"
 
 BattleFrontier_Lounge1_Text_BestAspectAtk:
-    .string "顺便提一句，它最出色的方面，\n我认为，是它的攻击……$"
+    .string "要说它最突出的地方，\n应该是它的攻击……$"
 
 BattleFrontier_Lounge1_Text_BestAspectDef:
-    .string "顺便提一句，它最出色的方面，\n我认为，是它的防御……$"
+    .string "要说它最突出的地方，\n应该是它的防御……$"
 
 BattleFrontier_Lounge1_Text_BestAspectSpAtk:
-    .string "顺便提一句，它最出色的方面，\n我认为，是它的特攻……$"
+    .string "要说它最突出的地方，\n应该是它的特攻……$"
 
 BattleFrontier_Lounge1_Text_BestAspectSpDef:
-    .string "顺便提一句，它最出色的方面，\n我认为，是它的特防……$"
+    .string "要说它最突出的地方，\n应该是它的特防……$"
 
 BattleFrontier_Lounge1_Text_BestAspectSpeed:
-    .string "顺便提一句，它最出色的方面，\n我认为，是它的速度……$"
+    .string "要说它最突出的地方，\n应该是它的速度……$"
 
 BattleFrontier_Lounge1_Text_StatRelativelyGood:
-    .string "这能力较好。\n……嗯……这是我对它的评价。$"
+    .string "有一般般的能力。\n……嗯……这是我对它的评价。$"
 
 BattleFrontier_Lounge1_Text_StatImpressive:
-    .string "这能力相当不错。\n……嗯……这是我对它的评价。$"
+    .string "有还可以的能力。\n……嗯……这是我对它的评价。$"
 
 BattleFrontier_Lounge1_Text_StatOutstanding:
-    .string "这能力非常出色！\n……嗯……这是我对它的评价。$"
+    .string "有很不错的能力！\n……嗯……这是我对它的评价。$"
 
 BattleFrontier_Lounge1_Text_StatFlawless:
-    .string "无可挑剔！完美无缺！\n……嗯……这是我对它的评价。$"
+    .string "有最强的能力！\n……嗯……这是我对它的评价。$"
 
 BattleFrontier_Lounge1_Text_NoTimeForMyAdvice:
-    .string "什么？\n你没时间听取我的建议？\p你应该要热切地学习\n年长者的经验！$"
+    .string "什么？\n没空听我建议？\p年轻人就该多学习\n年长者的经验！$"
 
 @ Unused
 BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending:
     .string "是的，现在有什么事？\p我有一些事情要处理！\n下次再说咯！$"
 
 BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon:
-    .string "哦，年轻人！你对你的\n宝可梦的能力很有兴趣吗？\p来，来！\n让我们来看一下你的宝可梦！$"
+    .string "哦，年轻人！\n想了解宝可梦的能力吗？\p来来来！\n让我看看一下你的宝可梦！$"
 
 BattleFrontier_Lounge1_Text_EvenICantTell:
-    .string "虽然我是专家，但对于还没有\n孵化出的宝可梦我也不能说什么！\p给我看只宝可梦！\n宝可梦才是我要看的！$"
+    .string "哪怕是我这样的专家，\n也看不出未孵化宝可梦的能力！\p给我看只宝可梦！\n那才是我要看的！$"
 
 BattleFrontier_Lounge1_Text_SaidMyMonIsOutstanding:
-    .string "他说我的宝可梦很出色！\n我很高兴我能精心培育它！$"
+    .string "他说我的宝可梦有了不起的能力！\n精心培育果然值得！$"
 
 BattleFrontier_Lounge1_Text_DidntDoAnythingSpecialRaisingIt:
-    .string "他说我的宝可梦很出色！\n但是我培育它时没有任何\l特殊照顾……$"
+    .string "他说我的宝可梦有了不起的能力！\n可我并没特别培育过啊……$"
 

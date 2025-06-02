@@ -73,7 +73,7 @@ MeteorFalls_1F_2R_Text_NicolasRegister:
     .string "我想更多了解你的力量。\n把你登记到宝可导航里吧。$"
 
 MeteorFalls_1F_2R_Text_NicolasRematchIntro:
-    .string "自从我们相遇，我们\n为了第一的目标而努力训练。\p让我们看下对方\n有多强大吧！$"
+    .string "自从上次相遇，\n我们一直为第一的目标而努力训练。\p帮忙见识一下我们成长\n得有多强大吧！$"
 
 MeteorFalls_1F_2R_Text_NicolasRematchDefeat:
     .string "呃！\n没想到你那么强！$"
@@ -106,7 +106,7 @@ MeteorFalls_1F_2R_Text_JayPostBattle:
     .string "初：结婚50年了……\p每当我们吵架，我们都是通过\n宝可梦对战来解决……$"
 
 MeteorFalls_1F_2R_Text_JayNotEnoughMons:
-    .string "初：好啦，好啦，你难道不是\n年轻的训练家？\p如果你想和我们对战，就得\n拿来更多的宝可梦。$"
+    .string "初：好啦，好啦，你难道不是\n年轻的训练家？\p如果你想和我们对战，\n就得拿来更多的宝可梦。$"
 
 MeteorFalls_1F_2R_Text_JohnRematchIntro:
     .string "源：我们一直是\n两人一起战斗的。\l我们对自己充满信心。$"

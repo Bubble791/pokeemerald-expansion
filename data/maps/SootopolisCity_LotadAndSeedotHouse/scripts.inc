@@ -118,7 +118,7 @@ SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1:
     .string "嗯？\n你的包包已经塞满了。$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot:
-    .string "{STR_VAR_2}厘米是吗？\p唔……我见过\n比这更大的橡实果。$"
+    .string "{STR_VAR_2}厘米是吗？\p唔……\n我见过比这更大的橡实果。$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot:
     .string "哎，这看上去不错……\n但它不是橡实果！$"
@@ -130,7 +130,7 @@ SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory:
     .string "史上最大的橡实果！\n{STR_VAR_2}的{STR_VAR_3}厘米大的巨物！\p比莲叶童子更大的橡实果\n总是人们追寻的东西！$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad:
-    .string "你知道宝可梦莲叶童子吗？\n在琉璃市这里很难见到。\p我非常非常喜欢大型莲叶童子！\p哥哥说橡实果\n更大，\p但那肯定不对！所有人\n都知道莲叶童子更大。\p嗯？你有莲叶童子吗？\n拜——拜—拜托给我看看！$"
+    .string "你知道宝可梦莲叶童子吗？\n在琉璃市这里很难见到。\p我非常非常喜欢大型莲叶童子！\p哥哥说橡实果\n更大，\p但那肯定不对！\n所有人都知道莲叶童子更大。\p嗯？你有莲叶童子吗？\n拜——拜—拜托给我看看！$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot:
     .string "{STR_VAR_2}厘米！\n哇，这么大！\p它肯定比哥哥看过的\n巨型橡实果更大。\p谢谢你给我看！\n收下我的谢意吧！$"

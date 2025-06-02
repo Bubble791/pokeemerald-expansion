@@ -1,6 +1,3 @@
-.set LOCALID_GRUNT_1, 1
-.set LOCALID_GRUNT_2, 6
-
 Route112_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route112_OnTransition
 	.byte 0
@@ -13,36 +10,36 @@ Route112_OnTransition:
 Route112_EventScript_MagmaGrunts::
 	lockall
 	delay 40
-	applymovement LOCALID_GRUNT_1, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	delay 20
 	msgbox Route112_Text_LeaderGoingToAwakenThing, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_GRUNT_1, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	delay 40
-	applymovement LOCALID_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 20
 	msgbox Route112_Text_YeahWeNeedMeteorite, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_GRUNT_2, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	delay 40
-	applymovement LOCALID_GRUNT_1, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	delay 20
 	msgbox Route112_Text_OhThatsWhyCrewWentToFallarbor, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_GRUNT_1, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_ROUTE112_GRUNT_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	delay 40
-	applymovement LOCALID_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 20
 	msgbox Route112_Text_CantLetAnyonePassUntilTheyreBack, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_GRUNT_2, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_ROUTE112_GRUNT_2, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	releaseall
 	end
@@ -116,7 +113,7 @@ Route112_Text_YeahWeNeedMeteorite:
     .string "嗯，听上去是这样，\n但据说我们还需要一块陨石。$"
 
 Route112_Text_OhThatsWhyCrewWentToFallarbor:
-    .string "哦，我明白了，所以\n大家才会去秋叶镇。$"
+    .string "哦，我明白了，\n所以大家才会去秋叶镇。$"
 
 Route112_Text_CantLetAnyonePassUntilTheyreBack:
     .string "说得没错。而且在他们回来前，\n我们不能让任何人通过这里。$"

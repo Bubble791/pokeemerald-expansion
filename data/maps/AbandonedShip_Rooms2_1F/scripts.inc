@@ -50,7 +50,7 @@ AbandonedShip_Rooms2_1F_EventScript_Garrison::
 	end
 
 AbandonedShip_Rooms2_1F_Text_DanIntro:
-    .string "文：在寻宝的途中，\n我们发现了一名训练家！$"
+    .string "文：在寻宝的途中，\n我们发现了一位训练家！$"
 
 AbandonedShip_Rooms2_1F_Text_DanDefeat:
     .string "文：即使我们联手\n也没能打过他……$"
@@ -62,7 +62,7 @@ AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons:
     .string "文：你连2只宝可梦都没有，\n这样肯定赢不了我们。$"
 
 AbandonedShip_Rooms2_1F_Text_KiraIntro:
-    .string "夏：哦？\n我们一直在寻宝，\l结果却找到一名训练家！$"
+    .string "夏：哦？\n我们一直在寻宝，\l结果却找到一位训练家！$"
 
 AbandonedShip_Rooms2_1F_Text_KiraDefeat:
     .string "夏：哦，太强了！$"

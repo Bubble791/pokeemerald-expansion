@@ -88,7 +88,7 @@ FortreeCity_Movement_KecleonFlee:
 	step_end
 
 FortreeCity_Text_SawGiganticPokemonInSky:
-    .string "没人肯相信我，但我\n确实在天空中看到了巨大的宝可梦。\p它在飞过131号水路时\n好像有些不安。\p另外……\n唔唔……你身上，呃……好像有焦味。\p你刚从火山或什么地方来吗？$"
+    .string "没人肯相信我，但我确实在天空中\n看到了巨大的宝可梦。\p它好像在辗转着\n飞向131号水路。\p话说……\n唔唔……你身上，呃……好像有焦味。\p你刚从火山或什么地方来吗？$"
 
 FortreeCity_Text_SomethingBlockingGym:
     .string "我想去宝可梦道馆，\n但有东西堵了路。\p在120号道路训练了\n那么久，现在却……$"

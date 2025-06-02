@@ -201,7 +201,7 @@ BattleFrontier_Lounge3_Text_CantYouSeeWereBusyHere::
     .string "……你想干什么？\p没看见我们很忙吗？\n你就不能一边去等等？$"
 
 BattleFrontier_Lounge3_Text_YouLookToughExplainGambling::
-    .string "……嗯？\n我觉得你是个挺强的训练家。\p呵呵呵……\n听着，我有个小提议。\p现在我们在对战开拓区\n有一组人，\l我们正在做一个小游戏。\p规则很简单，\p首先，我们选择一种\n对战开拓区的设施，\p然后我们各自选择一个\n正在挑战的训练家，\l赌上自己的对战点数，\p选的训练家获得成绩最好\n的人就可以得到所有的\l对战点数。\p很简单是吧？\n然后……$"
+    .string "……嗯？\n我觉得你是个挺强的训练家。\p呵呵呵……\n听着，我有个小提议。\p现在我们在对战开拓区\n有一组人，\l我们正在做一个小游戏。\p规则很简单。\p首先，我们选择一种\n对战开拓区的设施，\p然后我们各自选择一个\n正在挑战的训练家，\l赌上自己的对战点数，\p选的训练家获得成绩最好\n的人就可以得到所有的\l对战点数。\p很简单是吧？\n然后……$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleTowerSingle::
     .string "我正在找想要挑战\n对战塔单打对战间\l的训练家，\p但到现在我还没看到\n有能力胜出的训练家。$"

@@ -27,7 +27,7 @@ DewfordTown_House2_EventScript_Boy::
 	end
 
 DewfordTown_House2_Text_WantYouToHaveSilkScarf:
-    .string "来一饱眼福吧！\p这是丝绸围巾，是正\n流行的款式！\p啊，你的眼睛兴奋地发光了！\n你欣赏我这眩目的款式！\p啊，真高兴！\n给你吧，送给你了！$"
+    .string "来一饱眼福吧！\p这是丝绸围巾，\n是正流行的款式！\p啊，你的眼睛兴奋地发光了！\n你欣赏我这眩目的款式！\p啊，真高兴！\n给你吧，送给你了！$"
 
 DewfordTown_House2_Text_NoRoom:
     .string "呀，你没地方装了？\p那，听好，这个围巾是\n你的必备品！哎，我要是你，\l我会卖掉我的一切来得到它！$"

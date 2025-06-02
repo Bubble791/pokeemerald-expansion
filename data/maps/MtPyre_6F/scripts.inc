@@ -55,5 +55,5 @@ MtPyre_6F_Text_CedricDefeat:
     .string "你并没有迷路吗？$"
 
 MtPyre_6F_Text_CedricPostBattle:
-    .string "我觉得一个迷路的训练家\n会很惊慌，很容易就能打败。\p但那样太卑鄙了，我不会再那么做了……$"
+    .string "我觉得一个迷路的训练家\n会很惊慌，很容易就能打败。\p但那样太卑鄙了，\n我不会再那么做了……$"
 

@@ -1,5 +1,3 @@
-.set LOCALID_HIDEOUT_GUARD, 5
-
 JaggedPass_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, JaggedPass_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, JaggedPass_OnTransition
@@ -69,27 +67,27 @@ JaggedPass_EventScript_MagmaHideoutGuard::
 	goto_if_set FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS, JaggedPass_EventScript_GuardDefeated
 	waitse
 	playse SE_PIN
-	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_ExclamationMark
+	applymovement LOCALID_MAGMA_HIDEOUT_GUARD, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_Delay48
+	applymovement LOCALID_MAGMA_HIDEOUT_GUARD, Common_Movement_Delay48
 	waitmovement 0
-	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FacePlayer
+	applymovement LOCALID_MAGMA_HIDEOUT_GUARD, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox JaggedPass_Text_GruntIntro, MSGBOX_DEFAULT
 	closemessage
 	trainerbattle_no_intro TRAINER_GRUNT_JAGGED_PASS, JaggedPass_Text_GruntDefeat
 	setflag FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS
-	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_MAGMA_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	releaseall
 	end
 
 JaggedPass_EventScript_GuardDefeated::
-	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FacePlayer
+	applymovement LOCALID_MAGMA_HIDEOUT_GUARD, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox JaggedPass_Text_GoWhereverYouWant, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_MAGMA_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	releaseall
 	end
@@ -177,7 +175,7 @@ JaggedPass_Text_DianaRematchDefeat:
     .string "我只是因为地面太颠簸\n才输的！$"
 
 JaggedPass_Text_DianaPostRematch:
-    .string "我会忘记这次失败，享受\n在这凹凸的山中远足的乐趣。$"
+    .string "我会忘记这次失败，\n享受在这凹凸的山中远足的乐趣。$"
 
 JaggedPass_Text_EthanIntro:
     .string "凹凸山道很难走，\n这是个训练的好地方。$"
@@ -210,7 +208,7 @@ JaggedPass_Text_GoWhereverYouWant:
     .string "好吧好吧！\n我承认——你很强！\p别管我在干什么，\n赶紧去你想去的地方吧！$"
 
 JaggedPass_Text_BoulderShakingInResponseToEmblem:
-    .string "喔！这块大石头对熔岩标志\n有反应！石头晃动起来了！$"
+    .string "喔！这块巨石对熔岩标志\n有反应！它晃动起来了！$"
 
 JaggedPass_Text_JulioIntro:
     .string "哎呀！一下子从山顶冲下来\n真的好可怕！$"

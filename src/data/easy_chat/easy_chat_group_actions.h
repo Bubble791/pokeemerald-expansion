@@ -1,5 +1,5 @@
 const u8 gEasyChatWord_Meets[] = _("遇见");
-const u8 gEasyChatWord_Concede[] = _("让步");
+const u8 gEasyChatWord_Concede[] = _("答应");
 const u8 gEasyChatWord_Give[] = _("给予");
 const u8 gEasyChatWord_Gives[] = _("影响");
 const u8 gEasyChatWord_Played[] = _("给了");

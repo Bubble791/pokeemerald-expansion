@@ -32,7 +32,7 @@ AbandonedShip_Rooms_1F_EventScript_ThaliaRematch::
 	end
 
 AbandonedShip_Rooms_1F_Text_TakingALookAround:
-    .string "这种船很罕见，我得\n趁机参观一下。\p嗯……\n似乎还有其它船舱……$"
+    .string "这种船很罕见，\n我得趁机参观一下。\p嗯……\n似乎还有其它船舱……$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaIntro:
     .string "你究竟是为什么来\n这里？肯定是好奇吧！$"

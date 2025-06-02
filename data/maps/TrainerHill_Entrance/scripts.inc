@@ -1,8 +1,3 @@
-.set LOCALID_ATTENDANT, 1
-.set LOCALID_NURSE, 2
-.set LOCALID_GIRL, 4
-.set LOCALID_MAN, 5
-
 TrainerHill_Entrance_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, TrainerHill_Entrance_OnResume
 	map_script MAP_SCRIPT_ON_RETURN_TO_FIELD, TrainerHill_Entrance_OnReturn
@@ -25,24 +20,24 @@ TrainerHill_Entrance_OnResume:
 	setvar VAR_TEMP_0, 0
 	trainerhill_getusingereader
 	goto_if_eq VAR_RESULT, FALSE, TrainerHill_Entrance_EventScript_TryFaceAttendant  @ VAR_RESULT always FALSE here
-	setobjectxy OBJ_EVENT_ID_PLAYER, 9, 6
-	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant
+	setobjectxy LOCALID_PLAYER, 9, 6
+	applymovement LOCALID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant
 	end
 
 TrainerHill_Entrance_EventScript_TryFaceAttendant::
 	trainerhill_getwon
 	goto_if_eq VAR_RESULT, TRUE, TrainerHill_Entrance_EventScript_PlayerDontFaceAttendant
-	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant
+	applymovement LOCALID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant
 	end
 
 TrainerHill_Entrance_EventScript_PlayerDontFaceAttendant::
 	end
 
 TrainerHill_Entrance_OnReturn:
-	addobject LOCALID_NURSE
-	addobject LOCALID_ATTENDANT
-	addobject LOCALID_MAN
-	addobject LOCALID_GIRL
+	addobject LOCALID_TRAINER_HILL_NURSE
+	addobject LOCALID_TRAINER_HILL_ATTENDANT
+	addobject LOCALID_TRAINER_HILL_MAN
+	addobject LOCALID_TRAINER_HILL_GIRL
 	end
 
 TrainerHill_Entrance_OnLoad:
@@ -62,7 +57,7 @@ TrainerHill_Entrance_OnFrame:
 
 TrainerHill_Entrance_EventScript_ExitElevator::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PlayerExitElevator
+	applymovement LOCALID_PLAYER, TrainerHill_Entrance_Movement_PlayerExitElevator
 	waitmovement 0
 	setmetatile 17, 10, METATILE_TrainerHill_CounterDoor, TRUE
 	special DrawWholeMapView
@@ -82,17 +77,17 @@ TrainerHill_Entrance_EventScript_ExitChallenge::
 
 TrainerHill_Entrance_EventScript_ExitChallengeLost::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant
+	applymovement LOCALID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant
 	msgbox TrainerHill_Entrance_Text_TooBadTremendousEffort, MSGBOX_DEFAULT
 	goto TrainerHill_Entrance_EventScript_PlayerExitChallenge
 
 TrainerHill_Entrance_EventScript_ExitChallengeECard::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant
+	applymovement LOCALID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant
 	msgbox TrainerHill_Entrance_Text_MovedReceptionHereForSwitch, MSGBOX_DEFAULT
 TrainerHill_Entrance_EventScript_PlayerExitChallenge::
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PushPlayerBackFromCounter
+	applymovement LOCALID_PLAYER, TrainerHill_Entrance_Movement_PushPlayerBackFromCounter
 	waitmovement 0
 	setvar VAR_TRAINER_HILL_IS_ACTIVE, 0
 	special HealPlayerParty
@@ -102,7 +97,7 @@ TrainerHill_Entrance_EventScript_EndExitChallenge::
 	end
 
 TrainerHill_Entrance_EventScript_Nurse::
-	setvar VAR_0x800B, LOCALID_NURSE
+	setvar VAR_0x800B, LOCALID_TRAINER_HILL_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress
@@ -125,7 +120,7 @@ TrainerHill_Entrance_EventScript_AttendantEnd::
 
 TrainerHill_Entrance_EventScript_EntryTrigger::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant
+	applymovement LOCALID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant
 	goto_if_unset FLAG_SYS_GAME_CLEAR, TrainerHill_Entrance_EventScript_Closed
 	msgbox TrainerHill_Entrance_Text_WelcomeToTrainerHill, MSGBOX_DEFAULT
 	trainerhill_getsaved
@@ -172,7 +167,7 @@ TrainerHill_Entrance_EventScript_CancelEntry::
 	setvar VAR_TEMP_5, 0
 	msgbox TrainerHill_Entrance_Text_PleaseVisitUsAgain, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PushPlayerBackFromCounter
+	applymovement LOCALID_PLAYER, TrainerHill_Entrance_Movement_PushPlayerBackFromCounter
 	waitmovement 0
 	releaseall
 	end
@@ -194,7 +189,7 @@ TrainerHill_Entrance_EventScript_SaveFailed::
 TrainerHill_Entrance_EventScript_Closed::
 	msgbox TrainerHill_Entrance_Text_StillGettingReady, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PushPlayerBackFromCounter
+	applymovement LOCALID_PLAYER, TrainerHill_Entrance_Movement_PushPlayerBackFromCounter
 	waitmovement 0
 	releaseall
 	end
@@ -292,84 +287,84 @@ TrainerHill_Entrance_Pokemart_Expanded:
 	pokemartlistend
 
 TrainerHill_Entrance_Text_StillGettingReady:
-    .string "这里是训练家之丘，\n您可以在这里与许多其他训练家\l组队战斗。\p不过很抱歉，我们正在进行准备，\n请您下次再来！$"
+    .string "这里是训练家之丘，\n您可以在此享受与众多训练师的\l双打战斗。\p很抱歉，我们仍在准备中。\n请您下次再来！$"
 
 TrainerHill_Entrance_Text_WelcomeToTrainerHill:
-    .string "欢迎！\p这里是训练家之丘，\n在这里您可以与其他的\l训练家进行对战！$"
+    .string "欢迎！\p这里是训练家之丘，\n您可以在此享受与众多训练师的\l双打对战！$"
 
 TrainerHill_Entrance_Text_SaveGameBeforeEnter:
-    .string "您是第一次来这儿吗？\p在进入之前，\n请先写入记录。$"
+    .string "是第一次来这里吗？\p在进入之前，\n请先写入记录。$"
 
 TrainerHill_Entrance_Text_TrainersUpToFloorX:
-    .string "唔，我看看……\n现在这儿的训练家正在……\p{STR_VAR_1}楼。$"
+    .string "唔，我看看……\n当前在场的训练家……\p最高到第{STR_VAR_1}层。$"
 
 TrainerHill_Entrance_Text_TrainersInEveryRoom:
-    .string "唔，我看看……\n现在这儿的训练家正在……\p好像每间房间里\n都有训练家。$"
+    .string "唔，我看看……\n当前在场的训练家……\p似乎每个房间都有\n训练家聚集。$"
 
 TrainerHill_Entrance_Text_LikeToChallengeTrainers:
-    .string "您想要挑战\n等候着的训练家吗？$"
+    .string "要挑战正在等待的\n训练家吗？$"
 
 TrainerHill_Entrance_Text_TimeProgessGetSetGo:
-    .string "我会为您计时的，\n祝您好运！\p记下您的成绩……\p创造自己的纪录……\p去吧！$"
+    .string "我将为您计时，\n祝您好运！\p各就各位……\p预备……\p开始！$"
 
 TrainerHill_Entrance_Text_PleaseVisitUsAgain:
-    .string "下次再来！$"
+    .string "欢迎下次再来！$"
 
 TrainerHill_Entrance_Text_TooBadTremendousEffort:
-    .string "真遗憾。\p您一定为战斗付出了\n极大的努力。\p再来试试吧！$"
+    .string "真是遗憾。\p但看得出您已付出\n巨大的努力。\p欢迎再来挑战！$"
 
 TrainerHill_Entrance_Text_HopeYouGiveItYourBest:
-    .string "希望您发挥顺利。$"
+    .string "期待您的精彩表现。$"
 
 TrainerHill_Entrance_Text_MovedReceptionHereForSwitch:
-    .string "训练家移动的时候，\n就显得有些混乱。\p为避免这种情况，\n我们就把接待处搬到这儿来了。\p很抱歉对您造成了不便。$"
+    .string "训练家们更换位置的时候，\n场面可能显得有些混乱。\p为避免拥挤踩踏，\n我们就把接待处搬到这里来了。\p对此造成的不便深表歉意。$"
 
 TrainerHill_Entrance_Text_ThankYouForPlaying:
     .string "辛苦了！$"
 
 TrainerHill_Entrance_Text_ExplainTrainerHill:
-    .string "我们训练家之丘这里有一种\n叫做计时挑战的活动，\p是计算您从这个\n柜台跑到顶层老板\l那里的用时的游戏。\p最快的成绩会贴在那边的\n时间板上。跟您的朋友比试吧。\p一路上的战斗中，\n您既不能获得经验点数，\l也不能获得金钱。$"
+    .string "在训练家之丘，我们举办名为\n计时挑战的活动，\p比赛内容是从服务台出发，\n计时抵达楼顶的馆主处。\p最快纪录将展示在计时榜上——\n不妨和朋友比比看。\p在沿途的训练家对战中，\n无法获得经验值或金钱。$"
 
 @ Unused
 TrainerHill_Entrance_Text_NeedAtLeastTwoPokemon:
-    .string "哦，对不起，但是\n您只有1只宝可梦。\p您最少需要2只宝可梦\n来参加这个活动。$"
+    .string "哦，对不起，\n但是您只有1只宝可梦。\p您最少需要2只宝可梦\n来参加这个活动。$"
 
 TrainerHill_Roof_Text_YouFinallyCameBravo:
-    .string "嗯，嗯！\p你终于来了！\n是啊，你来了！\p等！不要说话！\n我知道你为什么会\l一个人单独走到这里来！\p你要来见我这个\n训练家之丘的老板，因为……\p你希望和我组队！\n呀——呵！\p……呃？\n不是吗？\p不管怎样，我一路看着你上来。\n完美的战斗！勇气可嘉！$"
+    .string "嗯！嗯！\p你终于来了！\n没错，你成功抵达了！\p等等！不必开口！\n我知道你独自前来的原因！\l你想见训练家之丘的馆主……\l是为了和我组队参赛！\p……呃？\n不是这样？\p总之我目睹了你的登顶过程。\n精彩的对战！值得喝彩！$"
 
 TrainerHill_Roof_Text_HaveTheMostMarvelousGift:
-    .string "像你这样杰出的人，当然\n只有最杰出的礼物才配得上你！$"
+    .string "像你这样了不起的人，\n我有最棒的礼物要送给你！$"
 
 TrainerHill_Roof_Text_FullUpBeBackLaterForThis:
-    .string "哦，不，包包已经塞满了！\n以后再来拿走这个吧！$"
+    .string "噢，不行，包包已经装满了！\n你晚点再来拿这个吧！$"
 
 TrainerHill_Roof_Text_GotHereMarvelouslyQuickly:
-    .string "啊，等等！\n你来得可真快啊。\p真让我吃惊！你不必\n这么急着来见我的！\p真棒，接待处的\n时间板需要更新了！$"
+    .string "噢，稍等一下！你是不是以惊人的速度\n赶到了这里？\p太棒了！其实你不必这么\n急着来见我的！\p真是令人开心。我会让接待处的\n计时板更新你的成绩！$"
 
 TrainerHill_Roof_Text_YouWerentVeryQuick:
-    .string "呃，噢……\n你来得并不是很快。$"
+    .string "但是，噢……\n你来得可不算快呢。$"
 
 TrainerHill_Roof_Text_ArriveZippierNextTime:
-    .string "也许下次你快一点来\n我会更高兴的。\p那样，我将会很高兴\n和你一同组队！\p下次再见，朋友！$"
+    .string "也许下次你能更快一点的话，\n我会更高兴的。\p那样的话，我会很乐意\n和你组队搭档！\p下次再见，朋友！$"
 
 @ Unused
 TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner:
-    .string "我建这训练家之丘\n的原因只有一个！\p就是要找到最合适的\n搭档来组成职业队伍！$"
+    .string "我建造这座训练师之丘\n只有一个原因！\p那就是找到最适合的搭档，\n和我组成双打队伍！$"
 
 TrainerHill_Entrance_Text_ChallengeTime:
-    .string "{STR_VAR_1}分{STR_VAR_2}。{STR_VAR_3}秒。$"
+    .string "{STR_VAR_1}分{STR_VAR_2}.{STR_VAR_3}秒。$"
 
 TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead:
-    .string "谁关心前面会有什么样的\n训练家和宝可梦的组合呢？\p我只知道，我要打倒每一个\n挡住我的路的人！$"
+    .string "谁知道前面会遇到什么样的\n训练师和宝可梦组合呢？\p我只知道，我会打倒\n所有挡路的家伙！$"
 
 TrainerHill_Entrance_Text_CantWaitToTestTheWaters:
-    .string "听说各地的强大训练家\n都会来到训练家之丘。\p我已经跃跃欲试了！\p我要打倒每一个\n挡住我的路的人！$"
+    .string "听说各地的强大训练师\n都会来这座训练师之丘。\p我已经等不及要试试身手了！\p我会打倒所有\n挡路的家伙！$"
 
 TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop:
-    .string "看到那边的时间板了吗？\p我和朋友正在比试\n谁能更快到达山顶。$"
+    .string "你看到那边的计时板了吗？\p我和朋友们正在比赛，\n看谁能用最短时间登顶。$"
 
 TrainerHill_Entrance_Text_DoYouKnowWhenTheyOpen:
-    .string "你知道这里什么时候\n才会开门吗？\p我一直在这儿等着\n成为这里的第一个挑战者！$"
+    .string "你知道这里什么时候\n正式开放吗？\p我在这儿等着成为\n第一个挑战者呢！$"
 
 TrainerHill_Elevator_Text_ReturnToReception:
-    .string "现在请您回到\n接待处好吗？$"
+    .string "要返回接待处吗？$"

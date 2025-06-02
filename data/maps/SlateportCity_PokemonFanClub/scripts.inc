@@ -268,7 +268,7 @@ SlateportCity_PokemonFanClub_Text_HmHmISee:
     .string "唔，嗯……\n看来……$"
 
 SlateportCity_PokemonFanClub_Text_GiveMonMorePokeblocks:
-    .string "唔……不算差……\n但也不算好……\p作为训练家，你必须\n更用心地培育这只宝可梦！\p比如，我建议你可以再\n喂它一些宝可方块。$"
+    .string "唔……不算差……\n但也不算好……\p作为训练家，你必须更用心地培育\n这只宝可梦！\p比如，我建议你可以再\n喂它一些宝可方块。$"
 
 SlateportCity_PokemonFanClub_Text_NoSpaceForReward:
     .string "哎呀呀……\p你的宝可梦培育得很不错，\n本该给你奖励的。\p但很遗憾，你的包包\n已经满了。$"

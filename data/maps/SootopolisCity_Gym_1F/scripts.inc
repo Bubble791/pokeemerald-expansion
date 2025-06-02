@@ -67,7 +67,7 @@ SootopolisCity_Gym_1F_EventScript_UnlockThirdStairs::
 SootopolisCity_Gym_1F_EventScript_FallThroughIce::
 	lockall
 	delay 20
-	applymovement OBJ_EVENT_ID_PLAYER, SootopolisCity_Gym_1F_Movement_FallThroughIce
+	applymovement LOCALID_PLAYER, SootopolisCity_Gym_1F_Movement_FallThroughIce
 	waitmovement 0
 	playse SE_FALL
 	delay 60
@@ -176,13 +176,13 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 	end
 
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
-    .string "嗨，怎么样，向冠军目标\n冲刺的{PLAYER}？\p琉璃市的道馆馆主亚当\n是使用水属性宝可梦的大师，\p但要走到他面前，还要\n先通过冰结成的地面……\p很抱歉，我只能\n给你这一点建议。\p这条路，你要凭\n自己的智慧通过！$"
+    .string "嗨，怎么样，向冠军目标\n冲刺的{PLAYER}？\p琉璃市的道馆馆主亚当\n是使用水属性宝可梦的大师，\p但要走到他面前，\n还要先通过冰结成的地面……\p很抱歉，\n我只能给你这一点建议。\p这条路，\n你要凭自己的智慧通过！$"
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
-    .string "哟，被誉为丰缘第一的亚当\n都输给你了！\p好了！看看你的训练家卡，\p如果你得到了所有徽章，\n就向宝可梦联盟出发吧！$"
+    .string "哟，被誉为丰缘第一的亚当\n都输给你了！\p好了！\n检查一下你的训练家卡，\p如果你集齐了所有徽章，\n就向宝可梦联盟出发吧！$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro:
-    .string "让我来考考你。\n你知道吗？\l啊，我没必要这么腼腆。\p是我教给了米可利\n关于宝可梦的一切。\p我曾经放弃了道馆馆主的职位，\n将道馆托付给了米可利\p但是现在我又\n不得不回来。\p啊，闲话说得够多了。\n让我们开始比试吧？\p请你见证\n我们的艺术。\p由我和宝可梦塑造的\n华丽的水之幻影！$"
+    .string "让我来考考你。\n你知道吗？\l啊，\n我不必如此拐弯抹角。\p是我教给了米可利\n关于宝可梦的一切。\p我曾经放弃了道馆馆主的职位，\n将道馆托付给了米可利\p但是现在我又\n不得不回来。\p啊，闲话说得够多了。\n让我们开始比试吧？\p请你见证我们的艺术。\p由我和宝可梦塑造的\n华丽的水之幻影！$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
 @ the gDisplayedStringBattle buffer that it's put into, and it stomps all over the gBattleTextBuffs

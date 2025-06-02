@@ -267,8 +267,8 @@ MauvilleCity_PokemonCenter_1F_Text_CouldThereBeOtherLegends:
 
 MauvilleCity_PokemonCenter_1F_Text_HaveYouAnyLegendaryTales:
 	.string "你是训练家吗？\p"
-	.string "那么告诉我吧，你听说\n"
-	.string "过更遥远的传说吗？$"
+	.string "那么告诉我吧，\n"
+	.string "你听说过更遥远的传说吗？$"
 
 @ Unused
 MauvilleCity_PokemonCenter_1F_Text_HearAnotherLegendaryTale:
@@ -965,8 +965,8 @@ MauvilleCity_PokemonCenter_1F_Text_IAlreadyTaughtYou:
 	.string "美妙的话语。$"
 
 MauvilleCity_PokemonCenter_1F_Text_IveGotNothingNewToTeach:
-	.string "但是，嘿，你已经\n"
-	.string "能抓住最新潮流的去向了。\p"
+	.string "但是，嘿，你已经能抓住\n"
+	.string "最新潮流的去向了。\p"
 	.string "我没什么新东西可以交给你了！$"
 
 MauvilleCity_PokemonCenter_1F_Text_HaveYouHeardOfWord:

@@ -360,7 +360,7 @@ Route110_TrickHousePuzzle7_Text_AlvaroDefeat:
     .string "我没有预见到这样的结果……$"
 
 Route110_TrickHousePuzzle7_Text_AlvaroPostBattle:
-    .string "啊，不管怎样，我们\n在命运之地相识了。\p虽然对对方来说我们都是怪人，\n我们也都要努力啊！$"
+    .string "啊，不管怎样，\n我们在命运之地相识了。\p虽然对对方来说我们都是怪人，\n我们也都要努力啊！$"
 
 Route110_TrickHousePuzzle7_Text_EverettIntro:
     .string "被困在这儿真讨厌……$"

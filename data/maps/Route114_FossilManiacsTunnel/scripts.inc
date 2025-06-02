@@ -1,5 +1,3 @@
-.set LOCALID_FOSSIL_MANIAC, 1
-
 Route114_FossilManiacsTunnel_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route114_FossilManiacsTunnel_OnTransition
 	map_script MAP_SCRIPT_ON_LOAD, Route114_FossilManiacsTunnel_OnLoad
@@ -26,7 +24,7 @@ Route114_FossilManiacsTunnel_EventScript_CloseDesertUnderpass::
 Route114_FossilManiacsTunnel_EventScript_ManiacMentionCaveIn::
 	lockall
 	applymovement LOCALID_FOSSIL_MANIAC, Common_Movement_WalkInPlaceFasterUp
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	msgbox Route114_FossilManiacsTunnel_Text_NotSafeThatWay, MSGBOX_DEFAULT
 	setvar VAR_FOSSIL_MANIAC_STATE, 2
@@ -59,7 +57,7 @@ Route114_FossilManiacsTunnel_Text_LookInDesertForFossils:
     .string "我是化石迷……\n我是喜欢化石的好人……\p你想要化石？\p但是这里所有的化石\n全部属于我……不能给你……\p如果你也需要化石\n去沙漠里找找吧\l那里到处是沙砾\l也许会藏着化石……$"
 
 Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils:
-    .string "难道说你找到了化石？\n太好了……不会是做梦吧……\p你想对那个化石\n做什么？\p我听说，得文正在做研究\n把宝可梦从\l化石中复活……\p我喜欢我的化石，因此\n我不喜欢那样做……$"
+    .string "难道说你找到了化石？\n太好了……不会是做梦吧……\p你想对那个化石\n做什么？\p我听说，得文正在做研究\n把宝可梦从\l化石中复活……\p我喜欢我的化石，\n因此我不喜欢那样做……$"
 
 Route114_FossilManiacsTunnel_Text_FossilsAreWonderful:
     .string "化石是那么的……迷人……\n它是那么完美……$"

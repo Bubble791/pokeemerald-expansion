@@ -272,7 +272,7 @@ BattleDome_Text_NeglectsSpDef::
     .string "无视特防。$"
 
 BattleDome_Text_RaisesMonsWellBalanced::
-    .string "使用恰当方法养育宝可梦。$"
+    .string "使用恰当方法培育宝可梦。$"
 
 BattleDome_Text_LetTheBattleBegin::
     .string "开战吧！$"
@@ -287,13 +287,13 @@ BattleDome_Text_TrainerWonByDefault::
     .string "{STR_VAR_1}因对手弃权而获胜！$"
 
 BattleDome_Text_TrainerWonOutrightByDefault::
-    .string "{STR_VAR_1}以绝对优势因对手弃权获胜！$"
+    .string "{STR_VAR_1}因对手彻底弃权而获胜！$"
 
 BattleDome_Text_TrainerWonNoMoves::
     .string "{STR_VAR_1}未使用任何招式就获胜了！$"
 
 BattleDome_Text_TrainerWonOutrightNoMoves::
-    .string "{STR_VAR_1}以绝对优势未使用任何招式获胜！$"
+    .string "{STR_VAR_1}未使用任何招式完胜对手！$"
 
 BattleDome_Text_Round1Match1::
     .string "第1轮，第1场$"

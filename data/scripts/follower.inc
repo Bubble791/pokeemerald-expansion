@@ -8,7 +8,7 @@ gText_FollowerDefault::
 	.string "错误：找不到脚本。$"
 
 gText_WantsToFly::
-	.string "{STR_VAR_1}一直在\n盯着天空。要使用\p飞翔吗？$"
+	.string "{STR_VAR_1}一直在\n盯着天空。\p要使用飞翔吗？$"
 
 EventScript_Follower::
 	lock

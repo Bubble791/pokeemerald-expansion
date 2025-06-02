@@ -1,5 +1,3 @@
-.set LOCALID_NURSE, 1
-
 OldaleTown_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, OldaleTown_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
@@ -11,7 +9,7 @@ OldaleTown_PokemonCenter_1F_OnTransition:
 	end
 
 OldaleTown_PokemonCenter_1F_EventScript_Nurse::
-	setvar VAR_0x800B, LOCALID_NURSE
+	setvar VAR_0x800B, LOCALID_OLDALE_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress
@@ -40,7 +38,7 @@ OldaleTown_PokemonCenter_1F_EventScript_WirelessClubAvailable::
 	end
 
 OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC:
-    .string "那边角落里的电脑免费提供给\n所有宝可梦训练家使用，\p就是说，你也可以\n随意使用。$"
+    .string "那边角落里的电脑是提供给所有\n宝可梦训练家使用的。\p当然，\n你也可以随意使用。$"
 
 OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat:
     .string "宝可梦中心真棒！\p你可以随时使用他们\n提供的服务，而且完全免费，\l什么也不用担心！$"

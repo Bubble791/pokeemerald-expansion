@@ -186,7 +186,7 @@ MauvilleCity_BikeShop_Text_GuessYouDontNeedBike:
     .string "风野：是吗？\p那么我想你\n不需要我的自行车。$"
 
 MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne:
-    .string "风野：唔，唔…… ……\p你说你从未白镇\n一路来到这里？\p天啊！\n那么远的地方！\p如果你骑着我的自行车，\n你可以在感受轻风拂面的同时\l轻轻松松地到任何地方去！\p我跟你说！\n我给你辆自行车！\p啊，等等！\p忘了告诉你，我这儿\n有两种自行车！\p分别是音速自行车\n和越野自行车！\p音速自行车是为\n追风的单车一族而设计，\p而越野自行车则是给\n喜爱车技的人所准备！\p我是好心人，所以\n让你随便挑一种！\p你想要哪样？$"
+    .string "风野：唔，唔…… ……\p你说你从未白镇\n一路来到这里？\p天啊！\n那么远的地方！\p如果你骑着我的自行车，\n你可以在感受轻风拂面的同时\l轻轻松松地到任何地方去！\p我跟你说！\n我给你辆自行车！\p啊，等等！\p忘了告诉你，\n我这儿有两种自行车！\p分别是音速自行车\n和越野自行车！\p音速自行车是为\n追风的单车一族而设计，\p而越野自行车则是给\n喜爱车技的人所准备！\p我是好心人，\n所以让你随便挑一种！\p你想要哪样？$"
 
 MauvilleCity_BikeShop_Text_ChoseMachBike:
     .string "{PLAYER}选择了音速自行车。$"
@@ -216,7 +216,7 @@ MauvilleCity_BikeShop_Text_OhYourBikeIsInPC:
     .string "哎？我\n给你的自行车呢？\p啊，明白了，你把它存到电脑里面了。\p把它从电脑里拿出来吧，\n我很乐意为你换一辆！\p愿你在旅行中\n体会到追风的快乐！$"
 
 MauvilleCity_BikeShop_Text_HandbooksAreInBack:
-    .string "我在这儿工作的时候\n学到了很多关于自行车的知识。\p如果你想知道\n怎么骑车，那边\l有几本说明书。$"
+    .string "我在这儿工作的时候\n学到了很多关于自行车的知识。\p如果你想知道怎么骑车，\n那边有几本说明书。$"
 
 MauvilleCity_BikeShop_Text_MachHandbookWhichPage:
     .string "是音速自行车的说明书。\p想读哪一页？$"

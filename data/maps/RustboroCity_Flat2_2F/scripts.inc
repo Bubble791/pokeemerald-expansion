@@ -28,5 +28,5 @@ RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt:
     .string "我爸爸在公司里工作。\p他做了这个东西！\n但我不会用，给你吧。$"
 
 RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo:
-    .string "我爸爸在公司里工作。\p我长大后，也要\n去得文工作。$"
+    .string "我爸爸在公司里工作。\p我长大后，\n也要去得文工作。$"
 

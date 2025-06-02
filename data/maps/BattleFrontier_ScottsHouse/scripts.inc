@@ -1,5 +1,3 @@
-.set LOCALID_SCOTT, 1
-
 BattleFrontier_ScottsHouse_MapScripts::
 	.byte 0
 
@@ -149,7 +147,7 @@ BattleFrontier_ScottsHouse_EventScript_WelcomeToFrontier::
 	call_if_eq VAR_FACING, DIR_EAST, BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayEast
 	call_if_eq VAR_FACING, DIR_WEST, BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayWest
 	msgbox BattleFrontier_ScottsHouse_Text_HowMuchEffortItTookToMakeReal, MSGBOX_DEFAULT
-	applymovement LOCALID_SCOTT, Common_Movement_FacePlayer
+	applymovement LOCALID_SCOTTS_HOUSE_SCOTT, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox BattleFrontier_ScottsHouse_Text_HaveThisAsMementoOfOurPathsCrossing, MSGBOX_DEFAULT
 	goto_if_eq VAR_SCOTT_STATE, 13, BattleFrontier_ScottsHouse_EventScript_Give4BattlePoints
@@ -192,27 +190,27 @@ BattleFrontier_ScottsHouse_EventScript_GiveBattlePoints::
 	end
 
 BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayNorth::
-	applymovement LOCALID_SCOTT, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_SCOTTS_HOUSE_SCOTT, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	return
 
 BattleFrontier_ScottsHouse_EventScript_ScottFaceAwaySouth::
-	applymovement LOCALID_SCOTT, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_SCOTTS_HOUSE_SCOTT, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	return
 
 BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayEast::
-	applymovement LOCALID_SCOTT, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_SCOTTS_HOUSE_SCOTT, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	return
 
 BattleFrontier_ScottsHouse_EventScript_ScottFaceAwayWest::
-	applymovement LOCALID_SCOTT, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_SCOTTS_HOUSE_SCOTT, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	return
 
 BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier:
-    .string "亚希达：欢迎欢迎！\n嘿嘿……抱歉空间有点狭窄。\p总之，{PLAYER}{KUN}，请让我\n正式欢迎你来到对战开拓区。\p这是我毕生梦想的实现，\n经过漫长的岁月终于得以成型。$"
+    .string "亚希达：欢迎欢迎！\n嘿嘿……抱歉空间有点狭窄。\p总之，{PLAYER}{KUN}，\n请让我正式欢迎你来到对战开拓区。\p这是我毕生梦想的实现，\n经过漫长的岁月终于得以成型。$"
 
 BattleFrontier_ScottsHouse_Text_HowMuchEffortItTookToMakeReal:
     .string "回想起来，这一路还真是\n走了很久很久……\p独自离家踏上寻找\n强大训练家的旅程……\p其中所付出的时间与\n努力真是难以想象。$"
@@ -224,7 +222,7 @@ BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints:
     .string "{PLAYER}获得了\n{STR_VAR_1}BP的对战点数。$"
 
 BattleFrontier_ScottsHouse_Text_ExplainBattlePoints:
-    .string "亚希达：你可以在开拓通行证上\n查看你对战点数的数量。\p你在对战开拓区\n获得的胜利越多，收集的\l对战点数就越多。\p这些对战点数随你所用，\n比如用来兑换道具什么的。$"
+    .string "亚希达：你可以在开拓通行证上\n查看你对战点数的数量。\p你在对战开拓区获得的胜利越多，\n收集的对战点数就越多。\p这些对战点数随你所用，\n比如用来兑换道具什么的。$"
 
 BattleFrontier_ScottsHouse_Text_ExpectingGreatThings:
     .string "期待你的更加精彩的表现！$"

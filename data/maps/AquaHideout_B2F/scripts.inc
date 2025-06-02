@@ -1,6 +1,3 @@
-.set LOCALID_MATT, 1
-.set LOCALID_SUBMARINE, 4
-
 AquaHideout_B2F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, AquaHideout_B2F_OnTransition
 	.byte 0
@@ -15,7 +12,7 @@ AquaHideout_B2F_EventScript_PreventMattNoticing::
 
 AquaHideout_B2F_EventScript_MattNoticePlayer::
 	lockall
-	setvar VAR_0x8008, LOCALID_MATT
+	setvar VAR_0x8008, LOCALID_AQUA_HIDEOUT_MATT
 	playse SE_PIN
 	applymovement VAR_0x8008, Common_Movement_ExclamationMark
 	waitmovement 0
@@ -32,8 +29,8 @@ AquaHideout_B2F_EventScript_Matt::
 	end
 
 AquaHideout_B2F_EventScript_SubmarineEscape::
-	setvar VAR_0x8008, LOCALID_MATT
-	setvar VAR_0x8009, LOCALID_SUBMARINE
+	setvar VAR_0x8008, LOCALID_AQUA_HIDEOUT_MATT
+	setvar VAR_0x8009, LOCALID_AQUA_HIDEOUT_SUBMARINE
 	applymovement VAR_0x8008, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 20
@@ -117,7 +114,7 @@ AquaHideout_B2F_Text_Grunt6Defeat:
     .string "怎么回事？\n你一点都不累！$"
 
 AquaHideout_B2F_Text_Grunt6PostBattle:
-    .string "说起来……我忘了\n把大师球放在哪里了。\p如果我没有保护好它，\n会被老大骂死的……$"
+    .string "说起来……\n我忘了把大师球放在哪里了。\p如果我没有保护好它，\n会被老大骂死的……$"
 
 AquaHideout_B2F_Text_Grunt8Intro:
     .string "我加入海洋队的时候，第一件事\n就是记住这些传送地板\l都通向什么地方。$"

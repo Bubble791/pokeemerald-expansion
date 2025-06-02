@@ -1,5 +1,3 @@
-.set LOCALID_ATTENDANT, 1
-
 FallarborTown_BattleTentLobby_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, FallarborTown_BattleTentLobby_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, FallarborTown_BattleTentLobby_OnWarp
@@ -11,7 +9,7 @@ FallarborTown_BattleTentLobby_OnWarp:
 
 FallarborTown_BattleTentLobby_EventScript_TurnPlayerNorth::
 	setvar VAR_TEMP_1, 1
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 
 FallarborTown_BattleTentLobby_OnFrame:
@@ -191,13 +189,13 @@ FallarborTown_BattleTentLobby_EventScript_EndCancelChallenge::
 	end
 
 FallarborTown_BattleTentLobby_EventScript_WalkToDoor::
-	applymovement LOCALID_ATTENDANT, FallarborTown_BattleTentLobby_Movement_AttendantWalkToDoor
-	applymovement OBJ_EVENT_ID_PLAYER, FallarborTown_BattleTentLobby_Movement_PlayerWalkToDoor
+	applymovement LOCALID_FALLARBOR_TENT_ATTENDANT, FallarborTown_BattleTentLobby_Movement_AttendantWalkToDoor
+	applymovement LOCALID_PLAYER, FallarborTown_BattleTentLobby_Movement_PlayerWalkToDoor
 	waitmovement 0
 	opendoor 6, 1
 	waitdooranim
-	applymovement LOCALID_ATTENDANT, FallarborTown_BattleTentLobby_Movement_AttendantEnterDoor
-	applymovement OBJ_EVENT_ID_PLAYER, FallarborTown_BattleTentLobby_Movement_PlayerEnterDoor
+	applymovement LOCALID_FALLARBOR_TENT_ATTENDANT, FallarborTown_BattleTentLobby_Movement_AttendantEnterDoor
+	applymovement LOCALID_PLAYER, FallarborTown_BattleTentLobby_Movement_PlayerEnterDoor
 	waitmovement 0
 	closedoor 6, 1
 	waitdooranim
@@ -306,13 +304,13 @@ FallarborTown_BattleTentLobby_Text_MakeThinkImJustKid:
     .string "哼哼哼哼哼。\p我要让大家以为我\n只是个孩子而轻视我，\p然后让他们大吃一惊，\n拔得头筹！$"
 
 FallarborTown_BattleTentLobby_Text_FallarborTentMyFavorite:
-    .string "你知道吗，不同城镇的对战帐篷\n所举行的比赛也不同。\p我最喜欢的就是秋叶镇的\n对战帐篷。\p训练家凭借着自己对\n宝可梦的信任，努力\l赢得比赛，太令人激动了！$"
+    .string "你知道吗，不同城镇的对战帐篷\n所举行的比赛也不同。\p我最喜欢的就是秋叶镇的\n对战帐篷。\p训练家凭借着自己对宝可梦的信任，\n努力赢得比赛，太令人激动了！$"
 
 FallarborTown_BattleTentLobby_Text_CameToCampOut:
     .string "我听说过一些关于帐篷的事，\n所以才出来宿营，\p但我没想到现在的帐篷\n会这么豪华！\p既然都来了，就进去试试\n放手一搏吧！$"
 
 FallarborTown_BattleTentLobby_Text_ScottLookingForSomeone:
-    .string "亚希达：嗨，{PLAYER}{KUN}！\n你也来这里的对战帐篷了！\p这里的人看上去大多都\n比较悠然自得，\p但你知道，\n我在寻找的是有……\p怎么说呢，\p胸怀强烈的求胜\n渴望与决心的人。\p如果有那样的训练家，\n我马上就……\p啊！没什么！\n继续加油吧！$"
+    .string "亚希达：嗨，{PLAYER}{KUN}！\n你也来这里的对战帐篷了！\p这里的人看上去大多都\n比较悠然自得，\p但你知道，\n我在寻找的是有……\p怎么说呢……\p胸怀强烈的求胜\n渴望与决心的人。\p如果有那样的训练家，\n我马上就……\p啊！没什么！\n继续加油吧！$"
 
 FallarborTown_BattleTentLobby_Text_ScottMakeChallenge:
     .string "亚希达：与其同我闲聊浪费时间，\n何不试着去挑战一下呢？$"

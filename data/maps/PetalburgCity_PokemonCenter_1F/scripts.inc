@@ -1,5 +1,3 @@
-.set LOCALID_NURSE, 1
-
 PetalburgCity_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PetalburgCity_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
@@ -11,7 +9,7 @@ PetalburgCity_PokemonCenter_1F_OnTransition:
 	end
 
 PetalburgCity_PokemonCenter_1F_EventScript_Nurse::
-	setvar VAR_0x800B, LOCALID_NURSE
+	setvar VAR_0x800B, LOCALID_PETALBURG_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress
@@ -70,5 +68,5 @@ PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType:
     .string "比如，你的火稚鸡\n是火属性。\p它对草属性和虫属性时\n占有优势，\p但对水属性宝可梦时\n则处于劣势。$"
 
 PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType:
-    .string "比如，你的水跃鱼\n是水属性。\p它对火属性时占有优势，\p但对草属性和电属性宝可梦时\n则处于劣势。$"
+    .string "比如，你的水跃鱼\n是水属性。\p它对火属性时\n占有优势，\p但对草属性和电属性宝可梦时\n则处于劣势。$"
 

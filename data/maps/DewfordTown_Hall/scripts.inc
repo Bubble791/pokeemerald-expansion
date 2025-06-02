@@ -1,8 +1,3 @@
-.set LOCALID_EXPERT_M, 4
-.set LOCALID_TWIN, 5
-.set LOCALID_SCHOOL_KID_M, 7
-.set LOCALID_PSYCHIC_M, 8
-
 DewfordTown_Hall_MapScripts::
 	.byte 0
 
@@ -55,7 +50,7 @@ DewfordTown_Hall_EventScript_ExpertM::
 	call Common_EventScript_BufferTrendyPhrase
 	msgbox DewfordTown_Hall_Text_TVShowAboutTrend, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_EXPERT_M, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_DEWFORD_HALL_EXPERT_M, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	release
 	end
@@ -66,7 +61,7 @@ DewfordTown_Hall_EventScript_Twin::
 	call Common_EventScript_BufferTrendyPhrase
 	msgbox DewfordTown_Hall_Text_IsTrendMorePopularAcrossSea, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_TWIN, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_DEWFORD_HALL_TWIN, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	release
 	end
@@ -191,7 +186,7 @@ DewfordTown_Hall_EventScript_DontMovePlayer1::
 	return
 
 DewfordTown_Hall_EventScript_DebateReact1::
-	applymovement LOCALID_PSYCHIC_M, DewfordTown_Hall_Movement_PsychicWalkInPlaceLeft
+	applymovement LOCALID_DEWFORD_HALL_PSYCHIC_M, DewfordTown_Hall_Movement_PsychicWalkInPlaceLeft
 	waitmovement 0
 	goto_if_eq VAR_0x8008, 0, DewfordTown_Hall_EventScript_PlayerReactWest
 	goto_if_eq VAR_0x8008, 1, DewfordTown_Hall_EventScript_DontMovePlayer2
@@ -199,7 +194,7 @@ DewfordTown_Hall_EventScript_DebateReact1::
 
 DewfordTown_Hall_EventScript_PlayerReactWest::
 	goto_if_eq VAR_FACING, DIR_EAST, DewfordTown_Hall_EventScript_DontMovePlayer1
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	return
 
@@ -207,7 +202,7 @@ DewfordTown_Hall_EventScript_DontMovePlayer2::
 	return
 
 DewfordTown_Hall_EventScript_DebateReact2::
-	applymovement LOCALID_SCHOOL_KID_M, DewfordTown_Hall_Movement_SchoolKidWalkInPlaceRight
+	applymovement LOCALID_DEWFORD_HALL_SCHOOL_KID_M, DewfordTown_Hall_Movement_SchoolKidWalkInPlaceRight
 	waitmovement 0
 	goto_if_eq VAR_0x8008, 0, DewfordTown_Hall_EventScript_PlayerReactNorthSouth
 	goto_if_eq VAR_0x8008, 1, DewfordTown_Hall_EventScript_PlayerReactEast
@@ -219,18 +214,18 @@ DewfordTown_Hall_EventScript_PlayerReactNorthSouth::
 	return
 
 DewfordTown_Hall_EventScript_PlayerWalkInPlaceUp::
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	return
 
 DewfordTown_Hall_EventScript_PlayerWalkInPlaceDown::
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	return
 
 DewfordTown_Hall_EventScript_PlayerReactEast::
 	goto_if_eq VAR_FACING, DIR_WEST, DewfordTown_Hall_EventScript_DontMovePlayer1
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	return
 
@@ -263,31 +258,31 @@ DewfordTown_Hall_Text_CantImagineLifeWithoutTrend:
     .string "现在流行什么？哎，当然是\n“{STR_VAR_1}”！\p不敢相信生活中没有\n“{STR_VAR_1}”会怎么样！$"
 
 DewfordTown_Hall_Text_GettingBoredOfTrend:
-    .string "现在流行什么？哎，当然是\n“{STR_VAR_1}”！\p但我对它已经有些腻了，\p我该去找找下面会流行什么。$"
+    .string "现在流行什么？哎，当然是\n“{STR_VAR_1}”！\p但我对它已经有些腻了。\p说不定该找点\n新玩意儿了。$"
 
 DewfordTown_Hall_Text_TeachingMonAboutTrend:
-    .string "我想把“{STR_VAR_1}”\n这个词教给我的宝可梦，\l但好像不太顺利。\p我想这对它来说太困难了。$"
+    .string "我想把“{STR_VAR_1}”\n的事教给我的宝可梦，\l但好像不太顺利。\p我想这对它来说太困难了。$"
 
 DewfordTown_Hall_Text_DeepLinkBetweenXAndY:
     .string "我正在研究现今十分流行的\n“{STR_VAR_1}”。\p“{STR_VAR_1}”和\n“{STR_VAR_2}”之间\l是不是有很深的联系呢？$"
 
 DewfordTown_Hall_Text_MyHunchWasRight:
-    .string "啊！\n我的直觉是对的！\p我抢在了潮流的\n前面，万岁！$"
+    .string "啊！\n我的直觉是对的！\p我离流行达人又近了一步，\n万岁！$"
 
 DewfordTown_Hall_Text_NotEasyToKeepUp:
-    .string "什么？！\n真的？！\p对我这样的老人来说，\n已经很难追上潮流了！$"
+    .string "什么？！\n真的？！\p对我这样的老人来说，\n跟上潮流可不容易！$"
 
 DewfordTown_Hall_Text_TVShowAboutTrend:
-    .string "说到关于\n“{STR_VAR_1}”的事……\l不是有部关于它的电视剧吗？$"
+    .string "说到关于\n“{STR_VAR_1}”的事……\l是不是有相关的电视节目？$"
 
 DewfordTown_Hall_Text_IsTrendMorePopularAcrossSea:
-    .string "在海的另一侧……\p“{STR_VAR_1}”\n比这里更流行吗？$"
+    .string "在海的另一侧……\p“{STR_VAR_1}”\n是不是更加流行吗？$"
 
 DewfordTown_Hall_Text_CollectTrendMerchandise:
-    .string "我收集经过官方认证的\n“{STR_VAR_1}”\l商品。\p我有官方\n“{STR_VAR_1}”玩偶……\p“{STR_VAR_1}”牌\n服装的真品……\p还有官方认证的\n“{STR_VAR_1}”\l图画书。\p呵呵呵，全是我的！\n我什么也不会给你！$"
+    .string "我收集正版授权的\n“{STR_VAR_1}”周边。\p我有正版\n“{STR_VAR_1}”玩偶……\p正版“{STR_VAR_1}”\n品牌服装……\p还有正版授权的\n“{STR_VAR_1}”\l图书。\p嘿嘿，都是我的！\n才不给你看呢！$"
 
 DewfordTown_Hall_Text_BooksAboutTrend:
-    .string "确认好的\n“{STR_VAR_1}”&\l坏的“{STR_VAR_1}”……\p这两者\n“{STR_VAR_1}”和\l宝可梦之间的关系……\p有用的\n“{STR_VAR_1}”……\p整整齐齐地排列着关于\n“{STR_VAR_1}”的书。$"
+    .string "辨别好的\n“{STR_VAR_1}”&\l坏的“{STR_VAR_1}”……\p“{STR_VAR_1}”和\n宝可梦之间的关系……\p实用的\n“{STR_VAR_1}”……\p书架上塞满了关于\n“{STR_VAR_1}”的书。$"
 
 DewfordTown_Hall_Text_TrendsScream:
     .string "标题是“{STR_VAR_1}的\n尖叫”。$"
@@ -296,44 +291,44 @@ DewfordTown_Hall_Text_TrendsSmile:
     .string "标题是“{STR_VAR_1}的\n微笑”。$"
 
 DewfordTown_Hall_Text_LastTrend:
-    .string "标题是“最后\n{STR_VAR_1}”。$"
+    .string "标题是“最后的\n{STR_VAR_1}”。$"
 
 DewfordTown_Hall_Text_BirthOfTrend:
     .string "标题是“{STR_VAR_1}\n的诞生”。$"
 
 DewfordTown_Hall_Text_SawTrendCoolestThing:
-    .string "我看过“{STR_VAR_1}”！\n厉害吧？\p它就像，呃，最酷的东西！\p非常棒！\n都是真的！$"
+    .string "我看过“{STR_VAR_1}”！\n超酷对吧？\p这绝对是当下\n最火的东西！\p太惊艳了！\n这才是真正的潮流啊！$"
 
 DewfordTown_Hall_Text_AllegedTrendNotAuthentic:
-    .string "啊，不不不。\p你说你看到过的\n“{STR_VAR_1}”\l——那是不可能的。\p有凭有据的文章更……\n怎么说，\l更尖锐，更丰富！\p啊，没什么，太惊讶了！$"
+    .string "啊，不不不。\p你说你看到过\n“{STR_VAR_1}”\l——那不可能。\p真正的版本更加……\n怎么说呢，\l更犀利也更柔和！\p总之简直\n不可思议！$"
 
 DewfordTown_Hall_Text_ComposedTrendThemeSong:
     .string "嘿，听好，我为\n“{STR_VAR_1}”作了曲。\p“{STR_VAR_1}”\n现在真的非常流行。\p好了，听着！\n……\p哦！\n{STR_VAR_1}！\p美丽的\n{STR_VAR_1}！$"
 
 DewfordTown_Hall_Text_WorkOnYourSinging:
-    .string "……\p我说，小子，\n你沉迷进\l“{STR_VAR_1}”之前\l能不能先学会怎么唱歌？$"
+    .string "……\p我说，伙计，\n你沉迷“{STR_VAR_1}”前\l能不能先学会怎么唱歌？$"
 
 DewfordTown_Hall_Text_OrganizeTrendParty:
-    .string "无论如何，就像我\n之前说的，我们该在\l这个小岛上开个\l“{STR_VAR_1}”聚会。$"
+    .string "无论如何，\n就像我之前说的，\l我们该在岛上组织个\l“{STR_VAR_1}”派对了。$"
 
 DewfordTown_Hall_Text_BrilliantIndeed:
-    .string "啊，真美妙的主意！\p我们可以邀请\n所有热爱\l“{STR_VAR_1}”的人。\l绝妙的主意，真的！\p今天就开始吧，我们生活的中心就是\n“{STR_VAR_1}”！$"
+    .string "啊，绝妙的主意！\p这样就能决出谁才是最擅长\n“{STR_VAR_1}”的人。\l真是绝妙的主意！\p从今天起，我们的生活就围绕\n“{STR_VAR_1}”了！$"
 
 DewfordTown_Hall_Text_TrendHasBecomePartOfLife:
-    .string "我想……\p你不认为\n“{STR_VAR_1}”已\l超越了潮流，成为\l我们日常生活的一部分了吗？$"
+    .string "其实我在想……\p你不觉得\n“{STR_VAR_1}”\l已经从潮流变成我们\l日常生活的一部分了吗？$"
 
 DewfordTown_Hall_Text_TrendWeighsHeavilyOnMind:
-    .string "什么？\n刚才你说的什么？\p但是，无论你醒着还是睡着，\n“{STR_VAR_1}”\l在你心中无疑都\l占有重大的地位。\p毫无疑问，你是\n“{STR_VAR_1}”\l博士！$"
+    .string "什么？\n有那么夸张？\p不过“{STR_VAR_1}”\n确实让你魂牵梦萦，\l醒着睡着都在想。\p你简直就是\n“{STR_VAR_1}”教授！$"
 
 DewfordTown_Hall_Text_IfWeTeamUpWellBeInvincible:
-    .string "如果我们两人组合起来，任何\n“{STR_VAR_1}”的事\l都难不倒我们！$"
+    .string "只要我们组队，\n在“{STR_VAR_1}”\l领域就所向无敌！$"
 
 DewfordTown_Hall_Text_WellBeTrendDuo:
-    .string "完全正确，好朋友！\p我们就是\n“{STR_VAR_1}”铛！\p这不是最适合的形象吗？\n哈哈哈哈！$"
+    .string "说得好，朋友！\p我们就是\n“{STR_VAR_1}”2人组！\p这形象太完美了！\n哈哈哈！$"
 
 DewfordTown_Hall_Text_GiveYouSludgeBomb:
-    .string "对我来说，污泥炸弹才是\n最最流行的。\p嗯？你说你不知道\n污泥炸弹？\p真可惜。\n我给你一个吧。$"
+    .string "对我来说，污泥炸弹才是\n最为流行的。\p嗯？你说你不知道\n污泥炸弹？\p这也太可怜了。\n我给你一个吧。$"
 
 DewfordTown_Hall_Text_LoveSludgeBombButTrendInToo:
-    .string "我喜欢污泥炸弹。\p但会\n“{STR_VAR_1}”的\l宝可梦也很棒。$"
+    .string "我超爱污泥炸弹。\p但现在会\n“{STR_VAR_1}”的\l宝可梦也很流行呢。$"
 

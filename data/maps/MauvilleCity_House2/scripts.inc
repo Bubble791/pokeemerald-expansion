@@ -42,7 +42,7 @@ MauvilleCity_House2_EventScript_DeclineTrade::
 	end
 
 MauvilleCity_House2_Text_BuyHarborMailAtSlateport:
-    .string "要是我也有自行车，骑车去\n凯那市买东西就更方便了，\p这样我就能去凯那市的\n友好商店买港口邮件……$"
+    .string "要是我也有自行车，\n骑车去凯那市买东西就更方便了。\p这样我就能去凯那市的\n友好商店买港口邮件……$"
 
 MauvilleCity_House2_Text_TradeHarborMailForCoinCase:
     .string "呀！你有港口邮件？\n愿意用它换个代币盒吗？$"

@@ -114,7 +114,7 @@ MossdeepCity_Gym_EventScript_Switch1::
 	lockall
 	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_1, MossdeepCity_Gym_EventScript_ClearSwitch1
 	setflag FLAG_MOSSDEEP_GYM_SWITCH_1
-	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 5, 5, METATILE_RSMossdeepGym_RedArrow_Right, FALSE
 	setmetatile 2, 7, METATILE_RSMossdeepGym_Switch_Down, TRUE
@@ -129,7 +129,7 @@ MossdeepCity_Gym_EventScript_DrawMapAfterSwitchUsed::
 
 MossdeepCity_Gym_EventScript_ClearSwitch1::
 	clearflag FLAG_MOSSDEEP_GYM_SWITCH_1
-	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 5, 5, METATILE_RSMossdeepGym_RedArrow_Left, FALSE
 	setmetatile 2, 7, METATILE_RSMossdeepGym_Switch_Up, TRUE
@@ -140,7 +140,7 @@ MossdeepCity_Gym_EventScript_Switch2::
 	lockall
 	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_2, MossdeepCity_Gym_EventScript_ClearSwitch2
 	setflag FLAG_MOSSDEEP_GYM_SWITCH_2
-	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 8, 14, METATILE_RSMossdeepGym_RedArrow_Right, FALSE
 	setmetatile 8, 10, METATILE_RSMossdeepGym_Switch_Down, TRUE
@@ -149,7 +149,7 @@ MossdeepCity_Gym_EventScript_Switch2::
 
 MossdeepCity_Gym_EventScript_ClearSwitch2::
 	clearflag FLAG_MOSSDEEP_GYM_SWITCH_2
-	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 8, 14, METATILE_RSMossdeepGym_RedArrow_Down, FALSE
 	setmetatile 8, 10, METATILE_RSMossdeepGym_Switch_Up, TRUE
@@ -160,7 +160,7 @@ MossdeepCity_Gym_EventScript_Switch3::
 	lockall
 	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_3, MossdeepCity_Gym_EventScript_ClearSwitch3
 	setflag FLAG_MOSSDEEP_GYM_SWITCH_3
-	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 15, 17, METATILE_RSMossdeepGym_RedArrow_Left, FALSE
 	setmetatile 17, 15, METATILE_RSMossdeepGym_Switch_Down, TRUE
@@ -169,7 +169,7 @@ MossdeepCity_Gym_EventScript_Switch3::
 
 MossdeepCity_Gym_EventScript_ClearSwitch3::
 	clearflag FLAG_MOSSDEEP_GYM_SWITCH_3
-	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 15, 17, METATILE_RSMossdeepGym_RedArrow_Right, FALSE
 	setmetatile 17, 15, METATILE_RSMossdeepGym_Switch_Up, TRUE
@@ -180,7 +180,7 @@ MossdeepCity_Gym_EventScript_Switch4::
 	lockall
 	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_4, MossdeepCity_Gym_EventScript_ClearSwitch4
 	setflag FLAG_MOSSDEEP_GYM_SWITCH_4
-	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 1, 23, METATILE_RSMossdeepGym_RedArrow_Up, FALSE
 	setmetatile 5, 24, METATILE_RSMossdeepGym_Switch_Down, TRUE
@@ -189,7 +189,7 @@ MossdeepCity_Gym_EventScript_Switch4::
 
 MossdeepCity_Gym_EventScript_ClearSwitch4::
 	clearflag FLAG_MOSSDEEP_GYM_SWITCH_4
-	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 1, 23, METATILE_RSMossdeepGym_RedArrow_Right, FALSE
 	setmetatile 5, 24, METATILE_RSMossdeepGym_Switch_Up, TRUE
@@ -398,7 +398,7 @@ MossdeepCity_Gym_Text_BlakePostBattle:
     .string "要用精神力举起精灵球还是困难\n了点，但这么小的灰尘的话……\p呜啊啊啊啊啊啊啊！\n…… …… ……\p不不，我没骗人！\n我没吹牛！真的！$"
 
 MossdeepCity_Gym_Text_HannahIntro:
-    .string "输给我的话，也不要\n太责怪自己。\p不是你弱小——\n而是我太强了！$"
+    .string "输给我的话，\n也不要太责怪自己。\p不是你弱小——\n而是我太强了！$"
 
 MossdeepCity_Gym_Text_HannahDefeat:
     .string "你太强了！$"
@@ -467,7 +467,7 @@ MossdeepCity_Gym_Text_MaceyDefeat:
     .string "你怎么会变得\n这么强的？$"
 
 MossdeepCity_Gym_Text_MaceyPostBattle:
-    .string "哼！你也许很强，但你\n不适合超能力属性！\p某种程度来说，\n你的战斗方式很野蛮！$"
+    .string "哼！你也许很强，\n但你不适合超能力属性！\p你的对战方式实在太野蛮了！$"
 
 MossdeepCity_Gym_Text_NicholasIntro:
     .string "呜啊啊啊！尝尝我的宝可梦\n那超凡脱俗的力量吧！$"

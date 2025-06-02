@@ -72,7 +72,7 @@ SSTidalRooms_Text_ColtonDefeat:
     .string "真是一场痛快的对战！$"
 
 SSTidalRooms_Text_ColtonPostBattle:
-    .string "只要想像一下在下次的华丽大赛中\n能看见什么样的宝可梦，我就会\l兴奋起来。真是无比期待啊！$"
+    .string "只要想想在下次的华丽大赛中能看见\n什么样的宝可梦，我就会兴奋起来。\l真是无比期待啊！$"
 
 SSTidalRooms_Text_MicahIntro:
     .string "你的朋友很强吗？$"

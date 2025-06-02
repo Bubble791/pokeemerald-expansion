@@ -9,7 +9,7 @@ EverGrandeCity_GlaciasRoom_OnWarp:
 	.2byte 0
 
 EverGrandeCity_GlaciasRoom_EventScript_PlayerTurnNorth::
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 
 EverGrandeCity_GlaciasRoom_OnFrame:
@@ -59,7 +59,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
-    .string "欢迎您。我叫波妮，\n是四天王的一员。\p我千里迢迢来到丰缘\n磨砺我的冰属性技巧。\p但是我在这儿见到的尽是些\n弱不禁风的训练家和宝可梦。\p您又如何呢？\p要是能让我使出全力也没问题，那就太棒了……！$"
+    .string "欢迎您。我叫波妮，\n是四天王的一员。\p我千里迢迢来到丰缘\n磨砺我的冰属性技巧。\p但是我在这儿见到的尽是些\n弱不禁风的训练家和宝可梦。\p您又如何呢？\p要是能让我使出全力也没问题，\n那就太棒了……！$"
 
 EverGrandeCity_GlaciasRoom_Text_Defeat:
     .string "您和您的宝可梦……\n灵魂燃烧的那么炽烈！\p这激烈的热量仿佛能吞噬一切。\p难怪我的冰属性技巧\n奈何不了您。$"

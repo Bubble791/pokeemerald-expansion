@@ -293,7 +293,7 @@ Route113_GlassWorkshop_EventScript_NinjaBoy::
 	end
 
 Route113_GlassWorkshop_Text_GoCollectAshWithThis:
-    .string "这里到处是火山灰，\n呼呼！\p我有种特别的才能，呼呼，\p我可以利用火山灰\n制作玻璃，呼呼。\p用这个去收集火山灰吧，呼呼。$"
+    .string "这里到处是火山灰，\n呼呼！\p我有个特别的才能，\n呼呼，\p我能用火山灰\n制作玻璃，呼呼。\p用这个去收集火山灰吧，呼呼。$"
 
 Route113_GlassWorkshop_Text_ExplainSootSack:
     .string "只要带上这个集灰袋在\n满是火山灰的地方走，呼呼，\p它就会将火山灰收集起来，\n呼呼。\p当你觉得收集了不少火山灰之后，\n就回来找我吧，呼呼。$"

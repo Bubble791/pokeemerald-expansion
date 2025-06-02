@@ -334,10 +334,10 @@ BattleFrontier_Lounge7_Text_RightTutorWelcomeBack::
     .string "嘻嘻嘻！\p你是回来学习强大而又漂亮的\n宝可梦招式的吗？$"
 
 BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong::
-    .string "那边两位女士总是不停地\n说对方的坏话，也许会让你\l以为她们俩关系并不好吧？\p但如果真是那样，她们\n就不会一块儿呆在那边了，不是吗？$"
+    .string "那边两位女士总是不停地\n说对方的坏话，也许会让你\l以为她们俩关系并不好吧？\p但如果真是那样，她们就不会\n一块儿呆在那边了，不是吗？$"
 
 BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful::
-    .string "我还仅仅是个少年的时候，\n那两位可是非常强大又美丽。\p她们是我们这些训练家的偶像。\p就算现在，时间也不曾掩盖\n她们的能力。\p实际上，她们的宝可梦招式\n在时间的淘洗中愈趋完美。\p但是……在某些方面，我却\n难以抑制地感受到……\p时间太残酷了……$"
+    .string "我还仅仅是个少年的时候，\n那两位可是非常强大又美丽。\p她们是我们这些训练家的偶像。\p就算现在，时间也不曾掩盖\n她们的能力。\p实际上，她们的宝可梦招式\n在时间的淘洗中愈趋完美。\p但是……在某些方面，\n我却难以抑制地感受到……\p时间太残酷了……$"
 
 BattleFrontier_Lounge7_Text_SoftboiledDesc::
     .string "最多可以恢复\n使用者最大体力的\n一半。$"

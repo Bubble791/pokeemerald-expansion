@@ -26,7 +26,7 @@ MagmaHideout_1F_Text_Grunt1PostBattle:
     .string "好吧，我以后做事\n会尽量认真一点的……$"
 
 MagmaHideout_1F_Text_Grunt2Intro:
-    .string "我们头儿叫我们挖掘烟囱山，\n所以我们挖了半天。\p在挖的过程中，我们\n发现了一些不可思议的东西！\p究竟是什么？\p哇哈哈！\n打赢我的话就告诉你！$"
+    .string "我们头儿叫我们挖掘烟囱山，\n所以我们挖了半天。\p在挖的过程中，\n我们发现了一些不可思议的东西！\p究竟是什么？\p哇哈哈！\n打赢我的话就告诉你！$"
 
 MagmaHideout_1F_Text_Grunt2Defeat:
     .string "啊！\n输了！$"
