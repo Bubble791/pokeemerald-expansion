@@ -65,7 +65,46 @@ static const u32 sTitleScreenRayquazaTilemap[] = INCBIN_U32("graphics/title_scre
 static const u32 sTitleScreenLogoShineGfx[] = INCBIN_U32("graphics/title_screen/logo_shine.4bpp.smol");
 static const u32 sTitleScreenCloudsGfx[] = INCBIN_U32("graphics/title_screen/clouds.4bpp.smol");
 
+static const u32 sTitleScreenBackgroundTilemap[] = INCBIN_U32("graphics/title_screen/bg/full.bin.lz");
 
+static const u32 sTitleScreenBackground0Gfx[] = INCBIN_U32("graphics/title_screen/bg/bg_gif/indexed/indexed_000.8bpp.lz");
+static const u16 sTitleScreenBackground0Pal[] = INCBIN_U16("graphics/title_screen/bg/bg_gif/indexed/indexed_000.gbapal");
+
+static const u32 sTitleScreenBackground1Gfx[] = INCBIN_U32("graphics/title_screen/bg/bg_gif/indexed/indexed_001.8bpp.lz");
+static const u16 sTitleScreenBackground1Pal[] = INCBIN_U16("graphics/title_screen/bg/bg_gif/indexed/indexed_001.gbapal");
+
+static const u32 sTitleScreenBackground2Gfx[] = INCBIN_U32("graphics/title_screen/bg/bg_gif/indexed/indexed_002.8bpp.lz");
+static const u16 sTitleScreenBackground2Pal[] = INCBIN_U16("graphics/title_screen/bg/bg_gif/indexed/indexed_002.gbapal");
+
+static const u32 sTitleScreenBackground3Gfx[] = INCBIN_U32("graphics/title_screen/bg/bg_gif/indexed/indexed_003.8bpp.lz");
+static const u16 sTitleScreenBackground3Pal[] = INCBIN_U16("graphics/title_screen/bg/bg_gif/indexed/indexed_003.gbapal");
+
+static const u32 sTitleScreenBackground4Gfx[] = INCBIN_U32("graphics/title_screen/bg/bg_gif/indexed/indexed_004.8bpp.lz");
+static const u16 sTitleScreenBackground4Pal[] = INCBIN_U16("graphics/title_screen/bg/bg_gif/indexed/indexed_004.gbapal");
+
+static const u32 *const sTitleScreenBackgroundGfxTable[] = 
+{
+    sTitleScreenBackground0Gfx,
+    sTitleScreenBackground1Gfx,
+    sTitleScreenBackground2Gfx,
+    sTitleScreenBackground3Gfx,
+    sTitleScreenBackground4Gfx,
+    sTitleScreenBackground3Gfx,
+    sTitleScreenBackground2Gfx,
+    sTitleScreenBackground1Gfx,
+};
+
+static const u16 *const sTitleScreenBackgroundPalTable[] = 
+{
+    sTitleScreenBackground0Pal,
+    sTitleScreenBackground1Pal,
+    sTitleScreenBackground2Pal,
+    sTitleScreenBackground3Pal,
+    sTitleScreenBackground4Pal,
+    sTitleScreenBackground3Pal,
+    sTitleScreenBackground2Pal,
+    sTitleScreenBackground1Pal,
+};
 
 // Used to blend "Emerald Version" as it passes over over the Pokémon banner.
 // Also used by the intro to blend the Game Freak name/logo in and out as they appear and disappear
@@ -588,20 +627,22 @@ void CB2_InitTitleScreen(void)
         break;
     case 1:
         // bg2
-        DecompressDataWithHeaderVram(gTitleScreenPokemonLogoGfx, (void *)(BG_CHAR_ADDR(0)));
-        DecompressDataWithHeaderVram(gTitleScreenPokemonLogoTilemap, (void *)(BG_SCREEN_ADDR(9)));
+        DecompressDataWithHeaderVram(gTitleScreenPokemonLogoGfx, (void *)(BG_CHAR_ADDR(3)));
+        DecompressDataWithHeaderVram(gTitleScreenPokemonLogoTilemap, (void *)(BG_SCREEN_ADDR(19)));
         LoadPalette(gTitleScreenBgPalettes, BG_PLTT_ID(0), 15 * PLTT_SIZE_4BPP);
-        // bg3
-        DecompressDataWithHeaderVram(sTitleScreenRayquazaGfx, (void *)(BG_CHAR_ADDR(2)));
-        DecompressDataWithHeaderVram(sTitleScreenRayquazaTilemap, (void *)(BG_SCREEN_ADDR(26)));
+        // // bg3
+        // DecompressDataWithHeaderVram(sTitleScreenRayquazaGfx, (void *)(BG_CHAR_ADDR(2)));
+        // DecompressDataWithHeaderVram(sTitleScreenRayquazaTilemap, (void *)(BG_SCREEN_ADDR(26)));
         // bg1
-        DecompressDataWithHeaderVram(sTitleScreenCloudsGfx, (void *)(BG_CHAR_ADDR(3)));
-        DecompressDataWithHeaderVram(gTitleScreenCloudsTilemap, (void *)(BG_SCREEN_ADDR(27)));
+        // DecompressDataWithHeaderVram(sTitleScreenCloudsGfx, (void *)(BG_CHAR_ADDR(3)));
+        // DecompressDataWithHeaderVram(gTitleScreenCloudsTilemap, (void *)(BG_SCREEN_ADDR(30)));
         ScanlineEffect_Stop();
         ResetTasks();
         ResetSpriteData();
         FreeAllSpritePalettes();
         gReservedSpritePaletteCount = 9;
+        LoadPaletteFast(sTitleScreenBackgroundPalTable[0], 0, 128 * 2);
+        LZ77UnCompVram(sTitleScreenBackgroundTilemap, (void *)(BG_SCREEN_ADDR(20)));
         LoadCompressedSpriteSheet(&sSpriteSheet_EmeraldVersion[0]);
         LoadCompressedSpriteSheet(&sSpriteSheet_PressStart[0]);
         LoadCompressedSpriteSheet(&sPokemonLogoShineSpriteSheet[0]);
@@ -640,9 +681,9 @@ void CB2_InitTitleScreen(void)
         SetGpuReg(REG_OFFSET_BLDCNT, BLDCNT_TGT1_BG2 | BLDCNT_EFFECT_LIGHTEN);
         SetGpuReg(REG_OFFSET_BLDALPHA, 0);
         SetGpuReg(REG_OFFSET_BLDY, 12);
-        SetGpuReg(REG_OFFSET_BG0CNT, BGCNT_PRIORITY(3) | BGCNT_CHARBASE(2) | BGCNT_SCREENBASE(26) | BGCNT_16COLOR | BGCNT_TXT256x256);
-        SetGpuReg(REG_OFFSET_BG1CNT, BGCNT_PRIORITY(2) | BGCNT_CHARBASE(3) | BGCNT_SCREENBASE(27) | BGCNT_16COLOR | BGCNT_TXT256x256);
-        SetGpuReg(REG_OFFSET_BG2CNT, BGCNT_PRIORITY(1) | BGCNT_CHARBASE(0) | BGCNT_SCREENBASE(9) | BGCNT_256COLOR | BGCNT_AFF256x256);
+        SetGpuReg(REG_OFFSET_BG0CNT, BGCNT_PRIORITY(3) | BGCNT_CHARBASE(0) | BGCNT_SCREENBASE(20) | BGCNT_256COLOR | BGCNT_TXT256x256);
+        //SetGpuReg(REG_OFFSET_BG1CNT, BGCNT_PRIORITY(2) | BGCNT_CHARBASE(3) | BGCNT_SCREENBASE(30) | BGCNT_16COLOR | BGCNT_TXT256x256);
+        SetGpuReg(REG_OFFSET_BG2CNT, BGCNT_PRIORITY(1) | BGCNT_CHARBASE(3) | BGCNT_SCREENBASE(19) | BGCNT_256COLOR | BGCNT_AFF256x256);
         EnableInterrupts(INTR_FLAG_VBLANK);
         SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_MODE_1
                                     | DISPCNT_OBJ_1D_MAP
@@ -720,6 +761,7 @@ static void Task_TitleScreenPhase1(u8 taskId)
 #undef sParentTaskId
 #undef sAlphaBlendIdx
 
+#define tAnimNum data[7]
 // Create "Press Start" and copyright banners, and slide Pokémon logo up
 static void Task_TitleScreenPhase2(u8 taskId)
 {
@@ -745,7 +787,6 @@ static void Task_TitleScreenPhase2(u8 taskId)
         SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_MODE_1
                                     | DISPCNT_OBJ_1D_MAP
                                     | DISPCNT_BG0_ON
-                                    | DISPCNT_BG1_ON
                                     | DISPCNT_BG2_ON
                                     | DISPCNT_OBJ_ON);
         CreatePressStartBanner(START_BANNER_X, 108);
@@ -804,7 +845,15 @@ static void Task_TitleScreenPhase3(u8 taskId)
             gBattle_BG1_Y = gTasks[taskId].tBg1Y / 2;
             gBattle_BG1_X = 0;
         }
-        UpdateLegendaryMarkingColor(gTasks[taskId].tCounter);
+        // UpdateLegendaryMarkingColor(gTasks[taskId].tCounter);
+        if (gTasks[taskId].tCounter % 8 == 0)
+        {
+            LoadPaletteFast(sTitleScreenBackgroundPalTable[gTasks[taskId].tAnimNum % NELEMS(sTitleScreenBackgroundPalTable)], 0, 128 * 2);
+            TransferPlttBuffer();
+            LZ77UnCompVram(sTitleScreenBackgroundGfxTable[gTasks[taskId].tAnimNum % NELEMS(sTitleScreenBackgroundGfxTable)], (void *)(BG_CHAR_ADDR(0)));
+            gTasks[taskId].tAnimNum++;
+        }
+    
         if ((gMPlayInfo_BGM.status & 0xFFFF) == 0)
         {
             BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_WHITEALPHA);
@@ -812,6 +861,8 @@ static void Task_TitleScreenPhase3(u8 taskId)
         }
     }
 }
+
+#undef tAnimNum
 
 static void CB2_GoToMainMenu(void)
 {
